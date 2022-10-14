@@ -1,1 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2022-10-14T10:49:21.499Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="if_NLe1GYCsedugbcNXK" version="20.4.1" type="github"><diagram id="QWg1XJd28sr7SxZCWTjO" name="Stránka-1">7ZZRj5swDMc/DY+bCi2UPl652026njStk/Y45SCFqCFGwb3S+/RzwJRyXaVO2tSXk5DA/9iJ458t4U2Tsnm0oiqeIZPaCyZZ403vvSDw/Tikl1MOnRLGcSfkVmXsNAhr9SZZnLC6U5msR44IoFFVYzEFY2SKI01YC/ux2wb0+NRK5PJMWKdCn6s/VYZFp8bBfNC/SpUX/cl+tOhWStE7803qQmSwP5GmD940sQDYfZVNIrUrXl+XLu7LhdVjYlYavCYge5rZX9tms/gR4f7Jf7XlI36Kul1ehd7xhVHW6OqpRV1z4njoq1HvVamFIWu5AYNrXpmQnRZKZytxgJ3LpkaRbntrWYBVb+QvNC35JNCyRYYdRG43pXUCGiwJBtoDhqC124yPsbKmsG/9rf130rNoRo4rUWOfIGgtqlq9tCm7wFLYXJklIELJTlwOaVE2F+vsH+lR20soJdoDuXBAEDNw7ng/Yns/9I8/Y6047Z3JjPuWezY/7j1gpQ8m+xeU52eUvWDppkFJNw53bqgOlTzDTUXAlpaFrXyH5w/EhFa5IVPLjQtzVVQ0SXcsI1Rus0qkyuSr1ud+NijfuRJOAord6HZaCpVl0jiggALFy7HhKlAG20qFS3qooMnkc+iFlHhCtj/Y9Dh3iwkYuotQLUhJrbF3zX4l9cvzc94KjD6IriPf+/1z8PEH+JuAD4Mbg198gL8J+Hn838CTOfwstGsnv1zTh98=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-14T10:51:44.545Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="aPWvhiP7hdUH_EADGjVL" version="20.4.1" type="github">
+  <diagram id="QWg1XJd28sr7SxZCWTjO" name="Stránka-1">
+    <mxGraphModel dx="1422" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dK4r_kxf9T6twK1vrmGt-6" value="test class" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="274" y="60" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="dK4r_kxf9T6twK1vrmGt-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="dK4r_kxf9T6twK1vrmGt-6" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dK4r_kxf9T6twK1vrmGt-8" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="dK4r_kxf9T6twK1vrmGt-6" vertex="1">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dK4r_kxf9T6twK1vrmGt-9" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="dK4r_kxf9T6twK1vrmGt-6" vertex="1">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
