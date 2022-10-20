@@ -30,7 +30,10 @@ Třídní rozvrh:
 -------------
 -> Tato třída představuje rozvrh konkrétní třídy základní školy. 
 
+[Vlastnost:]
+
 [Vazba:]
+	
 	
 
 Třída:
