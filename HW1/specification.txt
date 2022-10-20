@@ -27,18 +27,64 @@ reprezentaci použit v datech, její název, datový typ, popis a příklad.
 (todo: make sure že to tam je)
 
 Třídní rozvrh:
--------------
--> Tato třída představuje rozvrh konkrétní třídy základní školy. 
+--------------
+-> Tato třída představuje rozvrh konkrétní třídy základní školy.
 
-[Vlastnost:]
-
-[Vazba:]
-	
-	
+[Akademický rok]
+	Vlastnost: Akademický rok
+	Typ: Dva po sobě jdoucí roky, oddělené symbolem /
+	Jméno: Akademický rok
+	Popis: Roky, v kterých je daný rozvrh platný
+	Příklad: 2022/2023
+[Verze rozvrhu]
+	Vlastnost: Verze
+	Typ: Dvouciferný číselný kód, kde cifry jsou odděleny symbolem .
+	Jméno: Verze rozvrhu
+	Popis: Číslo označující aktuální verzi rozvrhu
+	Příklad: 1.5
+[Vazba:Naplánované hodiny]
+	Vazba: naplánováno
+	Typ: Hodina
+	Jméno: Naplánované hodiny
+	Popis: Náplánované hodiny v třídním rozvrhu	
+[Vazba:Třída]
+	Vazba: třída
+	Typ: Třída
+	Jméno: Příslušná třída
+	Popis: Třída, které rozvrh přísluší
 
 Třída:
 ------
+-> Představuje konkrétní fyzickou třídu studentů základní školy.
 
+[Ročník třídy]
+	Vlastnost: Ročník
+	Typ: číslo 1..9
+	Jméno: číslo 1..9
+	Popis: Ročník, ve kterém se třída nachází.
+	Příklad: 6
+[Kódové označení třídy]
+	Vlastnost: Kódové označení
+	Typ: Velké písmeno A-Z
+	Jméno: Písmeno A-Z
+	Popis: Kódové označení třídy písmenem.
+	Příklad: B
+[Vazba:Třídní učitel]
+	Vazba: třídní učitel
+	Typ: Učitel
+	Jméno: Třídní učitel
+	Popis: Učitel, který za třídu zodpovídá
+[Vazba:Týká se studenta]
+	Vazba: týká se
+	Typ: Student
+	Jméno: Týká se studenta
+	Popis: Studenti, kteří přísluší dané třídě
+[Vazba:Třídní rozvrh]
+	Vazba: přísluší
+	Typ: Třídní rozvrh
+	Jméno: Třídní rozvrh
+	Popis: Třídní rozvrh příslušící třídě.
+	
 Hodina:
 -------
 
@@ -53,9 +99,3 @@ Učitel:
 
 Student:
 --------
-
-
-
-
-
-
