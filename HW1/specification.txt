@@ -1,0 +1,17 @@
+/********************************/
+/*       Třídní rozvrhy        */
+/******************************/
+
+Editoři: 
+	Ondřej Kříž,
+	Václav Stibor,
+	Terezie Hrochová,
+	Jan Adámek
+
+GitHub: https://github.com/Cross-bit/NPRG036/tree/main/HW1
+-----------------------------------------------------------
+
+
+
+
+
