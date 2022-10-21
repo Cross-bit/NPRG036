@@ -23,59 +23,66 @@ Třídní rozvrh:
 -> Tato třída představuje rozvrh konkrétní třídy základní školy.
 
 [Akademický rok]
-	Vlastnost: Akademický rok
+	Vlastnost: akademický_rok
 	Typ: Řetězec
 	Jméno: Akademický rok
-	Popis: Roky, v kterých je daný rozvrh platný
+	Popis: Roky, v kterých je daný rozvrh platný.
 	Příklad: 2022/2023
+	
 [Verze rozvrhu]
-	Vlastnost: Verze
-	Typ: Řetězec
+	Vlastnost: verze
+	Typ: Desetinné číslo
 	Jméno: Verze rozvrhu
-	Popis: Číslo označující aktuální verzi rozvrhu
+	Popis: Číslo označující aktuální verzi rozvrhu.
 	Příklad: 1.5
+	
 [Vazba:Naplánované hodiny]
 	Vazba: naplánováno
 	Typ: Hodina
 	Jméno: Naplánované hodiny
-	Popis: Náplánované hodiny v třídním rozvrhu	
-[Vazba:Třída]
-	Vazba: třída
+	Popis: Náplánované hodiny v třídním rozvrhu.	
+	
+[Vazba:Přísluší třídě]
+	Vazba: přísluší
 	Typ: Třída
 	Jméno: Příslušná třída
-	Popis: Třída, které rozvrh přísluší
+	Popis: Třída, které rozvrh přísluší.
 
 Třída:
 ------
 -> Představuje konkrétní fyzickou třídu studentů základní školy.
 
 [Ročník třídy]
-	Vlastnost: Ročník
-	Typ: číslo 1..9
-	Jméno: číslo 1..9
+	Vlastnost: ročník
+	Typ: Celé číslo
+	Jméno: Ročník třídy
 	Popis: Ročník, ve kterém se třída nachází.
 	Příklad: 6
+	
 [Kódové označení třídy]
-	Vlastnost: Kódové označení
-	Typ: Velké písmeno A-Z
-	Jméno: Písmeno A-Z
+	Vlastnost: kódové_označení
+	Typ: Řetězec
+	Jméno: Kódové označení třídy
 	Popis: Kódové označení třídy písmenem.
 	Příklad: B
+	
 [Vazba:Třídní učitel]
-	Vazba: třídní učitel
+	Vazba: třídní_učitel
 	Typ: Učitel
 	Jméno: Třídní učitel
-	Popis: Učitel, který za třídu zodpovídá
+	Popis: Učitel, který za třídu zodpovídá.
+	
 [Vazba:Týká se studenta]
-	Vazba: týká se
+	Vazba: týká_se
 	Typ: Student
 	Jméno: Týká se studenta
-	Popis: Studenti, kteří přísluší dané třídě
+	Popis: Studenti, kteří přísluší dané třídě.
+	
 [Vazba:Třídní rozvrh]
 	Vazba: přísluší
 	Typ: Třídní rozvrh
-	Jméno: Třídní rozvrh
-	Popis: Třídní rozvrh příslušící třídě.
+	Jméno: Třídě přísluší třídní rozvrh.
+	Popis: Třídní rozvrh příslušící dané třídě.
 	
 Hodina:
 -------
@@ -88,23 +95,23 @@ Učebna:
 -> Tato třída reprezentuje učební místnost, v níž probíhá výuka na základní škole.
 
 [Identifikátor třídy]
-	Vlastnost: ID třídy
+	Vlastnost: id_třídy
 	Typ: Řetězec
-	Jméno: id_třídy
+	Jméno: ID třídy
 	Popis: Prostředek ke vzájemnému odlišení jednotlivých učeben.
 	Příklad: S9
 	
 [Kapacita učebny]
-	Vlastnost: Kapacita
+	Vlastnost: kapacita_učebny
 	Typ: Celé číslo
-	Jméno: kapacita_učebny
-	Popis: Označuje maximální počet studentů, jenž je v jednu chvíli schopný obývat danou učebnu.
+	Jméno: Kapacita učebny
+	Popis: Označuje maximální počet osob přítomných v danou chvíli v dané učebně.
 	Příklad: 30
 	
-[Vazba: Hodina se koná v učebně]
+[Vazba:Hodina se koná v učebně]
 	Vazba: koná_se
 	Typ: Hodina
-	Jméno: Koná se
+	Jméno: Hodina konající se v učebně
 	Popis: V učebně probíhá daná hodina.
 
 Předmět:
@@ -112,39 +119,30 @@ Předmět:
 -> Tato třída reprezentuje předmět vyučující se na základní škole.
 
 [Identifikátor předmětu] 
-	Vlastnost: ID předmětu
+	Vlastnost: id_předmětu
 	Typ: Řetězec
-	Jméno: id_předmětu
+	Jméno: ID předmětu
 	Popis: Prostředek ke vzájemnému odlišení jednotlivých předmětů.
 	Příklad: MAT
-	
-[Volitelnost předmětu]
-	Vlastnost: Volitelnost
-	Typ: Booleovská hodnota
-	Jméno: volitelnost
-	Popis: Označení volitelnosti předmětu.
-	Příklad: false
-?************?
-*?Volitelnost předmětu -změnit na-> Typ předmětu?*
-[Typ předmětu]
-	Vlastnost: Typ
+
+[Název předmětu]
+	Vlastnost: název
 	Typ: Řetězec
-	Jméno: typ
-	Popis: Označení typu volitelnosti předmětu.
-	Příklad: volitelný
-?************?
+	Jméno: Název předmětu
+	Popis: Pojmenování daného předmětu.
+	Příklad: Matematika
 
 [Vazba:Týká se učitele]
 	Vazba: týká_se
 	Typ: Učitel
-	Jméno: Týká se
-	Popis: Předmět, jenž se týká učitele.
+	Jméno: Týká se učitele
+	Popis: Předmět, jenž se týká daného učitele.
 	
 [Vazba:Vyučuje se]
 	Vazba: vyučuje_se
 	Typ: Hodina
-	Jméno: Vyučuje se
-	Popis: 	Předmět se vyučuje v rámci dané hodiny.
+	Jméno: Hodina daného předmětu
+	Popis: Předmět se vyučuje v rámci dané hodiny.
 
 Učitel:
 -------
@@ -157,12 +155,5 @@ Student:
 -----------
 
 Vašek
-  - [OBECNÉ] Opravdu je nutné typy "řetězec" jednotlivých atributů konkretizovat, zda-li se jedná o písmena/čísla? viz. vzor Úřední desky - 2.2.6 Revize
   - [OBECNÉ] Odkaz na základní datové typy: https://ofn.gov.cz/základn%C3%AD-datové-typy/2020-07-01/#řetězec
-  - [Předmět] (Pojmenování atributu) Nepoužít raději namísto "Identifikátor předmětu" -> "ID předmětu"?
-  - [Předmět] (Volitelnost) Pokud je "false", pak to znamená, že předmět je povinný nebo si ho nemohu zvolit? Pobavit se o přejmenování na "Typ předmětu: volitelný/povinný" / "Povinnost předmětu: true/false".
-  - [Předmět] Přejmenovat vazbu "týká se" -na-> "vyučuje se"?
-  - [Učebna] (ID třídy) změnit v diagramu "ID Třídy" -na-> "ID třídy", případně probrat, zda-li se jedná o srpávné pojmenování, protože by dávalo větší smysl "ID učebny"
-  - [Učebna] (Kapacita) zlepšit popis
-  - [Učebna] (Vazba: koná se) promyslet její přejmenování.. "Hodina -> koná se -> učebna???", třeba "hodina probíhá (v) učebně"
   
