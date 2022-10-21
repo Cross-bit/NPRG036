@@ -158,9 +158,11 @@ Student:
 
 Vašek
   - [OBECNÉ] Opravdu je nutné typy "řetězec" jednotlivých atributů konkretizovat, zda-li se jedná o písmena/čísla? viz. vzor Úřední desky - 2.2.6 Revize
+  - [OBECNÉ] Odkaz na základní datové typy: https://ofn.gov.cz/základn%C3%AD-datové-typy/2020-07-01/#řetězec
   - [Předmět] (Pojmenování atributu) Nepoužít raději namísto "Identifikátor předmětu" -> "ID předmětu"?
   - [Předmět] (Volitelnost) Pokud je "false", pak to znamená, že předmět je povinný nebo si ho nemohu zvolit? Pobavit se o přejmenování na "Typ předmětu: volitelný/povinný" / "Povinnost předmětu: true/false".
   - [Předmět] Přejmenovat vazbu "týká se" -na-> "vyučuje se"?
   - [Učebna] (ID třídy) změnit v diagramu "ID Třídy" -na-> "ID třídy", případně probrat, zda-li se jedná o srpávné pojmenování, protože by dávalo větší smysl "ID učebny"
   - [Učebna] (Kapacita) zlepšit popis
   - [Učebna] (Vazba: koná se) promyslet její přejmenování.. "Hodina -> koná se -> učebna???", třeba "hodina probíhá (v) učebně"
+  
