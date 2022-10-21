@@ -9,14 +9,7 @@ Editoři:
 	Jan Adámek
 
 GitHub: https://github.com/Cross-bit/NPRG036/tree/main/HW1
------------------------------------------------------------
-
-Abstrakt:
----------
-TODO:
-Přehled:
---------
-
+------------------------------------------------
 
 Specifikace:
 ------------
@@ -32,13 +25,13 @@ Třídní rozvrh:
 
 [Akademický rok]
 	Vlastnost: Akademický rok
-	Typ: Dva po sobě jdoucí roky, oddělené symbolem /
+	Typ: Řetězec
 	Jméno: Akademický rok
 	Popis: Roky, v kterých je daný rozvrh platný
 	Příklad: 2022/2023
 [Verze rozvrhu]
 	Vlastnost: Verze
-	Typ: Dvouciferný číselný kód, kde cifry jsou odděleny symbolem .
+	Typ: Řetězec
 	Jméno: Verze rozvrhu
 	Popis: Číslo označující aktuální verzi rozvrhu
 	Příklad: 1.5
