@@ -86,9 +86,70 @@ Třída:
 	
 Hodina:
 -------
+-> Tato třída reprezentuje konkrétní vyučovací hodinu v třídním rozvrhu. 
 
+[Identifikátor hodiny]
+	Vlastnost: id_hodiny
+	Typ: Řetězec
+	Jméno: ID hodiny
+	Popis: Jedonoznačné identifikační číslo hodiny. 
+	Příklad: 456376
+
+[URL Zoom meetingu pro hodinu] //TODO
+	Vlastnost: url_hodiny
+	Typ: URL
+	Jméno: Zoom meeting URL
+	Popis: URL Zoom meetingu pro online výuku hodiny.
+	Příklad: https://zoom.com/howefhowodsdh
+
+[Vazba:Probíhá]
+	Vazba: probíhá
+	Typ: Časový slot
+	Jméno: Časový slot hodiny
+	Popis: Hodina probíhající v daném časovém slotu.
+	
+[Vazba:Naplánováno]
+	Vazba: naplánováno
+	Typ: Třídní rozvrh
+	Jméno: 
+	Popis: 
+	
+[Vazba:Koná se]
+	Vazba: koná_se
+	Typ: Učebna
+	Jméno: 
+	Popis: 
+	
+[Vazba:Vyučuje se]
+	Vazba: vyučuje_se 
+	Typ: Předmět
+	Jméno: 
+	Popis: 
+	
 Časový slot:
 ------------
+-> Tato třída reprezentuje časové okno od-do, v němž probíhá výuka.
+
+[Začátek časového slotu]
+	Vlastnost: začátek
+	Typ: Čas
+	Jméno: Začátek časového slotu
+	Popis:  Čas, kdy začíná časový slot.
+	Příklad: 08:00:00
+	
+[Konec časového slotu]
+	Vlastnost: konec
+	Typ: Čas
+	Jméno: Konec časového slotu
+	Popis:  Čas, kdy končí časový slot.
+	Příklad: 09:00:00
+	
+[Den v týdnu]
+	Vlastnost: den_v_týdnu
+	Typ: Řetězec
+	Jméno: Den v týdnu
+	Popis: Den v týdnu, který se časový slot odehrává.
+	Příklad: Pondělí	
 
 Učebna:
 -------
