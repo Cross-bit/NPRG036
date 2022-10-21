@@ -88,6 +88,26 @@ Učebna:
 -------
 -> Tato třída reprezentuje učební místnost, v níž probíhá výuka na základní škole.
 
+[Identifikátor třídy]
+	Vlastnost: ID třídy
+	Typ: Řetězec
+	Jméno: id_třídy
+	Popis: Prostředek ke vzájemnému odlišení jednotlivých učeben.
+	Příklad: S9
+	
+[Kapacita učebny]
+	Vlastnost: Kapacita
+	Typ: Celé číslo
+	Jméno: kapacita_učebny
+	Popis: Označuje maximální počet studentů, jenž je v jednu chvíli schopný obývat danou učebnu.
+	Příklad: 30
+	
+[Vazba: Hodina se koná v učebně]
+	Vazba: koná_se
+	Typ: Hodina
+	Jméno: Koná se
+	Popis: V učebně probíhá daná hodina.
+
 Předmět:
 --------
 -> Tato třída reprezentuje předmět vyučující se na základní škole.
@@ -95,9 +115,10 @@ Předmět:
 [Identifikátor předmětu] 
 	Vlastnost: ID předmětu
 	Typ: Řetězec
-	Jméno: identifikátor_předmětu
+	Jméno: id_předmětu
 	Popis: Prostředek ke vzájemnému odlišení jednotlivých předmětů.
 	Příklad: MAT
+	
 [Volitelnost předmětu]
 	Vlastnost: Volitelnost
 	Typ: Booleovská hodnota
@@ -113,12 +134,14 @@ Předmět:
 	Popis: Označení typu volitelnosti předmětu.
 	Příklad: volitelný
 ?************?
+
 [Vazba:Týká se učitele]
 	Vazba: týká_se
 	Typ: Učitel
 	Jméno: Týká se
 	Popis: Předmět, jenž se týká učitele.
-[Vazba:vyučuje se]
+	
+[Vazba:Vyučuje se]
 	Vazba: vyučuje_se
 	Typ: Hodina
 	Jméno: Vyučuje se
@@ -139,3 +162,6 @@ Vašek
   - [Předmět] (Pojmenování atributu) Nepoužít raději namísto "Identifikátor předmětu" -> "ID předmětu"?
   - [Předmět] (Volitelnost) Pokud je "false", pak to znamená, že předmět je povinný nebo si ho nemohu zvolit? Pobavit se o přejmenování na "Typ předmětu: volitelný/povinný" / "Povinnost předmětu: true/false".
   - [Předmět] Přejmenovat vazbu "týká se" -na-> "vyučuje se"?
+  - [Učebna] (ID třídy) změnit v diagramu "ID Třídy" -na-> "ID třídy", případně probrat, zda-li se jedná o srpávné pojmenování, protože by dávalo větší smysl "ID učebny"
+  - [Učebna] (Kapacita) zlepšit popis
+  - [Učebna] (Vazba: koná se) promyslet její přejmenování.. "Hodina -> koná se -> učebna???", třeba "hodina probíhá (v) učebně"
