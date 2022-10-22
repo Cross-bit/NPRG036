@@ -111,20 +111,20 @@ Hodina:
 [Vazba:Naplánováno]
 	Vazba: naplánováno
 	Typ: Třídní rozvrh
-	Jméno: 
-	Popis: 
+	Jméno: Hodina v třídnm rozvrhu
+	Popis: Hodina je naplnována v třídním rozvrhu.
 	
 [Vazba:Koná se]
 	Vazba: koná_se
 	Typ: Učebna
-	Jméno: 
-	Popis: 
+	Jméno: Hodina se koná v učebně
+	Popis: Daná hodina se odehrává v dané učebně.
 	
 [Vazba:Vyučuje se]
 	Vazba: vyučuje_se 
 	Typ: Předmět
-	Jméno: 
-	Popis: 
+	Jméno: Předmět hodiny
+	Popis: Danou hodinu se vyučuje daný předmět.
 	
 Časový slot:
 ------------
