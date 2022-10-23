@@ -207,7 +207,7 @@ Předmět:
 
 Učitel:
 -------
--> Tato třída reprezentuje žáky dané základní školy.
+-> Tato třída reprezentuje jednotlivé učitele dané základní školy.
 
 [Identifikátor učitele]
 	Vlastnost: id_učitele
