@@ -207,9 +207,63 @@ Předmět:
 
 Učitel:
 -------
+-> Tato třída reprezentuje žáky dané základní školy.
 
+[Identifikátor učitele]
+	Vlastnost: id_učitele
+	Typ: Řetězec
+	Jméno: ID učitele
+	Popis: Prostředek ke vzájemnému odlišení jednolivých studentů.
+	
+[Jméno učitele]
+	Vlastnost: jméno
+	Typ: Řetězec
+	Jméno: Jméno učitele
+	Popis: Spojení rodného jména a přijímení daného učitele.
+	Příklad: Jan Novák
+
+[Zkušenosti učitele]
+	Vlastnost: zkušenosti
+	Typ: Celé číslo
+	Jméno: Zkušenosti učitele
+	Popis: Letité zkušenosti učitele, započítává se každý odučený celý školní rok.
+	Příklad: 3
+	
+[Vazba:Třídní učitel]
+	Vazba: třídní_učitel
+	Typ: Třída
+	Jméno: Třídní učitel 
+	Popis: Třída, za níž učitel zodpovídá.
+	
+[Vazba:Týká se]
+	Vazba: týká_se
+	Typ: Předmět
+	Jméno: TODO
+	Popis: TODO
+	
 Student:
 --------
+-> Tato třída reprezentuje žáky dané základní školy.
+
+[Identifikátor studenta]
+	Vlastnost: id_studenta
+	Typ: Řetězec
+	Jméno: ID studenta
+	Popis: Prostředek ke vzájemnému odlišení jednotlivých studentů.
+	Příklad: 21032
+	
+[Jméno studenta]
+	Vlastnost: jméno
+	Typ: Řetězec
+	Jméno: Jméno studenta
+	Popis: Spojení rodného jména a přijímení daného studenta.
+	Příklad: Ondřej Novotný
+	
+[Vazba:Týká se]
+	Vazba: týká_se
+	Typ: Třída
+	Jméno: TODO
+	Popis: TODO (NEPŘEJMENOVAT VZTAH?)
 
 -----------
 | DISKUZE |
