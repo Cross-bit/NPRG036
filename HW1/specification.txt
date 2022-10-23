@@ -50,7 +50,7 @@ Třídní rozvrh:
 
 Třída:
 ------
--> Představuje konkrétní fyzickou třídu studentů základní školy.
+-> Představuje konkrétní fyzickou třídu žáků základní školy.
 
 [Ročník třídy]
 	Vlastnost: ročník
@@ -72,11 +72,11 @@ Třída:
 	Jméno: Třídní učitel
 	Popis: Učitel, který za třídu zodpovídá.
 	
-[Vazba:Týká se studenta]
+[Vazba:Žák dochází]
 	Vazba: týká_se
-	Typ: Student
-	Jméno: Týká se studenta
-	Popis: Studenti, kteří přísluší dané třídě.
+	Typ: Žák
+	Jméno: Žák dochází
+	Popis: Žáci, kteří přísluší dané třídě.
 	
 [Vazba:Třídní rozvrh]
 	Vazba: přísluší
@@ -95,32 +95,32 @@ Hodina:
 	Popis: Jedonoznačné identifikační číslo hodiny. 
 	Příklad: 456376
 
-[URL Zoom meetingu pro hodinu] //TODO
+[URL Zoom meetingu pro hodinu]
 	Vlastnost: url_hodiny
 	Typ: URL
 	Jméno: Zoom meeting URL
 	Popis: URL Zoom meetingu pro online výuku hodiny.
 	Příklad: https://zoom.com/howefhowodsdh
 
-[Vazba:Probíhá]
+[Vazba:Probíhá v časovém slotu]
 	Vazba: probíhá
 	Typ: Časový slot
 	Jméno: Časový slot hodiny
 	Popis: Hodina probíhající v daném časovém slotu.
 	
-[Vazba:Naplánováno]
+[Vazba:Naplánováno v třídním rozvrhu]
 	Vazba: naplánováno
 	Typ: Třídní rozvrh
 	Jméno: Hodina v třídnm rozvrhu
 	Popis: Hodina je naplnována v třídním rozvrhu.
 	
-[Vazba:Koná se]
+[Vazba:Koná se v učebně]
 	Vazba: koná_se
 	Typ: Učebna
 	Jméno: Hodina se koná v učebně
 	Popis: Daná hodina se odehrává v dané učebně.
 	
-[Vazba:Vyučuje se]
+[Vazba:Vyučuje se předmět]
 	Vazba: vyučuje_se 
 	Typ: Předmět
 	Jméno: Předmět hodiny
@@ -193,10 +193,10 @@ Předmět:
 	Popis: Pojmenování daného předmětu.
 	Příklad: Matematika
 
-[Vazba:Týká se učitele]
+[Vazba:Vyučuje učitel]
 	Vazba: týká_se
 	Typ: Učitel
-	Jméno: Týká se učitele
+	Jméno: Vyučuje učitel
 	Popis: Předmět, jenž se týká daného učitele.
 	
 [Vazba:Vyučuje se]
@@ -213,7 +213,7 @@ Učitel:
 	Vlastnost: id_učitele
 	Typ: Řetězec
 	Jméno: ID učitele
-	Popis: Prostředek ke vzájemnému odlišení jednolivých studentů.
+	Popis: Prostředek ke vzájemnému odlišení jednolivých učitelů.
 	
 [Jméno učitele]
 	Vlastnost: jméno
@@ -235,40 +235,38 @@ Učitel:
 	Jméno: Třídní učitel 
 	Popis: Třída, za níž učitel zodpovídá.
 	
-[Vazba:Týká se]
-	Vazba: týká_se
+[Vazba:Vyučuje]
+	Vazba: vyučuje
 	Typ: Předmět
-	Jméno: TODO
-	Popis: TODO
+	Jméno: Vyučovaný předmět
+	Popis: Předmět, jenž učitel vyučuje.
 	
-Student:
---------
+Žák:
+----
 -> Tato třída reprezentuje žáky dané základní školy.
 
-[Identifikátor studenta]
-	Vlastnost: id_studenta
+[Identifikátor žáka]
+	Vlastnost: id_žáka
 	Typ: Řetězec
-	Jméno: ID studenta
-	Popis: Prostředek ke vzájemnému odlišení jednotlivých studentů.
+	Jméno: ID žáka
+	Popis: Prostředek ke vzájemnému odlišení jednotlivých žáků.
 	Příklad: 21032
 	
-[Jméno studenta]
+[Jméno žáka]
 	Vlastnost: jméno
 	Typ: Řetězec
-	Jméno: Jméno studenta
-	Popis: Spojení rodného jména a přijímení daného studenta.
+	Jméno: Jméno žáka
+	Popis: Spojení rodného jména a přijímení daného žáka.
 	Příklad: Ondřej Novotný
 	
-[Vazba:Týká se]
-	Vazba: týká_se
+[Vazba:Dochází do třídy]
+	Vazba: dochází
 	Typ: Třída
-	Jméno: TODO
-	Popis: TODO (NEPŘEJMENOVAT VZTAH?)
+	Jméno: Dochází do třídy
+	Popis: Třída, do které žák dochází.
+	
+-------------------------------------------
 
------------
-| DISKUZE |
------------
-
-Vašek
-  - [OBECNÉ] Odkaz na základní datové typy: https://ofn.gov.cz/základn%C3%AD-datové-typy/2020-07-01/#řetězec
-  
+Zdroje:
+-------
+[DATOVÉ TYPY] Odkaz na základní datové typy: https://ofn.gov.cz/základn%C3%AD-datové-typy/2020-07-01
