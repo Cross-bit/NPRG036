@@ -1,0 +1,262 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+@prefix ex: <http://example.org/vocabulary/> .
+
+# Třídní rozvrh
+
+ex:Timetable a rdfs:Class ;
+	rdfs:label "Třídní rozvrh"@cs ;
+	rdfs:comment "Představuje rozvrh konkrétní třídy základní školy."@cs .
+
+# [Akademický rok]
+# 	Vlastnost: akademický_rok
+# 	Typ: Řetězec
+# 	Jméno: Akademický rok
+# 	Popis: Roky, v kterých je daný rozvrh platný.
+# 	Příklad: 2022/2023
+
+# [Verze rozvrhu]
+# 	Vlastnost: verze
+# 	Typ: Desetinné číslo
+# 	Jméno: Verze rozvrhu
+# 	Popis: Číslo označující aktuální verzi rozvrhu.
+# 	Příklad: 1.5
+
+# [Vazba:Naplánované hodiny]
+# 	Vazba: naplánováno
+# 	Typ: Hodina
+# 	Jméno: Naplánované hodiny
+# 	Popis: Náplánované hodiny v třídním rozvrhu.
+
+# [Vazba:Přísluší třídě]
+# 	Vazba: přísluší
+# 	Typ: Třída
+# 	Jméno: Příslušná třída
+# 	Popis: Třída, které rozvrh přísluší.
+
+# Třída
+
+ex:Class a rdfs:Class ;
+	rdfs:label "Třída"@cs ;
+	rdfs:comment "Představuje konkrétní fyzickou třídu žáků základní školy."@cs .
+
+# [Ročník třídy]
+# 	Vlastnost: ročník
+# 	Typ: Celé číslo
+# 	Jméno: Ročník třídy
+# 	Popis: Ročník, ve kterém se třída nachází.
+# 	Příklad: 6
+
+# [Kódové označení třídy]
+# 	Vlastnost: kódové_označení
+# 	Typ: Řetězec
+# 	Jméno: Kódové označení třídy
+# 	Popis: Kódové označení třídy písmenem.
+# 	Příklad: B
+
+# [Vazba:Třídní učitel]
+# 	Vazba: třídní_učitel
+# 	Typ: Učitel
+# 	Jméno: Třídní učitel
+# 	Popis: Učitel, který za třídu zodpovídá.
+
+# [Vazba:Žák dochází]
+# 	Vazba: týká_se
+# 	Typ: Žák
+# 	Jméno: Žák dochází
+# 	Popis: Žáci, kteří přísluší dané třídě.
+
+# [Vazba:Třídní rozvrh]
+# 	Vazba: přísluší
+# 	Typ: Třídní rozvrh
+# 	Jméno: Třídě přísluší třídní rozvrh.
+# 	Popis: Třídní rozvrh příslušící dané třídě.
+
+# Hodina
+
+ex:Lesson a rdfs:Class ;
+	rdfs:label "Hodina"@cs ;
+	rdfs:comment "Reprezentuje konkrétní vyučovací hodinu v třídním rozvrhu."@cs .
+
+# [Identifikátor hodiny]
+# 	Vlastnost: id_hodiny
+# 	Typ: Řetězec
+# 	Jméno: ID hodiny
+# 	Popis: Jedonoznačné identifikační číslo hodiny. 
+# 	Příklad: 456376
+
+# [URL Zoom meetingu pro hodinu]
+# 	Vlastnost: url_hodiny
+# 	Typ: URL
+# 	Jméno: Zoom meeting URL
+# 	Popis: URL Zoom meetingu pro online výuku hodiny.
+# 	Příklad: https://zoom.com/howefhowodsdh
+
+# [Vazba:Probíhá v časovém slotu]
+# 	Vazba: probíhá
+# 	Typ: Časový slot
+# 	Jméno: Časový slot hodiny
+# 	Popis: Hodina probíhající v daném časovém slotu.
+
+# [Vazba:Naplánováno v třídním rozvrhu]
+# 	Vazba: naplánováno
+# 	Typ: Třídní rozvrh
+# 	Jméno: Hodina v třídnm rozvrhu
+# 	Popis: Hodina je naplnována v třídním rozvrhu.
+
+# [Vazba:Koná se v učebně]
+# 	Vazba: koná_se
+# 	Typ: Učebna
+# 	Jméno: Hodina se koná v učebně
+# 	Popis: Daná hodina se odehrává v dané učebně.
+
+# [Vazba:Vyučuje se předmět]
+# 	Vazba: vyučuje_se 
+# 	Typ: Předmět
+# 	Jméno: Předmět hodiny
+# 	Popis: Danou hodinu se vyučuje daný předmět.
+
+# Časový slot
+
+ex:TimeSlot a rdfs:Class ;
+	rdfs:label "Časový slot"@cs ;
+	rdfs:comment "Reprezentuje časové okno od-do, v němž probíhá výuka."@cs .
+
+# [Začátek časového slotu]
+# 	Vlastnost: začátek
+# 	Typ: Čas
+# 	Jméno: Začátek časového slotu
+# 	Popis:  Čas, kdy začíná časový slot.
+# 	Příklad: 08:00:00
+
+# [Konec časového slotu]
+# 	Vlastnost: konec
+# 	Typ: Čas
+# 	Jméno: Konec časového slotu
+# 	Popis:  Čas, kdy končí časový slot.
+# 	Příklad: 09:00:00
+
+# [Den v týdnu]
+# 	Vlastnost: den_v_týdnu
+# 	Typ: Řetězec
+# 	Jméno: Den v týdnu
+# 	Popis: Den v týdnu, který se časový slot odehrává.
+# 	Příklad: Pondělí
+
+# Učebna
+
+ex:Classroom a rdfs:Class ;
+	rdfs:label "Učebna"@cs ;
+	rdfs:comment "Reprezentuje učební místnost, v níž probíhá výuka na základní škole."@cs .
+
+# [Identifikátor třídy]
+# 	Vlastnost: id_třídy
+# 	Typ: Řetězec
+# 	Jméno: ID třídy
+# 	Popis: Prostředek ke vzájemnému odlišení jednotlivých učeben.
+# 	Příklad: S9
+
+# [Kapacita učebny]
+# 	Vlastnost: kapacita_učebny
+# 	Typ: Celé číslo
+# 	Jméno: Kapacita učebny
+# 	Popis: Označuje maximální počet osob přítomných v danou chvíli v dané učebně.
+# 	Příklad: 30
+
+# [Vazba:Hodina se koná v učebně]
+# 	Vazba: koná_se
+# 	Typ: Hodina
+# 	Jméno: Hodina konající se v učebně
+# 	Popis: V učebně probíhá daná hodina.
+
+# Předmět
+
+ex:Subject a rdfs:Class ;
+	rdfs:label "Předmět"@cs ;
+	rdfs:comment "Reprezentuje předmět vyučující se na základní škole."@cs .
+
+# [Identifikátor předmětu] 
+# 	Vlastnost: id_předmětu
+# 	Typ: Řetězec
+# 	Jméno: ID předmětu
+# 	Popis: Prostředek ke vzájemnému odlišení jednotlivých předmětů.
+# 	Příklad: MAT
+
+# [Název předmětu]
+# 	Vlastnost: název
+# 	Typ: Řetězec
+# 	foaf:name
+
+# [Vazba:Vyučuje učitel]
+# 	Vazba: týká_se
+# 	Typ: Učitel
+# 	Jméno: Vyučuje učitel
+# 	Popis: Předmět, jenž se týká daného učitele.
+
+# [Vazba:Vyučuje se]
+# 	Vazba: vyučuje_se
+# 	Typ: Hodina
+# 	Jméno: Hodina daného předmětu
+# 	Popis: Předmět se vyučuje v rámci dané hodiny.
+
+# Učitel
+
+ex:Teacher a rdfs:Class ;
+	rdfs:label "Učitel"@cs ;
+	rdfs:comment "Reprezentuje jednotlivé učitele dané základní školy."@cs .
+
+# [Identifikátor učitele]
+# 	Vlastnost: id_učitele
+# 	Typ: Řetězec
+# 	Jméno: ID učitele
+# 	Popis: Prostředek ke vzájemnému odlišení jednolivých učitelů.
+
+# [Jméno učitele]
+# 	Vlastnost: jméno
+#	foaf:name
+
+# [Zkušenosti učitele]
+
+ex:TeacherExperience a rdf:Property ;
+	rdfs:label "Zkušenosti učitele"@cs ;
+	rdfs:comment "Letité zkušenosti učitele, započítává se každý odučený celý školní rok."@cs ;
+	rdfs:domain ex:Teacher ;
+	rdfs:range xsd:integer .
+
+# [Vazba:Třídní učitel]
+# 	Vazba: třídní_učitel
+# 	Typ: Třída
+# 	Jméno: Třídní učitel 
+# 	Popis: Třída, za níž učitel zodpovídá.
+
+# [Vazba:Vyučuje]
+# 	Vazba: vyučuje
+# 	Typ: Předmět
+# 	Jméno: Vyučovaný předmět
+# 	Popis: Předmět, jenž učitel vyučuje.
+
+# Žák
+
+ex:Student a rdfs:Class ;
+	rdfs:label "Žák"@cs ;
+	rdfs:comment "Reprezentuje žáky dané základní školy."@cs .
+
+# [Identifikátor žáka]
+# 	Vlastnost: id_žáka
+# 	Typ: Řetězec
+# 	Jméno: ID žáka
+# 	Popis: Prostředek ke vzájemnému odlišení jednotlivých žáků.
+# 	Příklad: 21032
+
+# [Jméno žáka]
+# 	Vlastnost: jméno
+#	foaf:name
+
+# [Vazba:Dochází do třídy]
+# 	Vazba: dochází
+# 	Typ: Třída
+# 	Jméno: Dochází do třídy
+# 	Popis: Třída, do které žák dochází.
