@@ -2,6 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
 @prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#>
 
 @prefix ex: <http://example.org/vocabulary/> .
 
@@ -123,7 +124,8 @@ ex:Lesson a rdfs:Class ;
 
 ex:TimeSlot a rdfs:Class ;
 	rdfs:label "Časový slot"@cs ;
-	rdfs:comment "Reprezentuje časové okno od-do, v němž probíhá výuka."@cs .
+	rdfs:comment "Reprezentuje časové okno od-do, v němž probíhá výuka."@cs ;
+	rdfs:subClassOf time:GeneralDateTimeDescription .
 
 # [Začátek časového slotu]
 # 	Vlastnost: začátek
@@ -141,10 +143,7 @@ ex:TimeSlot a rdfs:Class ;
 
 # [Den v týdnu]
 # 	Vlastnost: den_v_týdnu
-# 	Typ: Řetězec
-# 	Jméno: Den v týdnu
-# 	Popis: Den v týdnu, který se časový slot odehrává.
-# 	Příklad: Pondělí
+#	time:dayOfWeek time:DayOfWeek (time:Monday/time:Tuesday/time:Wednesday/time:Thursday/time:Friday/time:Saturday/time:Sunday)
 
 # Učebna
 
