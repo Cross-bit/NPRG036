@@ -42,7 +42,7 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 **Triplestores:**
 - [Apache Jena Fuseki](https://doodle.com/meeting/organize/id/b6Xm0pze)
 - [Openlink Virtuoso](http://vos.openlinksw.com/owiki/wiki/VOS/VOSDownload)
-- [Open-Source](https://docs.google.com/presentation/d/1Me_9PDk9HlSFSry2bC_XamVQpheNpJRsqI5PhhrQXhw)
+[Tutorial od Klímka](https://docs.google.com/presentation/d/1Me_9PDk9HlSFSry2bC_XamVQpheNpJRsqI5PhhrQXhw)
 
 
 ## 2. week (14. - 20. 11.)
