@@ -51,7 +51,7 @@ Ze zadání: At least 4 non-trivial SPARQL queries (co znamená non-trivial najd
 **=> Každý napíše jednu.**
 
 
-$$\color{red}{----------------------------------------------------------}$$
+$$\color{red}{------------------------------------------------------------}$$
 <h1 align="center">21. 11. DEADLINE !!!:skull:</h1>
-$$\color{red}{----------------------------------------------------------}$$
+$$\color{red}{------------------------------------------------------------}$$
 <h1 align="center">:raised_hands: :raised_hands: :raised_hands:</h1>
