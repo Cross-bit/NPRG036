@@ -6,7 +6,7 @@
 - [RDF Playground](http://rdfplayground.dcc.uchile.cl/)
 
 
-# :point_right: ROADMAP
+# ROADMAP
 
 ## 1. week (7. - 12. 11.)
 :point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)** :lollipop: :candy:
