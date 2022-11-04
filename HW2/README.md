@@ -16,7 +16,7 @@ Tady pojedem podle schématu z minula. Každý má v [tabulce]([https://doodle.c
 
 ### Fix multilipcitního atributu
 Fixnul jsem chybějící atribut... Přijde vám to OK? Nebo máte nějaký lepší nápad?(update jsem provedl všude i v dokumentaci)
-Rád bych mu ten update poslal ještě před deadlinem 2. úkolu.
+**Update bych odevzdal ještě před deadlinem tohohle úkolu.**
 
 ### Schůzka dořešení RDF
 Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak sešel ve stejný čas i v **week 2**).
