@@ -10,15 +10,18 @@
 
 ## 1. week (7. - 12. 11.)
 
-### RDF turtle
+### RDF
 Tady pojedem podle schématu z minula. Každý má v [tabulce]([https://doodle.com/meeting/organize/id/b6Xm0pze](https://docs.google.com/spreadsheets/d/1uTtLzOIeqEwFoH9TViBvodOqBHcg-YHxN_iq-vWNm84/edit#gid=0)) poznamenanou svoji třídu. 
 (Kdybyste nevěděli jaký slovník použít, tak dejte nějaký komentář a dohodneme to na meetigu)
-**Important:**
-At least 3 instances of each class.
+
+
+
+<!-- **Important:**
+ At least 3 instances of each class.
 Every attribute used at least once.
 At least 3 instances of each association.
 At least 4 non-trivial SPARQL queries
-At least 4 non-trivial Cypher queries
+At least 4 non-trivial Cypher queries -->
 
 ### Fix multilipcitního atributu
 Fixnul jsem chybějící atribut... Přijde vám to OK? Nebo máte nějaký lepší nápad?(update jsem provedl všude i v dokumentaci)
