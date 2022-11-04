@@ -9,7 +9,7 @@
 # :point_right: ROADMAP
 
 ## 1. week (7. - 12. 11.)
-
+:point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)**
 ### RDF
 Tady pojedem podle schématu z minula. Každý má v [tabulce](https://docs.google.com/spreadsheets/d/1uTtLzOIeqEwFoH9TViBvodOqBHcg-YHxN_iq-vWNm84/edit#gid=0) poznamenanou svoji třídu. <br>
 Honza už připravil soubor [model.ttl](https://github.com/Cross-bit/NPRG036/blob/main/HW2/model.ttl) pro RDF turtle s začátky přepisů tříd.<br>
