@@ -11,9 +11,9 @@
 ## 1. week (7. - 12. 11.)
 
 ### RDF
-Tady pojedem podle schématu z minula. Každý má v [tabulce]([https://doodle.com/meeting/organize/id/b6Xm0pze](https://docs.google.com/spreadsheets/d/1uTtLzOIeqEwFoH9TViBvodOqBHcg-YHxN_iq-vWNm84/edit#gid=0)) poznamenanou svoji třídu. 
-Honza už připravil soubor [model.ttl](https://github.com/Cross-bit/NPRG036/blob/main/HW2/model.ttl) pro RDF turtle s začátky přepisů tříd.
-(Kdybyste nevěděli jaký slovník použít, tak dejte nějaký komentář a dohodneme to na meetingu)
+Tady pojedem podle schématu z minula. Každý má v [tabulce]([https://doodle.com/meeting/organize/id/b6Xm0pze](https://docs.google.com/spreadsheets/d/1uTtLzOIeqEwFoH9TViBvodOqBHcg-YHxN_iq-vWNm84/edit#gid=0)) poznamenanou svoji třídu. <br>
+Honza už připravil soubor [model.ttl](https://github.com/Cross-bit/NPRG036/blob/main/HW2/model.ttl) pro RDF turtle s začátky přepisů tříd.<br>
+(Kdybyste nevěděli jaký slovník použít, tak dejte nějaký komentář a dohodneme to na meetingu)<br>
 <br>
 Mimoto je ale ještě potřeba vytvořit opět UML(pro výstup covered.svg) diagram s objekty z RDF. 
 Vytvořil jsem tedy kopii původníhio diagramu kam tyhlety změny můžete rovnou aplikovat. [diagram](https://online.visual-paradigm.com/w/tfsyjamu/diagrams/?lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fonline.visual-paradigm.com%2Fw%2Ftfsyjamu%2Fdiagrams%2F%23G1mv44dDUabyuOmuSjimop1BVNR90ZjBAM&editBlankUrl=https%3A%2F%2Fonline.visual-paradigm.com%2Fapp%2Fdiagrams%2F%23diagram%3Aproj%3D0%26vpov%3D16.3%26vpob%3D20220410%26client%3D1%26edit%3D_blank&layers=1&nav=1&title=conceptual_diagram_rdf.vpd&vpov=16.3&vpob=20220410#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1mv44dDUabyuOmuSjimop1BVNR90ZjBAM%26export%3Ddownload)
