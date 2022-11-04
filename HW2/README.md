@@ -50,8 +50,13 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 Ze zadání: At least 4 non-trivial SPARQL queries (co znamená non-trivial najdete v zadání) <br>
 **=> Každý napíše jednu.**
 
+### LPG
+TODO:
 
-$$\color{red}{------------------------------------------------------------}$$
+### Cypher
+TODO:
+
+$$\color{red}{----------------------------------------------------------}$$
 <h1 align="center">21. 11. DEADLINE !!!:skull:</h1>
-$$\color{red}{------------------------------------------------------------}$$
+$$\color{red}{----------------------------------------------------------}$$
 <h1 align="center">:raised_hands: :raised_hands: :raised_hands:</h1>
