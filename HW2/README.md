@@ -39,7 +39,7 @@ Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak
 Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžeme víc probrat k dalším bodům... 
 (Samozřejmě můžete být i agilní a udělat něco z week 2 :D)
 
-todo: Je jedno jaký?
+todo: Je jedno jaký?<br>
 **Triplestores:**
 - [Apache Jena Fuseki](https://doodle.com/meeting/organize/id/b6Xm0pze)
 - [Openlink Virtuoso](http://vos.openlinksw.com/owiki/wiki/VOS/VOSDownload)<br>
