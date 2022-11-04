@@ -9,7 +9,7 @@
 # :point_right: ROADMAP
 
 ## 1. week (7. - 12. 11.)
-:point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)**
+:point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)** :lollipop:
 ### RDF
 Tady pojedem podle schématu z minula. Každý má v [tabulce](https://docs.google.com/spreadsheets/d/1uTtLzOIeqEwFoH9TViBvodOqBHcg-YHxN_iq-vWNm84/edit#gid=0) poznamenanou svoji třídu. <br>
 Honza už připravil soubor [model.ttl](https://github.com/Cross-bit/NPRG036/blob/main/HW2/model.ttl) pro RDF turtle s začátky přepisů tříd.<br>
@@ -34,7 +34,7 @@ Fixnul jsem chybějící atribut... Přijde vám to OK? Nebo máte nějaký lep�
 
 ### Schůzka dořešení RDF + triplestore
 Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak sešel ve stejný čas i v **week 2**).<br>
-:point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)**
+:point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)** (pokud jste ještě nehlasovali výše :))
 
 Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžeme víc probrat k dalším bodům... 
 (Samozřejmě můžete být i agilní a udělat něco z week 2 :D)
