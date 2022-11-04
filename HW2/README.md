@@ -48,7 +48,7 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 ## 2. week (14. - 20. 11.)
 ### SPARQL queries
 Ze zadání: At least 4 non-trivial SPARQL queries (co znamená non-trivial najdete v zadání) <br>
-**4(task)/4(members) = 1 (task/member) => Každý napíše jednu.** :)
+**(4 task)/(4 member) = 1 task/member => Každý napíše jednu.** :)
 
 ### LPG
 TODO:
