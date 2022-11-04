@@ -26,6 +26,7 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 ## 2. week (14. - 20. 11.)
 
 # 21. 11. DEADLINE !!!
+$$\color{Magenta} \fcolorbox{red}{white} {Magenta on White} 
 $$\color{black}{Black}$$
 $$\color{blue}{Blue}$$ | $$\color{brown}{Brown}$$ | $$\color{darkgray}{Darkgray}$$  | $$\color{gray}{Gray}$$ | 
 | $$\color{lightgray}{Lightgray}$$ |  $$\color{green}{Green}$$ | $$\color{brown}{Brown}$$ | $$\color{lime}{Lime}$$  | $$\color{magenta}{Magenta}$$ |
