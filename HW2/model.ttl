@@ -250,6 +250,13 @@ ex:Student a rdfs:Class ;
 # 	Popis: Prostředek ke vzájemnému odlišení jednotlivých žáků.
 # 	Příklad: 21032
 
+# [Přezdívky žáka]
+#	Vlastnost: přezdívky
+#	Typ: Řetězec
+#	Jméno: Přezdívky žáka
+#	Popis: Seznam slovních pojmenování, kterými může být daný žák identifikován.
+#	Příklad: Kostka, Banán, Bambula
+
 # [Jméno žáka]
 # 	Vlastnost: jméno
 #	foaf:name
