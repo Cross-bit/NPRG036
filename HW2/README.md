@@ -26,5 +26,5 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 ## 2. week (14. - 20. 11.)
 
 $$\color{red}{----------------------------------------------------------}$$
-# 21. 11. DEADLINE !!!
+<h1 align="center">21. 11. DEADLINE !!!</h1>
 $$\color{red}{----------------------------------------------------------}$$
