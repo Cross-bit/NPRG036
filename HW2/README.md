@@ -30,7 +30,7 @@ At least 4 non-trivial Cypher queries -->
 
 ### Fix multilipcitního atributu
 Fixnul jsem chybějící atribut... Přijde vám to OK? Nebo máte nějaký lepší nápad?(update jsem provedl všude i v dokumentaci)
-<br>**Update bych odevzdal ještě před deadlinem tohohle úkolu.**
+<br>**Update chci odevzdal ještě před deadlinem tohohle úkolu.**
 
 ### Schůzka dořešení RDF + triplestore
 Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak sešel ve stejný čas i v **week 2**).
