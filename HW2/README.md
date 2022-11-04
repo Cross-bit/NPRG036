@@ -25,5 +25,6 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 (Samozřejmě můžete být i agilní a udělat něco z week 2 :D)
 ## 2. week (14. - 20. 11.)
 
+$$\color{red}{----------------------------------------------------------------------}$$
 # 21. 11. DEADLINE !!!
-$$\color{red}{Red}$$
+$$\color{red}{----------------------------------------------------------------------}$$
