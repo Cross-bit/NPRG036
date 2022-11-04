@@ -47,7 +47,8 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 
 ## 2. week (14. - 20. 11.)
 ### SPARQL queries
-At least 4 non-trivial SPARQL queries
+Ze zadání: At least 4 non-trivial SPARQL queries (co znamená non-trivial najdete v zadání) <br>
+**=> Každý napíše jednu.**
 
 
 $$\color{red}{----------------------------------------------------------}$$
