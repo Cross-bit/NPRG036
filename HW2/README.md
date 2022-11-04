@@ -28,3 +28,4 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 $$\color{red}{----------------------------------------------------------}$$
 <h1 align="center">21. 11. DEADLINE !!!:skull:</h1>
 $$\color{red}{----------------------------------------------------------}$$
+<h1 align="center">:raised_hands: :raised_hands: :raised_hands:</h1>
