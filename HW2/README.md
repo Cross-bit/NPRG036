@@ -27,7 +27,7 @@ At least 4 non-trivial Cypher queries -->
 Fixnul jsem chybějící atribut... Přijde vám to OK? Nebo máte nějaký lepší nápad?(update jsem provedl všude i v dokumentaci)
 <br>**Update bych odevzdal ještě před deadlinem tohohle úkolu.**
 
-### Schůzka dořešení RDF + výběr triplestore
+### Schůzka dořešení RDF + triplestore
 Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak sešel ve stejný čas i v **week 2**).
 [anketa](https://doodle.com/meeting/organize/id/b6Xm0pze)
 
@@ -36,8 +36,8 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 
 **Triplestores:**
 - [Apache Jena Fuseki](https://doodle.com/meeting/organize/id/b6Xm0pze)
-- [Openlink Virtuoso] 
-- [Open-Source] (or both). There is a triplestore quick-start 
+- [Openlink Virtuoso] (http://vos.openlinksw.com/owiki/wiki/VOS/VOSDownload)
+- [Open-Source](https://docs.google.com/presentation/d/1Me_9PDk9HlSFSry2bC_XamVQpheNpJRsqI5PhhrQXhw)
 
 
 ## 2. week (14. - 20. 11.)
