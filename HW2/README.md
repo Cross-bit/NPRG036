@@ -26,6 +26,6 @@ Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžem
 ## 2. week (14. - 20. 11.)
 
 # 21. 11. DEADLINE !!!
- $$\color{blue} \fcolorbox{white}{red} {Blue on White} 
+ | $$\color{blue} \fcolorbox{white}{red} {Blue on White} |
 - ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
 
