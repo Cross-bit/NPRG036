@@ -5,7 +5,7 @@
 - [RDF Playground](http://rdfplayground.dcc.uchile.cl/)
 
 
-# ROADMAP
+# ROADMAP 	U+1F603
 
 ## 1. week (7. - 12. 11.)
 
