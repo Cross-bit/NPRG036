@@ -258,7 +258,14 @@ Učitel:
 	Jméno: Jméno žáka
 	Popis: Spojení rodného jména a přijímení daného žáka.
 	Příklad: Ondřej Novotný
-	
+
+[Přezdívky žáka]
+	Vlastnost: přezdívky
+	Typ: Řetězec
+	Jméno: Přezdívky žáka
+	Popis: Seznam slovních pojmenování, kterými může být daný žák identifikován.
+	Příklad: Kostka, Banán, Bambula
+
 [Vazba:Dochází do třídy]
 	Vazba: dochází
 	Typ: Třída
