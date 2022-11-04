@@ -34,7 +34,7 @@ Fixnul jsem chybějící atribut... Přijde vám to OK? Nebo máte nějaký lep�
 
 ### Schůzka dořešení RDF + triplestore
 Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak sešel ve stejný čas i v **week 2**).<br>
-**[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)**
+:point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)**
 
 Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžeme víc probrat k dalším bodům... 
 (Samozřejmě můžete být i agilní a udělat něco z week 2 :D)
