@@ -55,7 +55,7 @@ Ze zadání: At least 4 non-trivial SPARQL queries (co znamená non-trivial najd
 
 ### LPG
 Asi bych opět šel do 
-
+todo:
 
 ### Cypher
 Opět ze zadání: At least 4 non-trivial Cypher queries (co znamená non-trivial najdete v zadání)<br>
