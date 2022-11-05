@@ -21,6 +21,8 @@ Vytvořil jsem tedy kopii původníhio diagramu kam tyhlety změny můžete rovn
 **Disclaimer**: Ten software se trochu po stránce sharingu změnil a tak nezaručuji, že pokud nemáte účet autorizovaný přes google, že vám to bude fungovat...<br>
 (Kdyby ne, tak to pak případně doplníme najednou dle výsledného model.ttl.)<br>
 <br>
+Asi to je takové prvoplánově zřejmé, ale pokuste se použávat co nejobecnější slovníky(dcterms, ...). 
+
 <!-- **Important:**
  At least 3 instances of each class.
 Every attribute used at least once.
@@ -37,7 +39,6 @@ Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak
 :point_right: **[ANKETA](https://doodle.com/meeting/organize/id/b6Xm0pze)** (pokud jste ještě nehlasovali výše :))
 
 Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžeme víc probrat k dalším bodům... 
-(Samozřejmě můžete být i agilní a udělat něco z week 2 :D)
 
 todo: Je jedno jaký?<br>
 **Triplestores:**
@@ -47,15 +48,19 @@ todo: Je jedno jaký?<br>
 
 
 ## 2. week (14. - 20. 11.)
+Tenhle týden i hezky koresponduje s cvikem na LPG/Cypher, takže se snad dozvíme bližší info jak na to.
 ### SPARQL queries
 Ze zadání: At least 4 non-trivial SPARQL queries (co znamená non-trivial najdete v zadání) <br>
 **(4 task)/(4 member) = 1 task/member => Každý napíše jednu.** :)
 
 ### LPG
-TODO:
+Asi bych opět šel do 
+
 
 ### Cypher
-TODO:
+Opět ze zadání: At least 4 non-trivial Cypher queries (co znamená non-trivial najdete v zadání)<br>
+=> takže každý si vezme zase jednu.
+
 
 $$\color{red}{----------------------------------------------------------}$$
 <h1 align="center">21. 11. DEADLINE !!!:skull:</h1>
