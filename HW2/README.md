@@ -53,9 +53,12 @@ Tenhle týden i hezky koresponduje s cvikem na LPG/Cypher, takže se snad dozví
 Ze zadání: At least 4 non-trivial SPARQL queries (co znamená non-trivial najdete v zadání) <br>
 **(4 task)/(4 member) = 1 task/member => Každý napíše jednu.** :)
 
-### LPG
-Asi bych opět šel do 
-todo:
+### LPG – model
+Uvidíme podle cvika, jak přesně se to převádí z UML. Buď to udělá jeden člověk, nebo se ještě sejdeme během týdne. (Možná počítejte, že bych to viděl i během week 1, protože to všichni potřebujeme na week 2)
+
+### LPG do cypher
+V podstatě to musíme přepsat do RDF cypher. Takže zase bych to udělal podle [tabulky](https://docs.google.com/spreadsheets/d/1uTtLzOIeqEwFoH9TViBvodOqBHcg-YHxN_iq-vWNm84/edit#gid=0).
+<br> 
 
 ### Cypher
 Opět ze zadání: At least 4 non-trivial Cypher queries (co znamená non-trivial najdete v zadání)<br>
