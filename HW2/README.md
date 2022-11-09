@@ -20,7 +20,7 @@ Vytvořil jsem tedy kopii původníhio diagramu kam tyhlety změny můžete rovn
 **Disclaimer**: Ten software se trochu po stránce sharingu změnil a tak nezaručuji, že pokud nemáte účet autorizovaný přes google, že vám to bude fungovat...<br>
 (Kdyby ne, tak to pak případně doplníme najednou dle výsledného model.ttl.)<br>
 <br>
-Asi to je takové prvoplánově zřejmé, ale pokuste se použávat co nejobecnější slovníky(dcterms, ...). Nebo definujte vlastní, jak bylo na cviku o [RDF](https://docs.google.com/presentation/d/1SUiDAQNzpwzwthzN9ejNV4sxhx_UehH__mMplTNX9q8).
+Asi to je takové prvoplánově zřejmé, ale pokuste se použávat co nejobecnější slovníky(dcterms, ...). <br> Nebo definujte vlastní, jak bylo na cviku o [RDF](https://docs.google.com/presentation/d/1SUiDAQNzpwzwthzN9ejNV4sxhx_UehH__mMplTNX9q8) (na konci). 
 
 <!-- **Important:**
  At least 3 instances of each class.
