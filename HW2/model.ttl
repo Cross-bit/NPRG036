@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
 @prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix time: <http://www.w3.org/2006/time#>
+@prefix time: <http://www.w3.org/2006/time#> .
 
 @prefix ex: <http://example.org/vocabulary/> .
 
@@ -12,31 +12,29 @@ ex:Timetable a rdfs:Class ;
 	rdfs:label "Třídní rozvrh"@cs ;
 	rdfs:comment "Představuje rozvrh konkrétní třídy základní školy."@cs .
 
-# [Akademický rok]
-# 	Vlastnost: akademický_rok
-# 	Typ: Řetězec
-# 	Jméno: Akademický rok
-# 	Popis: Roky, v kterých je daný rozvrh platný.
-# 	Příklad: 2022/2023
+ex:AcademicalYear a rdf:Property ;
+	rdfs:label "Akademický rok"@cs ;
+	rdfs:comment "Roky, v kterých je daný rozvrh platný."@cs ;
+	rdfs:domain ex:Timetable ;
+	rdfs:range ""@cs . # todo 2022/2023 blanknode? rozepsat?
 
-# [Verze rozvrhu]
-# 	Vlastnost: verze
-# 	Typ: Desetinné číslo
-# 	Jméno: Verze rozvrhu
-# 	Popis: Číslo označující aktuální verzi rozvrhu.
-# 	Příklad: 1.5
+ex:ScheduleVersion a rdf:Property ;
+	rdfs:label "Verze rozvrhu"@cs ;
+	rdfs:comment "Číslo označující aktuální verzi rozvrhu."@cs ;
+	rdfs:domain ex:Timetable ;
+	rdfs:range xsd:decimal .
 
-# [Vazba:Naplánované hodiny]
-# 	Vazba: naplánováno
-# 	Typ: Hodina
-# 	Jméno: Naplánované hodiny
-# 	Popis: Náplánované hodiny v třídním rozvrhu.
+ex:PlannedLesson a rdf:Property ;
+	rdfs:label "Naplánovaná hodina"@cs ;
+	rdfs:comment "Náplánovaná hodina v třídním rozvrhu."@cs ;
+	rdfs:domain ex:Timetable ;
+	rdfs:range  ex:Lesson .
 
-# [Vazba:Přísluší třídě]
-# 	Vazba: přísluší
-# 	Typ: Třída
-# 	Jméno: Příslušná třída
-# 	Popis: Třída, které rozvrh přísluší.
+ex:BelongingClass a rdf:Property ;
+	rdfs:label "Příslušná třída"@cs ;
+	rdfs:comment "Třída, které rozvrh přísluší."@cs ;
+	rdfs:domain ex:Timetable ;
+	rdfs:range  ex:Class .
 
 # Třída
 
@@ -44,25 +42,23 @@ ex:Class a rdfs:Class ;
 	rdfs:label "Třída"@cs ;
 	rdfs:comment "Představuje konkrétní fyzickou třídu žáků základní školy."@cs .
 
-# [Ročník třídy]
-# 	Vlastnost: ročník
-# 	Typ: Celé číslo
-# 	Jméno: Ročník třídy
-# 	Popis: Ročník, ve kterém se třída nachází.
-# 	Příklad: 6
+ex:ClassYear a rdfs:Property ;
+	rdfs:label "Ročník třídy"@cs ;
+	rdfs:comment "Ročník, ve kterém se třída nachází."@cs ;
+	rdfs:domain ex:Class ;
+	rdfs:range  xsd:integer .
+	
+ex:ClassCode a rdfs:Property ;
+	rdfs:label "Kódové označení třídy"@cs ;
+	rdfs:comment "Kódové označení třídy písmenem."@cs ;
+	rdfs:domain ex:Class ;
+	rdfs:range  xsd:string . # todo foaf číselník?
 
-# [Kódové označení třídy]
-# 	Vlastnost: kódové_označení
-# 	Typ: Řetězec
-# 	Jméno: Kódové označení třídy
-# 	Popis: Kódové označení třídy písmenem.
-# 	Příklad: B
-
-# [Vazba:Třídní učitel]
-# 	Vazba: třídní_učitel
-# 	Typ: Učitel
-# 	Jméno: Třídní učitel
-# 	Popis: Učitel, který za třídu zodpovídá.
+ex:ClassTeacher a rdfs:Property ;
+	rdfs:label "Třídní učitel"@cs ;
+	rdfs:comment "Učitel, který za třídu zodpovídá."@cs ;
+	rdfs:domain ex:Class ;
+	rdfs:range  ex:Teacher .
 
 # [Vazba:Žák dochází]
 # 	Vazba: týká_se
