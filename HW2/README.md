@@ -21,9 +21,14 @@ Vytvořil jsem tedy kopii původníhio diagramu kam tyhlety změny můžete rovn
 (Kdyby ne, tak to pak případně doplníme najednou dle výsledného model.ttl.)<br>
 <br>
 Asi to je takové prvoplánově zřejmé, ale pokuste se použávat co nejobecnější slovníky(dcterms, ...). <br> Nebo definujte vlastní, jak bylo na cviku o [RDF](https://docs.google.com/presentation/d/1SUiDAQNzpwzwthzN9ejNV4sxhx_UehH__mMplTNX9q8) (na konci). 
+<br>
+Celkem fajn na editaci je extension do VS code.
+<br>
+Potom co definujete třídu a typ, tak je také potřeba vytvořit alespoň 3 instance s daty.
+
 
 <!-- **Important:**
- At least 3 instances of each class.
+ 
 Every attribute used at least once.
 At least 3 instances of each association.
 At least 4 non-trivial SPARQL queries
