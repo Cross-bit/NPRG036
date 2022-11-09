@@ -5,7 +5,8 @@
 - [Turtle Validator](http://ttl.summerofcode.be/)
 - [RDF Playground](http://rdfplayground.dcc.uchile.cl/)
 
-DCTERMS, desc.: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/ (vysvětlivky toho co jaké položky znamenají např. Range Includes x Range apod. ...)
+DCTERMS, desc.: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/ 
+(vysvětlivky toho co jaké položky znamenají např. Range Includes x Range apod. ...)
 
 
 
