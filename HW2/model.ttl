@@ -3,7 +3,7 @@
 @prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix time: <http://www.w3.org/2006/time#> .
-
+@prefix dbpedia:   <http://dbpedia.org/ontology/> .
 @prefix ex: <http://example.org/vocabulary/> .
 
 # Třídní rozvrh
@@ -17,9 +17,9 @@ ex:AcademicalYear a rdf:Property ;
 	rdfs:label "Akademický rok"@cs ;
 	rdfs:comment "Roky, v kterých je daný rozvrh platný."@cs ;
 	rdfs:domain ex:Timetable ;
-	rdfs:range ex:AcademicalYearsList . # todo 2022/2023 blanknode? rozepsat?
+	rdfs:range  xsd:String . # todo 2022/2023 blanknode? rozepsat? ex:AcademicalYearsList
 
-ex:AcademicalYearsList a time:DateTimeInterval .
+#ex:AcademicalYearsList a time:DateTimeInterval .
 
 # [Verze rozvrhu]
 ex:TimetableVersion a rdf:Property ;
@@ -42,6 +42,24 @@ ex:BelongingClass a rdf:Property ;
 	rdfs:domain ex:Timetable ;
 	rdfs:range  ex:Class .
 
+@prefix exTimetable: <http://example.org/vocabulary/timetables> . #todo: move at top
+
+exTimetable:Timetable1 a ex:Timetable ;
+	ex:AcademicalYear "2020/2021" ;
+	ex:TimetableVersion 1.5 .
+
+exTimetable:Timetable2 a ex:Timetable ;
+	ex:AcademicalYear "2021/2022" ;
+	ex:TimetableVersion 1.0 .
+
+exTimetable:Timetable3 a ex:Timetable ;
+	ex:AcademicalYear "2022/2023" ;
+	ex:TimetableVersion 2.0 .
+
+# todo vazby
+
+
+
 # Třída
 
 ex:Class a rdfs:Class ;
@@ -49,39 +67,56 @@ ex:Class a rdfs:Class ;
 	rdfs:comment "Představuje konkrétní fyzickou třídu žáků základní školy."@cs .
 
 # [Ročník třídy]
-ex:ClassYear a rdfs:Property ;
+ex:ClassYear a rdf:Property ;
 	rdfs:label "Ročník třídy"@cs ;
 	rdfs:comment "Ročník, ve kterém se třída nachází."@cs ;
 	rdfs:domain ex:Class ;
 	rdfs:range  xsd:integer .
 
 # [Kódové označení třídy]
-ex:ClassCode a rdfs:Property ;
+ex:ClassCode a rdf:Property ;
 	rdfs:label "Kódové označení třídy"@cs ;
 	rdfs:comment "Kódové označení třídy písmenem."@cs ;
 	rdfs:domain ex:Class ;
-	rdfs:range  xsd:string . # todo foaf číselník?
+	rdfs:range xsd:string .
 
 # [Vazba:Třídní učitel]
-ex:ClassTeacher a rdfs:Property ;
+ex:ClassTeacher a rdf:Property ;
 	rdfs:label "Třídní učitel"@cs ;
 	rdfs:comment "Učitel, který za třídu zodpovídá."@cs ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Teacher .
 
 # [Vazba:Žák dochází]
-ex:StudentAttends a rdfs:Property ;
+ex:StudentAttends a rdf:Property ;
 	rdfs:label "Žák dochází"@cs ;
 	rdfs:comment "Žáci, kteří přísluší dané třídě."@cs ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Student .
-	
+
 # [Vazba:Třídní rozvrh]
-ex:ClassTimetable a rdfs:Property ;
+ex:ClassTimetable a rdf:Property ;
 	rdfs:label "Třídě přísluší třídní rozvrh.";
 	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Timetable .
+
+@prefix exClass: <http://example.org/vocabulary/classes> . #todo: move at top
+
+exClass:ClassA a ex:Class ;
+	ex:ClassCode "A" ;
+	ex:ClassYear 6 .	
+
+exClass:ClassB a ex:Class ;
+	ex:ClassCode "B" ;
+	ex:ClassYear 5 .
+
+exClass:ClassC a ex:Class ;
+	ex:ClassCode "A" ;
+	ex:ClassYear 4 .
+
+# todo: add class relations
+
 
 # Hodina
 

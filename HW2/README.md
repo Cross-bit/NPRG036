@@ -5,6 +5,7 @@
 - [Turtle Validator](http://ttl.summerofcode.be/)
 - [RDF Playground](http://rdfplayground.dcc.uchile.cl/)
 - [RDF turtle](https://www.w3.org/TR/turtle/)
+- [RDF datatypes](https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes)
 
 
 
