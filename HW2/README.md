@@ -6,7 +6,7 @@
 - [RDF Playground](http://rdfplayground.dcc.uchile.cl/)
 - [RDF turtle](https://www.w3.org/TR/turtle/)
 - [RDF datatypes](https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes)
-- [Boží vysvětlení](https://perso.liris.cnrs.fr/pierre-antoine.champin/2001/rdf-tutorial/node14.html)
+- [Boží vysvětlení – volání Boha](https://perso.liris.cnrs.fr/pierre-antoine.champin/2001/rdf-tutorial/rdf-tutorial.html)
 
 
 
