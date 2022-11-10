@@ -60,17 +60,17 @@ ex:ClassTeacher a rdfs:Property ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Teacher .
 
-# [Vazba:Žák dochází]
-# 	Vazba: týká_se
-# 	Typ: Žák
-# 	Jméno: Žák dochází
-# 	Popis: Žáci, kteří přísluší dané třídě.
+ex:StudentAttends a rdfs:Property ;
+	rdfs:label "Žák dochází"@cs ;
+	rdfs:comment "Žáci, kteří přísluší dané třídě."@cs ;
+	rdfs:domain ex:Class ;
+	rdfs:range  ex:Student .
 
-# [Vazba:Třídní rozvrh]
-# 	Vazba: přísluší
-# 	Typ: Třídní rozvrh
-# 	Jméno: Třídě přísluší třídní rozvrh.
-# 	Popis: Třídní rozvrh příslušící dané třídě.
+ex:ClassTimetable a rdfs:Property ;
+	rdfs:label "Třídě přísluší třídní rozvrh.";
+	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
+	rdfs:domain ex:Class ;
+	rdfs:range  ex:Timetable .
 
 # Hodina
 
