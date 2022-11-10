@@ -4,7 +4,7 @@
 - [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
 - [Turtle Validator](http://ttl.summerofcode.be/)
 - [RDF Playground](http://rdfplayground.dcc.uchile.cl/)
-- [XDS Datatypes specification](https://www.w3.org/TR/xmlschema-2/) (if you need to know name of xsd types)
+- [RDF turtle](https://www.w3.org/TR/turtle/)
 
 
 
