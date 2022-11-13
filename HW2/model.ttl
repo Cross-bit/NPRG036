@@ -250,17 +250,17 @@ ex:Teacher a rdfs:Class ;
 	rdfs:comment "Reprezentuje jednotlivé učitele dané základní školy."@cs .
 
 # [Identifikátor učitele]
-# 	Vlastnost: id_učitele
-# 	Typ: Řetězec
-# 	Jméno: ID učitele
-# 	Popis: Prostředek ke vzájemnému odlišení jednolivých učitelů.
+ex:TeacherID a rdf:Property ;
+	rdfs:label "ID učitele"@cs ;
+	rdfs:comment "Prostředek ke vzájemnému odlišení jednolivých učitelů."@cs ;
+	rdfs:domain ex:Teacher ;
+	rdfs:range xsd:token .
 
 # [Jméno učitele]
 # 	Vlastnost: jméno
 #	foaf:name
 
 # [Zkušenosti učitele]
-
 ex:TeacherExperience a rdf:Property ;
 	rdfs:label "Zkušenosti učitele"@cs ;
 	rdfs:comment "Letité zkušenosti učitele, započítává se každý odučený celý školní rok."@cs ;
@@ -268,16 +268,18 @@ ex:TeacherExperience a rdf:Property ;
 	rdfs:range xsd:integer .
 
 # [Vazba:Třídní učitel]
-# 	Vazba: třídní_učitel
-# 	Typ: Třída
-# 	Jméno: Třídní učitel 
-# 	Popis: Třída, za níž učitel zodpovídá.
+ex:ClassTeacher a rdf:Property ;
+	rdfs:label "Třídní učitel"@cs ;
+	rdfs:comment "Třída, za níž učitel zodpovídá."@cs ;
+	rdfs:domain ex:Teacher ;
+	rdfs:range ex:Class .
 
 # [Vazba:Vyučuje]
-# 	Vazba: vyučuje
-# 	Typ: Předmět
-# 	Jméno: Vyučovaný předmět
-# 	Popis: Předmět, jenž učitel vyučuje.
+ex:Teaches a rdf:Property ;
+	rdfs:label "Vyučovaný předmět"@cs ;
+	rdfs:comment "Předmět, jenž učitel vyučuje."@cs ;
+	rdfs:domain ex:Teacher ;
+	rdfs:range ex:Subject .
 
 # Žák
 
