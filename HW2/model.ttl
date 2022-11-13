@@ -42,7 +42,7 @@ ex:BelongingClass a rdf:Property ;
 	rdfs:domain ex:Timetable ;
 	rdfs:range  ex:Class .
 
-@prefix exTimetable: <http://example.org/vocabulary/timetables> . #todo: move at top
+@prefix exTimetable: <http://example.org/data/timetables> . #todo: move at top
 
 exTimetable:Timetable1 a ex:Timetable ;
 	ex:AcademicalYear "2020/2021" ;
@@ -101,7 +101,7 @@ ex:ClassTimetable a rdf:Property ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Timetable .
 
-@prefix exClass: <http://example.org/vocabulary/classes> . #todo: move at top
+@prefix exClass: <http://example.org/data/classes> . #todo: move at top
 
 exClass:ClassA a ex:Class ;
 	ex:ClassCode "A" ;
