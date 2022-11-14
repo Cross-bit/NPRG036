@@ -48,9 +48,8 @@ Opět si vyberte časy, které by vám nejvíce vyhovovaly(ideálně bych se pak
 
 Snažte se toho co nejvíc udělat do meetingu, bude to potom kratší a můžeme víc probrat k dalším bodům... 
 
-todo: Je jedno jaký?<br>
 **Triplestores:**
-- [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/)
+- [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) (zkoušel jsem, je jednodušší a asi doporučuji spíš)
 - [Openlink Virtuoso](http://vos.openlinksw.com/owiki/wiki/VOS/VOSDownload)<br>
 [Tutorial od Klímka](https://docs.google.com/presentation/d/1Me_9PDk9HlSFSry2bC_XamVQpheNpJRsqI5PhhrQXhw)
 
