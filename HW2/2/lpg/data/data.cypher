@@ -56,14 +56,10 @@ CREATE
     LessonUrl: "https://zoom.com/TH0855S7"
 });
 
-CREATE
-(_20216A15)-[:PlannedLesson]->(TH0855S6);
-
-
 //Časové sloty
 
 CREATE
-(MO08000:TimeSlot {
+(MO0800:TimeSlot {
 	TimeSlotBeginning: "08:00:00",
 	TimeSlotEnd: "08:45:00",
 	DayOfWeek: "Monday"
@@ -73,7 +69,7 @@ CREATE
 	TimeSlotEnd: "09:40:00",
 	DayOfWeek: "Thursday"
 }),
-(MO08000:TimeSlot {
+(FR1000:TimeSlot {
 	TimeSlotBeginning: "10:00:00",
 	TimeSlotEnd: "10:45:00",
 	DayOfWeek: "Friday"
@@ -154,6 +150,33 @@ CREATE
 	nickname: ["Kajak", "Bizon"]
 });
 
+// Třídní rozvrh vazby
+CREATE
+(_20216A15)-[:PlannedLesson]->(TH0855S6),
+(_21226B10)-[:PlannedLesson]->(MO0800S7),
+(_21226B10)-[:PlannedLesson]->(FR1000S6),
+(_22234C20)-[:PlannedLesson]->(FR1000S9),
+
+(_20216A15)-[:BelongingClass]->(_6A),
+(_21226B10)-[:BelongingClass]->(_6B),
+(_22234C20)-[:BelongingClass]->(_4C);
+
+// Třída vazby
+CREATE
+(_6A)-[:ClassTeacher]->(muk),
+(_6B)-[:ClassTeacher]->(pel),
+(_4C)-[:ClassTeacher]->(svo);
+
+// Časový slot
+// -- nic --
+
+// Učebna
+// -- nic --
+
+// Předmět
+// -- nic --
+
+
 // Učitel vazby
 CREATE
 (muk)-[:Teaches]->(Math),
@@ -162,12 +185,12 @@ CREATE
 (svo)-[:Teaches]->(English);
 
 // Student vazby
-(kovpe)-[:BelongsTo]->(_6A),
+CREATE
+(kovpe)-[:BelongsTo]->(_6A)
 (kliji)-[:BelongsTo]->(_6B),
 (novpa)-[:BelongsTo]->(_4C);
 
 //Hodina vazby
-
 CREATE
 (TH0855S6)-[:TakesTime]->(TH0855),
 (TH0855S6)-[:TakesPlace]->(S6),
