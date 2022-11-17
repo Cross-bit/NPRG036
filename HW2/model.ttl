@@ -124,43 +124,69 @@ ex:Lesson a rdfs:Class ;
 	rdfs:label "Hodina"@cs ;
 	rdfs:comment "Reprezentuje konkrétní vyučovací hodinu v třídním rozvrhu."@cs .
 
-# [Identifikátor hodiny]
-# 	Vlastnost: id_hodiny
-# 	Typ: Řetězec
-# 	Jméno: ID hodiny
-# 	Popis: Jedonoznačné identifikační číslo hodiny. 
-# 	Příklad: 456376
+#[Identifikátor hodiny]
+ex:LessonID a rdf:Property ;
+	rdfs:label "Identifikátor hodiny"@cs;
+	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
+	rdfs:domain ex:Lesson ;
+	rdfs:range  xsd:string .
+#existuje typ ID...
 
-# [URL Zoom meetingu pro hodinu]
-# 	Vlastnost: url_hodiny
-# 	Typ: URL
-# 	Jméno: Zoom meeting URL
-# 	Popis: URL Zoom meetingu pro online výuku hodiny.
-# 	Příklad: https://zoom.com/howefhowodsdh
+#[URL Zoom meetingu pro hodinu]
+ex:LessonUrl a rdf:Property ;
+	rdfs:label "Zoom meeting URL"@cs;
+	rdfs:comment "URL Zoom meetingu pro online výuku hodiny."@cs ;
+	rdfs:domain ex:Lesson ;
+	rdfs:range  xsd:anyURI .
+
 
 # [Vazba:Probíhá v časovém slotu]
-# 	Vazba: probíhá
-# 	Typ: Časový slot
-# 	Jméno: Časový slot hodiny
-# 	Popis: Hodina probíhající v daném časovém slotu.
+ex:TakesTime a rdf:Property ;
+	rdfs:label "Časový slot hodiny"@cs ;
+	rdfs:comment "Hodina probíhající v daném časovém slotu."@cs ;
+	rdfs:domain ex:Lesson ;
+	rdfs:range  ex:TimeSlot .
 
+#naplanovane hodiny..planned lessons  Timeteble-Lesson
 # [Vazba:Naplánováno v třídním rozvrhu]
-# 	Vazba: naplánováno
-# 	Typ: Třídní rozvrh
-# 	Jméno: Hodina v třídnm rozvrhu
-# 	Popis: Hodina je naplnována v třídním rozvrhu.
+ex:Planned a rdf:Property ;
+	rdfs:label "Hodina v třídnm rozvrhu"@cs ;
+	rdfs:comment "Hodina je naplnována v třídním rozvrhu."@cs ;
+	rdfs:domain ex:Lesson ;
+	rdfs:range  ex:Timetable .
+#uz je zapsanej jeden smer u Timetable...
 
 # [Vazba:Koná se v učebně]
-# 	Vazba: koná_se
-# 	Typ: Učebna
-# 	Jméno: Hodina se koná v učebně
-# 	Popis: Daná hodina se odehrává v dané učebně.
+ex:TakesPlace a rdf:Property ;
+	rdfs:label "Hodina se koná v učebně"@cs ;
+	rdfs:comment "Daná hodina se odehrává v dané učebně."@cs ;
+	rdfs:domain ex:Lesson ;
+	rdfs:range  ex:Classroom .
 
 # [Vazba:Vyučuje se předmět]
-# 	Vazba: vyučuje_se 
-# 	Typ: Předmět
-# 	Jméno: Předmět hodiny
-# 	Popis: Danou hodinu se vyučuje daný předmět.
+ex:IsTaught a rdf:Property ;
+	rdfs:label "Předmět hodiny"@cs ;
+	rdfs:comment "Danou hodinu se vyučuje daný předmět."@cs ;
+	rdfs:domain ex:Lesson ;
+	rdfs:range  ex:Subject .
+
+
+@prefix exLesson: <http://example.org/data/lessons> . 
+
+exLesson:Lesson1 a ex:Lesson ;
+	ex:LessonID "cing763j"@cs ;
+	ex:LessonUrl "https://zoom.com/howefhowodsdh"^^xsd:anyURI .
+
+exLesson:Lesson2 a ex:Lesson ;
+	ex:LessonID "bfi76xat"@cs ;
+	ex:LessonUrl "https://zoom.com/smkot6xye3"^^xsd:anyURI .
+
+exLesson:Lesson3 a ex:Lesson ;
+	ex:LessonID "viuxetbx1"@cs ;
+	ex:LessonUrl "https://zoom.com/xs564972xe2"^^xsd:anyURI .
+
+#
+
 
 # Časový slot
 
@@ -170,22 +196,50 @@ ex:TimeSlot a rdfs:Class ;
 	rdfs:subClassOf time:GeneralDateTimeDescription .
 
 # [Začátek časového slotu]
-# 	Vlastnost: začátek
-# 	Typ: Čas
-# 	Jméno: Začátek časového slotu
-# 	Popis:  Čas, kdy začíná časový slot.
-# 	Příklad: 08:00:00
+ex:(TimeSlotBeginning) a rdf:Property ;
+	rdfs:label "Začátek časového slotu"@cs ;
+	rdfs:comment "Čas, kdy začíná časový slot."@cs ;
+	rdfs:domain ex:TimeSlot ;
+	rdfs:range xsd:time .
 
 # [Konec časového slotu]
-# 	Vlastnost: konec
-# 	Typ: Čas
-# 	Jméno: Konec časového slotu
-# 	Popis:  Čas, kdy končí časový slot.
-# 	Příklad: 09:00:00
+ex:(TimeSlotEnd) a rdf:Property ;
+	rdfs:label "Konec časového slotu"@cs ;
+	rdfs:comment "Čas, kdy končí časový slot."@cs ;
+	rdfs:domain ex:TimeSlot ;
+	rdfs:range xsd:time .
 
 # [Den v týdnu]
+ex:DayOfWeek a rdf:Property ;
+	rdfs:label "Den v týdnu"@cs ;
+	rdfs:comment "Den v týdnu, který se časový slot odehrává."@cs ;
+	rdfs:domain ex:TimeSlot ;
+	rdfs:range xsd:dayOfWeek .
+
 # 	Vlastnost: den_v_týdnu
 #	time:dayOfWeek time:DayOfWeek (time:Monday/time:Tuesday/time:Wednesday/time:Thursday/time:Friday/time:Saturday/time:Sunday)
+	
+
+
+@prefix exTimeSlot: <http://example.org/data/timeslots> . 
+
+exTimeSlot:Timeslot1 a ex:TimeSlot ;
+	ex:TimeSlotBeginning "08:00:00"^^xsd:time ;
+	ex:TimeSlotEnd "08:45:00"^^xsd:time ;
+	ex:DayOfWeek "Monday"^^time:dayOfWeek .
+
+exTimeSlot:Timeslot2 a ex:TimeSlot ;
+	ex:TimeSlotBeginning "08:55:00"^^xsd:time ;
+	ex:TimeSlotEnd "09:40:00"^^xsd:time ;
+	ex:DayOfWeek "Thursday"^^time:dayOfWeek .
+
+exTimeSlot:Timeslot3 a ex:TimeSlot ;
+	ex:TimeSlotBeginning "10:00:00"^^xsd:time ;
+	ex:TimeSlotEnd "10:45:00"^^xsd:time ;
+	ex:DayOfWeek "Friday"^^time:dayOfWeek .
+
+#
+
 
 # Učebna
 
