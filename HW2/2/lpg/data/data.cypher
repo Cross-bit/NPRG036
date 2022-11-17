@@ -15,7 +15,7 @@ CREATE
 (_22234C20:Timetable {
     academicYear: "2022/2023",
     version: 2.0
-})
+});
 
 // Třída
 
@@ -35,6 +35,7 @@ CREATE
 
 
 // Hodiny
+
 CREATE
 (TH0855S6:Lesson {
     LessonID: "TH0855S6",
