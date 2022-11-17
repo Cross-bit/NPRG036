@@ -9,6 +9,7 @@
 @prefix ex: <http://example.org/vocabulary/> .
 @prefix exClass: <http://example.org/data/classes/> .
 @prefix exTeacher: <http://example.org/data/teachers/> .
+@prefix exLesson: <http://example.org/data/lessons/> . 
 
 
 
@@ -126,7 +127,6 @@ exClass:4C a ex:Class ;
 	ex:ClassTeacher exTeacher:svo .
 
 
-
 # Hodina
 
 ex:Lesson a rdfs:Class ;
@@ -138,8 +138,7 @@ ex:LessonID a rdf:Property ;
 	rdfs:label "Identifikátor hodiny"@cs;
 	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
 	rdfs:domain ex:Lesson ;
-	rdfs:range  xsd:token .
-#existuje typ ID...
+	rdfs:range  xsd:ID .
 
 #[URL Zoom meetingu pro hodinu]
 ex:LessonUrl a rdf:Property ;
@@ -171,10 +170,8 @@ ex:IsTaught a rdf:Property ;
 	rdfs:range  ex:Subject .
 
 
-@prefix exLesson: <http://example.org/data/lessons> . 
-
 exLesson:Lesson1 a ex:Lesson ;
-	ex:LessonID "cing763j"@cs ;
+	ex:LessonID "NPRG036"@cs ;
 	ex:LessonUrl "https://zoom.com/howefhowodsdh"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:Timeslot2 ;
 	ex:TakesPlace ... ;
