@@ -171,37 +171,34 @@ ex:IsTaught a rdf:Property ;
 	rdfs:range  ex:Subject .
 
 
-exLesson:Lesson1 a ex:Lesson ;
-	ex:LessonID "NPRG036"^^xsd:ID ;
+exLesson:TH0855S6 a ex:Lesson ;
+	ex:LessonID "TH0855S6"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/howefhowodsdh"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:TH0855 ;
-	ex:TakesPlace ... ;
-	ex:IsTaught ... .
+	ex:TakesPlace exClassroom:S6 ;
+	ex:IsTaught exSubject:Math .
 
 
-exLesson:Lesson2 a ex:Lesson ;
-	ex:LessonID "bfi76xat"^^xsd:ID ;
+exLesson:MO0800S7 a ex:Lesson ;
+	ex:LessonID "MO0800S7"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/smkot6xye3"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:MO0800 ;
-	ex:TakesPlace ... ;
-	ex:IsTaught ... .
+	ex:TakesPlace exClassroom:S7 ;
+	ex:IsTaught exSubject:English .
 
-exLesson:Lesson3 a ex:Lesson ;
-	ex:LessonID "viuxetbx1"^^xsd:ID ;
+exLesson:FR1000S9 a ex:Lesson ;
+	ex:LessonID "FR1000S9"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/xs564972xe2"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:FR1000 ;
-	ex:TakesPlace ... ;
-	ex:IsTaught ... .
+	ex:TakesPlace exClassroom:S9 ;
+	ex:IsTaught exSubject:English .
 
-exLesson:Lesson4 a ex:Lesson ;
-	ex:LessonID "ncusfzkeldfj"@cs ;
+exLesson:FR1000S6 a ex:Lesson ;
+	ex:LessonID "FR1000S6"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/nfiqppodyio"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:FR1000 ;
-	ex:TakesPlace ... ;
-	ex:IsTaught ... .
-
-#
-
+	ex:TakesPlace exClassroom:S6 ;
+	ex:IsTaught exSubject:Physics .
 
 # Časový slot
 
