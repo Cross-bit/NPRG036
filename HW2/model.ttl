@@ -4,7 +4,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix dbpedia:   <http://dbpedia.org/ontology/> .
+
+#custom prefixes
 @prefix ex: <http://example.org/vocabulary/> .
+@prefix exClass: <http://example.org/data/classes> .
+
+
 
 # Třídní rozvrh
 
@@ -47,17 +52,20 @@ ex:BelongingClass a rdf:Property ;
 exTimetable:Timetable1 a ex:Timetable ;
 	ex:AcademicalYear "2020/2021" ;
 	ex:TimetableVersion 1.5 ;
-	ex:PlannedLesson exLesson:Lesson1 .
+	ex:PlannedLesson exLesson:Lesson1 ;
+	ex:BelongingClass exClass:ClassA .
 
 exTimetable:Timetable2 a ex:Timetable ;
 	ex:AcademicalYear "2021/2022" ;
 	ex:TimetableVersion 1.0 ;
-	ex:PlannedLesson exLesson:Lesson2 .
+	ex:PlannedLesson exLesson:Lesson2, exLesson:Lesson4 ;
+	ex:BelongingClass exClass:ClassB .
 
 exTimetable:Timetable3 a ex:Timetable ;
 	ex:AcademicalYear "2022/2023" ;
 	ex:TimetableVersion 2.0 ;
 	ex:PlannedLesson exLesson:Lesson3 ;
+	ex:BelongingClass exClass:ClassC .
 
 # TODO vazby
 
@@ -104,7 +112,6 @@ ex:ClassTimetable a rdf:Property ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Timetable .
 
-@prefix exClass: <http://example.org/data/classes> . #TODO: move at top
 
 exClass:ClassA a ex:Class ;
 	ex:ClassCode "A" ;
