@@ -59,23 +59,23 @@ CREATE
 (_20216A15)-[:PlannedLesson]->(TH0855S6);
 
 // Učebny
+
 CREATE
 (S6:Classroom {
-	ClassroomID: "S6",
-	ClassroomCapacity: 30
+    ClassroomID: "S6",
+    ClassroomCapacity: 30
 }),
-
 (S7:Classroom {
 	ClassroomID: "S7",
 	ClassroomCapacity: 28
 }),
-
 (S9:Classroom {
-	ClassroomID: "S9",
-	ClassroomCapacity: 30
+    ClassroomID: "S9",
+    ClassroomCapacity: 30
 })
 
 // Předměty
+
 CREATE
 (Math:Subject {
 	SubjectID: "mt",
