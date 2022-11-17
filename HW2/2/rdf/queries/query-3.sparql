@@ -1,20 +1,22 @@
 PREFIX ex: <http://example.org/vocabulary/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-# Vybere id lesson1 lesson2, 
+# Vybere všechny id lesson1, lesson2 a předmět, který se vyučuje v stejném časovém slotu.
 
-SELECT ?lesson1ID ?lesson2ID ?subjectName
+SELECT DISTINCT ?lesson1ID ?lesson2ID ?subjectName
 WHERE {
   	?lesson1 a ex:Lesson ;
-  		ex:Time ?timeslot ;
+  		ex:TakesTime ?timeslot ;
   		ex:IsTaught ?subject ;
     	ex:LessonID ?lesson1ID .
-
+  
   	?lesson2 a ex:Lesson ;
-  		ex:Time ?timeslot ;
+  		ex:TakesTime ?timeslot ;
   		ex:IsTaught ?subject ;
   		ex:LessonID ?lesson2ID .
   	
    	?subject a ex:Subject ;
-    	ex:SubjectName ?SubjectName . 
+    	ex:SubjectName ?subjectName . 
+
+    FILTER (STR(?lesson1ID) < STR(?lesson2ID))
 }
