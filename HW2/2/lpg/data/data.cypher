@@ -58,6 +58,28 @@ CREATE
 CREATE
 (_20216A15)-[:PlannedLesson]->(TH0855S6);
 
+
+//Časové sloty
+
+CREATE
+(MO08000:TimeSlot {
+	TimeSlotBeginning: "08:00:00",
+	TimeSlotEnd: "08:45:00",
+	DayOfWeek: "Monday"
+}),
+(TH0855:TimeSlot {
+	TimeSlotBeginning: "08:55:00",
+	TimeSlotEnd: "09:40:00",
+	DayOfWeek: "Thursday"
+}),
+(MO08000:TimeSlot {
+	TimeSlotBeginning: "10:00:00",
+	TimeSlotEnd: "10:45:00",
+	DayOfWeek: "Friday"
+})
+
+
+
 // Učebny
 
 CREATE
