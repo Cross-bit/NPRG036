@@ -98,20 +98,6 @@ ex:ClassTeacher a rdf:Property ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Teacher .
 
-# [Vazba:Žák dochází]
-#ex:StudentAttends a rdf:Property ; // TODO: směr z studenta pouze
-#	rdfs:label "Žák dochází"@cs ;
-#	rdfs:comment "Žáci, kteří přísluší dané třídě."@cs ;
-#	rdfs:domain ex:Class ;
-#	rdfs:range  ex:Student .
- 
-# [Vazba:Třídní rozvrh] // TODO: směr z timetable pouze
-#ex:ClassTimetable a rdf:Property ;
-#	rdfs:label "Třídě přísluší třídní rozvrh.";
-#	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
-#	rdfs:domain ex:Class ;
-#	rdfs:range  ex:Timetable .
-
 exClass:6A a ex:Class ;
 	ex:ClassCode "A" ;
 	ex:ClassYear 6 ;
@@ -227,9 +213,6 @@ ex:DayOfWeek a rdf:Property ;
 	rdfs:comment "Den v týdnu, který se časový slot odehrává."@cs ;
 	rdfs:domain ex:TimeSlot ;
 	rdfs:range xsd:dayOfWeek .
-
-# 	Vlastnost: den_v_týdnu
-#	time:dayOfWeek time:DayOfWeek (time:Monday/time:Tuesday/time:Wednesday/time:Thursday/time:Friday/time:Saturday/time:Sunday)
 	
 exTimeSlot:MO0800 a ex:TimeSlot ;
 	ex:TimeSlotBeginning "08:00:00"^^xsd:time ;
@@ -245,8 +228,6 @@ exTimeSlot:FR1000 a ex:TimeSlot ;
 	ex:TimeSlotBeginning "10:00:00"^^xsd:time ;
 	ex:TimeSlotEnd "10:45:00"^^xsd:time ;
 	ex:DayOfWeek "Friday"^^time:dayOfWeek .
-
-#
 
 
 # Učebna
@@ -268,12 +249,6 @@ ex:ClassroomCapacity a rdf:Property ;
 	rdfs:comment "Označuje maximální počet osob přítomných v danou chvíli v dané učebně."@cs ;
 	rdfs:domain ex:Classroom ;
 	rdfs:range xsd:integer .
-
-# [Vazba:Hodina se koná v učebně]
-# 	Vazba: koná_se
-# 	Typ: Hodina
-# 	Jméno: Hodina konající se v učebně
-# 	Popis: V učebně probíhá daná hodina.
 
 exClassroom:S6 a ex:Classroom ;
 	ex:ClassroomID "S6"^^xsd:ID ;
@@ -306,18 +281,6 @@ ex:SubjectName a rdf:Property ;
 	rdfs:comment "Pojmenování daného předmětu."@cs ;
 	rdfs:domain ex:Subject ;
 	rdfs:range rdf:langString .
-
-# [Vazba:Vyučuje učitel] # V opačném směru
-# 	Vazba: týká_se
-# 	Typ: Učitel
-# 	Jméno: Vyučuje učitel
-# 	Popis: Předmět, jenž se týká daného učitele.
-
-# [Vazba:Vyučuje se]
-# 	Vazba: vyučuje_se
-# 	Typ: Hodina
-# 	Jméno: Hodina daného předmětu
-# 	Popis: Předmět se vyučuje v rámci dané hodiny.
 
 exSubject:Math a ex:Subject ;
 	ex:SubjectID "mt"^^xsd:ID ;
@@ -357,20 +320,12 @@ ex:TeacherExperience a rdf:Property ;
 	rdfs:domain ex:Teacher ;
 	rdfs:range xsd:integer .
 
-# [Vazba:Třídní učitel] # V opačném směru (z třídy)
-# ex:ClassTeacher a rdf:Property ;
-# 	rdfs:label "Třídní učitel"@cs ;
-# 	rdfs:comment "Třída, za níž učitel zodpovídá."@cs ;
-# 	rdfs:domain ex:Teacher ;
-# 	rdfs:range ex:Class .
-
 # [Vazba:Vyučuje]
 ex:Teaches a rdf:Property ;
 	rdfs:label "Vyučovaný předmět"@cs ;
 	rdfs:comment "Předmět, jenž učitel vyučuje."@cs ;
 	rdfs:domain ex:Teacher ;
 	rdfs:range ex:Subject .
-
 
 exTeacher:muk a ex:Teacher ;
 	ex:TeacherID "muk"^^xsd:ID ;
@@ -421,7 +376,6 @@ ex:BelongsTo a rdf:Property ;
 	rdfs:comment "Třída, do které žák dochází."@cs ;
 	rdfs:domain ex:Student ;
 	rdfs:range ex:Class .
-
 
 exStudent:kovpe a ex:Student ;
 	ex:StudentID "kovpe"^^xsd:ID ;
