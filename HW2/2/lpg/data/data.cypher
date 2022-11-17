@@ -1,5 +1,5 @@
-match ()-[n]-() delete n;
-match (n) delete n;
+MATCH ()-[n]-() DELETE n;
+MATCH (n) DELETE n;
 
 // Třídní rozvrh
 CREATE
@@ -143,4 +143,4 @@ CREATE
 (kliji)-[:BelongsTo]->(_6B),
 (novpa)-[:BelongsTo]->(_4C);
 
-match (n) return n;
+MATCH (n) RETURN n;
