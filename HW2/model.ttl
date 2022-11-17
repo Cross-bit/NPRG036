@@ -7,7 +7,8 @@
 
 #custom prefixes
 @prefix ex: <http://example.org/vocabulary/> .
-@prefix exClass: <http://example.org/data/classes> .
+@prefix exClass: <http://example.org/data/classes/> .
+@prefix exTeacher: <http://example.org/data/teachers/> .
 
 
 
@@ -53,23 +54,19 @@ exTimetable:Timetable1 a ex:Timetable ;
 	ex:AcademicalYear "2020/2021" ;
 	ex:TimetableVersion 1.5 ;
 	ex:PlannedLesson exLesson:Lesson1 ;
-	ex:BelongingClass exClass:ClassA .
+	ex:BelongingClass exClass:6A .
 
 exTimetable:Timetable2 a ex:Timetable ;
 	ex:AcademicalYear "2021/2022" ;
 	ex:TimetableVersion 1.0 ;
 	ex:PlannedLesson exLesson:Lesson2, exLesson:Lesson4 ;
-	ex:BelongingClass exClass:ClassB .
+	ex:BelongingClass exClass:6B .
 
 exTimetable:Timetable3 a ex:Timetable ;
 	ex:AcademicalYear "2022/2023" ;
 	ex:TimetableVersion 2.0 ;
 	ex:PlannedLesson exLesson:Lesson3 ;
-	ex:BelongingClass exClass:ClassC .
-
-# TODO vazby
-
-
+	ex:BelongingClass exClass:4C .
 
 # Třída
 
@@ -99,33 +96,35 @@ ex:ClassTeacher a rdf:Property ;
 	rdfs:range  ex:Teacher .
 
 # [Vazba:Žák dochází]
-ex:StudentAttends a rdf:Property ;
-	rdfs:label "Žák dochází"@cs ;
-	rdfs:comment "Žáci, kteří přísluší dané třídě."@cs ;
-	rdfs:domain ex:Class ;
-	rdfs:range  ex:Student .
+#ex:StudentAttends a rdf:Property ; // TODO: směr z studenta pouze
+#	rdfs:label "Žák dochází"@cs ;
+#	rdfs:comment "Žáci, kteří přísluší dané třídě."@cs ;
+#	rdfs:domain ex:Class ;
+#	rdfs:range  ex:Student .
+ 
+# [Vazba:Třídní rozvrh] // TODO: směr z timetable pouze
+#ex:ClassTimetable a rdf:Property ;
+#	rdfs:label "Třídě přísluší třídní rozvrh.";
+#	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
+#	rdfs:domain ex:Class ;
+#	rdfs:range  ex:Timetable .
 
-# [Vazba:Třídní rozvrh]
-ex:ClassTimetable a rdf:Property ;
-	rdfs:label "Třídě přísluší třídní rozvrh.";
-	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
-	rdfs:domain ex:Class ;
-	rdfs:range  ex:Timetable .
-
-
-exClass:ClassA a ex:Class ;
+exClass:6A a ex:Class ;
 	ex:ClassCode "A" ;
-	ex:ClassYear 6 .	
+	ex:ClassYear 6 ;
+	ex:ClassTeacher exTeacher:muk .
 
-exClass:ClassB a ex:Class ;
+exClass:6B a ex:Class ;
 	ex:ClassCode "B" ;
-	ex:ClassYear 5 .
+	ex:ClassYear 6 ;
+	ex:ClassTeacher exTeacher:pel .
 
-exClass:ClassC a ex:Class ;
-	ex:ClassCode "A" ;
-	ex:ClassYear 4 .
 
-# TODO: add class relations
+exClass:4C a ex:Class ;
+	ex:ClassCode "C" ;
+	ex:ClassYear 4 ;
+	ex:ClassTeacher exTeacher:svo .
+
 
 
 # Hodina
@@ -355,7 +354,6 @@ ex:Teaches a rdf:Property ;
 	rdfs:domain ex:Teacher ;
 	rdfs:range ex:Subject .
 
-@prefix exTeacher: <http://example.org/data/teachers> . #TODO: move to top
 
 exTeacher:muk a ex:Teacher ;
 	ex:TeacherID "muk"^^xsd:token ;
@@ -412,13 +410,13 @@ ex:BelongsTo a rdf:Property ;
 exStudent:kovpe a ex:Student ;
 	ex:StudentID "kovpe"^^xsd:token ;
 	foaf:name "Petr Kovář"@cs ;
-	ex:BelongsTo exClass:ClassA .
+	ex:BelongsTo exClass:6A .
 
 exStudent:kliji a ex:Student ;
 	ex:StudentID "kliji"^^xsd:token ;
 	foaf:name "Jiří Klimošek"@cs ;
 	ex:Nickname "Limoš"@cs ;
-	ex:BelongsTo exClass:ClassB .
+	ex:BelongsTo exClass:6B .
 
 exStudent:novpa a ex:Student ;
 	ex:StudentID "novpa"^^xsd:token ;
@@ -426,4 +424,4 @@ exStudent:novpa a ex:Student ;
 	ex:Nickname
 		"Kajak"@cs ,
 		"Bizon"@cs ;
-	ex:BelongsTo exClass:ClassC .
+	ex:BelongsTo exClass:4C .
