@@ -64,35 +64,35 @@ CREATE
 // Učebny
 CREATE
 (S6:Classroom {
-	ClassroomID: "S6",
-	ClassroomCapacity: 30
+    ClassroomID: "S6",
+    ClassroomCapacity: 30
 }),
 
 (S7: Classroom {
-	ClassroomID: "S7",
-	ClassroomCapacity: 28
+    ClassroomID: "S7",
+    ClassroomCapacity: 28
 }),
 
 (S9:Classroom {
-	ClassroomID: "S9",
-	ClassroomCapacity: 30
+    ClassroomID: "S9",
+    ClassroomCapacity: 30
 })
 
 // Předměty
 CREATE
 (Math: Subject {
-	SubjectID: "mt",
-	SubjectName: "Matematika"
+    SubjectID: "mt",
+    SubjectName: "Matematika"
 }),
 
 (English: Subject {
-	SubjectID: "en",
-	SubjectName: "Angličtina"
+    SubjectID: "en",
+    SubjectName: "Angličtina"
 }),
 
 (Physics: Subject {
-	SubjectID: "ps",
-	SubjectName: "Fyzika"
+    SubjectID: "ps",
+    SubjectName: "Fyzika"
 })
 
 match (n) return n;
