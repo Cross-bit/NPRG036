@@ -29,8 +29,6 @@ ex:AcademicalYear a rdf:Property ;
 	rdfs:domain ex:Timetable ;
 	rdfs:range  xsd:string . # TODO 2022/2023 blanknode? rozepsat? ex:AcademicalYearsList
 
-#ex:AcademicalYearsList a time:DateTimeInterval .
-
 # [Verze rozvrhu]
 ex:TimetableVersion a rdf:Property ;
 	rdfs:label "Verze rozvrhu"@cs ;
