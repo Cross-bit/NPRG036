@@ -131,4 +131,16 @@ CREATE
 	nickname: ["Kajak", "Bizon"]
 });
 
+// Učitel vazby
+CREATE
+(muk)-[:Teaches]->(Math),
+(pel)-[:Teaches]->(Math),
+(pel)-[:Teaches]->(Physics),
+(svo)-[:Teaches]->(English);
+
+// Student vazby
+(kovpe)-[:BelongsTo]->(_6A),
+(kliji)-[:BelongsTo]->(_6B),
+(novpa)-[:BelongsTo]->(_4C);
+
 match (n) return n;
