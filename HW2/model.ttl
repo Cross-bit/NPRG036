@@ -174,7 +174,7 @@ ex:IsTaught a rdf:Property ;
 exLesson:Lesson1 a ex:Lesson ;
 	ex:LessonID "NPRG036"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/howefhowodsdh"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:Timeslot2 ;
+	ex:TakesTime exTimeSlot:TH0855 ;
 	ex:TakesPlace ... ;
 	ex:IsTaught ... .
 
@@ -182,21 +182,21 @@ exLesson:Lesson1 a ex:Lesson ;
 exLesson:Lesson2 a ex:Lesson ;
 	ex:LessonID "bfi76xat"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/smkot6xye3"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:Timeslot1 ;
+	ex:TakesTime exTimeSlot:MO0800 ;
 	ex:TakesPlace ... ;
 	ex:IsTaught ... .
 
 exLesson:Lesson3 a ex:Lesson ;
 	ex:LessonID "viuxetbx1"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/xs564972xe2"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:Timeslot3 ;
+	ex:TakesTime exTimeSlot:FR1000 ;
 	ex:TakesPlace ... ;
 	ex:IsTaught ... .
 
 exLesson:Lesson4 a ex:Lesson ;
 	ex:LessonID "ncusfzkeldfj"@cs ;
 	ex:LessonUrl "https://zoom.com/nfiqppodyio"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:Timeslot3 ;
+	ex:TakesTime exTimeSlot:FR1000 ;
 	ex:TakesPlace ... ;
 	ex:IsTaught ... .
 
@@ -234,17 +234,17 @@ ex:DayOfWeek a rdf:Property ;
 # 	Vlastnost: den_v_týdnu
 #	time:dayOfWeek time:DayOfWeek (time:Monday/time:Tuesday/time:Wednesday/time:Thursday/time:Friday/time:Saturday/time:Sunday)
 	
-exTimeSlot:Timeslot1 a ex:TimeSlot ;
+exTimeSlot:MO0800 a ex:TimeSlot ;
 	ex:TimeSlotBeginning "08:00:00"^^xsd:time ;
 	ex:TimeSlotEnd "08:45:00"^^xsd:time ;
 	ex:DayOfWeek "Monday"^^time:dayOfWeek .
 
-exTimeSlot:Timeslot2 a ex:TimeSlot ;
+exTimeSlot:TH0855 a ex:TimeSlot ;
 	ex:TimeSlotBeginning "08:55:00"^^xsd:time ;
 	ex:TimeSlotEnd "09:40:00"^^xsd:time ;
 	ex:DayOfWeek "Thursday"^^time:dayOfWeek .
 
-exTimeSlot:Timeslot3 a ex:TimeSlot ;
+exTimeSlot:FR1000 a ex:TimeSlot ;
 	ex:TimeSlotBeginning "10:00:00"^^xsd:time ;
 	ex:TimeSlotEnd "10:45:00"^^xsd:time ;
 	ex:DayOfWeek "Friday"^^time:dayOfWeek .
