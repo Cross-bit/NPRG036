@@ -8,6 +8,7 @@
 # Custom prefixes
 @prefix ex: <http://example.org/vocabulary/> .
 
+
 # Třídní rozvrh
 
 ex:Timetable a rdfs:Class ;
@@ -19,11 +20,7 @@ ex:AcademicalYear a rdf:Property ;
 	rdfs:label "Akademický rok"@cs ;
 	rdfs:comment "Roky, v kterých je daný rozvrh platný."@cs ;
 	rdfs:domain ex:Timetable ;
-<<<<<<< HEAD
-	rdfs:range  xsd:string . # TODO 2022/2023 blanknode? rozepsat? ex:AcademicalYearsList
-=======
 	rdfs:range  xsd:string .
->>>>>>> 0043ab53470bd99e971d19f2a7799b1ba871a846
 
 # [Verze rozvrhu]
 ex:TimetableVersion a rdf:Property ;
