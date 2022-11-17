@@ -78,7 +78,7 @@ ex:ClassCode a rdf:Property ;
 	rdfs:label "Kódové označení třídy"@cs ;
 	rdfs:comment "Kódové označení třídy písmenem."@cs ;
 	rdfs:domain ex:Class ;
-	rdfs:range xsd:string .
+	rdfs:range xsd:token .
 
 # [Vazba:Třídní učitel]
 ex:ClassTeacher a rdf:Property ;
@@ -129,7 +129,7 @@ ex:LessonID a rdf:Property ;
 	rdfs:label "Identifikátor hodiny"@cs;
 	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
 	rdfs:domain ex:Lesson ;
-	rdfs:range  xsd:string .
+	rdfs:range  xsd:token .
 #existuje typ ID...
 
 #[URL Zoom meetingu pro hodinu]
@@ -340,19 +340,19 @@ ex:Teaches a rdf:Property ;
 @prefix exTeacher: <http://example.org/data/teachers> . #TODO: move to top
 
 exTeacher:muk a ex:Teacher ;
-	ex:TeacherID "muk" ;
+	ex:TeacherID "muk"^^xsd:token ;
 	foaf:name "Vladimír Mukvald"@cs ;
 	ex:TeacherExperience "5"^^xsd:integer .
 	#TODO: ex:Teaches  needs a ex:Subject instance
 
 exTeacher:pel a ex:Teacher ;
-	ex:TeacherID "pel" ;
+	ex:TeacherID "pel"^^xsd:token ;
 	foaf:name "Jaroslav Pelikán"@cs ;
 	ex:TeacherExperience "3"^^xsd:integer .
 	#TODO: ex:Teaches  needs a ex:Subject instance
 
 exTeacher:svo a ex:Teacher ;
-	ex:TeacherID "muk" ;
+	ex:TeacherID "svo"^^xsd:token ;
 	foaf:name "Patrik Svoboda"@cs ;
 	ex:TeacherExperience "2"^^xsd:integer .
 	#TODO: ex:Teaches  needs a ex:Subject instance
@@ -371,16 +371,16 @@ ex:StudentID a rdf:Property ;
 	rdfs:domain ex:Student ;
 	rdfs:range xsd:token .
 
+# [Jméno žáka]
+# 	Vlastnost: jméno
+#	foaf:name
+
 # [Přezdívky žáka]
 ex:Nickname a rdf:Property ;
 	rdfs:label "Přezdívka žáka"@cs ;
 	rdfs:comment "Slovních pojmenování, kterým může být daný žák identifikován."@cs ;
 	rdfs:domain ex:Student ;
-	rdfs:range xsd:string .
-
-# [Jméno žáka]
-# 	Vlastnost: jméno
-#	foaf:name
+	rdfs:range rdf:langString .
 
 # [Vazba:Dochází do třídy]
 ex:BelongsTo a rdf:Property ;
@@ -388,3 +388,24 @@ ex:BelongsTo a rdf:Property ;
 	rdfs:comment "Třída, do které žák dochází."@cs ;
 	rdfs:domain ex:Student ;
 	rdfs:range ex:Class .
+
+@prefix exStudent: <http://example.org/data/students> . #TODO: move to top
+
+exStudent:kovpe a ex:Student ;
+	ex:StudentID "kovpe"^^xsd:token ;
+	foaf:name "Petr Kovář"@cs ;
+	ex:BelongsTo exClass:ClassA .
+
+exStudent:kliji a ex:Student ;
+	ex:StudentID "kliji"^^xsd:token ;
+	foaf:name "Jiří Klimošek"@cs ;
+	ex:Nickname "Limoš"@cs ;
+	ex:BelongsTo exClass:ClassB .
+
+exStudent:novpa a ex:Student ;
+	ex:StudentID "novpa"^^xsd:token ;
+	foaf:name "Pavel Novák"@cs ;
+	ex:Nickname
+		"Kajak"@cs ,
+		"Bizon"@cs ;
+	ex:BelongsTo exClass:ClassC .
