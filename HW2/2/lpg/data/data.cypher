@@ -1,6 +1,8 @@
 match ()-[n]-() delete n;
 match (n) delete n;
 
+// Třídní rozvrh
+
 CREATE
 (_20216A15:Timetable {
     academicYear: "2020/2021",
@@ -14,23 +16,26 @@ CREATE
     academicYear: "2022/2023",
     version: 2.0
 })
+
+// Třída
+
 CREATE
 (_6A:Class {
     code: "A",
     year: 6
-})<-[:BelongingClass]-(_20216A15),
+}), //<-[:BelongingClass]-(_20216A15);
 (_6B:Class {
     code: "B",
     year: 6
-})<-[:BelongingClass]-(_21226B10),
+}), //<-[:BelongingClass]-(_21226B10);
 (_4C:Class {
     code: "C",
     year: 4
-})<-[:BelongingClass]-(_22234C20),
+}); //<-[:BelongingClass]-(_22234C20);
 
 
 // Hodiny
-
+CREATE
 (TH0855S6:Lesson {
     LessonID: "TH0855S6",
     LessonUrl: "https://zoom.com/TH0855S6"
@@ -50,9 +55,9 @@ CREATE
 (TH0855S7:Lesson {
     LessonID: "TH0855S7",
     LessonUrl: "https://zoom.com/TH0855S7"
-}),
+});
 
-
+CREATE
 (_20216A15)-[:PlannedLesson]->(TH0855S6);
 // 
 
