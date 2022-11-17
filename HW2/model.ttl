@@ -12,8 +12,7 @@
 @prefix exLesson: <http://example.org/data/lessons/> . 
 @prefix exClassroom: <http://example.org/data/classrooms/> .
 @prefix exSubject: <http://example.org/data/subjects/> .
-
-
+@prefix exStudent: <http://example.org/data/students/> .
 
 # Třídní rozvrh
 
@@ -410,7 +409,7 @@ ex:StudentID a rdf:Property ;
 	rdfs:label "ID žáka"@cs ;
 	rdfs:comment "Prostředek ke vzájemnému odlišení jednotlivých žáků."@cs ;
 	rdfs:domain ex:Student ;
-	rdfs:range xsd:token .
+	rdfs:range xsd:ID .
 
 # [Jméno žáka]
 # 	Vlastnost: jméno
@@ -430,21 +429,20 @@ ex:BelongsTo a rdf:Property ;
 	rdfs:domain ex:Student ;
 	rdfs:range ex:Class .
 
-@prefix exStudent: <http://example.org/data/students> . #TODO: move to top
 
 exStudent:kovpe a ex:Student ;
-	ex:StudentID "kovpe"^^xsd:token ;
+	ex:StudentID "kovpe"^^xsd:ID ;
 	foaf:name "Petr Kovář"@cs ;
 	ex:BelongsTo exClass:6A .
 
 exStudent:kliji a ex:Student ;
-	ex:StudentID "kliji"^^xsd:token ;
+	ex:StudentID "kliji"^^xsd:ID ;
 	foaf:name "Jiří Klimošek"@cs ;
 	ex:Nickname "Limoš"@cs ;
 	ex:BelongsTo exClass:6B .
 
 exStudent:novpa a ex:Student ;
-	ex:StudentID "novpa"^^xsd:token ;
+	ex:StudentID "novpa"^^xsd:ID ;
 	foaf:name "Pavel Novák"@cs ;
 	ex:Nickname
 		"Kajak"@cs ,
