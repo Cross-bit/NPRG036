@@ -262,18 +262,18 @@ ex:Classroom a rdfs:Class ;
 	rdfs:comment "Reprezentuje učební místnost, v níž probíhá výuka na základní škole."@cs .
 
 # [Identifikátor třídy]
-# 	Vlastnost: id_třídy
-# 	Typ: Řetězec
-# 	Jméno: ID třídy
-# 	Popis: Prostředek ke vzájemnému odlišení jednotlivých učeben.
-# 	Příklad: S9
+ex:ClassroomID a rdf:Property ;
+	rdfs:label "ID třídy"@cs ;
+	rdfs:comment "Prostředek ke vzájemnému odlišení jednotlivých učeben."@cs ;
+	rdfs:domain ex:Classroom ;
+	rdfs:range xsd:token .
 
 # [Kapacita učebny]
-# 	Vlastnost: kapacita_učebny
-# 	Typ: Celé číslo
-# 	Jméno: Kapacita učebny
-# 	Popis: Označuje maximální počet osob přítomných v danou chvíli v dané učebně.
-# 	Příklad: 30
+ex:ClassroomCapacity a rdf:Property ;
+	rdfs:label "Kapacita učebny"@cs ;
+	rdfs:comment "Označuje maximální počet osob přítomných v danou chvíli v dané učebně."@cs ;
+	rdfs:domain ex:Classroom ;
+	rdfs:range xsd:integer .
 
 # [Vazba:Hodina se koná v učebně]
 # 	Vazba: koná_se
@@ -289,16 +289,18 @@ ex:Subject a rdfs:Class ;
 	rdfs:comment "Reprezentuje předmět vyučující se na základní škole."@cs .
 
 # [Identifikátor předmětu] 
-# 	Vlastnost: id_předmětu
-# 	Typ: Řetězec
-# 	Jméno: ID předmětu
-# 	Popis: Prostředek ke vzájemnému odlišení jednotlivých předmětů.
-# 	Příklad: MAT
+ex:SubjectID a rdf:Property ;
+	rdfs:label "ID předmětu"@cs ;
+	rdfs:comment "Prostředek ke vzájemnému odlišení jednotlivých předmětů."@cs ;
+	rdfs:domain ex:Subject ;
+	rdfs:range xsd:token .
 
 # [Název předmětu]
-# 	Vlastnost: název
-# 	Typ: Řetězec
-# 	foaf:name
+ex:SubjectName a rdf:Property ;
+	rdfs:label "Název předmětu"@cs ;
+	rdfs:comment "Pojmenování daného předmětu."@cs ;
+	rdfs:domain ex:Subject ;
+	rdfs:range xsd:string .
 
 # [Vazba:Vyučuje učitel] # V opačném směru
 # 	Vazba: týká_se
