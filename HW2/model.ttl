@@ -267,6 +267,7 @@ ex:Classroom a rdfs:Class ;
 # 	Jméno: Hodina konající se v učebně
 # 	Popis: V učebně probíhá daná hodina.
 
+
 # Předmět
 
 ex:Subject a rdfs:Class ;
@@ -296,6 +297,7 @@ ex:Subject a rdfs:Class ;
 # 	Typ: Hodina
 # 	Jméno: Hodina daného předmětu
 # 	Popis: Předmět se vyučuje v rámci dané hodiny.
+
 
 # Učitel
 
@@ -335,6 +337,7 @@ ex:Teaches a rdf:Property ;
 	rdfs:domain ex:Teacher ;
 	rdfs:range ex:Subject .
 
+
 # Žák
 
 ex:Student a rdfs:Class ;
@@ -342,25 +345,26 @@ ex:Student a rdfs:Class ;
 	rdfs:comment "Reprezentuje žáky dané základní školy."@cs .
 
 # [Identifikátor žáka]
-# 	Vlastnost: id_žáka
-# 	Typ: Řetězec
-# 	Jméno: ID žáka
-# 	Popis: Prostředek ke vzájemnému odlišení jednotlivých žáků.
-# 	Příklad: 21032
+ex:StudentID a rdf:Property ;
+	rdfs:label "ID žáka"@cs ;
+	rdfs:comment "Prostředek ke vzájemnému odlišení jednotlivých žáků."@cs ;
+	rdfs:domain ex:Student ;
+	rdfs:range xsd:token .
 
 # [Přezdívky žáka]
-#	Vlastnost: přezdívky
-#	Typ: Řetězec
-#	Jméno: Přezdívky žáka
-#	Popis: Seznam slovních pojmenování, kterými může být daný žák identifikován.
-#	Příklad: Kostka, Banán, Bambula
+ex:Nickname a rdf:Property ;
+	rdfs:label "Přezdívka žáka"@cs ;
+	rdfs:comment "Slovních pojmenování, kterým může být daný žák identifikován."@cs ;
+	rdfs:domain ex:Student ;
+	rdfs:range xsd:string .
 
 # [Jméno žáka]
 # 	Vlastnost: jméno
 #	foaf:name
 
 # [Vazba:Dochází do třídy]
-# 	Vazba: dochází
-# 	Typ: Třída
-# 	Jméno: Dochází do třídy
-# 	Popis: Třída, do které žák dochází.
+ex:BelongsTo a rdf:Property ;
+	rdfs:label "Dochází do třídy"@cs ;
+	rdfs:comment "Třída, do které žák dochází."@cs ;
+	rdfs:domain ex:Student ;
+	rdfs:range ex:Class .
