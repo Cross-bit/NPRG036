@@ -1,8 +1,7 @@
-match ()-[n]-() delete n;
-match (n) delete n;
+MATCH ()-[n]-() DELETE n;
+MATCH (n) DELETE n;
 
 // Třídní rozvrh
-
 CREATE
 (_20216A15:Timetable {
     academicYear: "2020/2021",
@@ -18,7 +17,6 @@ CREATE
 });
 
 // Třída
-
 CREATE
 (_6A:Class {
     code: "A",
@@ -60,6 +58,135 @@ CREATE
 
 CREATE
 (_20216A15)-[:PlannedLesson]->(TH0855S6);
-// 
 
-match (n) return n;
+
+//Časové sloty
+
+CREATE
+(MO08000:TimeSlot {
+	TimeSlotBeginning: "08:00:00",
+	TimeSlotEnd: "08:45:00",
+	DayOfWeek: "Monday"
+}),
+(TH0855:TimeSlot {
+	TimeSlotBeginning: "08:55:00",
+	TimeSlotEnd: "09:40:00",
+	DayOfWeek: "Thursday"
+}),
+(MO08000:TimeSlot {
+	TimeSlotBeginning: "10:00:00",
+	TimeSlotEnd: "10:45:00",
+	DayOfWeek: "Friday"
+})
+
+
+
+// Učebny
+
+CREATE
+(S6:Classroom {
+    ClassroomID: "S6",
+    ClassroomCapacity: 30
+}),
+(S7:Classroom {
+	ClassroomID: "S7",
+	ClassroomCapacity: 28
+}),
+(S9:Classroom {
+    ClassroomID: "S9",
+    ClassroomCapacity: 30
+})
+
+// Předměty
+
+CREATE
+(Math:Subject {
+	SubjectID: "mt",
+	SubjectName: "Matematika"
+}),
+
+(English:Subject {
+	SubjectID: "en",
+	SubjectName: "Angličtina"
+}),
+
+(Physics:Subject {
+	SubjectID: "ps",
+	SubjectName: "Fyzika"
+})
+
+// Učitel
+CREATE
+(muk:Teacher {
+	ID: "muk",
+	name: "Vladimír Mukvald",
+	experience: 5
+}),
+(pel:Teacher {
+	ID: "pel",
+	name: "Jaroslav Pelikán",
+	experience: 3
+}),
+(svo:Teacher {
+	ID: "svo",
+	name: "Patrik Svoboda",
+	experience: 2
+});
+
+// Žák
+CREATE
+(kovpe:Student {
+	ID: "kovpe",
+	name: "Petr Kovář"
+}),
+(:Student {
+	ID: "",
+	name: ""
+}),
+(kliji:Student {
+	ID: "kliji",
+	name: "Jiří Klimošek",
+	nickname: ["Limoš"]
+}),
+(novpa:Student {
+	ID: "novpa",
+	name: "Pavel Novák",
+	nickname: ["Kajak", "Bizon"]
+});
+
+// Učitel vazby
+CREATE
+(muk)-[:Teaches]->(Math),
+(pel)-[:Teaches]->(Math),
+(pel)-[:Teaches]->(Physics),
+(svo)-[:Teaches]->(English);
+
+// Student vazby
+(kovpe)-[:BelongsTo]->(_6A),
+(kliji)-[:BelongsTo]->(_6B),
+(novpa)-[:BelongsTo]->(_4C);
+
+//Hodina vazby
+
+CREATE
+(TH0855S6)-[:TakesTime]->(TH0855),
+(TH0855S6)-[:TakesPlace]->(S6),
+(TH0855S6)-[:IsTaught]->(Math),
+
+(MO0800S7)-[:TakesTime]->(MO0800),
+(MO0800S7)-[:TakesPlace]->(S7),
+(MO0800S7)-[:IsTaught]->(English),
+
+(FR1000S9)-[:TakesTime]->(FR1000),
+(FR1000S9)-[:TakesPlace]->(S9),
+(FR1000S9)-[:IsTaught]->(English),
+
+(FR1000S6)-[:TakesTime]->(FR1000),
+(FR1000S6)-[:TakesPlace]->(S6),
+(FR1000S6)-[:IsTaught]->(Physics),
+
+(TH0855S7)-[:TakesTime]->(TH0855),
+(TH0855S7)-[:TakesPlace]->(S7),
+(TH0855S7)-[:IsTaught]->(Math);
+
+MATCH (n) RETURN n;
