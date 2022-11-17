@@ -10,6 +10,8 @@
 @prefix exClass: <http://example.org/data/classes/> .
 @prefix exTeacher: <http://example.org/data/teachers/> .
 @prefix exLesson: <http://example.org/data/lessons/> . 
+@prefix exClassroom: <http://example.org/data/classrooms/> .
+@prefix exSubject: <http://example.org/data/subjects/> .
 
 
 
@@ -210,14 +212,14 @@ ex:TimeSlot a rdfs:Class ;
 	rdfs:subClassOf time:GeneralDateTimeDescription .
 
 # [Začátek časového slotu]
-ex:(TimeSlotBeginning) a rdf:Property ;
+ex:TimeSlotBeginning a rdf:Property ;
 	rdfs:label "Začátek časového slotu"@cs ;
 	rdfs:comment "Čas, kdy začíná časový slot."@cs ;
 	rdfs:domain ex:TimeSlot ;
 	rdfs:range xsd:time .
 
 # [Konec časového slotu]
-ex:(TimeSlotEnd) a rdf:Property ;
+ex:TimeSlotEnd a rdf:Property ;
 	rdfs:label "Konec časového slotu"@cs ;
 	rdfs:comment "Čas, kdy končí časový slot."@cs ;
 	rdfs:domain ex:TimeSlot ;
@@ -266,7 +268,7 @@ ex:ClassroomID a rdf:Property ;
 	rdfs:label "ID třídy"@cs ;
 	rdfs:comment "Prostředek ke vzájemnému odlišení jednotlivých učeben."@cs ;
 	rdfs:domain ex:Classroom ;
-	rdfs:range xsd:token .
+	rdfs:range xsd:ID .
 
 # [Kapacita učebny]
 ex:ClassroomCapacity a rdf:Property ;
@@ -281,6 +283,17 @@ ex:ClassroomCapacity a rdf:Property ;
 # 	Jméno: Hodina konající se v učebně
 # 	Popis: V učebně probíhá daná hodina.
 
+exClassroom:S6 a ex:Classroom ;
+	ex:ClassroomID "S6"^^xsd:ID ;
+	ex:ClassroomCapacity 30 .
+
+exClassroom:S7 a ex:Classroom ;
+	ex:ClassroomID "S7"^^xsd:ID ;
+	ex:ClassroomCapacity 28 .
+
+exClassroom:S9 a ex:Classroom ;
+	ex:ClassroomID "S9"^^xsd:ID ;
+	ex:ClassroomCapacity 30 .
 
 # Předmět
 
@@ -293,14 +306,14 @@ ex:SubjectID a rdf:Property ;
 	rdfs:label "ID předmětu"@cs ;
 	rdfs:comment "Prostředek ke vzájemnému odlišení jednotlivých předmětů."@cs ;
 	rdfs:domain ex:Subject ;
-	rdfs:range xsd:token .
+	rdfs:range xsd:ID .
 
 # [Název předmětu]
-ex:SubjectName a rdf:Property ;
+ex:SubjectName a rdf:Property ; 
 	rdfs:label "Název předmětu"@cs ;
 	rdfs:comment "Pojmenování daného předmětu."@cs ;
 	rdfs:domain ex:Subject ;
-	rdfs:range xsd:string .
+	rdfs:range rdf:langString .
 
 # [Vazba:Vyučuje učitel] # V opačném směru
 # 	Vazba: týká_se
@@ -314,6 +327,19 @@ ex:SubjectName a rdf:Property ;
 # 	Jméno: Hodina daného předmětu
 # 	Popis: Předmět se vyučuje v rámci dané hodiny.
 
+exSubject:Math a ex:Subject ;
+	ex:SubjectID "mt"^^xsd:ID ;
+	ex:SubjectName "Matematika"@cs .
+
+
+exSubject:English a ex:Subject ;
+	ex:SubjectID "en"^^xsd:ID ;
+	ex:SubjectName "Angličtina"@cs .
+
+exSubject:Physics a ex:Subject ;
+	ex:SubjectID "ps"^^xsd:ID ;
+	ex:SubjectName "Fyzika"@cs .
+
 
 # Učitel
 
@@ -326,7 +352,7 @@ ex:TeacherID a rdf:Property ;
 	rdfs:label "ID učitele"@cs ;
 	rdfs:comment "Prostředek ke vzájemnému odlišení jednolivých učitelů."@cs ;
 	rdfs:domain ex:Teacher ;
-	rdfs:range xsd:token .
+	rdfs:range xsd:ID .
 
 # [Jméno učitele]
 # 	Vlastnost: jméno
@@ -339,7 +365,7 @@ ex:TeacherExperience a rdf:Property ;
 	rdfs:domain ex:Teacher ;
 	rdfs:range xsd:integer .
 
-# [Vazba:Třídní učitel] # V opačném směru
+# [Vazba:Třídní učitel] # V opačném směru (z třídy)
 # ex:ClassTeacher a rdf:Property ;
 # 	rdfs:label "Třídní učitel"@cs ;
 # 	rdfs:comment "Třída, za níž učitel zodpovídá."@cs ;
@@ -355,22 +381,22 @@ ex:Teaches a rdf:Property ;
 
 
 exTeacher:muk a ex:Teacher ;
-	ex:TeacherID "muk"^^xsd:token ;
+	ex:TeacherID "muk"^^xsd:ID ;
 	foaf:name "Vladimír Mukvald"@cs ;
-	ex:TeacherExperience "5"^^xsd:integer .
-	#TODO: ex:Teaches  needs a ex:Subject instance
+	ex:TeacherExperience "5"^^xsd:integer ;
+	ex:Teaches exSubject:Math .
 
 exTeacher:pel a ex:Teacher ;
-	ex:TeacherID "pel"^^xsd:token ;
+	ex:TeacherID "pel"^^xsd:ID ;
 	foaf:name "Jaroslav Pelikán"@cs ;
-	ex:TeacherExperience "3"^^xsd:integer .
-	#TODO: ex:Teaches  needs a ex:Subject instance
+	ex:TeacherExperience "3"^^xsd:integer ;
+	ex:Teaches exSubject:Math, exSubject:Physics .
 
 exTeacher:svo a ex:Teacher ;
-	ex:TeacherID "svo"^^xsd:token ;
+	ex:TeacherID "svo"^^xsd:ID ;
 	foaf:name "Patrik Svoboda"@cs ;
-	ex:TeacherExperience "2"^^xsd:integer .
-	#TODO: ex:Teaches  needs a ex:Subject instance
+	ex:TeacherExperience "2"^^xsd:integer ;
+	ex:Teaches exSubject:English .
 
 
 # Žák
