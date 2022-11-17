@@ -165,4 +165,27 @@ CREATE
 (kliji)-[:BelongsTo]->(_6B),
 (novpa)-[:BelongsTo]->(_4C);
 
+//Hodina vazby
+
+CREATE
+(TH0855S6)-[:TakesTime]->(TH0855),
+(TH0855S6)-[:TakesPlace]->(S6),
+(TH0855S6)-[:IsTaught]->(Math),
+
+(MO0800S7)-[:TakesTime]->(MO0800),
+(MO0800S7)-[:TakesPlace]->(S7),
+(MO0800S7)-[:IsTaught]->(English),
+
+(FR1000S9)-[:TakesTime]->(FR1000),
+(FR1000S9)-[:TakesPlace]->(S9),
+(FR1000S9)-[:IsTaught]->(English),
+
+(FR1000S6)-[:TakesTime]->(FR1000),
+(FR1000S6)-[:TakesPlace]->(S6),
+(FR1000S6)-[:IsTaught]->(Physics),
+
+(TH0855S7)-[:TakesTime]->(TH0855),
+(TH0855S7)-[:TakesPlace]->(S7),
+(TH0855S7)-[:IsTaught]->(Math);
+
 MATCH (n) RETURN n;
