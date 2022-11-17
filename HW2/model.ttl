@@ -52,22 +52,23 @@ ex:BelongingClass a rdf:Property ;
 	rdfs:domain ex:Timetable ;
 	rdfs:range  ex:Class .
 
-exTimetable:Timetable1 a ex:Timetable ;
+
+exTimetable:20216A15 a ex:Timetable ;
 	ex:AcademicalYear "2020/2021" ;
 	ex:TimetableVersion 1.5 ;
-	ex:PlannedLesson exLesson:Lesson1 ;
+	ex:PlannedLesson exLesson:TH0855S6 ;
 	ex:BelongingClass exClass:6A .
 
-exTimetable:Timetable2 a ex:Timetable ;
+exTimetable:21226B10 a ex:Timetable ;
 	ex:AcademicalYear "2021/2022" ;
 	ex:TimetableVersion 1.0 ;
-	ex:PlannedLesson exLesson:Lesson2, exLesson:Lesson4 ;
+	ex:PlannedLesson exLesson:MO0800S7, exLesson:FR1000S6 ;
 	ex:BelongingClass exClass:6B .
 
-exTimetable:Timetable3 a ex:Timetable ;
+exTimetable:22234C20 a ex:Timetable ;
 	ex:AcademicalYear "2022/2023" ;
 	ex:TimetableVersion 2.0 ;
-	ex:PlannedLesson exLesson:Lesson3 ;
+	ex:PlannedLesson exLesson:FR1000S9 ;
 	ex:BelongingClass exClass:4C .
 
 # Třída
@@ -169,7 +170,6 @@ ex:IsTaught a rdf:Property ;
 	rdfs:comment "Danou hodinu se vyučuje daný předmět."@cs ;
 	rdfs:domain ex:Lesson ;
 	rdfs:range  ex:Subject .
-
 
 exLesson:TH0855S6 a ex:Lesson ;
 	ex:LessonID "TH0855S6"^^xsd:ID ;
