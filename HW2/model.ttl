@@ -5,16 +5,8 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix dbpedia:   <http://dbpedia.org/ontology/> .
 
-#custom prefixes
+# Custom prefixes
 @prefix ex: <http://example.org/vocabulary/> .
-@prefix exClass: <http://example.org/data/classes/> .
-@prefix exTeacher: <http://example.org/data/teachers/> .
-@prefix exLesson: <http://example.org/data/lessons/> . 
-@prefix exClassroom: <http://example.org/data/classrooms/> .
-@prefix exSubject: <http://example.org/data/subjects/> .
-@prefix exStudent: <http://example.org/data/students/> .
-@prefix exTimeSlot: <http://example.org/data/timeslots/> . 
-@prefix exTimetable: <http://example.org/data/timetables/> .
 
 # Třídní rozvrh
 
@@ -27,7 +19,11 @@ ex:AcademicalYear a rdf:Property ;
 	rdfs:label "Akademický rok"@cs ;
 	rdfs:comment "Roky, v kterých je daný rozvrh platný."@cs ;
 	rdfs:domain ex:Timetable ;
+<<<<<<< HEAD
 	rdfs:range  xsd:string . # TODO 2022/2023 blanknode? rozepsat? ex:AcademicalYearsList
+=======
+	rdfs:range  xsd:string .
+>>>>>>> 0043ab53470bd99e971d19f2a7799b1ba871a846
 
 # [Verze rozvrhu]
 ex:TimetableVersion a rdf:Property ;
@@ -50,24 +46,6 @@ ex:BelongingClass a rdf:Property ;
 	rdfs:domain ex:Timetable ;
 	rdfs:range  ex:Class .
 
-
-exTimetable:20216A15 a ex:Timetable ;
-	ex:AcademicalYear "2020/2021" ;
-	ex:TimetableVersion 1.5 ;
-	ex:PlannedLesson exLesson:TH0855S6 ;
-	ex:BelongingClass exClass:6A .
-
-exTimetable:21226B10 a ex:Timetable ;
-	ex:AcademicalYear "2021/2022" ;
-	ex:TimetableVersion 1.0 ;
-	ex:PlannedLesson exLesson:MO0800S7, exLesson:FR1000S6 ;
-	ex:BelongingClass exClass:6B .
-
-exTimetable:22234C20 a ex:Timetable ;
-	ex:AcademicalYear "2022/2023" ;
-	ex:TimetableVersion 2.0 ;
-	ex:PlannedLesson exLesson:FR1000S9 ;
-	ex:BelongingClass exClass:4C .
 
 # Třída
 
@@ -95,22 +73,6 @@ ex:ClassTeacher a rdf:Property ;
 	rdfs:comment "Učitel, který za třídu zodpovídá."@cs ;
 	rdfs:domain ex:Class ;
 	rdfs:range  ex:Teacher .
-
-exClass:6A a ex:Class ;
-	ex:ClassCode "A" ;
-	ex:ClassYear 6 ;
-	ex:ClassTeacher exTeacher:muk .
-
-exClass:6B a ex:Class ;
-	ex:ClassCode "B" ;
-	ex:ClassYear 6 ;
-	ex:ClassTeacher exTeacher:pel .
-
-
-exClass:4C a ex:Class ;
-	ex:ClassCode "C" ;
-	ex:ClassYear 4 ;
-	ex:ClassTeacher exTeacher:svo .
 
 
 # Hodina
@@ -155,34 +117,6 @@ ex:IsTaught a rdf:Property ;
 	rdfs:domain ex:Lesson ;
 	rdfs:range  ex:Subject .
 
-exLesson:TH0855S6 a ex:Lesson ;
-	ex:LessonID "TH0855S6"^^xsd:ID ;
-	ex:LessonUrl "https://zoom.com/howefhowodsdh"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:TH0855 ;
-	ex:TakesPlace exClassroom:S6 ;
-	ex:IsTaught exSubject:Math .
-
-
-exLesson:MO0800S7 a ex:Lesson ;
-	ex:LessonID "MO0800S7"^^xsd:ID ;
-	ex:LessonUrl "https://zoom.com/smkot6xye3"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:MO0800 ;
-	ex:TakesPlace exClassroom:S7 ;
-	ex:IsTaught exSubject:English .
-
-exLesson:FR1000S9 a ex:Lesson ;
-	ex:LessonID "FR1000S9"^^xsd:ID ;
-	ex:LessonUrl "https://zoom.com/xs564972xe2"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:FR1000 ;
-	ex:TakesPlace exClassroom:S9 ;
-	ex:IsTaught exSubject:English .
-
-exLesson:FR1000S6 a ex:Lesson ;
-	ex:LessonID "FR1000S6"^^xsd:ID ;
-	ex:LessonUrl "https://zoom.com/nfiqppodyio"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:FR1000 ;
-	ex:TakesPlace exClassroom:S6 ;
-	ex:IsTaught exSubject:Physics .
 
 # Časový slot
 
@@ -211,21 +145,6 @@ ex:DayOfWeek a rdf:Property ;
 	rdfs:comment "Den v týdnu, který se časový slot odehrává."@cs ;
 	rdfs:domain ex:TimeSlot ;
 	rdfs:range xsd:dayOfWeek .
-	
-exTimeSlot:MO0800 a ex:TimeSlot ;
-	ex:TimeSlotBeginning "08:00:00"^^xsd:time ;
-	ex:TimeSlotEnd "08:45:00"^^xsd:time ;
-	ex:DayOfWeek "Monday"^^time:dayOfWeek .
-
-exTimeSlot:TH0855 a ex:TimeSlot ;
-	ex:TimeSlotBeginning "08:55:00"^^xsd:time ;
-	ex:TimeSlotEnd "09:40:00"^^xsd:time ;
-	ex:DayOfWeek "Thursday"^^time:dayOfWeek .
-
-exTimeSlot:FR1000 a ex:TimeSlot ;
-	ex:TimeSlotBeginning "10:00:00"^^xsd:time ;
-	ex:TimeSlotEnd "10:45:00"^^xsd:time ;
-	ex:DayOfWeek "Friday"^^time:dayOfWeek .
 
 
 # Učebna
@@ -248,17 +167,6 @@ ex:ClassroomCapacity a rdf:Property ;
 	rdfs:domain ex:Classroom ;
 	rdfs:range xsd:integer .
 
-exClassroom:S6 a ex:Classroom ;
-	ex:ClassroomID "S6"^^xsd:ID ;
-	ex:ClassroomCapacity 30 .
-
-exClassroom:S7 a ex:Classroom ;
-	ex:ClassroomID "S7"^^xsd:ID ;
-	ex:ClassroomCapacity 28 .
-
-exClassroom:S9 a ex:Classroom ;
-	ex:ClassroomID "S9"^^xsd:ID ;
-	ex:ClassroomCapacity 30 .
 
 # Předmět
 
@@ -279,19 +187,6 @@ ex:SubjectName a rdf:Property ;
 	rdfs:comment "Pojmenování daného předmětu."@cs ;
 	rdfs:domain ex:Subject ;
 	rdfs:range rdf:langString .
-
-exSubject:Math a ex:Subject ;
-	ex:SubjectID "mt"^^xsd:ID ;
-	ex:SubjectName "Matematika"@cs .
-
-
-exSubject:English a ex:Subject ;
-	ex:SubjectID "en"^^xsd:ID ;
-	ex:SubjectName "Angličtina"@cs .
-
-exSubject:Physics a ex:Subject ;
-	ex:SubjectID "ps"^^xsd:ID ;
-	ex:SubjectName "Fyzika"@cs .
 
 
 # Učitel
@@ -325,24 +220,6 @@ ex:Teaches a rdf:Property ;
 	rdfs:domain ex:Teacher ;
 	rdfs:range ex:Subject .
 
-exTeacher:muk a ex:Teacher ;
-	ex:TeacherID "muk"^^xsd:ID ;
-	foaf:name "Vladimír Mukvald"@cs ;
-	ex:TeacherExperience "5"^^xsd:integer ;
-	ex:Teaches exSubject:Math .
-
-exTeacher:pel a ex:Teacher ;
-	ex:TeacherID "pel"^^xsd:ID ;
-	foaf:name "Jaroslav Pelikán"@cs ;
-	ex:TeacherExperience "3"^^xsd:integer ;
-	ex:Teaches exSubject:Math, exSubject:Physics .
-
-exTeacher:svo a ex:Teacher ;
-	ex:TeacherID "svo"^^xsd:ID ;
-	foaf:name "Patrik Svoboda"@cs ;
-	ex:TeacherExperience "2"^^xsd:integer ;
-	ex:Teaches exSubject:English .
-
 
 # Žák
 
@@ -374,22 +251,3 @@ ex:BelongsTo a rdf:Property ;
 	rdfs:comment "Třída, do které žák dochází."@cs ;
 	rdfs:domain ex:Student ;
 	rdfs:range ex:Class .
-
-exStudent:kovpe a ex:Student ;
-	ex:StudentID "kovpe"^^xsd:ID ;
-	foaf:name "Petr Kovář"@cs ;
-	ex:BelongsTo exClass:6A .
-
-exStudent:kliji a ex:Student ;
-	ex:StudentID "kliji"^^xsd:ID ;
-	foaf:name "Jiří Klimošek"@cs ;
-	ex:Nickname "Limoš"@cs ;
-	ex:BelongsTo exClass:6B .
-
-exStudent:novpa a ex:Student ;
-	ex:StudentID "novpa"^^xsd:ID ;
-	foaf:name "Pavel Novák"@cs ;
-	ex:Nickname
-		"Kajak"@cs ,
-		"Bizon"@cs ;
-	ex:BelongsTo exClass:4C .
