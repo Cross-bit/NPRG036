@@ -17,7 +17,7 @@ ex:AcademicalYear a rdf:Property ;
 	rdfs:label "Akademický rok"@cs ;
 	rdfs:comment "Roky, v kterých je daný rozvrh platný."@cs ;
 	rdfs:domain ex:Timetable ;
-	rdfs:range  xsd:String . # TODO 2022/2023 blanknode? rozepsat? ex:AcademicalYearsList
+	rdfs:range  xsd:string . # TODO 2022/2023 blanknode? rozepsat? ex:AcademicalYearsList
 
 #ex:AcademicalYearsList a time:DateTimeInterval .
 
@@ -46,15 +46,18 @@ ex:BelongingClass a rdf:Property ;
 
 exTimetable:Timetable1 a ex:Timetable ;
 	ex:AcademicalYear "2020/2021" ;
-	ex:TimetableVersion 1.5 .
+	ex:TimetableVersion 1.5 ;
+	ex:PlannedLesson exLesson:Lesson1 .
 
 exTimetable:Timetable2 a ex:Timetable ;
 	ex:AcademicalYear "2021/2022" ;
-	ex:TimetableVersion 1.0 .
+	ex:TimetableVersion 1.0 ;
+	ex:PlannedLesson exLesson:Lesson2 .
 
 exTimetable:Timetable3 a ex:Timetable ;
 	ex:AcademicalYear "2022/2023" ;
-	ex:TimetableVersion 2.0 .
+	ex:TimetableVersion 2.0 ;
+	ex:PlannedLesson exLesson:Lesson3 ;
 
 # TODO vazby
 
