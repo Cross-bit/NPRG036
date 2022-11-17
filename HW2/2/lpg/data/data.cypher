@@ -2,7 +2,6 @@ match ()-[n]-() delete n;
 match (n) delete n;
 
 // Třídní rozvrh
-
 CREATE
 (_20216A15:Timetable {
     academicYear: "2020/2021",
@@ -18,7 +17,6 @@ CREATE
 })
 
 // Třída
-
 CREATE
 (_6A:Class {
     code: "A",
@@ -59,7 +57,6 @@ CREATE
 
 CREATE
 (_20216A15)-[:PlannedLesson]->(TH0855S6);
-// 
 
 // Učebny
 CREATE
@@ -68,7 +65,7 @@ CREATE
 	ClassroomCapacity: 30
 }),
 
-(S7: Classroom {
+(S7:Classroom {
 	ClassroomID: "S7",
 	ClassroomCapacity: 28
 }),
@@ -80,19 +77,58 @@ CREATE
 
 // Předměty
 CREATE
-(Math: Subject {
+(Math:Subject {
 	SubjectID: "mt",
 	SubjectName: "Matematika"
 }),
 
-(English: Subject {
+(English:Subject {
 	SubjectID: "en",
 	SubjectName: "Angličtina"
 }),
 
-(Physics: Subject {
+(Physics:Subject {
 	SubjectID: "ps",
 	SubjectName: "Fyzika"
 })
+
+// Učitel
+CREATE
+(muk:Teacher {
+	ID: "muk",
+	name: "Vladimír Mukvald",
+	experience: 5
+}),
+(pel:Teacher {
+	ID: "pel",
+	name: "Jaroslav Pelikán",
+	experience: 3
+}),
+(svo:Teacher {
+	ID: "svo",
+	name: "Patrik Svoboda",
+	experience: 2
+});
+
+// Žák
+CREATE
+(kovpe:Student {
+	ID: "kovpe",
+	name: "Petr Kovář"
+}),
+(:Student {
+	ID: "",
+	name: ""
+}),
+(kliji:Student {
+	ID: "kliji",
+	name: "Jiří Klimošek",
+	nickname: ["Limoš"]
+}),
+(novpa:Student {
+	ID: "novpa",
+	name: "Pavel Novák",
+	nickname: ["Kajak", "Bizon"]
+});
 
 match (n) return n;
