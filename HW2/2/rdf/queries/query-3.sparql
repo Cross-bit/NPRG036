@@ -1,7 +1,7 @@
 PREFIX ex: <http://example.org/vocabulary/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-# Vybere všechny id lesson1, lesson2 a předmět, který se vyučuje v stejném časovém slotu.
+# Vybere všechny dvojice lesson1 a lesson2, které se odehrávají ve stejném časouvém sloutu a mají stejný předmět, vypíše lesson id a jméno předmětu.
 
 SELECT DISTINCT ?lesson1ID ?lesson2ID ?subjectName
 WHERE {
