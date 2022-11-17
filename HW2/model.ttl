@@ -147,15 +147,6 @@ ex:TakesTime a rdf:Property ;
 	rdfs:domain ex:Lesson ;
 	rdfs:range  ex:TimeSlot .
 
-#naplanovane hodiny..planned lessons  Timeteble-Lesson
-# [Vazba:Naplánováno v třídním rozvrhu]
-ex:Planned a rdf:Property ;
-	rdfs:label "Hodina v třídnm rozvrhu"@cs ;
-	rdfs:comment "Hodina je naplnována v třídním rozvrhu."@cs ;
-	rdfs:domain ex:Lesson ;
-	rdfs:range  ex:Timetable .
-#uz je zapsanej jeden smer u Timetable...
-
 # [Vazba:Koná se v učebně]
 ex:TakesPlace a rdf:Property ;
 	rdfs:label "Hodina se koná v učebně"@cs ;
@@ -177,7 +168,6 @@ exLesson:Lesson1 a ex:Lesson ;
 	ex:LessonID "cing763j"@cs ;
 	ex:LessonUrl "https://zoom.com/howefhowodsdh"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:Timeslot2 ;
-	ex:Planned ...exTimetable:TimeTable2 ;
 	ex:TakesPlace ... ;
 	ex:IsTaught ... .
 
@@ -186,7 +176,6 @@ exLesson:Lesson2 a ex:Lesson ;
 	ex:LessonID "bfi76xat"@cs ;
 	ex:LessonUrl "https://zoom.com/smkot6xye3"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:Timeslot1 ;
-	ex:Planned ...exTimetable:TimeTable1 ;
 	ex:TakesPlace ... ;
 	ex:IsTaught ... .
 
@@ -194,7 +183,13 @@ exLesson:Lesson3 a ex:Lesson ;
 	ex:LessonID "viuxetbx1"@cs ;
 	ex:LessonUrl "https://zoom.com/xs564972xe2"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:Timeslot3 ;
-	ex:Planned ...exTimetable:TimeTable3 ;
+	ex:TakesPlace ... ;
+	ex:IsTaught ... .
+
+exLesson:Lesson4 a ex:Lesson ;
+	ex:LessonID "ncusfzkeldfj"@cs ;
+	ex:LessonUrl "https://zoom.com/nfiqppodyio"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:Timeslot3 ;
 	ex:TakesPlace ... ;
 	ex:IsTaught ... .
 
