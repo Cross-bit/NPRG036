@@ -1,4 +1,8 @@
-//MATCH (studentName:Student)-[:BelongsTo]->(:Class)<-[:BelongingClass]-(:Timetable)-[:PlannedLesson]->(lessonID:Lesson)-[:IsTaught]->(:Subject)<-[:Teaches]-(teacherName:Teacher)  return teacherName, lessonID, studentName
 
-MATCH path = (student:Student)-[:BelongsTo]->(:Class)<-[:BelongingClass]
--(:Timetable)-[:PlannedLesson]->(lesson:Lesson)-[:IsTaught]->(:Subject)<-[:Teaches]-(teacher:Teacher) RETURN student.name, teacher.name, lesson.ID 
+// Vybere všechny jména žáků a učitelů a id hodin, na kterých se mohou potkat.
+
+MATCH 
+    (student:Student)-[:BelongsTo]->(:Class)<-[:BelongingClass]-
+    (:Timetable)-[:PlannedLesson]->(lesson:Lesson)-[:IsTaught]->
+    (:Subject)<-[:Teaches]-(teacher:Teacher)
+ RETURN student.name, teacher.name, lesson.ID 
