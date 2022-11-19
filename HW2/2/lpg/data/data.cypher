@@ -27,7 +27,6 @@ CREATE
 	year: 4
 }),
 
-
 // Hodina
 (TH0855S6:Lesson {
 	url: "https://zoom.com/TH0855S6",

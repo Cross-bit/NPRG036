@@ -77,20 +77,19 @@ ex:Lesson a rdfs:Class ;
 	rdfs:label "Hodina"@cs ;
 	rdfs:comment "Reprezentuje konkrétní vyučovací hodinu v třídním rozvrhu."@cs .
 
-#[Identifikátor hodiny]
+# [Identifikátor hodiny]
 ex:LessonID a rdf:Property ;
 	rdfs:label "Identifikátor hodiny"@cs;
 	rdfs:comment "Třídní rozvrh příslušící dané třídě."@cs ;
 	rdfs:domain ex:Lesson ;
 	rdfs:range  xsd:ID .
 
-#[URL Zoom meetingu pro hodinu]
+# [URL Zoom meetingu pro hodinu]
 ex:LessonUrl a rdf:Property ;
 	rdfs:label "Zoom meeting URL"@cs;
 	rdfs:comment "URL Zoom meetingu pro online výuku hodiny."@cs ;
 	rdfs:domain ex:Lesson ;
 	rdfs:range  xsd:anyURI .
-
 
 # [Vazba:Probíhá v časovém slotu]
 ex:TakesTime a rdf:Property ;

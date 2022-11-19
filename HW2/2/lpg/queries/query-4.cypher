@@ -1,4 +1,4 @@
-// Zobrazí rozvrh pro učitele exTeacher:muk (Vladimír Mukvald). Hodiny jsou ve formátu "<třída> @ <učebna>", nebo "none", pokud má v ten čas volno.
+// Zobrazí rozvrh pro učitele exTeacher:muk (Vladimír Mukvald). Hodiny jsou ve formátu "<třída> @ <učebna>", nebo "none", pokud má v ten čas volno. Seřazené podle dne v týdnu a času.
 
 MATCH
 	(timeSlot:TimeSlot)
