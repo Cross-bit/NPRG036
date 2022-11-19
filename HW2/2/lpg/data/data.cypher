@@ -30,23 +30,23 @@ CREATE
 
 // Hodina
 (TH0855S6:Lesson {
-	Url: "https://zoom.com/TH0855S6",
+	url: "https://zoom.com/TH0855S6",
 	ID: "TH0855S6"
 }),
 (MO0800S7:Lesson {
-	Url: "https://zoom.com/MO0800S7",
+	url: "https://zoom.com/MO0800S7",
 	ID: "MO0800S7"
 }),
 (FR1000S9:Lesson {
-	Url: "https://zoom.com/FR1000S9",
+	url: "https://zoom.com/FR1000S9",
 	ID: "FR1000S9"
 }),
 (FR1000S6:Lesson {
-	Url: "https://zoom.com/FR1000S6",
+	url: "https://zoom.com/FR1000S6",
 	ID: "FR1000S6"
 }),
 (TH0855S7:Lesson {
-	Url: "https://zoom.com/TH0855S7",
+	url: "https://zoom.com/TH0855S7",
 	ID: "TH0855S7"
 }),
 
@@ -85,19 +85,19 @@ CREATE
 
 // Časový slot
 (MO0800:TimeSlot {
-	TimeSlotBeginning: "08:00:00",
-	TimeSlotEnd: "08:45:00",
-	DayOfWeek: "Monday"
+	beginning: "08:00:00",
+	end: "08:45:00",
+	dayOfWeek: "Monday"
 }),
 (TH0855:TimeSlot {
-	TimeSlotBeginning: "08:55:00",
-	TimeSlotEnd: "09:40:00",
-	DayOfWeek: "Thursday"
+	beginning: "08:55:00",
+	end: "09:40:00",
+	dayOfWeek: "Thursday"
 }),
 (FR1000:TimeSlot {
-	TimeSlotBeginning: "10:00:00",
-	TimeSlotEnd: "10:45:00",
-	DayOfWeek: "Friday"
+	beginning: "10:00:00",
+	end: "10:45:00",
+	dayOfWeek: "Friday"
 }),
 
 // Předmět
@@ -116,16 +116,16 @@ CREATE
 
 // Učebna
 (S6:Classroom {
-	ClassroomID: "S6",
-	ClassroomCapacity: 30
+	ID: "S6",
+	capacity: 30
 }),
 (S7:Classroom {
-	ClassroomID: "S7",
-	ClassroomCapacity: 28
+	ID: "S7",
+	capacity: 28
 }),
 (S9:Classroom {
-	ClassroomID: "S9",
-	ClassroomCapacity: 30
+	ID: "S9",
+	capacity: 30
 }),
 
 // Třídní rozvrh vazby
