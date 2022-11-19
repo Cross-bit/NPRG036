@@ -1,4 +1,4 @@
-# Užitečné linky :eyes:
+# Užitečné odkazy :eyes:
 ### [HW2](https://jakub.xn--klmek-0sa.com/nprg036-hw2)
 
 - [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
@@ -7,6 +7,7 @@
 - [RDF turtle](https://www.w3.org/TR/turtle/)
 - [RDF datatypes](https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes)
 - [Boží vysvětlení](https://perso.liris.cnrs.fr/pierre-antoine.champin/2001/rdf-tutorial/rdf-tutorial.html)
+- [Neo4j Console](https://console.neo4j.org/)
 
 
 
@@ -73,6 +74,9 @@ Opět ze zadání: At least 4 non-trivial Cypher queries (co znamená non-trivia
 
 
 $$\color{red}{----------------------------------------------------------}$$
+
 <h1 align="center">21. 11. DEADLINE !!!:skull:</h1>
+
 $$\color{red}{----------------------------------------------------------}$$
+
 <h1 align="center">:raised_hands: :raised_hands: :raised_hands:</h1>
