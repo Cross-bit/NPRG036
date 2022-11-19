@@ -100,7 +100,6 @@ CREATE
 	DayOfWeek: "Friday"
 }),
 
-
 // Předmět
 (Math:Subject {
 	SubjectID: "mt",

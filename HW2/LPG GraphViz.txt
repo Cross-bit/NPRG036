@@ -1,0 +1,95 @@
+//https://dreampuf.github.io/GraphvizOnline
+digraph G {
+    graph [fontname="helvetica"]
+    node [fontname="helvetica"]
+    edge [fontname="helvetica"]
+    
+    // Třídní rozvrh
+    _20216A15 [label=":Timetable\nacademicYear: \"2020/2021\",\lversion: 1.5\l"]
+    _21226B10 [label=":Timetable\nacademicYear: \"2021/2022\",\lversion: 1.0\l"]
+    _22234C20 [label=":Timetable\nacademicYear: \"2022/2023\",\lversion: 2.0\l"]
+    
+    // Třída
+    _6A [label=":Class\ncode: \"A\",\lyear: 6\l"]
+    _6B [label=":Class\ncode: \"B\",\lyear: 6\l"]
+    _4C [label=":Class\ncode: \"C\",\lyear: 4\l"]
+    
+    // Hodina
+    TH0855S6 [label=":Lesson\nLessonUrl: \"https://zoom.com/TH0855S6\",\lLessonID: \"TH0855S6\"\l"]
+    MO0800S7 [label=":Lesson\nLessonUrl: \"https://zoom.com/MO0800S7\",\lLessonID: \"MO0800S7\"\l"]
+    FR1000S9 [label=":Lesson\nLessonUrl: \"https://zoom.com/FR1000S9\",\lLessonID: \"FR1000S9\"\l"]
+    FR1000S6 [label=":Lesson\nLessonUrl: \"https://zoom.com/FR1000S6\",\lLessonID: \"FR1000S6\"\l"]
+    TH0855S7 [label=":Lesson\nLessonUrl: \"https://zoom.com/TH0855S7\",\lLessonID: \"TH0855S7\"\l"]
+    
+    // Žák
+    kovpe [label=":Student\nID: \"kovpe\",\lname: \"Petr Kovář\"\l"]
+    kliji [label=":Student\nID: \"kliji\",\lname: \"Jiří Klimošek\"\lnickname: [\"Limoš\"]\l"]
+    novpa [label=":Student\nID: \"novpa\",\lname: \"Pavel Novák\"\lnickname: [\"Kajak\", \"Bizon\"]\l"]
+    
+    // Učtiel
+    muk [label=":Teacher\nID: \"muk\",\lname: \"Vladimír Mukvald\"\lexperience: 5\l"]
+    pel [label=":Teacher\nID: \"pel\",\lname: \"Jaroslav Pelikán\"\lexperience: 3\l"]
+    svo [label=":Teacher\nID: \"svo\",\lname: \"Patrik Svoboda\"\lexperience: 2\l"]
+    
+    // Časový slot
+    MO0800 [label=":TimeSlot\nTimeSlotBeginning: \"08:00:00\",\lTimeSlotEnd: \"08:45:00\"\lDayOfWeek: \"Monday\"\l"]
+    TH0855 [label=":TimeSlot\nTimeSlotBeginning: \"08:55:00\",\lTimeSlotEnd: \"09:40:00\"\lDayOfWeek: \"Thursday\"\l"]
+    FR1000 [label=":TimeSlot\nTimeSlotBeginning: \"10:00:00\",\lTimeSlotEnd: \"10:45:00\"\lDayOfWeek: \"Friday\"\l"]
+    
+    // Předmět
+    Math [label=":Subject\nSubjectID: \"mt\",\lSubjectName: \"Matematika\"\l"]
+    English [label=":Subject\nSubjectID: \"en\",\lSubjectName: \"Angličtina\"\l"]
+    Physics [label=":Subject\nSubjectID: \"ps\",\lSubjectName: \"Fyzika\"\l"]
+    
+    // Učebna
+    S6 [label=":Classroom\nClassroomID: \"S6\",\lClassroomCapacity: 30\l"]
+    S7 [label=":Classroom\nClassroomID: \"S7\",\lClassroomCapacity: 28\l"]
+    S9 [label=":Classroom\nClassroomID: \"S9\",\lClassroomCapacity: 30\l"]
+    
+    // Třídní rozvrh vazby
+    _20216A15 -> TH0855S6 [label=":PlannedLesson"]
+    _21226B10 -> MO0800S7 [label=":PlannedLesson"]
+    _21226B10 -> FR1000S6 [label=":PlannedLesson"]
+    _22234C20 -> FR1000S9 [label=":PlannedLesson"]
+    
+    _20216A15 -> _6A [label=":BelongingClass"]
+    _21226B10 -> _6B [label=":BelongingClass"]
+    _22234C20 -> _4C [label=":BelongingClass"]
+    
+    // Třída vazby
+    _6A -> muk [label=":ClassTeacher"]
+    _6B -> pel [label=":ClassTeacher"]
+    _4C -> svo [label=":ClassTeacher"]
+    
+    // Student vazby
+    kovpe -> _6A [label=":BelongsTo"]
+    kliji -> _6B [label=":BelongsTo"]
+    novpa -> _4C [label=":BelongsTo"]
+    
+    // Učitel vazby
+    muk -> Math [label=":Teaches"]
+    pel -> Math [label=":Teaches"]
+    pel -> Physics [label=":Teaches"]
+    svo -> English [label=":Teaches"]
+    
+    // Hodina vazby
+    TH0855S6 -> TH0855 [label=":TakesTime"]
+    TH0855S6 -> S6 [label=":TakesPlace"]
+    TH0855S6 -> Math [label=":IsTaught"]
+    
+    MO0800S7 -> MO0800 [label=":TakesTime"]
+    MO0800S7 -> S7 [label=":TakesPlace"]
+    MO0800S7 -> English [label=":IsTaught"]
+    
+    FR1000S9 -> FR1000 [label=":TakesTime"]
+    FR1000S9 -> S9 [label=":TakesPlace"]
+    FR1000S9 -> English [label=":IsTaught"]
+    
+    FR1000S6 -> FR1000 [label=":TakesTime"]
+    FR1000S6 -> S6 [label=":TakesPlace"]
+    FR1000S6 -> Physics [label=":IsTaught"]
+    
+    TH0855S7 -> TH0855 [label=":TakesTime"]
+    TH0855S7 -> S7 [label=":TakesPlace"]
+    TH0855S7 -> Math [label=":IsTaught"]
+}
