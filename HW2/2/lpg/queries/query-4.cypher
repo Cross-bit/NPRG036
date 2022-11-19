@@ -5,7 +5,10 @@ MATCH
 WHERE NOT
 	(:Teacher {ID: "muk"})-[:Teaches]->(:Subject)<-[:IsTaught]-(:Lesson)-[:TakesTime]->(timeSlot)
 RETURN
-	timeSlot.dayOfWeek AS dow, timeSlot.beginning AS f, timeSlot.end AS t, "none" AS lessonDesc
+	timeSlot.dayOfWeek AS DayOfWeek,
+	timeSlot.beginning AS BeginningTime,
+	timeSlot.end AS EndTime,
+	"none" AS LessonDescription
 UNION
 MATCH
 	(timeSlot:TimeSlot),
@@ -13,6 +16,20 @@ MATCH
 	(timeSlot)<-[:TakesTime]-(lesson)-[:IsTaught]->(subject),
 	(class:Class)<-[:BelongingClass]-(:Timetable)-[:PlannedLesson]->(lesson)-[:TakesPlace]->(classroom:Classroom)
 RETURN
-	timeSlot.dayOfWeek AS dow, timeSlot.beginning AS f, timeSlot.end AS t, class.year + "." + class.code + " @ " + classroom.ID AS lessonDesc
+	timeSlot.dayOfWeek AS DayOfWeek,
+	timeSlot.beginning AS BeginningTime,
+	timeSlot.end AS EndTime,
+	class.year + "." + class.code + " @ " + classroom.ID AS LessonDescription
 ORDER BY
-	reduce(ord = -1, w IN [[1, "Monday"], [2, "Tuesday"], [3, "Wednesday"], [4, "Thursday"], [5, "Friday"], [6, "Saturday"], [7, "Sunday"]] | CASE w[1] WHEN timeSlot.dayOfWeek THEN w[0] ELSE ord END), timeSlot.beginning, timeSlot.end
+	CASE timeSlot.dayOfWeek
+		WHEN "Monday" THEN 1
+		WHEN "Tuesday" THEN 2
+		WHEN "Wednesday" THEN 3
+		WHEN "Thursday" THEN 4
+		WHEN "Friday" THEN 5
+		WHEN "Saturday" THEN 6
+		WHEN "Sunday" THEN 7
+		ELSE -1
+	END,
+	BeginningTime,
+	EndTime
