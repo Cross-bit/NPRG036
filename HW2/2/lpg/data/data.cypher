@@ -30,24 +30,24 @@ CREATE
 
 // Hodina
 (TH0855S6:Lesson {
-	LessonUrl: "https://zoom.com/TH0855S6",
-	LessonID: "TH0855S6"
+	Url: "https://zoom.com/TH0855S6",
+	ID: "TH0855S6"
 }),
 (MO0800S7:Lesson {
-	LessonUrl: "https://zoom.com/MO0800S7",
-	LessonID: "MO0800S7"
+	Url: "https://zoom.com/MO0800S7",
+	ID: "MO0800S7"
 }),
 (FR1000S9:Lesson {
-	LessonUrl: "https://zoom.com/FR1000S9",
-	LessonID: "FR1000S9"
+	Url: "https://zoom.com/FR1000S9",
+	ID: "FR1000S9"
 }),
 (FR1000S6:Lesson {
-	LessonUrl: "https://zoom.com/FR1000S6",
-	LessonID: "FR1000S6"
+	Url: "https://zoom.com/FR1000S6",
+	ID: "FR1000S6"
 }),
 (TH0855S7:Lesson {
-	LessonUrl: "https://zoom.com/TH0855S7",
-	LessonID: "TH0855S7"
+	Url: "https://zoom.com/TH0855S7",
+	ID: "TH0855S7"
 }),
 
 // Žák

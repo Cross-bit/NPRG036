@@ -1,4 +1,4 @@
 //MATCH (studentName:Student)-[:BelongsTo]->(:Class)<-[:BelongingClass]-(:Timetable)-[:PlannedLesson]->(lessonID:Lesson)-[:IsTaught]->(:Subject)<-[:Teaches]-(teacherName:Teacher)  return teacherName, lessonID, studentName
 
-MATCH path = (:Student)-[:BelongsTo]->(:Class)<-[:BelongingClass]
--(:Timetable)-[:PlannedLesson]->(:Lesson)-[:IsTaught]->(:Subject)<-[:Teaches]-(:Teacher) RETURN DISTINCT path
+MATCH path = (student:Student)-[:BelongsTo]->(:Class)<-[:BelongingClass]
+-(:Timetable)-[:PlannedLesson]->(lesson:Lesson)-[:IsTaught]->(:Subject)<-[:Teaches]-(teacher:Teacher) RETURN student.name, teacher.name, lesson.ID 
