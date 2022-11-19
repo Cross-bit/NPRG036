@@ -1,0 +1,38 @@
+PREFIX ex: <http://example.org/vocabulary/>
+PREFIX exTeacher: <http://example.org/data/teachers/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+# Zobrazí rozvrh pro učitele exTeacher:muk (Vladimír Mukvald).
+
+SELECT ?dowl ?f ?t ?lessonDesc WHERE {
+	?timeslot a ex:TimeSlot ;
+		ex:DayOfWeek ?dow;
+		ex:TimeSlotBeginning ?f ;
+		ex:TimeSlotEnd ?t .
+	
+	VALUES (?dow ?down ?dowl) {
+		(time:Monday 1 "Mon")
+		(time:Tuesday 2 "Tue")
+		(time:Wednesday 3 "Wed")
+		(time:Thursday 4 "Thu")
+		(time:Friday 5 "Fri")
+		(time:Saturday 6 "Sat")
+		(time:Sunday 7 "Sun")
+	}
+	
+	OPTIONAL {
+		exTeacher:muk ex:Teaches ?subject .
+		
+		?lesson ex:TakesTime ?timeslot ;
+			ex:IsTaught ?subject ;
+			^ex:PlannedLesson/ex:BelongingClass ?class ;
+			ex:TakesPlace/ex:ClassroomID ?classroom .
+		
+		?class ex:ClassYear ?classYear ;
+			ex:ClassCode ?classCode .
+		
+		BIND(CONCAT(STR(?classYear), ".", STR(?classCode), " @ ", STR(?classroom)) AS ?optLessonDesc)
+	}
+	
+	BIND(COALESCE(?optLessonDesc, "none") AS ?lessonDesc)
+} ORDER BY ?down ?f ?t
