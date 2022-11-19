@@ -1,58 +1,56 @@
 // Třídní rozvrh
 CREATE
 (_20216A15:Timetable {
-    academicYear: "2020/2021",
-    version: 1.5
+	academicYear: "2020/2021",
+	version: 1.5
 }),
 (_21226B10:Timetable {
-    academicYear: "2021/2022",
-    version: 1.0
+	academicYear: "2021/2022",
+	version: 1.0
 }),
 (_22234C20:Timetable {
-    academicYear: "2022/2023",
-    version: 2.0
+	academicYear: "2022/2023",
+	version: 2.0
 }),
 
 // Třída
-
 (_6A:Class {
-    code: "A",
-    year: 6
+	code: "A",
+	year: 6
 }),
 (_6B:Class {
-    code: "B",
-    year: 6
+	code: "B",
+	year: 6
 }),
 (_4C:Class {
-    code: "C",
-    year: 4
+	code: "C",
+	year: 4
 }),
 
 
-// Hodiny
-
+// Hodina
 (TH0855S6:Lesson {
-    LessonUrl: "https://zoom.com/TH0855S6",
-    LessonID: "TH0855S6"
+	LessonUrl: "https://zoom.com/TH0855S6",
+	LessonID: "TH0855S6"
 }),
 (MO0800S7:Lesson {
-    LessonUrl: "https://zoom.com/MO0800S7",
-    LessonID: "MO0800S7"
+	LessonUrl: "https://zoom.com/MO0800S7",
+	LessonID: "MO0800S7"
 }),
 (FR1000S9:Lesson {
-    LessonUrl: "https://zoom.com/FR1000S9",
-    LessonID: "FR1000S9"
+	LessonUrl: "https://zoom.com/FR1000S9",
+	LessonID: "FR1000S9"
 }),
 (FR1000S6:Lesson {
-    LessonUrl: "https://zoom.com/FR1000S6",
-    LessonID: "FR1000S6"
+	LessonUrl: "https://zoom.com/FR1000S6",
+	LessonID: "FR1000S6"
 }),
 (TH0855S7:Lesson {
-    LessonUrl: "https://zoom.com/TH0855S7",
-    LessonID: "TH0855S7"
+	LessonUrl: "https://zoom.com/TH0855S7",
+	LessonID: "TH0855S7"
 }),
 
-// žák
+// Žák
 (kovpe:Student {
 	ID: "kovpe",
 	name: "Petr Kovář"
@@ -68,8 +66,7 @@ CREATE
 	nickname: ["Kajak", "Bizon"]
 }),
 
-// učtielé
-
+// Učtiel
 (muk:Teacher {
 	ID: "muk",
 	name: "Vladimír Mukvald",
@@ -86,8 +83,7 @@ CREATE
 	experience: 2
 }),
 
-//Časové sloty
-
+// Časový slot
 (MO0800:TimeSlot {
 	TimeSlotBeginning: "08:00:00",
 	TimeSlotEnd: "08:45:00",
@@ -105,39 +101,35 @@ CREATE
 }),
 
 
-// Předměty
+// Předmět
 (Math:Subject {
 	SubjectID: "mt",
 	SubjectName: "Matematika"
 }),
-
 (English:Subject {
 	SubjectID: "en",
 	SubjectName: "Angličtina"
 }),
-
 (Physics:Subject {
 	SubjectID: "ps",
 	SubjectName: "Fyzika"
 }),
 
-// Učebny
-
+// Učebna
 (S6:Classroom {
-    ClassroomID: "S6",
-    ClassroomCapacity: 30
+	ClassroomID: "S6",
+	ClassroomCapacity: 30
 }),
 (S7:Classroom {
 	ClassroomID: "S7",
 	ClassroomCapacity: 28
 }),
 (S9:Classroom {
-    ClassroomID: "S9",
-    ClassroomCapacity: 30
+	ClassroomID: "S9",
+	ClassroomCapacity: 30
 }),
 
-// Třídní rozvrh
-
+// Třídní rozvrh vazby
 (_20216A15)-[:PlannedLesson]->(TH0855S6),
 (_21226B10)-[:PlannedLesson]->(MO0800S7),
 (_21226B10)-[:PlannedLesson]->(FR1000S6),
@@ -147,17 +139,15 @@ CREATE
 (_21226B10)-[:BelongingClass]->(_6B),
 (_22234C20)-[:BelongingClass]->(_4C),
 
-// Student vazby
-
-(kovpe)-[:BelongsTo]->(_6A),
-(kliji)-[:BelongsTo]->(_6B),
-(novpa)-[:BelongsTo]->(_4C),
-
-// Učitel vazby
-
+// Třída vazby
 (_6A)-[:ClassTeacher]->(muk),
 (_6B)-[:ClassTeacher]->(pel),
 (_4C)-[:ClassTeacher]->(svo),
+
+// Student vazby
+(kovpe)-[:BelongsTo]->(_6A),
+(kliji)-[:BelongsTo]->(_6B),
+(novpa)-[:BelongsTo]->(_4C),
 
 // Učitel vazby
 (muk)-[:Teaches]->(Math),
@@ -165,7 +155,7 @@ CREATE
 (pel)-[:Teaches]->(Physics),
 (svo)-[:Teaches]->(English),
 
-//Hodina vazby
+// Hodina vazby
 (TH0855S6)-[:TakesTime]->(TH0855),
 (TH0855S6)-[:TakesPlace]->(S6),
 (TH0855S6)-[:IsTaught]->(Math),
