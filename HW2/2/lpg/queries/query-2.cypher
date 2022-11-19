@@ -1,2 +1,2 @@
 MATCH path = 
-(class:Class)<-[:BelongingClass]-(:Timetable)-[:PlannedLesson]->(:Lesson)-[:IsTaught]->(:Subject)<-[:Teaches]-(pel:Teacher {name: "Jaroslav Pelikán"})<-[:ClassTeacher]-(class:Class) RETURN path
+(class:Class)<-[:BelongingClass]-(:Timetable)-[:PlannedLesson]->(:Lesson)-[:IsTaught]->(subject:Subject)<-[:Teaches]-(teacher:Teacher)<-[:ClassTeacher]-(class:Class) RETURN teacher.name, class.year + "." + class.code, subject.name

@@ -102,16 +102,16 @@ CREATE
 
 // Předmět
 (Math:Subject {
-	SubjectID: "mt",
-	SubjectName: "Matematika"
+	ID: "mt",
+	name: "Matematika"
 }),
 (English:Subject {
-	SubjectID: "en",
-	SubjectName: "Angličtina"
+	ID: "en",
+	name: "Angličtina"
 }),
 (Physics:Subject {
-	SubjectID: "ps",
-	SubjectName: "Fyzika"
+	ID: "ps",
+	name: "Fyzika"
 }),
 
 // Učebna
