@@ -2,9 +2,10 @@ PREFIX ex: <http://example.org/vocabulary/>
 PREFIX exTeacher: <http://example.org/data/teachers/>
 PREFIX time: <http://www.w3.org/2006/time#>
 
-# Zobrazí rozvrh pro učitele exTeacher:muk (Vladimír Mukvald).
+# Zobrazí rozvrh pro učitele exTeacher:muk (Vladimír Mukvald). Hodiny jsou ve formátu "<třída> @ <učebna>", nebo "none", pokud má v ten čas volno.
 
-SELECT ?dowl ?f ?t ?lessonDesc WHERE {
+SELECT ?dowl ?f ?t ?lessonDesc
+WHERE {
 	?timeslot a ex:TimeSlot ;
 		ex:DayOfWeek ?dow;
 		ex:TimeSlotBeginning ?f ;
@@ -35,4 +36,5 @@ SELECT ?dowl ?f ?t ?lessonDesc WHERE {
 	}
 	
 	BIND(COALESCE(?optLessonDesc, "none") AS ?lessonDesc)
-} ORDER BY ?down ?f ?t
+}
+ORDER BY ?down ?f ?t

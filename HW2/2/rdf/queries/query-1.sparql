@@ -5,13 +5,13 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 SELECT DISTINCT ?teacherName ?studentName ?lessonID
 WHERE {
-  	?student a ex:Student ;
-  		foaf:name ?studentName .
-  	?teacher a ex:Teacher ;
-  		foaf:name ?teacherName .
-  	?lesson a ex:Lesson ;
-    	ex:LessonID ?lessonID .
-  
-  	?student ex:BelongsTo/^ex:BelongingClass/ex:PlannedLesson ?lesson .
+	?student a ex:Student ;
+		foaf:name ?studentName .
+	?teacher a ex:Teacher ;
+		foaf:name ?teacherName .
+	?lesson a ex:Lesson ;
+	ex:LessonID ?lessonID .
+	
+	?student ex:BelongsTo/^ex:BelongingClass/ex:PlannedLesson ?lesson .
 	?lesson ex:IsTaught/^ex:Teaches ?teacher .
 }

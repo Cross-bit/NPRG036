@@ -5,18 +5,19 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 SELECT DISTINCT ?classTeacherName ?classID ?SubjectName
 WHERE {
-  	?class a ex:Class ;
-  		ex:ClassCode ?classCode ;
-  		ex:ClassYear ?classYear .
-  
-  	BIND(CONCAT(STR(?classYear), ".", STR(?classCode)) AS ?classID)
-  
-  	?teacher a ex:Teacher ;
-  		foaf:name ?classTeacherName .
-  	?subject a ex:Subject ;
-    	ex:SubjectName ?SubjectName .
-  
-  	?class ex:ClassTeacher ?teacher ;
-    ^ex:BelongingClass/ex:PlannedLesson/ex:IsTaught ?subject .
-  	?teacher ex:Teaches ?subject .   
+	?class a ex:Class ;
+		ex:ClassCode ?classCode ;
+		ex:ClassYear ?classYear .
+	
+	BIND(CONCAT(STR(?classYear), ".", STR(?classCode)) AS ?classID)
+	
+	?teacher a ex:Teacher ;
+		foaf:name ?classTeacherName .
+	?subject a ex:Subject ;
+		ex:SubjectName ?SubjectName .
+	
+	?class ex:ClassTeacher ?teacher ;
+		^ex:BelongingClass/ex:PlannedLesson/ex:IsTaught ?subject .
+	
+	?teacher ex:Teaches ?subject .   
 }

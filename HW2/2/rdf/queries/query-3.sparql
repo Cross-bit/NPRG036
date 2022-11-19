@@ -5,18 +5,18 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 SELECT DISTINCT ?lesson1ID ?lesson2ID ?subjectName
 WHERE {
-  	?lesson1 a ex:Lesson ;
-  		ex:TakesTime ?timeslot ;
-  		ex:IsTaught ?subject ;
-    	ex:LessonID ?lesson1ID .
-  
-  	?lesson2 a ex:Lesson ;
-  		ex:TakesTime ?timeslot ;
-  		ex:IsTaught ?subject ;
-  		ex:LessonID ?lesson2ID .
-  	
-   	?subject a ex:Subject ;
-    	ex:SubjectName ?subjectName . 
-
-    FILTER (STR(?lesson1ID) < STR(?lesson2ID))
+	?lesson1 a ex:Lesson ;
+		ex:TakesTime ?timeslot ;
+		ex:IsTaught ?subject ;
+		ex:LessonID ?lesson1ID .
+	
+	?lesson2 a ex:Lesson ;
+		ex:TakesTime ?timeslot ;
+		ex:IsTaught ?subject ;
+		ex:LessonID ?lesson2ID .
+	
+	?subject a ex:Subject ;
+		ex:SubjectName ?subjectName . 
+	
+	FILTER (STR(?lesson1ID) < STR(?lesson2ID))
 }
