@@ -1,1 +1,447 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="1137.870849609375" height="894.2992553710938" viewBox="-540.26611328125 -414.8330078125 1137.870849609375 894.2992553710938"><title>Neo4j Graph Visualization</title><desc>Created using Neo4j (http://www.neo4j.com/)</desc><g class="layer relationships"><g class="relationship" transform="translate(-471.55420968756164 213.42417933266054) rotate(382.0166101943945)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 46.81283848996955 0.5 L 46.81283848996955 -0.5 L 32.5 -0.5 Z M 108.40268223996955 0.5 L 122.7155207299391 0.5 L 122.7155207299391 3.5 L 129.7155207299391 0 L 122.7155207299391 -3.5 L 122.7155207299391 -0.5 L 108.40268223996955 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="77.60776036496955" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">BelongingClass</text></g><g class="relationship" transform="translate(-471.55420968756164 213.42417933266054) rotate(261.3418748363234)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 44.25045107833748 0.5 L 44.25045107833748 -0.5 L 32.5 -0.5 Z M 105.40670107833748 0.5 L 117.15715215667495 0.5 L 117.15715215667495 3.5 L 124.15715215667495 0 L 117.15715215667495 -3.5 L 117.15715215667495 -0.5 L 105.40670107833748 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="74.82857607833748" y="3" transform="rotate(180 74.82857607833748 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">PlannedLesson</text></g><g class="relationship" transform="translate(35.51675248020084 -42.682405023851025) rotate(220.734591410458)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 88.23370177476907 0.5 L 88.23370177476907 -0.5 L 32.5 -0.5 Z M 149.8235455247691 0.5 L 205.55724729953815 0.5 L 205.55724729953815 3.5 L 212.55724729953815 0 L 205.55724729953815 -3.5 L 205.55724729953815 -0.5 L 149.8235455247691 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="119.02862364976907" y="3" transform="rotate(180 119.02862364976907 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">BelongingClass</text></g><g class="relationship" transform="translate(35.51675248020084 -42.682405023851025) rotate(465.92690824357663)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 88.5381793322506 0.5 L 88.5381793322506 -0.5 L 32.5 -0.5 Z M 149.6944293322506 0.5 L 205.7326086645012 0.5 L 205.7326086645012 3.5 L 212.7326086645012 0 L 205.7326086645012 -3.5 L 205.7326086645012 -0.5 L 149.6944293322506 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="119.1163043322506" y="3" transform="rotate(180 119.1163043322506 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">PlannedLesson</text></g><g class="relationship" transform="translate(35.51675248020084 -42.682405023851025) rotate(287.09997710193335)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 69.75787337114282 0.5 L 69.75787337114282 -0.5 L 32.5 -0.5 Z M 130.9141233711428 0.5 L 168.17199674228564 0.5 L 168.17199674228564 3.5 L 175.17199674228564 0 L 168.17199674228564 -3.5 L 168.17199674228564 -0.5 L 130.9141233711428 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="100.33599837114282" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">PlannedLesson</text></g><g class="relationship" transform="translate(335.22799894583164 187.5692036173157) rotate(311.18349510161374)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 46.28067465107473 0.5 L 46.28067465107473 -0.5 L 32.5 -0.5 Z M 107.87051840107473 0.5 L 121.65119305214947 0.5 L 121.65119305214947 3.5 L 128.65119305214947 0 L 121.65119305214947 -3.5 L 121.65119305214947 -0.5 L 107.87051840107473 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="77.07559652607473" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">BelongingClass</text></g><g class="relationship" transform="translate(335.22799894583164 187.5692036173157) rotate(227.6503434750408)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 51.85248570440136 0.5 L 51.85248570440136 -0.5 L 32.5 -0.5 Z M 113.00873570440136 0.5 L 132.36122140880272 0.5 L 132.36122140880272 3.5 L 139.36122140880272 0 L 132.36122140880272 -3.5 L 132.36122140880272 -0.5 L 113.00873570440136 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="82.43061070440136" y="3" transform="rotate(180 82.43061070440136 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">PlannedLesson</text></g><g class="relationship" transform="translate(-321.1682207378191 274.23478279367896) rotate(285.92060049648126)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 79.87454629113182 0.5 L 79.87454629113182 -0.5 L 32.5 -0.5 Z M 134.33939004113182 0.5 L 181.71393633226364 0.5 L 181.71393633226364 3.5 L 188.71393633226364 0 L 181.71393633226364 -3.5 L 181.71393633226364 -0.5 L 134.33939004113182 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="107.10696816613182" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">ClassTeacher</text></g><g class="relationship" transform="translate(-150.17304961512656 -202.59598121994873) rotate(471.14462267238525)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 52.86159317546331 0.5 L 52.86159317546331 -0.5 L 32.5 -0.5 Z M 107.32643692546331 0.5 L 127.68803010092662 0.5 L 127.68803010092662 3.5 L 134.68803010092662 0 L 127.68803010092662 -3.5 L 127.68803010092662 -0.5 L 107.32643692546331 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="80.09401505046331" y="3" transform="rotate(180 80.09401505046331 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">ClassTeacher</text></g><g class="relationship" transform="translate(441.34165829425524 66.28607073471797) rotate(262.1743108812715)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 51.887971268150835 0.5 L 51.887971268150835 -0.5 L 32.5 -0.5 Z M 106.35281501815084 0.5 L 125.74078628630167 0.5 L 125.74078628630167 3.5 L 132.74078628630167 0 L 125.74078628630167 -3.5 L 125.74078628630167 -0.5 L 106.35281501815084 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="79.12039314315084" y="3" transform="rotate(180 79.12039314315084 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">ClassTeacher</text></g><g class="relationship" transform="translate(-496.2661541225442 51.1377337913521) rotate(321.9656988075204)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 78.54901155752833 0.5 L 78.54901155752833 -0.5 L 40 -0.5 Z M 114.79119905752833 0.5 L 153.34021061505666 0.5 L 153.34021061505666 3.5 L 160.34021061505666 0 L 153.34021061505666 -3.5 L 153.34021061505666 -0.5 L 114.79119905752833 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="96.67010530752833" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">IsTaught</text></g><g class="relationship" transform="translate(-496.2661541225442 51.1377337913521) rotate(381.6432562931227)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 139.80227396258917 0.5 L 139.80227396258917 -0.5 L 40 -0.5 Z M 186.71243021258917 0.5 L 286.51470417517834 0.5 L 286.51470417517834 3.5 L 293.51470417517834 0 L 286.51470417517834 -3.5 L 286.51470417517834 -0.5 L 186.71243021258917 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="163.25735208758917" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesPlace</text></g><g class="relationship" transform="translate(-496.2661541225442 51.1377337913521) rotate(274.0337010011615)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 96.01261518582746 0.5 L 96.01261518582746 -0.5 L 40 -0.5 Z M 140.39152143582746 0.5 L 196.4041366216549 0.5 L 196.4041366216549 3.5 L 203.4041366216549 0 L 196.4041366216549 -3.5 L 196.4041366216549 -0.5 L 140.39152143582746 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="118.20206831082746" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesTime</text></g><g class="relationship" transform="translate(98.7859141918939 -248.342321775662) rotate(201.24510267418918)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 82.53943945057883 0.5 L 82.53943945057883 -0.5 L 40 -0.5 Z M 129.4495957005788 0.5 L 171.98903515115765 0.5 L 171.98903515115765 3.5 L 178.98903515115765 0 L 171.98903515115765 -3.5 L 171.98903515115765 -0.5 L 129.4495957005788 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="105.99451757557883" y="3" transform="rotate(180 105.99451757557883 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesPlace</text></g><g class="relationship" transform="translate(98.7859141918939 -248.342321775662) rotate(301.6595204175269)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 62.575098947921504 0.5 L 62.575098947921504 -0.5 L 40 -0.5 Z M 106.9540051979215 0.5 L 129.529104145843 0.5 L 129.529104145843 3.5 L 136.529104145843 0 L 129.529104145843 -3.5 L 129.529104145843 -0.5 L 106.9540051979215 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="84.7645520729215" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesTime</text></g><g class="relationship" transform="translate(98.7859141918939 -248.342321775662) rotate(389.5102889442508)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 79.97088019083222 0.5 L 79.97088019083222 -0.5 L 40 -0.5 Z M 116.21306769083222 0.5 L 156.18394788166444 0.5 L 156.18394788166444 3.5 L 163.18394788166444 0 L 156.18394788166444 -3.5 L 156.18394788166444 -0.5 L 116.21306769083222 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="98.09197394083222" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">IsTaught</text></g><g class="relationship" transform="translate(214.40072444013185 55.012734590784135) rotate(472.3695970534201)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 71.59006916875417 0.5 L 71.59006916875417 -0.5 L 40 -0.5 Z M 115.96897541875417 0.5 L 147.55904458750834 0.5 L 147.55904458750834 3.5 L 154.55904458750834 0 L 147.55904458750834 -3.5 L 147.55904458750834 -0.5 L 115.96897541875417 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="93.77952229375417" y="3" transform="rotate(180 93.77952229375417 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesTime</text></g><g class="relationship" transform="translate(214.40072444013185 55.012734590784135) rotate(284.79999664581294)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 89.16245884804135 0.5 L 89.16245884804135 -0.5 L 40 -0.5 Z M 125.40464634804135 0.5 L 174.5671051960827 0.5 L 174.5671051960827 3.5 L 181.5671051960827 0 L 174.5671051960827 -3.5 L 174.5671051960827 -0.5 L 125.40464634804135 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="107.28355259804135" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">IsTaught</text></g><g class="relationship" transform="translate(214.40072444013185 55.012734590784135) rotate(513.168242400024)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 44.74745090811314 0.5 L 44.74745090811314 -0.5 L 40 -0.5 Z M 91.65760715811314 0.5 L 96.40505806622627 0.5 L 96.40505806622627 3.5 L 103.40505806622627 0 L 96.40505806622627 -3.5 L 96.40505806622627 -0.5 L 91.65760715811314 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="68.20252903311314" y="3" transform="rotate(180 68.20252903311314 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesPlace</text></g><g class="relationship" transform="translate(-33.835819557628746 200.34844123666292) rotate(366.56732511293546)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 72.35468956778934 0.5 L 72.35468956778934 -0.5 L 40 -0.5 Z M 116.73359581778934 0.5 L 149.08828538557867 0.5 L 149.08828538557867 3.5 L 156.08828538557867 0 L 149.08828538557867 -3.5 L 149.08828538557867 -0.5 L 116.73359581778934 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="94.54414269278934" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesTime</text></g><g class="relationship" transform="translate(-33.835819557628746 200.34844123666292) rotate(247.093100380264)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 67.18886839291523 0.5 L 67.18886839291523 -0.5 L 40 -0.5 Z M 103.43105589291523 0.5 L 130.61992428583045 0.5 L 130.61992428583045 3.5 L 137.61992428583045 0 L 130.61992428583045 -3.5 L 130.61992428583045 -0.5 L 103.43105589291523 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="85.30996214291523" y="3" transform="rotate(180 85.30996214291523 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">IsTaught</text></g><g class="relationship" transform="translate(-33.835819557628746 200.34844123666292) rotate(190.29998234469696)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 57.800428730251 0.5 L 57.800428730251 -0.5 L 40 -0.5 Z M 104.710584980251 0.5 L 122.511013710502 0.5 L 122.511013710502 3.5 L 129.511013710502 0 L 122.511013710502 -3.5 L 122.511013710502 -0.5 L 104.710584980251 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="81.255506855251" y="3" transform="rotate(180 81.255506855251 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesPlace</text></g><g class="relationship" transform="translate(-313.8926329807805 -291.6230696456906) rotate(505.35449314617347)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 82.88618185602407 0.5 L 82.88618185602407 -0.5 L 40 -0.5 Z M 127.26508810602407 0.5 L 170.15126996204813 0.5 L 170.15126996204813 3.5 L 177.15126996204813 0 L 170.15126996204813 -3.5 L 170.15126996204813 -0.5 L 127.26508810602407 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="105.07563498102407" y="3" transform="rotate(180 105.07563498102407 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesTime</text></g><g class="relationship" transform="translate(-313.8926329807805 -291.6230696456906) rotate(351.20435338860966)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 85.85878821126876 0.5 L 85.85878821126876 -0.5 L 40 -0.5 Z M 132.76894446126875 0.5 L 178.62773267253752 0.5 L 178.62773267253752 3.5 L 185.62773267253752 0 L 178.62773267253752 -3.5 L 178.62773267253752 -0.5 L 132.76894446126875 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="109.31386633626876" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">TakesPlace</text></g><g class="relationship" transform="translate(-313.8926329807805 -291.6230696456906) rotate(457.7517110714942)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 40 0.5 L 95.13434584789991 0.5 L 95.13434584789991 -0.5 L 40 -0.5 Z M 131.3765333478999 0.5 L 186.51087919579982 0.5 L 186.51087919579982 3.5 L 193.51087919579982 0 L 186.51087919579982 -3.5 L 186.51087919579982 -0.5 L 131.3765333478999 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="113.25543959789991" y="3" transform="rotate(180 113.25543959789991 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">IsTaught</text></g><g class="relationship" transform="translate(-229.15931904407464 408.9662266493169) rotate(235.67059948237898)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 56.39573765107424 0.5 L 56.39573765107424 -0.5 L 32.5 -0.5 Z M 99.75511265107424 0.5 L 123.65085030214848 0.5 L 123.65085030214848 3.5 L 130.65085030214848 0 L 123.65085030214848 -3.5 L 123.65085030214848 -0.5 L 99.75511265107424 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="78.07542515107424" y="3" transform="rotate(180 78.07542515107424 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">BelongsTo</text></g><g class="relationship" transform="translate(-1.276384976178548 -208.11009051306866) rotate(537.8791272476058)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 49.3196785072014 0.5 L 49.3196785072014 -0.5 L 32.5 -0.5 Z M 92.6790535072014 0.5 L 109.4987320144028 0.5 L 109.4987320144028 3.5 L 116.4987320144028 0 L 109.4987320144028 -3.5 L 109.4987320144028 -0.5 L 92.6790535072014 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="70.9993660072014" y="3" transform="rotate(180 70.9993660072014 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">BelongsTo</text></g><g class="relationship" transform="translate(565.1047468325779 -28.644971744895113) rotate(502.5104083459511)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 52.809422173740344 0.5 L 52.809422173740344 -0.5 L 32.5 -0.5 Z M 96.16879717374034 0.5 L 116.47821934748069 0.5 L 116.47821934748069 3.5 L 123.47821934748069 0 L 116.47821934748069 -3.5 L 116.47821934748069 -0.5 L 96.16879717374034 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="74.48910967374034" y="3" transform="rotate(180 74.48910967374034 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">BelongsTo</text></g><g class="relationship" transform="translate(-260.48813377040574 61.50600553671748) rotate(237.0011822619016)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 55.61736986615591 0.5 L 55.61736986615591 -0.5 L 32.5 -0.5 Z M 91.41424486615591 0.5 L 114.53161473231182 0.5 L 114.53161473231182 3.5 L 121.53161473231182 0 L 114.53161473231182 -3.5 L 114.53161473231182 -0.5 L 91.41424486615591 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="73.51580736615591" y="3" transform="rotate(180 73.51580736615591 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Teaches</text></g><g class="relationship" transform="translate(-210.48166668327215 -46.664239370009405) rotate(399.2761851049636)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 49.928751028420095 0.5 L 49.928751028420095 -0.5 L 32.5 -0.5 Z M 85.7256260284201 0.5 L 103.15437705684019 0.5 L 103.15437705684019 3.5 L 110.15437705684019 0 L 103.15437705684019 -3.5 L 103.15437705684019 -0.5 L 85.7256260284201 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="67.8271885284201" y="3" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Teaches</text></g><g class="relationship" transform="translate(-210.48166668327215 -46.664239370009405) rotate(188.9191295936713)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 46.36870793966759 0.5 L 46.36870793966759 -0.5 L 32.5 -0.5 Z M 82.16558293966759 0.5 L 96.03429087933517 0.5 L 96.03429087933517 3.5 L 103.03429087933517 0 L 96.03429087933517 -3.5 L 96.03429087933517 -0.5 L 82.16558293966759 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="64.26714543966759" y="3" transform="rotate(180 64.26714543966759 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Teaches</text></g><g class="relationship" transform="translate(418.84251080808303 -97.41581017967682) rotate(200.00967080948595)"><path class="b-outline" fill="#A5ABB6" stroke="none" d="M 32.5 0.5 L 58.29169956544641 0.5 L 58.29169956544641 -0.5 L 32.5 -0.5 Z M 94.08857456544641 0.5 L 119.88027413089281 0.5 L 119.88027413089281 3.5 L 126.88027413089281 0 L 119.88027413089281 -3.5 L 119.88027413089281 -0.5 L 94.08857456544641 -0.5 Z"/><text text-anchor="middle" pointer-events="none" font-size="8px" fill="#000000" x="76.19013706544641" y="3" transform="rotate(180 76.19013706544641 0)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Teaches</text></g></g><g class="layer nodes"><g class="node" aria-label="graph-node14" transform="translate(-471.55420968756164,213.42417933266054)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#C990C0" stroke="#b261a5" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> 2020/2021</text></g><g class="node" aria-label="graph-node15" transform="translate(35.51675248020084,-42.682405023851025)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#C990C0" stroke="#b261a5" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> 2021/2022</text></g><g class="node" aria-label="graph-node16" transform="translate(335.22799894583164,187.5692036173157)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#C990C0" stroke="#b261a5" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> 2022/2023</text></g><g class="node" aria-label="graph-node17" transform="translate(-321.1682207378191,274.23478279367896)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#F79767" stroke="#f36924" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> A</text></g><g class="node" aria-label="graph-node18" transform="translate(-150.17304961512656,-202.59598121994873)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#F79767" stroke="#f36924" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> B</text></g><g class="node" aria-label="graph-node19" transform="translate(441.34165829425524,66.28607073471797)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#F79767" stroke="#f36924" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> C</text></g><g class="node" aria-label="graph-node20" transform="translate(-496.2661541225442,51.1377337913521)"><circle class="b-outline" cx="0" cy="0" r="40" fill="#57C7E3" stroke="#23b3d7" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> TH0855S6</text></g><g class="node" aria-label="graph-node21" transform="translate(98.7859141918939,-248.342321775662)"><circle class="b-outline" cx="0" cy="0" r="40" fill="#57C7E3" stroke="#23b3d7" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> MO0800S7</text></g><g class="node" aria-label="graph-node22" transform="translate(214.40072444013185,55.012734590784135)"><circle class="b-outline" cx="0" cy="0" r="40" fill="#57C7E3" stroke="#23b3d7" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> FR1000S9</text></g><g class="node" aria-label="graph-node23" transform="translate(-33.835819557628746,200.34844123666292)"><circle class="b-outline" cx="0" cy="0" r="40" fill="#57C7E3" stroke="#23b3d7" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> FR1000S6</text></g><g class="node" aria-label="graph-node24" transform="translate(-313.8926329807805,-291.6230696456906)"><circle class="b-outline" cx="0" cy="0" r="40" fill="#57C7E3" stroke="#23b3d7" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> TH0855S7</text></g><g class="node selected" aria-label="graph-node25" transform="translate(-229.15931904407464,408.9662266493169)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#4C8EDA" stroke="#2870c2" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Petr Kovář</text></g><g class="node" aria-label="graph-node26" transform="translate(-1.276384976178548,-208.11009051306866)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#4C8EDA" stroke="#2870c2" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Jiří Klimošek</text></g><g class="node" aria-label="graph-node27" transform="translate(565.1047468325779,-28.644971744895113)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#4C8EDA" stroke="#2870c2" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Pavel Novák</text></g><g class="node" aria-label="graph-node28" transform="translate(-260.48813377040574,61.50600553671748)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#ECB5C9" stroke="#da7298" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="0" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Vladimír</text><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="10" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Mukvald</text></g><g class="node" aria-label="graph-node29" transform="translate(-210.48166668327215,-46.664239370009405)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#ECB5C9" stroke="#da7298" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="0" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Jaroslav</text><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="10" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Pelikán</text></g><g class="node" aria-label="graph-node30" transform="translate(418.84251080808303,-97.41581017967682)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#ECB5C9" stroke="#da7298" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="0" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Patrik</text><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="10" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Svoboda</text></g><g class="node" aria-label="graph-node31" transform="translate(183.56776296489116,-385.83301093238714)"><circle class="b-outline" cx="0" cy="0" r="25" fill="#F16667" stroke="#eb2728" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Monday</text></g><g class="node" aria-label="graph-node32" transform="translate(-480.199471173861,-176.70061092900022)"><circle class="b-outline" cx="0" cy="0" r="25" fill="#F16667" stroke="#eb2728" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Thursday</text></g><g class="node" aria-label="graph-node33" transform="translate(146.06419182944293,221.05962195675392)"><circle class="b-outline" cx="0" cy="0" r="25" fill="#F16667" stroke="#eb2728" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Friday</text></g><g class="node" aria-label="graph-node34" transform="translate(-344.3770981784057,-67.67750729520954)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#8DCC93" stroke="#5db665" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Matematika</text></g><g class="node" aria-label="graph-node35" transform="translate(269.0832462599968,-151.95235264484296)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#8DCC93" stroke="#5db665" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Angličtina</text></g><g class="node" aria-label="graph-node69" transform="translate(-100.05242744076256,43.644422527926565)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#8DCC93" stroke="#5db665" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> Fyzika</text></g><g class="node" aria-label="graph-node70" transform="translate(-193.23604085409914,171.38056223006782)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#D9C8AE" stroke="#c0a378" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> S6</text></g><g class="node" aria-label="graph-node71" transform="translate(-98.33008187615808,-324.97714469101373)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#D9C8AE" stroke="#c0a378" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> S7</text></g><g class="node" aria-label="graph-node72" transform="translate(93.12777962036274,116.35650088146417)"><circle class="b-outline" cx="0" cy="0" r="32.5" fill="#D9C8AE" stroke="#c0a378" stroke-width="2px"/><text class="caption" text-anchor="middle" pointer-events="none" x="0" y="5" font-size="10px" fill="#2A2C34" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"> S9</text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ --><!-- Title: G Pages: 1 --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2797pt" height="727pt" viewBox="0.00 0.00 2797.07 727.19">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 723.1855)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-723.1855 2793.0695,-723.1855 2793.0695,4 -4,4"/>
+<!-- _20216A15 -->
+<g id="node1" class="node">
+<title>_20216A15</title>
+<ellipse fill="none" stroke="#000000" cx="516.3327" cy="-506.8622" rx="136.755" ry="41.0911"/>
+<text text-anchor="middle" x="516.3327" y="-519.4622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Timetable</text>
+<text text-anchor="start" x="427.7225" y="-502.6622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">academicYear: "2020/2021",</text>
+<text text-anchor="start" x="427.7225" y="-485.8622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">version: 1.5</text>
+</g>
+<!-- _6A -->
+<g id="node4" class="node">
+<title>_6A</title>
+<ellipse fill="none" stroke="#000000" cx="128.3327" cy="-347.7134" rx="54.8098" ry="41.0911"/>
+<text text-anchor="middle" x="128.3327" y="-360.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Class</text>
+<text text-anchor="start" x="97.686" y="-343.5134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">code: "A",</text>
+<text text-anchor="start" x="97.686" y="-326.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">year: 6</text>
+</g>
+<!-- _20216A15&#45;&gt;_6A -->
+<g id="edge5" class="edge">
+<title>_20216A15-&gt;_6A</title>
+<path fill="none" stroke="#000000" d="M406.251,-482.2969C341.1748,-465.063 258.6077,-438.3522 191.3327,-400.8878 184.211,-396.9218 177.1399,-392.0887 170.4494,-386.9705"/>
+<polygon fill="#000000" stroke="#000000" points="172.1998,-383.8888 162.2032,-380.3788 167.829,-389.3566 172.1998,-383.8888"/>
+<text text-anchor="middle" x="309.8986" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:BelongingClass</text>
+</g>
+<!-- TH0855S6 -->
+<g id="node7" class="node">
+<title>TH0855S6</title>
+<ellipse fill="none" stroke="#000000" cx="808.3327" cy="-347.7134" rx="196.6378" ry="41.0911"/>
+<text text-anchor="middle" x="808.3327" y="-360.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Lesson</text>
+<text text-anchor="start" x="677.3375" y="-343.5134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonUrl: "https://zoom.com/TH0855S6",</text>
+<text text-anchor="start" x="677.3375" y="-326.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonID: "TH0855S6"</text>
+</g>
+<!-- _20216A15&#45;&gt;TH0855S6 -->
+<g id="edge1" class="edge">
+<title>_20216A15-&gt;TH0855S6</title>
+<path fill="none" stroke="#000000" d="M582.9574,-470.5497C626.1951,-446.9839 682.777,-416.145 728.4298,-391.2629"/>
+<polygon fill="#000000" stroke="#000000" points="730.3019,-394.2287 737.4074,-386.3698 726.9519,-388.0823 730.3019,-394.2287"/>
+<text text-anchor="middle" x="720.5213" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:PlannedLesson</text>
+</g>
+<!-- _21226B10 -->
+<g id="node2" class="node">
+<title>_21226B10</title>
+<ellipse fill="none" stroke="#000000" cx="1447.3327" cy="-506.8622" rx="136.755" ry="41.0911"/>
+<text text-anchor="middle" x="1447.3327" y="-519.4622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Timetable</text>
+<text text-anchor="start" x="1358.7225" y="-502.6622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">academicYear: "2021/2022",</text>
+<text text-anchor="start" x="1358.7225" y="-485.8622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">version: 1.0</text>
+</g>
+<!-- _6B -->
+<g id="node5" class="node">
+<title>_6B</title>
+<ellipse fill="none" stroke="#000000" cx="1160.3327" cy="-347.7134" rx="54.8098" ry="41.0911"/>
+<text text-anchor="middle" x="1160.3327" y="-360.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Class</text>
+<text text-anchor="start" x="1129.686" y="-343.5134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">code: "B",</text>
+<text text-anchor="start" x="1129.686" y="-326.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">year: 6</text>
+</g>
+<!-- _21226B10&#45;&gt;_6B -->
+<g id="edge6" class="edge">
+<title>_21226B10-&gt;_6B</title>
+<path fill="none" stroke="#000000" d="M1373.4924,-471.9565C1333.2051,-452.2393 1282.8209,-426.4751 1239.3327,-400.8878 1229.3036,-394.987 1218.8177,-388.3115 1208.8843,-381.7333"/>
+<polygon fill="#000000" stroke="#000000" points="1210.5789,-378.6558 1200.3225,-375.9994 1206.6838,-384.472 1210.5789,-378.6558"/>
+<text text-anchor="middle" x="1350.8986" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:BelongingClass</text>
+</g>
+<!-- MO0800S7 -->
+<g id="node8" class="node">
+<title>MO0800S7</title>
+<ellipse fill="none" stroke="#000000" cx="1447.3327" cy="-347.7134" rx="199.1421" ry="41.0911"/>
+<text text-anchor="middle" x="1447.3327" y="-360.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Lesson</text>
+<text text-anchor="start" x="1314.3915" y="-343.5134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonUrl: "https://zoom.com/MO0800S7",</text>
+<text text-anchor="start" x="1314.3915" y="-326.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonID: "MO0800S7"</text>
+</g>
+<!-- _21226B10&#45;&gt;MO0800S7 -->
+<g id="edge2" class="edge">
+<title>_21226B10-&gt;MO0800S7</title>
+<path fill="none" stroke="#000000" d="M1447.3327,-465.4632C1447.3327,-445.2804 1447.3327,-420.8036 1447.3327,-399.406"/>
+<polygon fill="#000000" stroke="#000000" points="1450.8328,-399.1812 1447.3327,-389.1813 1443.8328,-399.1813 1450.8328,-399.1812"/>
+<text text-anchor="middle" x="1497.5213" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:PlannedLesson</text>
+</g>
+<!-- FR1000S6 -->
+<g id="node10" class="node">
+<title>FR1000S6</title>
+<ellipse fill="none" stroke="#000000" cx="1861.3327" cy="-347.7134" rx="196.6378" ry="41.0911"/>
+<text text-anchor="middle" x="1861.3327" y="-360.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Lesson</text>
+<text text-anchor="start" x="1730.3375" y="-343.5134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonUrl: "https://zoom.com/FR1000S6",</text>
+<text text-anchor="start" x="1730.3375" y="-326.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonID: "FR1000S6"</text>
+</g>
+<!-- _21226B10&#45;&gt;FR1000S6 -->
+<g id="edge3" class="edge">
+<title>_21226B10-&gt;FR1000S6</title>
+<path fill="none" stroke="#000000" d="M1531.8606,-474.3682C1597.024,-449.3183 1687.4721,-414.5484 1757.1176,-387.7755"/>
+<polygon fill="#000000" stroke="#000000" points="1758.7238,-390.9078 1766.802,-384.0526 1756.212,-384.3739 1758.7238,-390.9078"/>
+<text text-anchor="middle" x="1716.5213" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:PlannedLesson</text>
+</g>
+<!-- _22234C20 -->
+<g id="node3" class="node">
+<title>_22234C20</title>
+<ellipse fill="none" stroke="#000000" cx="2357.3327" cy="-666.0111" rx="136.755" ry="41.0911"/>
+<text text-anchor="middle" x="2357.3327" y="-678.6111" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Timetable</text>
+<text text-anchor="start" x="2268.7225" y="-661.8111" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">academicYear: "2022/2023",</text>
+<text text-anchor="start" x="2268.7225" y="-645.0111" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">version: 2.0</text>
+</g>
+<!-- _4C -->
+<g id="node6" class="node">
+<title>_4C</title>
+<ellipse fill="none" stroke="#000000" cx="2655.3327" cy="-506.8622" rx="55.399" ry="41.0911"/>
+<text text-anchor="middle" x="2655.3327" y="-519.4622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Class</text>
+<text text-anchor="start" x="2624.301" y="-502.6622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">code: "C",</text>
+<text text-anchor="start" x="2624.301" y="-485.8622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">year: 4</text>
+</g>
+<!-- _22234C20&#45;&gt;_4C -->
+<g id="edge7" class="edge">
+<title>_22234C20-&gt;_4C</title>
+<path fill="none" stroke="#000000" d="M2424.9535,-629.8977C2478.3018,-601.4067 2551.7278,-562.1931 2601.2255,-535.7585"/>
+<polygon fill="#000000" stroke="#000000" points="2603.0071,-538.775 2610.1791,-530.9768 2599.7094,-532.6004 2603.0071,-538.775"/>
+<text text-anchor="middle" x="2564.8986" y="-582.2367" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:BelongingClass</text>
+</g>
+<!-- FR1000S9 -->
+<g id="node9" class="node">
+<title>FR1000S9</title>
+<ellipse fill="none" stroke="#000000" cx="2331.3327" cy="-347.7134" rx="196.6378" ry="41.0911"/>
+<text text-anchor="middle" x="2331.3327" y="-360.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Lesson</text>
+<text text-anchor="start" x="2200.3375" y="-343.5134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonUrl: "https://zoom.com/FR1000S9",</text>
+<text text-anchor="start" x="2200.3375" y="-326.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonID: "FR1000S9"</text>
+</g>
+<!-- _22234C20&#45;&gt;FR1000S9 -->
+<g id="edge4" class="edge">
+<title>_22234C20-&gt;FR1000S9</title>
+<path fill="none" stroke="#000000" d="M2353.9603,-624.7255C2349.2421,-566.9649 2340.6747,-462.081 2335.5435,-399.263"/>
+<polygon fill="#000000" stroke="#000000" points="2339.0223,-398.86 2334.7197,-389.1782 2332.0455,-399.43 2339.0223,-398.86"/>
+<text text-anchor="middle" x="2398.5213" y="-502.6622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:PlannedLesson</text>
+</g>
+<!-- muk -->
+<g id="node15" class="node">
+<title>muk</title>
+<ellipse fill="none" stroke="#000000" cx="128.3327" cy="-188.5645" rx="128.1656" ry="53.3494"/>
+<text text-anchor="middle" x="128.3327" y="-209.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Teacher</text>
+<text text-anchor="start" x="45.5878" y="-192.7645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ID: "muk",</text>
+<text text-anchor="start" x="45.5878" y="-175.9645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">name: "Vladimír Mukvald"</text>
+<text text-anchor="start" x="45.5878" y="-159.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">experience: 5</text>
+</g>
+<!-- _6A&#45;&gt;muk -->
+<g id="edge8" class="edge">
+<title>_6A-&gt;muk</title>
+<path fill="none" stroke="#000000" d="M128.3327,-306.3143C128.3327,-289.6846 128.3327,-270.1396 128.3327,-251.8039"/>
+<polygon fill="#000000" stroke="#000000" points="131.8328,-251.7679 128.3327,-241.7679 124.8328,-251.768 131.8328,-251.7679"/>
+<text text-anchor="middle" x="173.4477" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:ClassTeacher</text>
+</g>
+<!-- pel -->
+<g id="node16" class="node">
+<title>pel</title>
+<ellipse fill="none" stroke="#000000" cx="1144.3327" cy="-188.5645" rx="121.9836" ry="53.3494"/>
+<text text-anchor="middle" x="1144.3327" y="-209.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Teacher</text>
+<text text-anchor="start" x="1066.2484" y="-192.7645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ID: "pel",</text>
+<text text-anchor="start" x="1066.2484" y="-175.9645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">name: "Jaroslav Pelikán"</text>
+<text text-anchor="start" x="1066.2484" y="-159.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">experience: 3</text>
+</g>
+<!-- _6B&#45;&gt;pel -->
+<g id="edge9" class="edge">
+<title>_6B-&gt;pel</title>
+<path fill="none" stroke="#000000" d="M1156.1706,-306.3143C1154.4988,-289.6846 1152.5338,-270.1396 1150.6904,-251.8039"/>
+<polygon fill="#000000" stroke="#000000" points="1154.1643,-251.3676 1149.6815,-241.7679 1147.1994,-252.0679 1154.1643,-251.3676"/>
+<text text-anchor="middle" x="1197.4477" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:ClassTeacher</text>
+</g>
+<!-- svo -->
+<g id="node17" class="node">
+<title>svo</title>
+<ellipse fill="none" stroke="#000000" cx="2661.3327" cy="-347.7134" rx="115.928" ry="53.3494"/>
+<text text-anchor="middle" x="2661.3327" y="-368.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Teacher</text>
+<text text-anchor="start" x="2587.5107" y="-351.9134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ID: "svo",</text>
+<text text-anchor="start" x="2587.5107" y="-335.1134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">name: "Patrik Svoboda"</text>
+<text text-anchor="start" x="2587.5107" y="-318.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">experience: 2</text>
+</g>
+<!-- _4C&#45;&gt;svo -->
+<g id="edge10" class="edge">
+<title>_4C-&gt;svo</title>
+<path fill="none" stroke="#000000" d="M2656.8934,-465.4632C2657.5204,-448.8334 2658.2572,-429.2885 2658.9485,-410.9527"/>
+<polygon fill="#000000" stroke="#000000" points="2662.4476,-411.0416 2659.3269,-400.9168 2655.4525,-410.7778 2662.4476,-411.0416"/>
+<text text-anchor="middle" x="2703.4477" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:ClassTeacher</text>
+</g>
+<!-- TH0855 -->
+<g id="node19" class="node">
+<title>TH0855</title>
+<ellipse fill="none" stroke="#000000" cx="517.3327" cy="-188.5645" rx="148.3487" ry="53.3494"/>
+<text text-anchor="middle" x="517.3327" y="-209.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TimeSlot</text>
+<text text-anchor="start" x="420.5577" y="-192.7645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">TimeSlotBeginning: "08:55:00",</text>
+<text text-anchor="start" x="420.5577" y="-175.9645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">TimeSlotEnd: "09:40:00"</text>
+<text text-anchor="start" x="420.5577" y="-159.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">DayOfWeek: "Thursday"</text>
+</g>
+<!-- TH0855S6&#45;&gt;TH0855 -->
+<g id="edge18" class="edge">
+<title>TH0855S6-&gt;TH0855</title>
+<path fill="none" stroke="#000000" d="M693.8208,-314.0361C666.7788,-303.8574 638.7101,-291.3624 614.2219,-276.5389 600.0573,-267.9647 586.1056,-257.143 573.3934,-246.0482"/>
+<polygon fill="#000000" stroke="#000000" points="575.4353,-243.1788 565.6477,-239.1225 570.7695,-248.3971 575.4353,-243.1788"/>
+<text text-anchor="middle" x="649.8881" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesTime</text>
+</g>
+<!-- Math -->
+<g id="node21" class="node">
+<title>Math</title>
+<ellipse fill="none" stroke="#000000" cx="497.3327" cy="-41.295" rx="134.3022" ry="41.0911"/>
+<text text-anchor="middle" x="497.3327" y="-53.895" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Subject</text>
+<text text-anchor="start" x="410.2968" y="-37.095" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">SubjectID: "mt",</text>
+<text text-anchor="start" x="410.2968" y="-20.295" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">SubjectName: "Matematika"</text>
+</g>
+<!-- TH0855S6&#45;&gt;Math -->
+<g id="edge20" class="edge">
+<title>TH0855S6-&gt;Math</title>
+<path fill="none" stroke="#000000" d="M763.1054,-307.2907C744.5817,-288.8027 724.2016,-265.6972 709.9779,-241.7389 684.5293,-198.8736 706.5536,-173.428 674.3327,-135.3901 653.3249,-110.5897 624.0882,-91.3614 595.4224,-76.9402"/>
+<polygon fill="#000000" stroke="#000000" points="596.6699,-73.6548 586.1466,-72.4259 593.6067,-79.949 596.6699,-73.6548"/>
+<text text-anchor="middle" x="738.5101" y="-184.3645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:IsTaught</text>
+</g>
+<!-- S6 -->
+<g id="node24" class="node">
+<title>S6</title>
+<ellipse fill="none" stroke="#000000" cx="1397.3327" cy="-188.5645" rx="113.7362" ry="41.0911"/>
+<text text-anchor="middle" x="1397.3327" y="-201.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Classroom</text>
+<text text-anchor="start" x="1324.9926" y="-184.3645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ClassroomID: "S6",</text>
+<text text-anchor="start" x="1324.9926" y="-167.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ClassroomCapacity: 30</text>
+</g>
+<!-- TH0855S6&#45;&gt;S6 -->
+<g id="edge19" class="edge">
+<title>TH0855S6-&gt;S6</title>
+<path fill="none" stroke="#000000" d="M951.5936,-319.4193C997.7011,-310.8077 1049.0821,-301.7286 1096.3327,-294.5389 1162.7136,-284.4383 1182.6702,-297.8823 1246.3327,-276.5389 1278.26,-265.835 1310.8858,-247.8764 1337.6033,-230.9656"/>
+<polygon fill="#000000" stroke="#000000" points="1339.5465,-233.8772 1346.0618,-225.5224 1335.7585,-227.9907 1339.5465,-233.8772"/>
+<text text-anchor="middle" x="1323.8411" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesPlace</text>
+</g>
+<!-- MO0800 -->
+<g id="node18" class="node">
+<title>MO0800</title>
+<ellipse fill="none" stroke="#000000" cx="1677.3327" cy="-188.5645" rx="148.3487" ry="53.3494"/>
+<text text-anchor="middle" x="1677.3327" y="-209.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TimeSlot</text>
+<text text-anchor="start" x="1580.5577" y="-192.7645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">TimeSlotBeginning: "08:00:00",</text>
+<text text-anchor="start" x="1580.5577" y="-175.9645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">TimeSlotEnd: "08:45:00"</text>
+<text text-anchor="start" x="1580.5577" y="-159.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">DayOfWeek: "Monday"</text>
+</g>
+<!-- MO0800S7&#45;&gt;MO0800 -->
+<g id="edge21" class="edge">
+<title>MO0800S7-&gt;MO0800</title>
+<path fill="none" stroke="#000000" d="M1504.7781,-307.9639C1533.7254,-287.9338 1569.228,-263.3677 1600.4884,-241.737"/>
+<polygon fill="#000000" stroke="#000000" points="1602.5277,-244.5822 1608.7594,-236.0139 1598.5446,-238.8259 1602.5277,-244.5822"/>
+<text text-anchor="middle" x="1604.8881" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesTime</text>
+</g>
+<!-- English -->
+<g id="node22" class="node">
+<title>English</title>
+<ellipse fill="none" stroke="#000000" cx="2625.3327" cy="-188.5645" rx="127.0038" ry="41.0911"/>
+<text text-anchor="middle" x="2625.3327" y="-201.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Subject</text>
+<text text-anchor="start" x="2543.3522" y="-184.3645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">SubjectID: "en",</text>
+<text text-anchor="start" x="2543.3522" y="-167.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">SubjectName: "Angličtina"</text>
+</g>
+<!-- MO0800S7&#45;&gt;English -->
+<g id="edge23" class="edge">
+<title>MO0800S7-&gt;English</title>
+<path fill="none" stroke="#000000" d="M1561.4115,-313.7899C1591.6795,-306.1026 1624.5203,-298.9218 1655.3327,-294.5389 1900.5491,-259.6586 1966.731,-308.5946 2212.3327,-276.5389 2245.1928,-272.2501 2252.2495,-264.9387 2284.9779,-259.7389 2375.0245,-245.4326 2400.5636,-262.5503 2489.3327,-241.7389 2506.3549,-237.7482 2524.0757,-232.0486 2540.8833,-225.8504"/>
+<polygon fill="#000000" stroke="#000000" points="2542.5462,-228.9636 2550.6617,-222.1526 2540.0701,-222.4161 2542.5462,-228.9636"/>
+<text text-anchor="middle" x="2313.5101" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:IsTaught</text>
+</g>
+<!-- S7 -->
+<g id="node25" class="node">
+<title>S7</title>
+<ellipse fill="none" stroke="#000000" cx="891.3327" cy="-188.5645" rx="113.7362" ry="41.0911"/>
+<text text-anchor="middle" x="891.3327" y="-201.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Classroom</text>
+<text text-anchor="start" x="818.9926" y="-184.3645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ClassroomID: "S7",</text>
+<text text-anchor="start" x="818.9926" y="-167.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ClassroomCapacity: 28</text>
+</g>
+<!-- MO0800S7&#45;&gt;S7 -->
+<g id="edge22" class="edge">
+<title>MO0800S7-&gt;S7</title>
+<path fill="none" stroke="#000000" d="M1431.2355,-306.0996C1422.2426,-288.676 1409.185,-270.0975 1391.3327,-259.7389 1354.9639,-238.6365 1054.2796,-251.2964 1013.3327,-241.7389 997.681,-238.0856 981.5273,-232.4916 966.3,-226.2811"/>
+<polygon fill="#000000" stroke="#000000" points="967.5261,-222.9999 956.9514,-222.3465 964.8106,-229.4517 967.5261,-222.9999"/>
+<text text-anchor="middle" x="1448.8411" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesPlace</text>
+</g>
+<!-- FR1000 -->
+<g id="node20" class="node">
+<title>FR1000</title>
+<ellipse fill="none" stroke="#000000" cx="2086.3327" cy="-188.5645" rx="148.3487" ry="53.3494"/>
+<text text-anchor="middle" x="2086.3327" y="-209.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TimeSlot</text>
+<text text-anchor="start" x="1989.5577" y="-192.7645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">TimeSlotBeginning: "10:00:00",</text>
+<text text-anchor="start" x="1989.5577" y="-175.9645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">TimeSlotEnd: "10:45:00"</text>
+<text text-anchor="start" x="1989.5577" y="-159.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">DayOfWeek: "Friday"</text>
+</g>
+<!-- FR1000S9&#45;&gt;FR1000 -->
+<g id="edge24" class="edge">
+<title>FR1000S9-&gt;FR1000</title>
+<path fill="none" stroke="#000000" d="M2207.0687,-315.6948C2182.9248,-305.7516 2159.0059,-292.9393 2139.2219,-276.5389 2130.3082,-269.1498 2122.5125,-259.8451 2115.8413,-250.0729"/>
+<polygon fill="#000000" stroke="#000000" points="2118.6193,-247.9216 2110.2684,-241.4014 2112.7305,-251.7062 2118.6193,-247.9216"/>
+<text text-anchor="middle" x="2174.8881" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesTime</text>
+</g>
+<!-- FR1000S9&#45;&gt;English -->
+<g id="edge26" class="edge">
+<title>FR1000S9-&gt;English</title>
+<path fill="none" stroke="#000000" d="M2402.5019,-309.1879C2447.4302,-284.8671 2505.3726,-253.5016 2550.9103,-228.851"/>
+<polygon fill="#000000" stroke="#000000" points="2552.7169,-231.853 2559.8449,-224.0145 2549.3845,-225.6971 2552.7169,-231.853"/>
+<text text-anchor="middle" x="2515.5101" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:IsTaught</text>
+</g>
+<!-- S9 -->
+<g id="node26" class="node">
+<title>S9</title>
+<ellipse fill="none" stroke="#000000" cx="2366.3327" cy="-188.5645" rx="113.7362" ry="41.0911"/>
+<text text-anchor="middle" x="2366.3327" y="-201.1645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Classroom</text>
+<text text-anchor="start" x="2293.9926" y="-184.3645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ClassroomID: "S9",</text>
+<text text-anchor="start" x="2293.9926" y="-167.5645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ClassroomCapacity: 30</text>
+</g>
+<!-- FR1000S9&#45;&gt;S9 -->
+<g id="edge25" class="edge">
+<title>FR1000S9-&gt;S9</title>
+<path fill="none" stroke="#000000" d="M2340.4371,-306.3143C2344.9134,-285.9603 2350.3501,-261.2391 2355.0841,-239.7131"/>
+<polygon fill="#000000" stroke="#000000" points="2358.5441,-240.2747 2357.2738,-229.7563 2351.7075,-238.7711 2358.5441,-240.2747"/>
+<text text-anchor="middle" x="2387.8411" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesPlace</text>
+</g>
+<!-- FR1000S6&#45;&gt;FR1000 -->
+<g id="edge27" class="edge">
+<title>FR1000S6-&gt;FR1000</title>
+<path fill="none" stroke="#000000" d="M1917.5293,-307.9639C1945.7268,-288.019 1980.2827,-263.5767 2010.7683,-242.0133"/>
+<polygon fill="#000000" stroke="#000000" points="2013.1072,-244.646 2019.2502,-236.0139 2009.0649,-238.9312 2013.1072,-244.646"/>
+<text text-anchor="middle" x="2016.8881" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesTime</text>
+</g>
+<!-- Physics -->
+<g id="node23" class="node">
+<title>Physics</title>
+<ellipse fill="none" stroke="#000000" cx="1624.3327" cy="-41.295" rx="111.6923" ry="41.0911"/>
+<text text-anchor="middle" x="1624.3327" y="-53.895" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Subject</text>
+<text text-anchor="start" x="1553.2456" y="-37.095" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">SubjectID: "ps",</text>
+<text text-anchor="start" x="1553.2456" y="-20.295" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">SubjectName: "Fyzika"</text>
+</g>
+<!-- FR1000S6&#45;&gt;Physics -->
+<g id="edge29" class="edge">
+<title>FR1000S6-&gt;Physics</title>
+<path fill="none" stroke="#000000" d="M1867.2517,-306.2277C1871.5196,-259.9543 1871.182,-185.0881 1834.3327,-135.3901 1809.2709,-101.5897 1769.2847,-79.6745 1730.8967,-65.5861"/>
+<polygon fill="#000000" stroke="#000000" points="1731.7763,-62.1854 1721.1815,-62.1705 1729.4546,-68.7892 1731.7763,-62.1854"/>
+<text text-anchor="middle" x="1896.5101" y="-184.3645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:IsTaught</text>
+</g>
+<!-- FR1000S6&#45;&gt;S6 -->
+<g id="edge28" class="edge">
+<title>FR1000S6-&gt;S6</title>
+<path fill="none" stroke="#000000" d="M1781.9157,-309.9331C1741.7793,-292.2505 1691.8363,-272.354 1645.3327,-259.7389 1591.1618,-245.044 1574.3441,-257.0092 1520.3327,-241.7389 1505.3659,-237.5075 1489.8277,-231.8596 1475.0371,-225.8236"/>
+<polygon fill="#000000" stroke="#000000" points="1476.0154,-222.4392 1465.4391,-221.8121 1473.316,-228.8977 1476.0154,-222.4392"/>
+<text text-anchor="middle" x="1731.8411" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesPlace</text>
+</g>
+<!-- TH0855S7 -->
+<g id="node11" class="node">
+<title>TH0855S7</title>
+<ellipse fill="none" stroke="#000000" cx="397.3327" cy="-347.7134" rx="196.6378" ry="41.0911"/>
+<text text-anchor="middle" x="397.3327" y="-360.3134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Lesson</text>
+<text text-anchor="start" x="266.3375" y="-343.5134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonUrl: "https://zoom.com/TH0855S7",</text>
+<text text-anchor="start" x="266.3375" y="-326.7134" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">LessonID: "TH0855S7"</text>
+</g>
+<!-- TH0855S7&#45;&gt;TH0855 -->
+<g id="edge30" class="edge">
+<title>TH0855S7-&gt;TH0855</title>
+<path fill="none" stroke="#000000" d="M394.156,-306.3327C394.7731,-290.7406 397.7846,-273.473 406.2219,-259.7389 410.9772,-251.9983 416.9254,-244.9479 423.583,-238.5597"/>
+<polygon fill="#000000" stroke="#000000" points="425.9309,-241.1554 431.0626,-231.8863 421.2707,-235.9321 425.9309,-241.1554"/>
+<text text-anchor="middle" x="441.8881" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesTime</text>
+</g>
+<!-- TH0855S7&#45;&gt;Math -->
+<g id="edge32" class="edge">
+<title>TH0855S7-&gt;Math</title>
+<path fill="none" stroke="#000000" d="M348.4245,-307.6808C330.1911,-289.6663 311.5971,-266.8106 301.9779,-241.7389 285.0467,-197.6093 276.8322,-175.4124 301.9779,-135.3901 320.5703,-105.7981 351.3687,-85.2943 383.0753,-71.1789"/>
+<polygon fill="#000000" stroke="#000000" points="384.6454,-74.3147 392.4805,-67.1829 381.9081,-67.872 384.6454,-74.3147"/>
+<text text-anchor="middle" x="331.5101" y="-184.3645" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:IsTaught</text>
+</g>
+<!-- TH0855S7&#45;&gt;S7 -->
+<g id="edge31" class="edge">
+<title>TH0855S7-&gt;S7</title>
+<path fill="none" stroke="#000000" d="M442.8233,-307.5166C466.9949,-287.087 494.6694,-265.3915 509.3159,-259.7389 614.9047,-218.9886 653.1917,-267.7879 763.3327,-241.7389 779.9719,-237.8037 797.2353,-231.9565 813.4945,-225.5619"/>
+<polygon fill="#000000" stroke="#000000" points="814.98,-228.7366 822.9394,-221.7439 812.3565,-222.2468 814.98,-228.7366"/>
+<text text-anchor="middle" x="546.8411" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:TakesPlace</text>
+</g>
+<!-- kovpe -->
+<g id="node12" class="node">
+<title>kovpe</title>
+<ellipse fill="none" stroke="#000000" cx="128.3327" cy="-506.8622" rx="99.3854" ry="41.0911"/>
+<text text-anchor="middle" x="128.3327" y="-519.4622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Student</text>
+<text text-anchor="start" x="66.193" y="-502.6622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ID: "kovpe",</text>
+<text text-anchor="start" x="66.193" y="-485.8622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">name: "Petr Kovář"</text>
+</g>
+<!-- kovpe&#45;&gt;_6A -->
+<g id="edge11" class="edge">
+<title>kovpe-&gt;_6A</title>
+<path fill="none" stroke="#000000" d="M128.3327,-465.4632C128.3327,-445.2804 128.3327,-420.8036 128.3327,-399.406"/>
+<polygon fill="#000000" stroke="#000000" points="131.8328,-399.1812 128.3327,-389.1813 124.8328,-399.1813 131.8328,-399.1812"/>
+<text text-anchor="middle" x="163.7324" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:BelongsTo</text>
+</g>
+<!-- kliji -->
+<g id="node13" class="node">
+<title>kliji</title>
+<ellipse fill="none" stroke="#000000" cx="1160.3327" cy="-506.8622" rx="112.8403" ry="53.3494"/>
+<text text-anchor="middle" x="1160.3327" y="-527.8622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Student</text>
+<text text-anchor="start" x="1088.4861" y="-511.0622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ID: "kliji",</text>
+<text text-anchor="start" x="1088.4861" y="-494.2622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">name: "Jiří Klimošek"</text>
+<text text-anchor="start" x="1088.4861" y="-477.4622" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">nickname: ["Limoš"]</text>
+</g>
+<!-- kliji&#45;&gt;_6B -->
+<g id="edge12" class="edge">
+<title>kliji-&gt;_6B</title>
+<path fill="none" stroke="#000000" d="M1160.3327,-453.4252C1160.3327,-436.076 1160.3327,-416.8621 1160.3327,-399.6258"/>
+<polygon fill="#000000" stroke="#000000" points="1163.8328,-399.1837 1160.3327,-389.1837 1156.8328,-399.1837 1163.8328,-399.1837"/>
+<text text-anchor="middle" x="1195.7324" y="-423.0878" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:BelongsTo</text>
+</g>
+<!-- novpa -->
+<g id="node14" class="node">
+<title>novpa</title>
+<ellipse fill="none" stroke="#000000" cx="2655.3327" cy="-666.0111" rx="133.974" ry="53.3494"/>
+<text text-anchor="middle" x="2655.3327" y="-687.0111" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Student</text>
+<text text-anchor="start" x="2568.7665" y="-670.2111" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">ID: "novpa",</text>
+<text text-anchor="start" x="2568.7665" y="-653.4111" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">name: "Pavel Novák"</text>
+<text text-anchor="start" x="2568.7665" y="-636.6111" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">nickname: ["Kajak", "Bizon"]</text>
+</g>
+<!-- novpa&#45;&gt;_4C -->
+<g id="edge13" class="edge">
+<title>novpa-&gt;_4C</title>
+<path fill="none" stroke="#000000" d="M2655.3327,-612.5741C2655.3327,-595.2249 2655.3327,-576.011 2655.3327,-558.7747"/>
+<polygon fill="#000000" stroke="#000000" points="2658.8328,-558.3325 2655.3327,-548.3326 2651.8328,-558.3326 2658.8328,-558.3325"/>
+<text text-anchor="middle" x="2690.7324" y="-582.2367" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:BelongsTo</text>
+</g>
+<!-- muk&#45;&gt;Math -->
+<g id="edge14" class="edge">
+<title>muk-&gt;Math</title>
+<path fill="none" stroke="#000000" d="M171.3402,-138.2293C185.7324,-124.1482 202.7378,-110.1091 220.7591,-100.5901 263.0332,-78.2605 313.1538,-64.339 359.0388,-55.66"/>
+<polygon fill="#000000" stroke="#000000" points="359.8555,-59.0689 369.0661,-53.8329 358.6007,-52.1823 359.8555,-59.0689"/>
+<text text-anchor="middle" x="250.1195" y="-104.7901" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Teaches</text>
+</g>
+<!-- pel&#45;&gt;Math -->
+<g id="edge15" class="edge">
+<title>pel-&gt;Math</title>
+<path fill="none" stroke="#000000" d="M1058.869,-150.6738C1044.1965,-145.0183 1028.9618,-139.6626 1014.3327,-135.3901 887.0781,-98.2249 737.7122,-72.9342 632.3384,-58.012"/>
+<polygon fill="#000000" stroke="#000000" points="632.6699,-54.5243 622.2805,-56.6003 631.6969,-61.4564 632.6699,-54.5243"/>
+<text text-anchor="middle" x="974.1195" y="-104.7901" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Teaches</text>
+</g>
+<!-- pel&#45;&gt;Physics -->
+<g id="edge16" class="edge">
+<title>pel-&gt;Physics</title>
+<path fill="none" stroke="#000000" d="M1231.1746,-151.2871C1245.4806,-145.6546 1260.2389,-140.146 1274.3327,-135.3901 1355.615,-107.9613 1449.5906,-83.0598 1519.6855,-65.7734"/>
+<polygon fill="#000000" stroke="#000000" points="1520.5366,-69.1684 1529.4138,-63.3852 1518.8677,-62.3703 1520.5366,-69.1684"/>
+<text text-anchor="middle" x="1407.1195" y="-104.7901" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Teaches</text>
+</g>
+<!-- svo&#45;&gt;English -->
+<g id="edge17" class="edge">
+<title>svo-&gt;English</title>
+<path fill="none" stroke="#000000" d="M2649.3452,-294.7191C2645.3442,-277.0315 2640.8955,-257.3645 2636.9251,-239.8122"/>
+<polygon fill="#000000" stroke="#000000" points="2640.2698,-238.7344 2634.6496,-229.753 2633.4423,-240.2788 2640.2698,-238.7344"/>
+<text text-anchor="middle" x="2673.1195" y="-263.9389" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">:Teaches</text>
+</g>
+</g>
+</svg>
