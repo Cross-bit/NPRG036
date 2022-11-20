@@ -1,4 +1,5 @@
-// Vybere všechny dvojice lesson1 a lesson2, které se odehrávají ve stejném časovém slotu a mají stejný předmět, vypíše lesson id a jméno předmětu.
+// Vybere všechny dvojice hodin, které se odehrávají ve stejné časovém slotu a mají stejný předmět.
+// Vypíše identifikátory lesson1, lesson2 a jméno předmětu.
 
 MATCH
 	(lesson1)-[:TakesTime]->(:TimeSlot)<-[:TakesTime]-(lesson2),
@@ -6,4 +7,4 @@ MATCH
 WHERE
 	lesson1.ID < lesson2.ID
 RETURN
-	lesson1.ID, lesson2.ID, subject.name
+	lesson1.ID AS `Lesson1 ID`, lesson2.ID AS `Lesson2 ID`, subject.name AS `Subject name`

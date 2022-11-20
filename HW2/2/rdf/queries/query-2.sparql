@@ -1,9 +1,9 @@
 PREFIX ex: <http://example.org/vocabulary/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-# Vybere všechny trojice identifikátorů tříd, jejich třídních učitelů a předmětů, kde učitel může učit svoji třídu.
+# Vybere všechny trojice identifikátorů tříd, jmen jejich třídních učitelů a názvů předmětů, kde daný učitel může učit svoji třídu.
 
-SELECT DISTINCT ?classTeacherName ?classID ?SubjectName
+SELECT DISTINCT ?classID ?classTeacherName ?subjectName
 WHERE {
 	?class a ex:Class ;
 		ex:ClassCode ?classCode ;
@@ -14,7 +14,7 @@ WHERE {
 	?teacher a ex:Teacher ;
 		foaf:name ?classTeacherName .
 	?subject a ex:Subject ;
-		ex:SubjectName ?SubjectName .
+		ex:SubjectName ?subjectName .
 	
 	?class ex:ClassTeacher ?teacher ;
 		^ex:BelongingClass/ex:PlannedLesson/ex:IsTaught ?subject .

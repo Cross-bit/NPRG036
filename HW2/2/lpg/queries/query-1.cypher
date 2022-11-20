@@ -4,4 +4,4 @@ MATCH
 	(student:Student)-[:BelongsTo]->(:Class)<-[:BelongingClass]-(:Timetable)-[:PlannedLesson]->
 		(lesson:Lesson)-[:IsTaught]->(:Subject)<-[:Teaches]-(teacher:Teacher)
 RETURN
-	student.name, teacher.name, lesson.ID
+	student.name AS `Student name`, teacher.name AS `Teacher name`, lesson.ID AS `Lesson ID`
