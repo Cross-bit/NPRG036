@@ -1,7 +1,7 @@
 PREFIX ex: <http://example.org/vocabulary/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-# Vybere všechna jména žáků, učitelů a id hodin, na kterých se mohou potkat.
+# Vybere všechna jména žáků a učitelů a id hodin, na kterých se mohou potkat.
 
 SELECT DISTINCT ?studentName ?teacherName ?lessonID
 WHERE {
