@@ -148,10 +148,10 @@ CREATE
 (novpa)-[:BelongsTo]->(_4C),
 
 // Učitel vazby
-(muk)-[:Teaches]->(Math),
-(pel)-[:Teaches]->(Math),
-(pel)-[:Teaches]->(Physics),
-(svo)-[:Teaches]->(English),
+(muk)-[:Teaches { yearsTeaching: 5 } ]->(Math),
+(pel)-[:Teaches { yearsTeaching: 3 } ]->(Math),
+(pel)-[:Teaches { yearsTeaching: 1 } ]->(Physics),
+(svo)-[:Teaches { yearsTeaching: 2 } ]->(English),
 
 // Hodina vazby
 (TH0855S6)-[:TakesTime]->(TH0855),
