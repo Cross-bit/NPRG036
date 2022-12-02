@@ -5,7 +5,7 @@
   
 # XML schéma:
 Dle .svg hierarchií(v /HW3/03/model/) každý vytvořte odpovídající XML schema. 
-Pojmenování souborů je ze zadání **schema-k.xsd**, kde  – k volte stejné jako je v názvu hierarchie tj.: **hierarchy-k.svg**.
+Pojmenování souborů je ze zadání **schema-k.xsd**, kde – k volte stejné jako je v názvu hierarchie tj.: **hierarchy-k.svg**.
 Rozdělení jak jsme se v Pátek dohodli je:
  - Ondra: 1, 2
  - Vašek: 5
