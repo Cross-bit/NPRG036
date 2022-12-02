@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="ID" type="xs:anyURI" />
+	
+	<xs:element name="code">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[a-z0-9]*"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="Subject">
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<xs:all>
+				<xs:element ref="code" />
+				<xs:element name="name" type="xs:string" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Class">
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<xs:all>
+				<xs:element name="classYear" type="xs:integer" />
+				<xs:element name="classCode" ref="code" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Teacher">
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<xs:all>
+				<xs:element ref="code" />
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="experience" type="xs:integer" />
+				<xs:element ref="Class" />
+				<xs:element name="Subjects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Subject" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Teachers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Teacher" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

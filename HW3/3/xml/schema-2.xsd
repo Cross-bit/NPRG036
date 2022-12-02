@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="ID" type="xs:anyURI" />
 	<xs:element name="ClassroomCapacity" type="xs:integer" />
 	<xs:element name="ZoomURI" type="xs:anyURI" />
-	<xs:attribute name="ID" type="xs:anyURI" />
 	
 	<xs:element name="Lesson">
-		<xs:attribute ref="ID" use="required" />
-		<xs:element ref="ZoomURI" />
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<x:all>
+				<xs:element ref="ZoomURI" />
+			</x:all>
+		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="Classroom">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
-			<xs:element ref="ClassroomCapacity" />
-			<xs:element name="TakesPlace">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element ref="Lesson" maxOccurs="unbounded" />
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+			<x:all>
+				<xs:element ref="ClassroomCapacity" />
+				<xs:element name="TakesPlace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Lesson" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</x:all>
 		</xs:complexType>
 	</xs:element>
 	

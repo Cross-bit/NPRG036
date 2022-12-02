@@ -16,28 +16,35 @@
 	</xs:simpleType>
 	
 	<xs:element name="Lesson">
-		<xs:attribute ref="ID" use="required" />
-		<xs:element ref="ZoomURI" />
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<x:all>
+				<xs:element ref="ZoomURI" />
+			</x:all>
+		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="TimeSlot">
 		<xs:complexType>
-		<xs:attribute ref="ID" use="required" />
-		<xs:element ref="TimeSlotBeginning" />
-		<xs:element ref="TimeSlotEnd" />
-		<xs:element ref="DayOfWeek" />
-		<xs:element name="TakesTime">
-			<xs:complexType>
-				<xs:sequence>
-					<xs:element ref="Lesson" maxOccurs="unbounded" />
-				</xs:sequence>
-			</xs:complexType>
-		</xs:element>
+			<xs:attribute ref="ID" use="required" />
+			<x:all>
+				<xs:element ref="TimeSlotBeginning" />
+				<xs:element ref="TimeSlotEnd" />
+				<xs:element ref="DayOfWeek" />
+				<xs:element name="TakesTime">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Lesson" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</x:all>
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="TimeSlots">
 		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
 			<xs:sequence>
 				<xs:element ref="TimeSlot" maxOccurs="unbounded" />
 			</xs:sequence>
