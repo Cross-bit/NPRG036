@@ -139,7 +139,7 @@ ex:DayOfWeek a rdf:Property ;
 	rdfs:label "Den v týdnu"@cs ;
 	rdfs:comment "Den v týdnu, který se časový slot odehrává."@cs ;
 	rdfs:domain ex:TimeSlot ;
-	rdfs:range xsd:dayOfWeek .
+	rdfs:range time:DayOfWeek .
 
 
 # Učebna
