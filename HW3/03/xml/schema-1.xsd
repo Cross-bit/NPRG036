@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="uri" type="xs:anyURI"/>
+  <xs:element name="TimeSlotBeginning" type="xs:time"/>
+  <xs:element name="TimeSlotEnd" type="xs:time"/>
+  <xs:element name="DayOfWeek" type=""/>
+  <xs:element name="contract">
+
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="uri"/>
+        <xs:element ref="publishTime"/>
+        <xs:element ref="contractData"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="contracts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="contract" maxOccurs="unbounded" minOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
