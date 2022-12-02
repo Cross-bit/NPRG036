@@ -1,26 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="uri" type="xs:anyURI"/>
-  <xs:element name="TimeSlotBeginning" type="xs:time"/>
-  <xs:element name="TimeSlotEnd" type="xs:time"/>
-  <xs:element name="DayOfWeek" type=""/>
-  <xs:element name="contract">
 
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="uri"/>
-        <xs:element ref="publishTime"/>
-        <xs:element ref="contractData"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+    <xs:element name="TimeSlotBeginning" type="xs:time"/>
+    <xs:element name="TimeSlotEnd" type="xs:time" />
+    <xs:element name="ZoomURI" type="xs:anyURI" />
+    <xs:attribute name="ID" type="xs:anyURI" />
 
-  <xs:element name="contracts">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="contract" maxOccurs="unbounded" minOccurs="1"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+    <xs:simpleType name="DayOfWeek" >
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Monday"/>
+            <xs:enumeration value="Tuesday"/>
+            <xs:enumeration value="Wednesday"/>
+            <xs:enumeration value="Thursday"/>
+            <xs:enumeration value="Friday"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="Lesson">
+        <xs:attribute ref="ID" use="required" />
+        <xs:element ref="ZoomURI" />
+    </xs:element>
+
+    <xs:element name="TimeSlot">
+        <xs:complexType>
+            <xs:attribute ref="ID" use="required" />
+            <xs:element ref="TimeSlotBeginning" />
+            <xs:element ref="TimeSlotEnd" />
+            <xs:element ref="DayOfWeek" />
+
+            <xs:element name="TakesTime">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="Lesson" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="TimeSlots">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="TimeSlot" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
 </xs:schema>

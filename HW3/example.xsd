@@ -28,6 +28,7 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="name" type="xs:string"/>
+  
   <xs:element name="id">
     <xs:simpleType>
       <xs:restriction base="xs:string">
@@ -35,6 +36,9 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
+
+
+
   <xs:element name="address" type="xs:string"/>
   <xs:element name="contractingAuthority">
     <xs:complexType>
