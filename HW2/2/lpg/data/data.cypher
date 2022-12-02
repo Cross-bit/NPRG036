@@ -128,48 +128,48 @@ CREATE
 }),
 
 // Třídní rozvrh vazby
-(_20216A15)-[:PlannedLesson]->(TH0855S6),
-(_21226B10)-[:PlannedLesson]->(MO0800S7),
-(_21226B10)-[:PlannedLesson]->(FR1000S6),
-(_22234C20)-[:PlannedLesson]->(FR1000S9),
+(_20216A15)-[:PLANNED_LESSON]->(TH0855S6),
+(_21226B10)-[:PLANNED_LESSON]->(MO0800S7),
+(_21226B10)-[:PLANNED_LESSON]->(FR1000S6),
+(_22234C20)-[:PLANNED_LESSON]->(FR1000S9),
 
-(_20216A15)-[:BelongingClass]->(_6A),
-(_21226B10)-[:BelongingClass]->(_6B),
-(_22234C20)-[:BelongingClass]->(_4C),
+(_20216A15)-[:BELONGING_CLASS]->(_6A),
+(_21226B10)-[:BELONGING_CLASS]->(_6B),
+(_22234C20)-[:BELONGING_CLASS]->(_4C),
 
 // Třída vazby
-(_6A)-[:ClassTeacher]->(muk),
-(_6B)-[:ClassTeacher]->(pel),
-(_4C)-[:ClassTeacher]->(svo),
+(_6A)-[:CLASS_TEACHER]->(muk),
+(_6B)-[:CLASS_TEACHER]->(pel),
+(_4C)-[:CLASS_TEACHER]->(svo),
 
 // Student vazby
-(kovpe)-[:BelongsTo]->(_6A),
-(kliji)-[:BelongsTo]->(_6B),
-(novpa)-[:BelongsTo]->(_4C),
+(kovpe)-[:BELONGS_TO]->(_6A),
+(kliji)-[:BELONGS_TO]->(_6B),
+(novpa)-[:BELONGS_TO]->(_4C),
 
 // Učitel vazby
-(muk)-[:Teaches { yearsTeaching: 5 } ]->(Math),
-(pel)-[:Teaches { yearsTeaching: 3 } ]->(Math),
-(pel)-[:Teaches { yearsTeaching: 1 } ]->(Physics),
-(svo)-[:Teaches { yearsTeaching: 2 } ]->(English),
+(muk)-[:TEACHES { yearsTeaching: 5 } ]->(Math),
+(pel)-[:TEACHES { yearsTeaching: 3 } ]->(Math),
+(pel)-[:TEACHES { yearsTeaching: 1 } ]->(Physics),
+(svo)-[:TEACHES { yearsTeaching: 2 } ]->(English),
 
 // Hodina vazby
-(TH0855S6)-[:TakesTime]->(TH0855),
-(TH0855S6)-[:TakesPlace]->(S6),
-(TH0855S6)-[:IsTaught]->(Math),
+(TH0855S6)-[:TAKES_TIME]->(TH0855),
+(TH0855S6)-[:TAKES_PLACE]->(S6),
+(TH0855S6)-[:IS_TAUGHT]->(Math),
 
-(MO0800S7)-[:TakesTime]->(MO0800),
-(MO0800S7)-[:TakesPlace]->(S7),
-(MO0800S7)-[:IsTaught]->(English),
+(MO0800S7)-[:TAKES_TIME]->(MO0800),
+(MO0800S7)-[:TAKES_PLACE]->(S7),
+(MO0800S7)-[:IS_TAUGHT]->(English),
 
-(FR1000S9)-[:TakesTime]->(FR1000),
-(FR1000S9)-[:TakesPlace]->(S9),
-(FR1000S9)-[:IsTaught]->(English),
+(FR1000S9)-[:TAKES_TIME]->(FR1000),
+(FR1000S9)-[:TAKES_PLACE]->(S9),
+(FR1000S9)-[:IS_TAUGHT]->(English),
 
-(FR1000S6)-[:TakesTime]->(FR1000),
-(FR1000S6)-[:TakesPlace]->(S6),
-(FR1000S6)-[:IsTaught]->(Physics),
+(FR1000S6)-[:TAKES_TIME]->(FR1000),
+(FR1000S6)-[:TAKES_PLACE]->(S6),
+(FR1000S6)-[:IS_TAUGHT]->(Physics),
 
-(TH0855S7)-[:TakesTime]->(TH0855),
-(TH0855S7)-[:TakesPlace]->(S7),
-(TH0855S7)-[:IsTaught]->(Math);
+(TH0855S7)-[:TAKES_TIME]->(TH0855),
+(TH0855S7)-[:TAKES_PLACE]->(S7),
+(TH0855S7)-[:IS_TAUGHT]->(Math);
