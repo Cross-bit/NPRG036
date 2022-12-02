@@ -6,7 +6,7 @@
 MATCH
 	(timeSlot:TimeSlot)
 WHERE NOT
-	(:Teacher {ID: "muk"})-[:Teaches]->(:Subject)<-[:IsTaught]-(:Lesson)-[:TakesTime]->(timeSlot)
+	(:Teacher {ID: "muk"})-[:TEACHES]->(:Subject)<-[:IS_TAUGHT]-(:Lesson)-[:TAKES_TIME]->(timeSlot)
 RETURN
 	timeSlot.dayOfWeek AS `Day of week`,
 	timeSlot.beginning AS `Beginning time`,
@@ -15,9 +15,9 @@ RETURN
 UNION
 MATCH
 	(timeSlot:TimeSlot),
-	(:Teacher {ID: "muk"})-[:Teaches]->(subject:Subject),
-	(timeSlot)<-[:TakesTime]-(lesson)-[:IsTaught]->(subject),
-	(class:Class)<-[:BelongingClass]-(:Timetable)-[:PlannedLesson]->(lesson)-[:TakesPlace]->(classroom:Classroom)
+	(:Teacher {ID: "muk"})-[:TEACHES]->(subject:Subject),
+	(timeSlot)<-[:TAKES_TIME]-(lesson)-[:IS_TAUGHT]->(subject),
+	(class:Class)<-[:BELONGING_CLASS]-(:Timetable)-[:PLANNED_LESSON]->(lesson)-[:TAKES_PLACE]->(classroom:Classroom)
 RETURN
 	timeSlot.dayOfWeek AS `Day of week`,
 	timeSlot.beginning AS `Beginning time`,

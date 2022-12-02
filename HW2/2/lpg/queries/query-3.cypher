@@ -2,8 +2,8 @@
 // Vypíše identifikátory lesson1, lesson2 a jméno předmětu.
 
 MATCH
-	(lesson1)-[:TakesTime]->(:TimeSlot)<-[:TakesTime]-(lesson2),
-	(lesson1)-[:IsTaught]->(subject:Subject)<-[:IsTaught]-(lesson2)
+	(lesson1)-[:TAKES_TIME]->(:TimeSlot)<-[:TAKES_TIME]-(lesson2),
+	(lesson1)-[:IS_TAUGHT]->(subject:Subject)<-[:IS_TAUGHT]-(lesson2)
 WHERE
 	lesson1.ID < lesson2.ID
 RETURN
