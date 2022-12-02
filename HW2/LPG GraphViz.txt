@@ -57,39 +57,39 @@ digraph G {
     _22234C20 -> _4C [label=":BelongingClass"]
     
     // Třída vazby
-    _6A -> muk [label=":ClassTeacher"]
-    _6B -> pel [label=":ClassTeacher"]
-    _4C -> svo [label=":ClassTeacher"]
+    _6A -> muk [label=":CLASS_TEACHER"]
+    _6B -> pel [label=":CLASS_TEACHER"]
+    _4C -> svo [label=":CLASS_TEACHER"]
     
     // Student vazby
-    kovpe -> _6A [label=":BelongsTo"]
-    kliji -> _6B [label=":BelongsTo"]
-    novpa -> _4C [label=":BelongsTo"]
+    kovpe -> _6A [label=":BELONGS_TO"]
+    kliji -> _6B [label=":BELONGS_TO"]
+    novpa -> _4C [label=":BELONGS_TO"]
     
     // Učitel vazby
-    muk -> Math [label=":Teaches"]
-    pel -> Math [label=":Teaches"]
-    pel -> Physics [label=":Teaches"]
-    svo -> English [label=":Teaches"]
+    muk -> Math [label=":TEACHES"]
+    pel -> Math [label=":TEACHES"]
+    pel -> Physics [label=":TEACHES"]
+    svo -> English [label=":TEACHES"]
     
     // Hodina vazby
-    TH0855S6 -> TH0855 [label=":TakesTime"]
-    TH0855S6 -> S6 [label=":TakesPlace"]
-    TH0855S6 -> Math [label=":IsTaught"]
+    TH0855S6 -> TH0855 [label=":TAKES_TIME"]
+    TH0855S6 -> S6 [label=":TAKES_PLACE"]
+    TH0855S6 -> Math [label=":IS_TAUGHT"]
     
-    MO0800S7 -> MO0800 [label=":TakesTime"]
-    MO0800S7 -> S7 [label=":TakesPlace"]
-    MO0800S7 -> English [label=":IsTaught"]
+    MO0800S7 -> MO0800 [label=":TAKES_TIME"]
+    MO0800S7 -> S7 [label=":TAKES_PLACE"]
+    MO0800S7 -> English [label=":IS_TAUGHT"]
     
-    FR1000S9 -> FR1000 [label=":TakesTime"]
-    FR1000S9 -> S9 [label=":TakesPlace"]
-    FR1000S9 -> English [label=":IsTaught"]
+    FR1000S9 -> FR1000 [label=":TAKES_TIME"]
+    FR1000S9 -> S9 [label=":TAKES_PLACE"]
+    FR1000S9 -> English [label=":IS_TAUGHT"]
     
-    FR1000S6 -> FR1000 [label=":TakesTime"]
-    FR1000S6 -> S6 [label=":TakesPlace"]
-    FR1000S6 -> Physics [label=":IsTaught"]
+    FR1000S6 -> FR1000 [label=":TAKES_TIME"]
+    FR1000S6 -> S6 [label=":TAKES_PLACE"]
+    FR1000S6 -> Physics [label=":IS_TAUGHT"]
     
-    TH0855S7 -> TH0855 [label=":TakesTime"]
-    TH0855S7 -> S7 [label=":TakesPlace"]
-    TH0855S7 -> Math [label=":IsTaught"]
+    TH0855S7 -> TH0855 [label=":TAKES_TIME"]
+    TH0855S7 -> S7 [label=":TAKES_PLACE"]
+    TH0855S7 -> Math [label=":IS_TAUGHT"]
 }
