@@ -11,7 +11,10 @@ Rozdělení jak jsme se v Pátek dohodli je:
  - Vašek: 5
  - Honza: 4
  - Terka: 3
-
+ 
+ Deadline: do meetinu Neděle 10:00 
+ 
+ ---------------------------------------------------------------------------------------------------------------------------------------------
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<br>
 !IMPORTANT!: Resolve references na schéma v instancích při archivování(.zip).<br>
