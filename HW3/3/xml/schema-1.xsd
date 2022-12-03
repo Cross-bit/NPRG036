@@ -18,16 +18,16 @@
 	<xs:element name="Lesson">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
-			<x:all>
+			<xs:all>
 				<xs:element ref="ZoomURI" />
-			</x:all>
+			</xs:all>
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="TimeSlot">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
-			<x:all>
+			<xs:all>
 				<xs:element ref="TimeSlotBeginning" />
 				<xs:element ref="TimeSlotEnd" />
 				<xs:element ref="DayOfWeek" />
@@ -38,7 +38,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-			</x:all>
+			</xs:all>
 		</xs:complexType>
 	</xs:element>
 	
