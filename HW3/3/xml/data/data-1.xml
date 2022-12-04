@@ -1,4 +1,4 @@
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TimeSlots
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../schemas/schema-1.xsd" >
@@ -8,7 +8,7 @@ xsi:noNamespaceSchemaLocation="../schemas/schema-1.xsd" >
         <DayOfWeek>Monday</DayOfWeek>
 
         <xs:element name="TakesTime">
-        
+
 
     </TimeSlot>
 </TimeSlots>
