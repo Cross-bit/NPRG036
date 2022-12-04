@@ -16,7 +16,7 @@
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
-                <xs:element name="name" type="xs:string" />
+				<xs:element name="name" type="xs:string" />
 				<xs:element name="isTaught">
 					<xs:complexType>
 						<xs:sequence>

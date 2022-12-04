@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="ZoomURI" type="xs:anyURI" />
-    	<xs:attribute name="ID" type="xs:anyURI" />
+	<xs:attribute name="ID" type="xs:anyURI" />
 	
 	<xs:element name="code">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:pattern value="[a-z0-9]*"/>
+				<xs:pattern value="[a-z0-9]*" />
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
-
-    	<xs:element name="AcademicalYear">
+	
+	<xs:element name="AcademicalYear">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:pattern value="\d{4}[/]\d{4}"/>
-                <xs:length value="9"/>
+				<xs:pattern value="\d{4}[/]\d{4}" />
+				<xs:length value="9" />
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
-
+	
 	<xs:element name="Lesson">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
@@ -28,58 +28,58 @@
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
-
+	
 	<xs:element name="Student">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element name="name" type="xs:string" />
-				<xs:element name="Nickname" type="xs:string" maxOccurs="unbounded"/>
+				<xs:element name="Nickname" type="xs:string" maxOccurs="unbounded" />
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
-
+	
 	<xs:element name="Class">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element name="ClassYear" type="xs:integer" />
 				<xs:element name="ClassCode" ref="code" />
-                <xs:element name="BelongsTo">
+				<xs:element name="BelongsTo">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element ref="Student" maxOccurs="unbounded" />
 						</xs:sequence>
 					</xs:complexType>
-				</xs:element>  
+				</xs:element>
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
-
+	
 	<xs:element name="Timetable">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="AcademicalYear" />
-                <xs:element name="TimetableVersion" type="xs:float" />
-            	<xs:element name="PlannedLesson">
+				<xs:element name="TimetableVersion" type="xs:float" />
+				<xs:element name="PlannedLesson">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element ref="Lesson" maxOccurs="unbounded" />
 						</xs:sequence>
 					</xs:complexType>
-				</xs:element>    
-                <xs:element name="BelongingClass">
+				</xs:element>
+				<xs:element name="BelongingClass">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element ref="Class" maxOccurs="1" />
 						</xs:sequence>
 					</xs:complexType>
-				</xs:element>  
+				</xs:element>
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
-
+	
 	<xs:element name="Timetables">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
