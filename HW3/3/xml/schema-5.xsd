@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="ZoomURI" type="xs:anyURI" />
-    <xs:attribute name="ID" type="xs:anyURI" />
+    	<xs:attribute name="ID" type="xs:anyURI" />
 	
 	<xs:element name="code">
 		<xs:simpleType>
@@ -11,7 +11,7 @@
 		</xs:simpleType>
 	</xs:element>
 
-    <xs:element name="AcademicalYear">
+    	<xs:element name="AcademicalYear">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
 				<xs:pattern value="\d{4}[/]\d{4}"/>
@@ -20,7 +20,7 @@
 		</xs:simpleType>
 	</xs:element>
 
-    <xs:element name="Lesson">
+	<xs:element name="Lesson">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
@@ -39,7 +39,7 @@
 		</xs:complexType>
 	</xs:element>
 
-    <xs:element name="Class">
+	<xs:element name="Class">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
@@ -56,7 +56,7 @@
 		</xs:complexType>
 	</xs:element>
 
-    <xs:element name="Timetable">
+	<xs:element name="Timetable">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
@@ -80,7 +80,7 @@
 		</xs:complexType>
 	</xs:element>
 
-    <xs:element name="Timetables">
+	<xs:element name="Timetables">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:sequence>
