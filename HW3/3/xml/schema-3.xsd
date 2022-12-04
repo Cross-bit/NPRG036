@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ZoomURI" type="xs:anyURI" />
+	<xs:attribute name="ID" type="xs:anyURI" />
+	
+	<xs:element name="Lesson">
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<xs:all>
+				<xs:element ref="ZoomURI" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Subject">
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<xs:all>
+                <xs:element name="name" type="xs:string" />
+				<xs:element name="isTaught">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Lesson" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Subjects">
+		<xs:complexType>
+			<xs:attribute ref="ID" use="required" />
+			<xs:sequence>
+				<xs:element ref="Subject" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
