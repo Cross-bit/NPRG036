@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Teachers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/schema-4.xsd">
+	<Teacher ID="http://example.org/data/teachers/muk">
+		<Code>muk</Code>
+		<Name xml:lang="cs">Vladimír Mukvald</Name>
+		<Experience>5</Experience>
+		<ClassTeacher ID="http://example.org/data/classes/6A">
+			<ClassYear>6</ClassYear>
+			<ClassCode>A</ClassCode>
+		</ClassTeacher>
+		<Subjects>
+			<Subject ID="http://example.org/data/subjects/Math">
+				<Code>mt</Code>
+				<Name xml:lang="cs">Matematika</Name>
+			</Subject>
+		</Subjects>
+	</Teacher>
+	<Teacher ID="http://example.org/data/teachers/pel">
+		<Code>pel</Code>
+		<Name xml:lang="cs">Jaroslav Pelikán</Name>
+		<Experience>3</Experience>
+		<ClassTeacher ID="http://example.org/data/classes/6B">
+			<ClassYear>6</ClassYear>
+			<ClassCode>B</ClassCode>
+		</ClassTeacher>
+		<Subjects>
+			<Subject ID="http://example.org/data/subjects/Math">
+				<Code>mt</Code>
+				<Name xml:lang="cs">Matematika</Name>
+			</Subject>
+			<Subject ID="http://example.org/data/subjects/Physics">
+				<Code>ps</Code>
+				<Name xml:lang="cs">Fyzika</Name>
+			</Subject>
+		</Subjects>
+	</Teacher>
+	<Teacher ID="http://example.org/data/teachers/svo">
+		<Code>svo</Code>
+		<Name xml:lang="cs">Patrik Svoboda</Name>
+		<Experience>2</Experience>
+		<ClassTeacher ID="http://example.org/data/classes/4C">
+			<ClassYear>4/ClassYear>
+			<ClassCode>C</ClassCode>
+		</ClassTeacher>
+		<Subjects>
+			<Subject ID="http://example.org/data/subjects/English">
+				<Code>en</Code>
+				<Name xml:lang="cs">Angličtina</Name>
+			</Subject>
+		</Subjects>
+	</Teacher>
+</Teachers>

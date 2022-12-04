@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:import namespace="http://www.w3.org/XML/1998/namespace"
-			schemaLocation="https://www.w3.org/2009/01/xml.xsd" />
-
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2009/01/xml.xsd" />
+	
 	<xs:element name="ZoomURI" type="xs:anyURI" />
 	<xs:attribute name="ID" type="xs:anyURI" />
 	
 	<xs:element name="Code">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:pattern value="[a-zA-Z0-9]*" />
+				<xs:pattern value="[a-zA-Z0-9]+" />
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
-
+	
 	<xs:element name="Lesson">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
@@ -28,7 +27,7 @@
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
-				<xs:element name="Name" type="xs:string" >
+				<xs:element name="Name" type="xs:string">
 					<xs:attribute ref="xml:lang" use="required" />
 				</xs:element>
 				<xs:element name="IsTaught">
