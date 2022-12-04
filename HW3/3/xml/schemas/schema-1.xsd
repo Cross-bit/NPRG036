@@ -5,6 +5,15 @@
 	<xs:element name="ZoomURI" type="xs:anyURI" />
 	<xs:attribute name="ID" type="xs:anyURI" />
 	
+
+	<xs:element name="Code">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[a-zA-Z0-9]*" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
 	<xs:simpleType name="DayOfWeek" >
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Monday" />
@@ -20,10 +29,11 @@
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="ZoomURI" />
+				<xs:element ref="Code" />
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
-	
+	  
 	<xs:element name="TimeSlot">
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
@@ -44,7 +54,6 @@
 	
 	<xs:element name="TimeSlots">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:sequence>
 				<xs:element ref="TimeSlot" maxOccurs="unbounded" />
 			</xs:sequence>

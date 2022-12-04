@@ -28,7 +28,6 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="name" type="xs:string"/>
-  
   <xs:element name="id">
     <xs:simpleType>
       <xs:restriction base="xs:string">
@@ -36,9 +35,6 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
-
-
-
   <xs:element name="address" type="xs:string"/>
   <xs:element name="contractingAuthority">
     <xs:complexType>
@@ -59,3 +55,45 @@
     </xs:complexType>
   </xs:element>
 </xs:schema>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<contracts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema3.xsd">
+  <contract>
+    <uri>https://smlouvy.gov.cz/smlouva/1153037</uri>
+    <publishTime>2017-02-01T00:13:13+01:00</publishTime>
+    <contractData>
+      <title>Pomocné práce v závodní jídelně</title>
+      <price>35678</price>
+      <contractingAuthority>
+        <name>Česká republika - Ministerstvo životního prostředí</name>
+        <id>00164801</id>
+        <address>Vršovická 1442/65 Praha 10010 Czech Republic</address>
+      </contractingAuthority>
+      <supplier>
+        <name>Kamil M</name>
+        <id>67416501</id>
+        <address>Pernerova 536/6 Praha 18600 Czech Republic</address>
+      </supplier>
+      <publisher>Ing. Miroslava, ředitelka odboru vnitřní správy</publisher>
+    </contractData>
+  </contract>
+  <contract>
+    <uri>https://smlouvy.gov.cz/smlouva/1153341</uri>
+    <publishTime>2017-02-01T07:33:14+01:00</publishTime>
+    <contractData>
+      <title>Smlouva o projektové přípravě (akce III/3963, ul.Rakšická)</title>
+      <price>108900</price>
+      <contractingAuthority>
+        <name>Město Moravský Krumlov</name>
+        <id>00293199</id>
+        <address>Nám. Klášterní 125 Moravský Krumlov 67201 Czech Republic</address>
+      </contractingAuthority>
+      <supplier>
+        <name>Sivio Plan, s.r.o.</name>
+        <id>27738809</id>
+        <address>Sochorova 3178/23 Brno 61600 Czech Republic</address>
+      </supplier>
+    </contractData>
+  </contract>
+</contracts>

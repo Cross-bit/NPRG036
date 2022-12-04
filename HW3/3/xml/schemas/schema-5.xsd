@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace"
+			schemaLocation="https://www.w3.org/2009/01/xml.xsd" />
+
 	<xs:element name="ZoomURI" type="xs:anyURI" />
 	<xs:attribute name="ID" type="xs:anyURI" />
-	
-	<xs:element name="code">
+
+	<xs:element name="Code">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:pattern value="[a-z0-9]*" />
+				<xs:pattern value="[a-zA-Z0-9]*" />
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
@@ -25,6 +28,7 @@
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="ZoomURI" />
+				<xs:element ref="Code" />
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
@@ -33,7 +37,10 @@
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
-				<xs:element name="name" type="xs:string" />
+				<xs:element ref="Code" />
+				<xs:element name="Name" type="xs:string" >
+					<xs:attribute ref="xml:lang" use="required" />
+				</xs:element>
 				<xs:element name="Nickname" type="xs:string" maxOccurs="unbounded" />
 			</xs:all>
 		</xs:complexType>
@@ -44,7 +51,7 @@
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element name="ClassYear" type="xs:integer" />
-				<xs:element name="ClassCode" ref="code" />
+				<xs:element name="ClassCode" ref="Code" />
 				<xs:element name="BelongsTo">
 					<xs:complexType>
 						<xs:sequence>
@@ -69,20 +76,13 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="BelongingClass">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element ref="Class" maxOccurs="1" />
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+				<xs:element name="BelongingClass" ref="Class" />
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="Timetables">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:sequence>
 				<xs:element ref="Timetable" maxOccurs="unbounded" />
 			</xs:sequence>

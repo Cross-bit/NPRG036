@@ -1,0 +1,14 @@
+?xml version="1.0" encoding="utf-8"?>
+<TimeSlots
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../schemas/schema-1.xsd" >
+    <TimeSlot ID="http://example.org/data/timeslots/MO0800" >
+        <TimeSlotBeginning>08:00:00</TimeSlotBeginning>
+        <TimeSlotEnd>08:45:00</TimeSlotEnd>
+        <DayOfWeek>Monday</DayOfWeek>
+
+        <xs:element name="TakesTime">
+        
+
+    </TimeSlot>
+</TimeSlots>
