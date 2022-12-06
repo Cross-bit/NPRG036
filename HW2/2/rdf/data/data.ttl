@@ -55,19 +55,26 @@ exClass:4C a ex:Class ;
 
 # Hodina
 
-exLesson:TH0855S6 a ex:Lesson ;
-	ex:LessonID "TH0855S6"^^xsd:ID ;
-	ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:TH0855 ;
-	ex:TakesPlace exClassroom:S6 ;
-	ex:IsTaught exSubject:Math .
-
 exLesson:MO0800S7 a ex:Lesson ;
 	ex:LessonID "MO0800S7"^^xsd:ID ;
 	ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI ;
 	ex:TakesTime exTimeSlot:MO0800 ;
 	ex:TakesPlace exClassroom:S7 ;
 	ex:IsTaught exSubject:English .
+
+exLesson:TH0855S7 a ex:Lesson ;
+	ex:LessonID "TH0855S7"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/TH0855S7"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:TH0855 ;
+	ex:TakesPlace exClassroom:S7 ;
+	ex:IsTaught exSubject:Math .
+
+exLesson:TH0855S6 a ex:Lesson ;
+	ex:LessonID "TH0855S6"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:TH0855 ;
+	ex:TakesPlace exClassroom:S6 ;
+	ex:IsTaught exSubject:Math .
 
 exLesson:FR1000S9 a ex:Lesson ;
 	ex:LessonID "FR1000S9"^^xsd:ID ;
@@ -82,13 +89,6 @@ exLesson:FR1000S6 a ex:Lesson ;
 	ex:TakesTime exTimeSlot:FR1000 ;
 	ex:TakesPlace exClassroom:S6 ;
 	ex:IsTaught exSubject:Physics .
-
-exLesson:TH0855S7 a ex:Lesson ;
-	ex:LessonID "TH0855S7"^^xsd:ID ;
-	ex:LessonUrl "https://zoom.com/TH0855S7"^^xsd:anyURI ;
-	ex:TakesTime exTimeSlot:TH0855 ;
-	ex:TakesPlace exClassroom:S7 ;
-	ex:IsTaught exSubject:Math .
 
 
 # Časový slot

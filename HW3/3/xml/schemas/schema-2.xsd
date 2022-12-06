@@ -26,6 +26,7 @@
 		<xs:complexType>
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
+				<xs:element ref="Code" />
 				<xs:element ref="ClassroomCapacity" />
 				<xs:element name="TakesPlace">
 					<xs:complexType>
