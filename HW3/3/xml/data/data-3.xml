@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Subjects
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../schemas/schema-3.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../schemas/schema-3.xsd"
 >
-
-
-    <Subject ID="http://example.org/data/subjects/mt">
-        <Name xml:lang="cs">Matematika</Name>
-        <IsTaught>
-            <Lesson ID="http://example.org/data/lessons/TH0855S7">
-				<ZoomURI>https://zoom.com/TH0855S7</ZoomURI>
-				<Code>TH0855S7</Code>
-			</Lesson>
-			<Lesson ID="http://example.org/data/lessons/TH0855S6">
-				<ZoomURI>https://zoom.com/TH0855S6</ZoomURI>
-				<Code>TH0855S6</Code>
-			</Lesson>
-        </IsTaught>
-    </Subject>
-
-    <Subject ID="http://example.org/data/subjects/en">
-        <Name xml:lang="cs">Angličtina</Name>
-        <IsTaught>
-            <Lesson ID="http://example.org/data/lessons/MO0800S7">
+	<Subject ID="http://example.org/data/subjects/mt">
+	<Name xml:lang="cs">Matematika</Name>
+	<IsTaught>
+		<Lesson ID="http://example.org/data/lessons/TH0855S7">
+			<ZoomURI>https://zoom.com/TH0855S7</ZoomURI>
+			<Code>TH0855S7</Code>
+		</Lesson>
+		<Lesson ID="http://example.org/data/lessons/TH0855S6">
+			<ZoomURI>https://zoom.com/TH0855S6</ZoomURI>
+			<Code>TH0855S6</Code>
+		</Lesson>
+	</IsTaught>
+	</Subject>
+	
+	<Subject ID="http://example.org/data/subjects/en">
+		<Name xml:lang="cs">Angličtina</Name>
+		<IsTaught>
+			<Lesson ID="http://example.org/data/lessons/MO0800S7">
 				<ZoomURI>https://zoom.com/MO0800S7</ZoomURI>
 				<Code>MO0800S7</Code>
 			</Lesson>
@@ -30,20 +28,16 @@
 				<ZoomURI>https://zoom.com/FR1000S9</ZoomURI>
 				<Code>FR1000S9</Code>
 			</Lesson>
-        </IsTaught>
-    </Subject>
-
-    <Subject ID="http://example.org/data/subjects/ps">
-        <Name xml:lang="cs">Fyzika</Name>
-        <IsTaught>
-            <Lesson ID="http://example.org/data/lessons/FR1000S6">
+		</IsTaught>
+	</Subject>
+	
+	<Subject ID="http://example.org/data/subjects/ps">
+		<Name xml:lang="cs">Fyzika</Name>
+		<IsTaught>
+			<Lesson ID="http://example.org/data/lessons/FR1000S6">
 				<ZoomURI>https://zoom.com/FR1000S6</ZoomURI>
 				<Code>FR1000S6</Code>
 			</Lesson>
-        </IsTaught>
-    </Subject>
-
-
-
-
+		</IsTaught>
+	</Subject>
 </Subjects>
