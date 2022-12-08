@@ -15,20 +15,25 @@
 	
 	<xs:element name="Lesson">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="ZoomURI" />
 				<xs:element ref="Code" />
 			</xs:all>
+            <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="Subject">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:all>
-				<xs:element name="Name" type="xs:string">
-					<xs:attribute ref="xml:lang" use="required" />
+				<xs:element name="Name">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute ref="xml:lang" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>                  
 				</xs:element>
 				<xs:element name="IsTaught">
 					<xs:complexType>
@@ -38,6 +43,7 @@
 					</xs:complexType>
 				</xs:element>
 			</xs:all>
+            <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	

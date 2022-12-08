@@ -38,8 +38,15 @@
 			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="Code" />
-				<xs:element name="Name" type="xs:string">
-					<xs:attribute ref="xml:lang" use="required" />
+				<xs:element name="Name">
+				<!-- inspired by: https://stackoverflow.com/questions/4504994/xml-schema-for-simpletype-and-attribute -->
+					<xs:complexType>
+						<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute ref="xml:lang" use="required" />
+						</xs:extension>
+						</xs:simpleContent>
+                  	</xs:complexType>     
 				</xs:element>
 				<xs:element name="Experience" type="xs:integer" />
 				<xs:element name="ClassTeacher" ref="Class" />
