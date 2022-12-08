@@ -1,0 +1,182 @@
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+# Custom prefixes
+@prefix ex: <http://example.org/vocabulary/> .
+@prefix exClass: <http://example.org/data/classes/> .
+@prefix exTeacher: <http://example.org/data/teachers/> .
+@prefix exLesson: <http://example.org/data/lessons/> .
+@prefix exClassroom: <http://example.org/data/classrooms/> .
+@prefix exSubject: <http://example.org/data/subjects/> .
+@prefix exStudent: <http://example.org/data/students/> .
+@prefix exTimeSlot: <http://example.org/data/timeslots/> .
+@prefix exTimetable: <http://example.org/data/timetables/> .
+
+
+# Třídní rozvrh
+
+exTimetable:20216A15 a ex:Timetable ;
+	ex:AcademicalYear "2020/2021" ;
+	ex:TimetableVersion 1.5 ;
+	ex:PlannedLesson exLesson:TH0855S6 ;
+	ex:BelongingClass exClass:6A .
+
+exTimetable:21226B10 a ex:Timetable ;
+	ex:AcademicalYear "2021/2022" ;
+	ex:TimetableVersion 1.0 ;
+	ex:PlannedLesson exLesson:MO0800S7, exLesson:FR1000S6 ;
+	ex:BelongingClass exClass:6B .
+
+exTimetable:22234C20 a ex:Timetable ;
+	ex:AcademicalYear "2022/2023" ;
+	ex:TimetableVersion 2.0 ;
+	ex:PlannedLesson exLesson:FR1000S9 ;
+	ex:BelongingClass exClass:4C .
+
+
+# Třída
+
+exClass:6A a ex:Class ;
+	ex:ClassCode "A" ;
+	ex:ClassYear 6 ;
+	ex:ClassTeacher exTeacher:muk .
+
+exClass:6B a ex:Class ;
+	ex:ClassCode "B" ;
+	ex:ClassYear 6 ;
+	ex:ClassTeacher exTeacher:pel .
+
+exClass:4C a ex:Class ;
+	ex:ClassCode "C" ;
+	ex:ClassYear 4 ;
+	ex:ClassTeacher exTeacher:svo .
+
+
+# Hodina
+
+exLesson:MO0800S7 a ex:Lesson ;
+	ex:LessonID "MO0800S7"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:MO0800 ;
+	ex:TakesPlace exClassroom:S7 ;
+	ex:IsTaught exSubject:English .
+
+exLesson:TH0855S7 a ex:Lesson ;
+	ex:LessonID "TH0855S7"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/TH0855S7"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:TH0855 ;
+	ex:TakesPlace exClassroom:S7 ;
+	ex:IsTaught exSubject:Math .
+
+exLesson:TH0855S6 a ex:Lesson ;
+	ex:LessonID "TH0855S6"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:TH0855 ;
+	ex:TakesPlace exClassroom:S6 ;
+	ex:IsTaught exSubject:Math .
+
+exLesson:FR1000S9 a ex:Lesson ;
+	ex:LessonID "FR1000S9"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/FR1000S9"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:FR1000 ;
+	ex:TakesPlace exClassroom:S9 ;
+	ex:IsTaught exSubject:English .
+
+exLesson:FR1000S6 a ex:Lesson ;
+	ex:LessonID "FR1000S6"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/FR1000S6"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:FR1000 ;
+	ex:TakesPlace exClassroom:S6 ;
+	ex:IsTaught exSubject:Physics .
+
+
+# Časový slot
+	
+exTimeSlot:MO0800 a ex:TimeSlot ;
+	ex:TimeSlotBeginning "08:00:00"^^xsd:time ;
+	ex:TimeSlotEnd "08:45:00"^^xsd:time ;
+	ex:DayOfWeek time:Monday .
+
+exTimeSlot:TH0855 a ex:TimeSlot ;
+	ex:TimeSlotBeginning "08:55:00"^^xsd:time ;
+	ex:TimeSlotEnd "09:40:00"^^xsd:time ;
+	ex:DayOfWeek time:Thursday .
+
+exTimeSlot:FR1000 a ex:TimeSlot ;
+	ex:TimeSlotBeginning "10:00:00"^^xsd:time ;
+	ex:TimeSlotEnd "10:45:00"^^xsd:time ;
+	ex:DayOfWeek time:Friday .
+
+
+# Učebna
+
+exClassroom:S6 a ex:Classroom ;
+	ex:ClassroomID "S6"^^xsd:ID ;
+	ex:ClassroomCapacity 30 .
+
+exClassroom:S7 a ex:Classroom ;
+	ex:ClassroomID "S7"^^xsd:ID ;
+	ex:ClassroomCapacity 28 .
+
+exClassroom:S9 a ex:Classroom ;
+	ex:ClassroomID "S9"^^xsd:ID ;
+	ex:ClassroomCapacity 30 .
+
+
+# Předmět
+
+exSubject:Math a ex:Subject ;
+	ex:SubjectID "mt"^^xsd:ID ;
+	ex:SubjectName "Matematika"@cs .
+
+exSubject:English a ex:Subject ;
+	ex:SubjectID "en"^^xsd:ID ;
+	ex:SubjectName "Angličtina"@cs .
+
+exSubject:Physics a ex:Subject ;
+	ex:SubjectID "ps"^^xsd:ID ;
+	ex:SubjectName "Fyzika"@cs .
+
+
+# Učitel
+
+exTeacher:muk a ex:Teacher ;
+	ex:TeacherID "muk"^^xsd:ID ;
+	foaf:name "Vladimír Mukvald"@cs ;
+	ex:TeacherExperience "5"^^xsd:integer ;
+	ex:Teaches exSubject:Math .
+
+exTeacher:pel a ex:Teacher ;
+	ex:TeacherID "pel"^^xsd:ID ;
+	foaf:name "Jaroslav Pelikán"@cs ;
+	ex:TeacherExperience "3"^^xsd:integer ;
+	ex:Teaches exSubject:Math, exSubject:Physics .
+
+exTeacher:svo a ex:Teacher ;
+	ex:TeacherID "svo"^^xsd:ID ;
+	foaf:name "Patrik Svoboda"@cs ;
+	ex:TeacherExperience "2"^^xsd:integer ;
+	ex:Teaches exSubject:English .
+
+
+# Žák
+
+exStudent:kovpe a ex:Student ;
+	ex:StudentID "kovpe"^^xsd:ID ;
+	foaf:name "Petr Kovář"@cs ;
+	ex:BelongsTo exClass:6A .
+
+exStudent:kliji a ex:Student ;
+	ex:StudentID "kliji"^^xsd:ID ;
+	foaf:name "Jiří Klimošek"@cs ;
+	ex:Nickname "Limoš"@cs ;
+	ex:BelongsTo exClass:6B .
+
+exStudent:novpa a ex:Student ;
+	ex:StudentID "novpa"^^xsd:ID ;
+	foaf:name "Pavel Novák"@cs ;
+	ex:Nickname
+		"Kajak"@cs ,
+		"Bizon"@cs ;
+	ex:BelongsTo exClass:4C .
