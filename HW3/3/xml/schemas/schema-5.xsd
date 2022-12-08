@@ -5,13 +5,11 @@
 	<xs:element name="ZoomURI" type="xs:anyURI" />
 	<xs:attribute name="ID" type="xs:anyURI" />
 	
-	<xs:element name="Code">
-		<xs:simpleType>
-			<xs:restriction base="xs:string">
-				<xs:pattern value="[a-zA-Z0-9]+" />
-			</xs:restriction>
-		</xs:simpleType>
-	</xs:element>
+  <xs:simpleType name="Code">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9]+" />
+    </xs:restriction>
+  </xs:simpleType>
 	
 	<xs:element name="AcademicalYear">
 		<xs:simpleType>
@@ -24,33 +22,47 @@
 	
 	<xs:element name="Lesson">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="ZoomURI" />
-				<xs:element ref="Code" />
+				<xs:element name="LessonCode" type="Code" />
 			</xs:all>
+            <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="Student">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
-			<xs:all>
-				<xs:element ref="Code" />
-				<xs:element name="Name" type="xs:string">
-					<xs:attribute ref="xml:lang" use="required" />
+			<xs:sequence>
+              <xs:element name="Name" >
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute ref="xml:lang" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>  
 				</xs:element>
-				<xs:element name="Nickname" type="xs:string" maxOccurs="unbounded" />
-			</xs:all>
+				<xs:element name="StudentCode" type="Code" />
+                    <xs:element name="Nickname" minOccurs="0" maxOccurs="unbounded" >
+                    <xs:complexType>
+                      <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                          <xs:attribute ref="xml:lang" use="required" />
+                        </xs:extension>
+                      </xs:simpleContent>
+                    </xs:complexType> 
+                  </xs:element>
+			</xs:sequence>
+         
+            <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="Class">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element name="ClassYear" type="xs:integer" />
-				<xs:element name="ClassCode" ref="Code" />
+				<xs:element name="ClassCode" type="Code" />
 				<xs:element name="BelongsTo">
 					<xs:complexType>
 						<xs:sequence>
@@ -59,12 +71,12 @@
 					</xs:complexType>
 				</xs:element>
 			</xs:all>
+          <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="Timetable">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="AcademicalYear" />
 				<xs:element name="TimetableVersion" type="xs:float" />
@@ -75,8 +87,15 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="BelongingClass" ref="Class" />
+				<xs:element name="BelongingClass" >
+                  <xs:complexType>
+                   <xs:all > 
+                     <xs:element ref="Class" />
+                   </xs:all>
+                   </xs:complexType>
+              	</xs:element>
 			</xs:all>
+            <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	

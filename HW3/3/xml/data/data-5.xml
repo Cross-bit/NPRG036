@@ -1,75 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Timetables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/schema-4.xsd">
-	<TimeTable ID="http://example.org/data/timetables/20216A15">
+<Timetables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/schema-5.xsd">
+	<Timetable ID="http://example.org/data/timetables/20216A15" >
 		<AcademicalYear>2020/2021</AcademicalYear>
 		<TimetableVersion>1.5</TimetableVersion>
 		<PlannedLesson>
 			<Lesson ID="http://example.org/data/lessons/TH0855S6">
 				<ZoomURI>https://zoom.com/TH0855S6</ZoomURI>
-				<Code>TH0855S6</Code>
+				<LessonCode>TH0855S6</LessonCode>
 			</Lesson>
 		</PlannedLesson>
 		<BelongingClass>
 			<Class ID="http://example.org/data/classes/6A">
-				<ClassCode>6</ClassCode>
-				<ClassYear>A</CalssYear>
+                <ClassYear>6</ClassYear>
+				<ClassCode>A</ClassCode>
 				<BelongsTo>
 					<Student ID="http://example.org/data/students/kovpe">
-					<Name xml:lang="cs">Petr Kovář</Name>
-				</Student>
+						<Name xml:lang="cs">Petr Kovář</Name>
+                        <StudentCode>kovpe</StudentCode>
+					</Student>
 				</BelongsTo>
 			</Class>
 		</BelongingClass>
-	</TimeTable>
+	</Timetable>
 	
-	<TimeTable ID="http://example.org/data/timetables/21226B10">
+	<Timetable ID="http://example.org/data/timetables/21226B10">
 		<AcademicalYear>2021/2022</AcademicalYear>
 		<TimetableVersion>1.0</TimetableVersion>
 		<PlannedLesson>
 			<Lesson ID="http://example.org/data/lessons/MO0800S7">
 				<ZoomURI>https://zoom.com/MO0800S7</ZoomURI>
-				<Code>MO0800S7</Code>
+				<LessonCode>MO0800S7</LessonCode>
 			</Lesson>
 			<Lesson ID="http://example.org/data/lessons/FR1000S6">
 				<ZoomURI>https://zoom.com/FR1000S6</ZoomURI>
-				<Code>FR1000S6</Code>
+				<LessonCode>FR1000S6</LessonCode>
 			</Lesson>
 		</PlannedLesson>
 		<BelongingClass>
 			<Class ID="http://example.org/data/classes/6B">
-				<ClassCode>6</ClassCode>
-				<ClassYear>B</CalssYear>
+				<ClassYear>6</ClassYear>
+              	<ClassCode>B</ClassCode>
 				<BelongsTo>
 				<Student ID="http://example.org/data/students/kliji">
 					<Name xml:lang="cs">Jiří Klimošek</Name>
+                    <StudentCode>kliji</StudentCode>
 					<Nickname xml:lang="cs">Limoš</Nickname>
 				</Student>
 				</BelongsTo>
 			</Class>
 		</BelongingClass>
-	</TimeTable>
+	</Timetable>
 	
-	<TimeTable ID="http://example.org/data/timetables/22234C20">
+	<Timetable ID="http://example.org/data/timetables/22234C20">
 		<AcademicalYear>2022/2023</AcademicalYear>
 		<TimetableVersion>2.0</TimetableVersion>
 		<PlannedLesson>
 			<Lesson ID="http://example.org/data/lessons/FR1000S9">
 				<ZoomURI>https://zoom.com/FR1000S9</ZoomURI>
-				<Code>FR1000S9</Code>
+				<LessonCode>FR1000S9</LessonCode>
 			</Lesson>
 		</PlannedLesson>
 		<BelongingClass>
 			<Class ID="http://example.org/data/classes/4C">
-				<ClassCode>4</ClassCode>
-				<ClassYear>C</CalssYear>
+                <ClassYear>4</ClassYear>
+				<ClassCode>C</ClassCode>
 				<BelongsTo>
 				<Student ID="http://example.org/data/students/novpa">
 					<Name xml:lang="cs">Pavel Novák</Name>
+                  	<StudentCode>novpa</StudentCode>
 					<Nickname xml:lang="cs">Kajak</Nickname>
 					<Nickname xml:lang="cs">Bizon</Nickname>
+                  
 				</Student>
 				</BelongsTo>
 			</Class>
 		</BelongingClass>
-	</TimeTable>
-</TimeTables>
+	</Timetable>
+</Timetables>
