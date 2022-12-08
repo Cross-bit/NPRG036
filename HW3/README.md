@@ -11,8 +11,24 @@ Rozdělení jak jsme se v Pátek dohodli je:
  - Vašek: 5
  - Honza: 4
  - Terka: 3
- 
- Deadline: do meetinu Neděle 10:00 
+
+# XSLT
+
+Transformace do rdf tripples
+Kam to má jít(output files atp.) najdete v zadání.
+Přidal jsem bash script který vezme všechny vygenerované rdf soubory a mergne je.
+Přidal jsem python script, který používá: [rdflib](https://github.com/RDFLib/rdflib), pro parsing rdf.
+
+Nainstalujete pomocí:
+pip install rdflib
+
+Spuštění věřím, že každý zvládne dle systému.
+
+
+
+
+
+
  
  ---------------------------------------------------------------------------------------------------------------------------------------------
 
