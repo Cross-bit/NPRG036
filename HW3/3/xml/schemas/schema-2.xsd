@@ -14,17 +14,16 @@
 	
 	<xs:element name="Lesson">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="ZoomURI" />
 				<xs:element ref="Code" />
 			</xs:all>
+            <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="Classroom">
 		<xs:complexType>
-			<xs:attribute ref="ID" use="required" />
 			<xs:all>
 				<xs:element ref="Code" />
 				<xs:element ref="ClassroomCapacity" />
@@ -36,6 +35,7 @@
 					</xs:complexType>
 				</xs:element>
 			</xs:all>
+            <xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
