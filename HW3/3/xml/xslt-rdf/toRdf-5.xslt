@@ -15,6 +15,17 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 
+@prefix ex: <http://example.org/vocabulary/> .
+
+@prefix exClass: <http://example.org/data/classes/> .
+@prefix exTeacher: <http://example.org/data/teachers/> .
+@prefix exLesson: <http://example.org/data/lessons/> .
+@prefix exClassroom: <http://example.org/data/classrooms/> .
+@prefix exSubject: <http://example.org/data/subjects/> .
+@prefix exStudent: <http://example.org/data/students/> .
+@prefix exTimeSlot: <http://example.org/data/timeslots/> .
+@prefix exTimetable: <http://example.org/data/timetables/> .
+
 -->
 
 

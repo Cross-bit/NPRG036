@@ -9,13 +9,6 @@
 
 <xsl:template match="Timetable">
 
-<!-- 
-
-@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-
--->
 
 
 </xsl:template>
