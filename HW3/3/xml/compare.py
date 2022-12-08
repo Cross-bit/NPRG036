@@ -7,6 +7,7 @@ mergeRdfs = True
 
 HOME = os.getenv('HOME')
 
+# nastavete si svoje cesty...
 original_rdf_path = HOME + "/school/NPRG036/HW2/2/rdf/data/data.ttl"
 #merged_rdf_path = HOME + "/school/NPRG036/HW3/3/xml/rdf-merged.ttl"
 merged_rdf_path = HOME + "/school/NPRG036/HW3/TOBEDONE.ttl"
@@ -35,9 +36,3 @@ else:
     print("Missing tripples:")
     for s, p, o in original:
         print(s, p, o);
-
-
-
-
-#for s, p, o in g:
-#    print(s, p, o)

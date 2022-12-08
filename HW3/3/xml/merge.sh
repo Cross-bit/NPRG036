@@ -1,7 +1,7 @@
 #!/bin/bash
 
 location="$HOME/school/NPRG036/HW3/3/xml/rdf"
-output="./rdf-merged.ttl"
+output="$HOME/school/NPRG036/HW3/3/xml/rdf-merged.ttl"
 
 rm -rf $output
 
