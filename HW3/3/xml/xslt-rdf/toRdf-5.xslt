@@ -55,7 +55,7 @@
 <xsl:if test="count(Nickname) > 0">&lt;<xsl:value-of select="self::Student/@ID"/>&gt; ex:Nickname <xsl:apply-templates select="Nickname" /> . </xsl:if>
 </xsl:template>
 
-<xsl:template match="Nickname">"<xsl:value-of select="self::Nickname/text()"/>"@cs<xsl:if test="position() != last()">, </xsl:if></xsl:template>
+<xsl:template match="Nickname">"<xsl:value-of select="text()"/>"@<xsl:value-of select="@xml:lang"/><xsl:if test="position() != last()">, </xsl:if></xsl:template>
 
 <xsl:template match="PlannedLesson/Lesson" mode="PlannedLesson" >&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt;<xsl:if test="position() != last()">, </xsl:if></xsl:template>
 
