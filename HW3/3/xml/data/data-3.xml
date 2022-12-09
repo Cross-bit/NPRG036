@@ -3,21 +3,23 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="../schemas/schema-3.xsd"
 >
-	<Subject ID="http://example.org/data/subjects/mt">
-	<Name xml:lang="cs">Matematika</Name>
-	<IsTaught>
-		<Lesson ID="http://example.org/data/lessons/TH0855S7">
-			<ZoomURI>https://zoom.com/TH0855S7</ZoomURI>
-			<Code>TH0855S7</Code>
-		</Lesson>
-		<Lesson ID="http://example.org/data/lessons/TH0855S6">
-			<ZoomURI>https://zoom.com/TH0855S6</ZoomURI>
-			<Code>TH0855S6</Code>
-		</Lesson>
-	</IsTaught>
+	<Subject ID="http://example.org/data/subjects/Math">
+		<SubjectCode>mt</SubjectCode>
+		<Name xml:lang="cs">Matematika</Name>
+		<IsTaught>
+			<Lesson ID="http://example.org/data/lessons/TH0855S7">
+				<ZoomURI>https://zoom.com/TH0855S7</ZoomURI>
+				<Code>TH0855S7</Code>
+			</Lesson>
+			<Lesson ID="http://example.org/data/lessons/TH0855S6">
+				<ZoomURI>https://zoom.com/TH0855S6</ZoomURI>
+				<Code>TH0855S6</Code>
+			</Lesson>
+		</IsTaught>
 	</Subject>
 	
-	<Subject ID="http://example.org/data/subjects/en">
+	<Subject ID="http://example.org/data/subjects/English">
+		<SubjectCode>en</SubjectCode>
 		<Name xml:lang="cs">Angličtina</Name>
 		<IsTaught>
 			<Lesson ID="http://example.org/data/lessons/MO0800S7">
@@ -31,7 +33,8 @@
 		</IsTaught>
 	</Subject>
 	
-	<Subject ID="http://example.org/data/subjects/ps">
+	<Subject ID="http://example.org/data/subjects/Physics">
+		<SubjectCode>ps</SubjectCode>
 		<Name xml:lang="cs">Fyzika</Name>
 		<IsTaught>
 			<Lesson ID="http://example.org/data/lessons/FR1000S6">

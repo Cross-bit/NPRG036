@@ -26,6 +26,7 @@
 	<xs:element name="Subject">
 		<xs:complexType>
 			<xs:all>
+				<xs:element name="SubjectCode" type="Code" />
 				<xs:element name="Name">
                   <xs:complexType>
                     <xs:simpleContent>
