@@ -1,0 +1,39 @@
+
+
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+@prefix ex: <http://example.org/vocabulary/> .
+
+
+
+<http://example.org/data/subjects/Math> a ex:Subject ;
+    ex:SubjectName Matematika ;
+    ex:SubjectID "mt" .
+
+
+<http://example.org/data/lessons/TH0855S7> a ex:Lesson .
+<http://example.org/data/lessons/TH0855S7> ex:IsTaught <http://example.org/data/subjects/Math> .
+
+<http://example.org/data/lessons/TH0855S6> a ex:Lesson .
+<http://example.org/data/lessons/TH0855S6> ex:IsTaught <http://example.org/data/subjects/Math> .
+
+<http://example.org/data/subjects/English> a ex:Subject ;
+    ex:SubjectName Angličtina ;
+    ex:SubjectID "en" .
+
+
+<http://example.org/data/lessons/MO0800S7> a ex:Lesson .
+<http://example.org/data/lessons/MO0800S7> ex:IsTaught <http://example.org/data/subjects/English> .
+
+<http://example.org/data/lessons/FR1000S9> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S9> ex:IsTaught <http://example.org/data/subjects/English> .
+
+<http://example.org/data/subjects/Physics> a ex:Subject ;
+    ex:SubjectName Fyzika ;
+    ex:SubjectID "ps" .
+
+
+<http://example.org/data/lessons/FR1000S6> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S6> ex:IsTaught <http://example.org/data/subjects/Physics> .

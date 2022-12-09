@@ -10,33 +10,31 @@
 
 <xsl:template match="Subjects" >
 
+@prefix xsd: &lt;https://www.w3.org/2001/XMLSchema#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
+
+@prefix ex: &lt;http://example.org/vocabulary/&gt; .
+
+
+<xsl:apply-templates select="Subject" />
 </xsl:template>
 
 
 
 <xsl:template match="Subject" >
+&lt;<xsl:value-of select="self::Subject/@ID"/>&gt; a ex:Subject ;
+    ex:SubjectName <xsl:value-of select="Name"/> ;
+    ex:SubjectID "<xsl:value-of select="SubjectCode"/>" .
 
-<!-- 
-
-@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-
--->
-
-
-
-exSubject:<xsl:value-of select="self::Subject/Name"/> a ex:Subject ;
-    ex:SubjectID "<xsl:value-of select="SubjectCode"/>" ;
-    ex:TimetableVersion <xsl:value-of select="TimetableVersion"/> ;
-    ex:PlannedLesson <xsl:apply-templates select="PlannedLesson/Lesson" /> ;
-    ex:BelongingClass &lt;<xsl:value-of select="BelongingClass/Class/@ID" />&gt; .
-
-
-
-
-
-
+<xsl:apply-templates select="IsTaught/Lesson" />
 
 </xsl:template>
+
+
+<xsl:template match="IsTaught/Lesson" >
+&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; a ex:Lesson .
+&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; ex:IsTaught &lt;<xsl:value-of select="ancestor::Subject/@ID"/>&gt; .
+</xsl:template>
+
 </xsl:stylesheet>
