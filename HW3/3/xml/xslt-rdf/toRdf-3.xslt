@@ -8,8 +8,14 @@
 <xsl:variable name="prefix">https://example.org/</xsl:variable>
 
 
+<xsl:template match="Subjects" >
 
-@prefix exSubject: &lt;http://example.org/data/subjects/&gt; .
+</xsl:template>
+
+
+
+<xsl:template match="Subject" >
+
 <!-- 
 
 @prefix xsd: <https://www.w3.org/2001/XMLSchema#> .

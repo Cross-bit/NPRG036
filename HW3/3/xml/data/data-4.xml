@@ -4,8 +4,8 @@
 		<TeacherCode>muk</TeacherCode>
 		<Name xml:lang="cs">Vladimír Mukvald</Name>
 		<Experience>5</Experience>
-		<ClassTeacher ID="http://example.org/data/classes/6A" >
-          <Class>
+		<ClassTeacher >
+          <Class ID="http://example.org/data/classes/6A">
 			<ClassYear>6</ClassYear>
 			<ClassCode>A</ClassCode>
            </Class>
@@ -21,8 +21,8 @@
 		<TeacherCode>pel</TeacherCode>
 		<Name xml:lang="cs">Jaroslav Pelikán</Name>
 		<Experience>3</Experience>
-		<ClassTeacher ID="http://example.org/data/classes/6B">
-          <Class>
+		<ClassTeacher>
+          <Class ID="http://example.org/data/classes/6B">
 			<ClassYear>6</ClassYear>
 			<ClassCode>B</ClassCode>
            </Class>
@@ -42,8 +42,8 @@
 		<TeacherCode>svo</TeacherCode>
 		<Name xml:lang="cs">Patrik Svoboda</Name>
 		<Experience>2</Experience>
-		<ClassTeacher ID="http://example.org/data/classes/4C">
-          <Class>
+		<ClassTeacher>
+          <Class ID="http://example.org/data/classes/4C">
 			<ClassYear>4</ClassYear>
 			<ClassCode>C</ClassCode>
           </Class>
