@@ -53,6 +53,7 @@
 &lt;<xsl:value-of select="self::Student/@ID"/>&gt; foaf:name "<xsl:value-of select="Name"/>"@cs .
 &lt;<xsl:value-of select="self::Student/@ID"/>&gt; ex:StudentID "<xsl:value-of select="StudentCode"/>"^^xsd:ID .
 <xsl:if test="count(Nickname) > 0">&lt;<xsl:value-of select="self::Student/@ID"/>&gt; ex:Nickname <xsl:apply-templates select="Nickname" /> . </xsl:if>
+&lt;<xsl:value-of select="self::Student/@ID"/>&gt; ex:BelongsTo &lt;<xsl:value-of select="ancestor::Class/@ID"/>&gt; .
 </xsl:template>
 
 <xsl:template match="Nickname">"<xsl:value-of select="text()"/>"@<xsl:value-of select="@xml:lang"/><xsl:if test="position() != last()">, </xsl:if></xsl:template>

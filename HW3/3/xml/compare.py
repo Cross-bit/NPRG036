@@ -9,7 +9,7 @@ HOME = os.getenv('HOME')
 
 # nastavete si svoje cesty...
 original_rdf_path = HOME + "/school/NPRG036/HW2/2/rdf/data/data.ttl"
-merged_rdf_path = HOME + "/school/NPRG036/HW3/3/xml/rdf/data-5.ttl" #rdf-merged
+merged_rdf_path = HOME + "/school/NPRG036/HW3/3/xml/rdf-merged.ttl" #rdf-merged
 #merged_rdf_path = HOME + "/school/NPRG036/HW3/TOBEDONE.ttl"
 
 if mergeRdfs:
