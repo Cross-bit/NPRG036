@@ -23,8 +23,8 @@
 <http://example.org/data/classes/6A> ex:ClassYear 6 .
 
 <http://example.org/data/students/kovpe> a ex:Student .
-<http://example.org/data/students/kovpe> foaf:name "Petr Kovář" .
-<http://example.org/data/students/kovpe> ex:StudentCode "kovpe" .
+<http://example.org/data/students/kovpe> foaf:name "Petr Kovář"@cs .
+<http://example.org/data/students/kovpe> ex:StudentID "kovpe"^^xsd:ID .
 
 
 <http://example.org/data/lessons/TH0855S6> a ex:Lesson .
@@ -44,8 +44,8 @@
 <http://example.org/data/classes/6B> ex:ClassYear 6 .
 
 <http://example.org/data/students/kliji> a ex:Student .
-<http://example.org/data/students/kliji> foaf:name "Jiří Klimošek" .
-<http://example.org/data/students/kliji> ex:StudentCode "kliji" .
+<http://example.org/data/students/kliji> foaf:name "Jiří Klimošek"@cs .
+<http://example.org/data/students/kliji> ex:StudentID "kliji"^^xsd:ID .
 <http://example.org/data/students/kliji> ex:Nickname "Limoš"@cs . 
 
 <http://example.org/data/lessons/MO0800S7> a ex:Lesson .
@@ -70,8 +70,8 @@
 <http://example.org/data/classes/4C> ex:ClassYear 4 .
 
 <http://example.org/data/students/novpa> a ex:Student .
-<http://example.org/data/students/novpa> foaf:name "Pavel Novák" .
-<http://example.org/data/students/novpa> ex:StudentCode "novpa" .
+<http://example.org/data/students/novpa> foaf:name "Pavel Novák"@cs .
+<http://example.org/data/students/novpa> ex:StudentID "novpa"^^xsd:ID .
 <http://example.org/data/students/novpa> ex:Nickname "Kajak"@cs, "Bizon"@cs . 
 
 <http://example.org/data/lessons/FR1000S9> a ex:Lesson .

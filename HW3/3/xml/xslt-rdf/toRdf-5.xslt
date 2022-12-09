@@ -50,8 +50,8 @@
 
 <xsl:template match="BelongsTo/Student">
 &lt;<xsl:value-of select="self::Student/@ID"/>&gt; a ex:Student .
-&lt;<xsl:value-of select="self::Student/@ID"/>&gt; foaf:name "<xsl:value-of select="Name"/>" .
-&lt;<xsl:value-of select="self::Student/@ID"/>&gt; ex:StudentCode "<xsl:value-of select="StudentCode"/>" .
+&lt;<xsl:value-of select="self::Student/@ID"/>&gt; foaf:name "<xsl:value-of select="Name"/>"@cs .
+&lt;<xsl:value-of select="self::Student/@ID"/>&gt; ex:StudentID "<xsl:value-of select="StudentCode"/>"^^xsd:ID .
 <xsl:if test="count(Nickname) > 0">&lt;<xsl:value-of select="self::Student/@ID"/>&gt; ex:Nickname <xsl:apply-templates select="Nickname" /> . </xsl:if>
 </xsl:template>
 
