@@ -12,10 +12,10 @@ exTimetable:20216A15 a ex:Timetable ; 5
 
 // Třída
 
-exClass:6A a ex:Class ;
-	ex:ClassCode "A" ;
-	ex:ClassYear 6 ;
-	ex:ClassTeacher exTeacher:muk .
+exClass:6A a ex:Class ; 5
+	ex:ClassCode "A" ; 5
+	ex:ClassYear 6 ; 5
+	ex:ClassTeacher exTeacher:muk . 4
 
 
 // Hodina
