@@ -29,16 +29,16 @@
             <xsl:value-of select="Name" />
         </h2>
             <dl>
-                    <dt><b>Identifier:</b></dt>
-                    <dd><xsl:value-of select="self::Teacher/@ID" /></dd>    
-                    <dt><b>TeacherCode:</b></dt>
-                    <dd><xsl:value-of select="TeacherCode" /></dd>
-                    <dt><b>Experience:</b></dt>
-                    <dd><xsl:value-of select="Experience"/></dd>
-                    <dt><b>Subjects teaches:</b></dt>
-                    <xsl:apply-templates select="Subjects" />
-                    <dt><b>Is class teacher of:</b></dt>
-                </dl>  
+                <dt><b>Identifier:</b></dt>
+                <dd><xsl:value-of select="self::Teacher/@ID" /></dd>    
+                <dt><b>TeacherCode:</b></dt>
+                <dd><xsl:value-of select="TeacherCode" /></dd>
+                <dt><b>Experience:</b></dt>
+                <dd><xsl:value-of select="Experience"/></dd>
+                <dt><b>Subjects teaches:</b></dt>
+                <xsl:apply-templates select="Subjects" />
+                <dt><b>Is class teacher of:</b></dt>
+            </dl>  
      </xsl:template>
 
     <xsl:template match="Subjects">

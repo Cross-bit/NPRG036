@@ -59,7 +59,7 @@ exTeacher:muk a ex:Teacher ;
 
 // Žák
 
-exStudent:kovpe a ex:Student ;
-	ex:StudentID "kovpe"^^xsd:ID ;
-	foaf:name "Petr Kovář"@cs ;
-	ex:BelongsTo exClass:6A .
+exStudent:kovpe a ex:Student ; 5
+	ex:StudentID "kovpe"^^xsd:ID ; 5
+	foaf:name "Petr Kovář"@cs ; 5
+	ex:BelongsTo exClass:6A . 5

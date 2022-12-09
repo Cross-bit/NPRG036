@@ -18,6 +18,14 @@
 <http://example.org/data/timetables/20216A15> ex:BelongingClass <http://example.org/data/classes/6A> .
 
 
+<http://example.org/data/classes/6A> a ex:Class .
+<http://example.org/data/classes/6A> ex:ClassCode "A" .
+<http://example.org/data/classes/6A> ex:ClassYear 6 .
+
+<http://example.org/data/students/kovpe> a ex:Student .
+<http://example.org/data/students/kovpe> foaf:name "Petr Kovář" .
+<http://example.org/data/students/kovpe> ex:StudentCode "kovpe" .
+
 
 <http://example.org/data/timetables/21226B10> a ex:Timetable .
 <http://example.org/data/timetables/21226B10> ex:AcademicalYear "2021/2022" .
@@ -26,6 +34,14 @@
 <http://example.org/data/timetables/21226B10> ex:BelongingClass <http://example.org/data/classes/6B> .
 
 
+<http://example.org/data/classes/6B> a ex:Class .
+<http://example.org/data/classes/6B> ex:ClassCode "B" .
+<http://example.org/data/classes/6B> ex:ClassYear 6 .
+
+<http://example.org/data/students/kliji> a ex:Student .
+<http://example.org/data/students/kliji> foaf:name "Jiří Klimošek" .
+<http://example.org/data/students/kliji> ex:StudentCode "kliji" .
+<http://example.org/data/students/kliji> ex:Nickname "Limoš" . 
 
 <http://example.org/data/timetables/22234C20> a ex:Timetable .
 <http://example.org/data/timetables/22234C20> ex:AcademicalYear "2022/2023" .
@@ -33,3 +49,12 @@
 <http://example.org/data/timetables/22234C20> ex:PlannedLesson <http://example.org/data/lessons/FR1000S9> .
 <http://example.org/data/timetables/22234C20> ex:BelongingClass <http://example.org/data/classes/4C> .
 
+
+<http://example.org/data/classes/4C> a ex:Class .
+<http://example.org/data/classes/4C> ex:ClassCode "C" .
+<http://example.org/data/classes/4C> ex:ClassYear 4 .
+
+<http://example.org/data/students/novpa> a ex:Student .
+<http://example.org/data/students/novpa> foaf:name "Pavel Novák" .
+<http://example.org/data/students/novpa> ex:StudentCode "novpa" .
+<http://example.org/data/students/novpa> ex:Nickname "Kajak", "Bizon" . 
