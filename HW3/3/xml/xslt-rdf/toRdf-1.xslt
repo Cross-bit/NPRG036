@@ -13,13 +13,22 @@
 @prefix time: &lt;http://www.w3.org/2006/time#&gt; .
 
 @prefix ex: &lt;http://example.org/vocabulary/&gt; .
-<xsl:apply-templates select="Timetable" />
+<xsl:apply-templates select="TimeSlot" />
 </xsl:template>
 
 
-<xsl:template match="Timetable" >
+<xsl:template match="TimeSlot" >
+   &lt;<xsl:value-of select="self::TimeSlot/@ID"/>&gt; a ex:TimeSlot ;
+	ex:TimeSlotBeginning "<xsl:value-of select="TimeSlotBeginning"/>"^^xsd:time ;
+	ex:TimeSlotEnd "<xsl:value-of select="TimeSlotEnd"/>"^^xsd:time ;
+	ex:DayOfWeek time:<xsl:value-of select="DayOfWeek"/> .
+   <xsl:apply-templates select="TakesTime/Lesson" />
+</xsl:template>
 
-
+<xsl:template match="TakesTime/Lesson" >
+   &lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; a ex:TimeSlot ;
+	ex:TakesTime &lt;<xsl:value-of select="ancestor::TimeSlot/@ID"/>&gt; .
 
 </xsl:template>
+
 </xsl:stylesheet>
