@@ -7,8 +7,9 @@
 <xsl:output method="text" encoding="UTF-8" />
 <xsl:variable name="prefix">https://example.org/</xsl:variable>
 
-<xsl:template match="Timetable">
 
+
+@prefix exSubject: &lt;http://example.org/data/subjects/&gt; .
 <!-- 
 
 @prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
@@ -16,6 +17,19 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 
 -->
+
+
+
+exSubject:<xsl:value-of select="self::Subject/Name"/> a ex:Subject ;
+    ex:SubjectID "<xsl:value-of select="SubjectCode"/>" ;
+    ex:TimetableVersion <xsl:value-of select="TimetableVersion"/> ;
+    ex:PlannedLesson <xsl:apply-templates select="PlannedLesson/Lesson" /> ;
+    ex:BelongingClass &lt;<xsl:value-of select="BelongingClass/Class/@ID" />&gt; .
+
+
+
+
+
 
 
 </xsl:template>
