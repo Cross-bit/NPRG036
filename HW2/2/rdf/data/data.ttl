@@ -37,6 +37,11 @@ exTimetable:22234C20 a ex:Timetable ;
 
 # Třída
 
+vexClass:7A a ex:Class ;
+	ex:ClassCode "A" ;
+	ex:ClassYear 7 ;
+	ex:ClassTeacher exTeacher:muk .
+
 exClass:6A a ex:Class ;
 	ex:ClassCode "A" ;
 	ex:ClassYear 6 ;

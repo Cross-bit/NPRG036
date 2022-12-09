@@ -36,6 +36,13 @@
 &lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:TimetableVersion <xsl:value-of select="TimetableVersion"/> .
 &lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:PlannedLesson <xsl:apply-templates select="PlannedLesson/Lesson" /> .
 &lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:BelongingClass &lt;<xsl:value-of select="BelongingClass/Class/@ID" />&gt; .
+
+<xsl:apply-templates select="Class" />
+
+</xsl:template>
+
+<xsl:template match="Class">
+
 </xsl:template>
 
 <xsl:template match="Lesson">&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt;<xsl:if test="position() != last()">, </xsl:if></xsl:template>

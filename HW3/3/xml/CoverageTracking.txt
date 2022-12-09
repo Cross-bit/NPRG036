@@ -1,0 +1,65 @@
+
+# tracking where(in what xslt transformation file) each property/association is mapped(indicated by the number at the end of line)
+
+
+// Rozvrh
+
+exTimetable:20216A15 a ex:Timetable ; 5
+	ex:AcademicalYear "2020/2021" ; 5
+	ex:TimetableVersion 1.5 ; 5
+	ex:PlannedLesson exLesson:TH0855S6 ; 5
+	ex:BelongingClass exClass:6A . 5
+
+// Třída
+
+exClass:6A a ex:Class ;
+	ex:ClassCode "A" ;
+	ex:ClassYear 6 ;
+	ex:ClassTeacher exTeacher:muk .
+
+
+// Hodina
+
+exLesson:MO0800S7 a ex:Lesson ;
+	ex:LessonID "MO0800S7"^^xsd:ID ;
+	ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI ;
+	ex:TakesTime exTimeSlot:MO0800 ;
+	ex:TakesPlace exClassroom:S7 ;
+	ex:IsTaught exSubject:English .
+
+
+// Časový slot
+
+exTimeSlot:MO0800 a ex:TimeSlot ;
+	ex:TimeSlotBeginning "08:00:00"^^xsd:time ;
+	ex:TimeSlotEnd "08:45:00"^^xsd:time ;
+	ex:DayOfWeek time:Monday .
+
+// Učebna
+
+exClassroom:S6 a ex:Classroom ;
+	ex:ClassroomID "S6"^^xsd:ID ;
+	ex:ClassroomCapacity 30 .
+	
+	
+// Předmět
+
+exSubject:Math a ex:Subject ;
+	ex:SubjectID "mt"^^xsd:ID ;
+	ex:SubjectName "Matematika"@cs .
+
+// Učitel
+
+exTeacher:muk a ex:Teacher ;
+	ex:TeacherID "muk"^^xsd:ID ;
+	foaf:name "Vladimír Mukvald"@cs ;
+	ex:TeacherExperience "5"^^xsd:integer ;
+	ex:Teaches exSubject:Math .
+
+
+// Žák
+
+exStudent:kovpe a ex:Student ;
+	ex:StudentID "kovpe"^^xsd:ID ;
+	foaf:name "Petr Kovář"@cs ;
+	ex:BelongsTo exClass:6A .
