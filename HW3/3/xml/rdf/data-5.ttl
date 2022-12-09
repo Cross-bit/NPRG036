@@ -27,6 +27,11 @@
 <http://example.org/data/students/kovpe> ex:StudentCode "kovpe" .
 
 
+<http://example.org/data/lessons/TH0855S6> a ex:Lesson .
+<http://example.org/data/lessons/TH0855S6> ex:LessonID "TH0855S6"^^xsd:ID .
+<http://example.org/data/lessons/TH0855S6> ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI .
+
+
 <http://example.org/data/timetables/21226B10> a ex:Timetable .
 <http://example.org/data/timetables/21226B10> ex:AcademicalYear "2021/2022" .
 <http://example.org/data/timetables/21226B10> ex:TimetableVersion 1.0 .
@@ -43,6 +48,16 @@
 <http://example.org/data/students/kliji> ex:StudentCode "kliji" .
 <http://example.org/data/students/kliji> ex:Nickname "Limoš" . 
 
+<http://example.org/data/lessons/MO0800S7> a ex:Lesson .
+<http://example.org/data/lessons/MO0800S7> ex:LessonID "MO0800S7"^^xsd:ID .
+<http://example.org/data/lessons/MO0800S7> ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI .
+
+
+<http://example.org/data/lessons/FR1000S6> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S6> ex:LessonID "FR1000S6"^^xsd:ID .
+<http://example.org/data/lessons/FR1000S6> ex:LessonUrl "https://zoom.com/FR1000S6"^^xsd:anyURI .
+
+
 <http://example.org/data/timetables/22234C20> a ex:Timetable .
 <http://example.org/data/timetables/22234C20> ex:AcademicalYear "2022/2023" .
 <http://example.org/data/timetables/22234C20> ex:TimetableVersion 2.0 .
@@ -58,3 +73,7 @@
 <http://example.org/data/students/novpa> foaf:name "Pavel Novák" .
 <http://example.org/data/students/novpa> ex:StudentCode "novpa" .
 <http://example.org/data/students/novpa> ex:Nickname "Kajak", "Bizon" . 
+
+<http://example.org/data/lessons/FR1000S9> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S9> ex:LessonID "FR1000S9"^^xsd:ID .
+<http://example.org/data/lessons/FR1000S9> ex:LessonUrl "https://zoom.com/FR1000S9"^^xsd:anyURI .

@@ -34,10 +34,11 @@
 &lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; a ex:Timetable .
 &lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:AcademicalYear "<xsl:value-of select="AcademicalYear"/>" .
 &lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:TimetableVersion <xsl:value-of select="TimetableVersion"/> .
-&lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:PlannedLesson <xsl:apply-templates select="PlannedLesson/Lesson" /> .
+&lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:PlannedLesson <xsl:apply-templates   select="PlannedLesson/Lesson" mode="PlannedLesson" /> .
 &lt;<xsl:value-of select="self::Timetable/@ID"/>&gt; ex:BelongingClass &lt;<xsl:value-of select="BelongingClass/Class/@ID" />&gt; .
 
 <xsl:apply-templates select="BelongingClass/Class" />
+<xsl:apply-templates select="PlannedLesson/Lesson" mode="Lesson"  />
 </xsl:template>
 
 <xsl:template match="BelongingClass/Class">
@@ -56,6 +57,14 @@
 
 <xsl:template match="Nickname">"<xsl:value-of select="self::Nickname/text()"/>"<xsl:if test="position() != last()">, </xsl:if></xsl:template>
 
-<xsl:template match="Lesson">&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt;<xsl:if test="position() != last()">, </xsl:if></xsl:template>
+<xsl:template match="PlannedLesson/Lesson" mode="PlannedLesson" >&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt;<xsl:if test="position() != last()">, </xsl:if></xsl:template>
+
+<xsl:template match="PlannedLesson/Lesson" mode="Lesson" >
+
+&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; a ex:Lesson .
+&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; ex:LessonID "<xsl:value-of select="LessonCode"/>"^^xsd:ID .
+&lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; ex:LessonUrl "<xsl:value-of select="ZoomURI"/>"^^xsd:anyURI .
+</xsl:template>
+
 </xsl:stylesheet>
 
