@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" 
-   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   xmlns:fn="http://www.w3.org/2005/xpath-functions">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
+  <xsl:output method="text" encoding="UTF-8" />
+  
+  <xsl:template match="/">
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-<xsl:output method="text" encoding="UTF-8" />
-<xsl:variable name="prefix">https://example.org/</xsl:variable>
+# Custom prefixes
+@prefix ex: &lt;http://example.org/vocabulary/&gt; .
+@prefix exClassroom: &lt;http://example.org/data/classes/&gt; .
+@prefix ex:Lesson &lt;http://example.org/data/classes/&gt; .
 
-<xsl:template match="Timetables">
+<xsl:apply-templates mode="entity" select="Classrooms"/>
+  </xsl:template>
+  
+  <xsl:template mode="IRI" match="node()">
+&lt;<xsl:value-of select="@ID" />&gt;
+  </xsl:template>
+  
+  <xsl:template mode="entity" match="Classroom">
+<xsl:apply-templates mode="IRI" select="." /> a ex:Classroom ;
+	ex:ClassroomID "<xsl:value-of select="Code" />"^^xsd:ID ;
+	ex:ClassroomCapacity <xsl:value-of select="ClassroomCapacity" /> .
 
-<!-- 
-
-@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-
--->
-
-
-</xsl:template>
+<xsl:apply-templates mode="entity" select="TakesPlace" />
+  </xsl:template>
+  
+  <xsl:template mode="entity" match="Lesson">
+<xsl:apply-templates mode="IRI" select="." /> a ex:Lesson ;
+	ex:LessonID "<xsl:value-of select="Code" />"^^xsd:token ;
+  ex:LessonUrl "<xsl:value-of select="ZoomURI" />"^^xsd:anyURI ;
+	ex:TakesPlace <xsl:apply-templates mode="IRI" select="../.." /> .
+  </xsl:template>
+  
+  <!--xsl:template match="text()" /-->
 </xsl:stylesheet>

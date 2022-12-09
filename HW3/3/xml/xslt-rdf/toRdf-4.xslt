@@ -5,7 +5,6 @@
   <xsl:template match="/">
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
-@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
 
 # Custom prefixes
 @prefix ex: &lt;http://example.org/vocabulary/&gt; .
@@ -36,8 +35,6 @@
 <xsl:apply-templates mode="IRI" select="." /> a ex:Subject ;
 	ex:SubjectID "<xsl:value-of select="SubjectCode" />"^^xsd:ID ;
 	ex:SubjectName "<xsl:value-of select="Name" />"@<xsl:value-of select="Name/@xml:lang" /> .
-
-<xsl:apply-templates mode="entity" select="Subjects" />
   </xsl:template>
   
   <xsl:template mode="entity" match="Class">
@@ -45,8 +42,6 @@
 	ex:ClassCode "<xsl:value-of select="ClassCode" />"^^xsd:token ;
 	ex:ClassYear <xsl:value-of select="ClassYear" /> ;
 	ex:ClassTeacher <xsl:apply-templates mode="IRI" select="../.." /> .
-
-<xsl:apply-templates mode="entity" select="Subjects" />
   </xsl:template>
   
   <!--xsl:template match="text()" /-->
