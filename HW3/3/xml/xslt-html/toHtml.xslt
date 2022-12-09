@@ -63,8 +63,4 @@
         <dd><xsl:value-of select="ClassCode" /></dd>
         <hr style="border-top: dotted 2px; color: blue;" ></hr>
     </xsl:template>
-    <!-- 
-    
-    java -jar $HOME/school/saxon/saxon-he-11.3.jar -xsl:"./toHtml.xslt" -s:"$HOME/school/NPRG036/HW3/3/xml/data/data-4.xml"  -o:"$HOME/school/NPRG036/HW3/3/xml/xslt-html/toHtml.html"
-     -->
 </xsl:stylesheet>
