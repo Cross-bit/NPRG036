@@ -1,0 +1,104 @@
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+# Custom prefixes
+@prefix ex: <http://example.org/vocabulary/> .
+@prefix exClass: <http://example.org/data/classes/> .
+@prefix exTeacher: <http://example.org/data/teachers/> .
+@prefix exSubject: <http://example.org/data/subjects/> .
+
+
+	
+<http://example.org/data/teachers/muk>
+   a ex:Teacher ;
+	ex:TeacherID "muk"^^xsd:ID ;
+	foaf:name "Vladimír Mukvald"@cs ;
+	ex:TeacherExperience "5"^^xsd:integer ;
+	ex:Teaches <http://example.org/data/subjects/Math> .
+
+
+			
+<http://example.org/data/subjects/Math>
+   a ex:Subject ;
+	ex:SubjectID "mt"^^xsd:ID ;
+	foaf:name "Matematika"@cs .
+
+
+		
+          
+<http://example.org/data/classes/6A>
+   a ex:Class ;
+	ex:ClassCode "A"^^xsd:ID ;
+	ex:ClassYear 6 ;
+	ex:ClassTeacher 
+<http://example.org/data/teachers/muk>
+   .
+
+
+		
+	
+<http://example.org/data/teachers/pel>
+   a ex:Teacher ;
+	ex:TeacherID "pel"^^xsd:ID ;
+	foaf:name "Jaroslav Pelikán"@cs ;
+	ex:TeacherExperience "3"^^xsd:integer ;
+	ex:Teaches <http://example.org/data/subjects/Math>, <http://example.org/data/subjects/Physics> .
+
+
+			
+<http://example.org/data/subjects/Math>
+   a ex:Subject ;
+	ex:SubjectID "mt"^^xsd:ID ;
+	foaf:name "Matematika"@cs .
+
+
+			
+<http://example.org/data/subjects/Physics>
+   a ex:Subject ;
+	ex:SubjectID "ps"^^xsd:ID ;
+	foaf:name "Fyzika"@cs .
+
+
+		
+          
+<http://example.org/data/classes/6B>
+   a ex:Class ;
+	ex:ClassCode "B"^^xsd:ID ;
+	ex:ClassYear 6 ;
+	ex:ClassTeacher 
+<http://example.org/data/teachers/pel>
+   .
+
+
+		
+	
+<http://example.org/data/teachers/svo>
+   a ex:Teacher ;
+	ex:TeacherID "svo"^^xsd:ID ;
+	foaf:name "Patrik Svoboda"@cs ;
+	ex:TeacherExperience "2"^^xsd:integer ;
+	ex:Teaches <http://example.org/data/subjects/English> .
+
+
+			
+<http://example.org/data/subjects/English>
+   a ex:Subject ;
+	ex:SubjectID "en"^^xsd:ID ;
+	foaf:name "Angličtina"@cs .
+
+
+		
+          
+<http://example.org/data/classes/4C>
+   a ex:Class ;
+	ex:ClassCode "C"^^xsd:ID ;
+	ex:ClassYear 4 ;
+	ex:ClassTeacher 
+<http://example.org/data/teachers/svo>
+   .
+
+
+		
+
