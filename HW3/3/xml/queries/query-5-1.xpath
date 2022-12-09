@@ -1,0 +1,3 @@
+(: Najdi mezi rozvrhy pro letošní a následující akademické roky všechny jména studentů, jenž dochází do čtvrté a vyšší třídy :)
+
+//Timetable[number(substring(AcademicalYear,6,4)) >= 2023]//Class[number(ClassYear) >= 4]//Student/Name
