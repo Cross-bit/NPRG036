@@ -7,7 +7,7 @@
 <xsl:output method="text" encoding="UTF-8" />
 <xsl:variable name="prefix">https://example.org/</xsl:variable>
 
-<xsl:template match="Timetable">
+<xsl:template match="Timetables">
 
 <!-- 
 

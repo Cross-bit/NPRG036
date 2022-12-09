@@ -9,8 +9,8 @@ HOME = os.getenv('HOME')
 
 # nastavete si svoje cesty...
 original_rdf_path = HOME + "/school/NPRG036/HW2/2/rdf/data/data.ttl"
-#merged_rdf_path = HOME + "/school/NPRG036/HW3/3/xml/rdf-merged.ttl"
-merged_rdf_path = HOME + "/school/NPRG036/HW3/TOBEDONE.ttl"
+merged_rdf_path = HOME + "/school/NPRG036/HW3/3/xml/rdf-merged.ttl"
+#merged_rdf_path = HOME + "/school/NPRG036/HW3/TOBEDONE.ttl"
 
 if mergeRdfs:
     command = 'bash merge.sh'
@@ -35,4 +35,7 @@ else:
     (both, original, merged) = graph_diff(original_g, merged_g)
     print("Missing tripples:")
     for s, p, o in original:
-        print(s, p, o);
+        print(s, p, o)
+    print("Useless tripples:")
+    for s, p, o in merged:
+        print(s, p, o)

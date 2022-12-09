@@ -1,19 +1,32 @@
 
+
+
+
 @prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 
 @prefix ex: <http://example.org/vocabulary/> .
 
-@prefix exClass: <ttp://example.org/data/classes/> .
-@prefix exTeacher: <ttp://example.org/data/teachers/> .
-@prefix exLesson: <ttp://example.org/data/lessons/> .
-@prefix exClassroom: <ttp://example.org/data/classrooms/> .
-@prefix exSubject: <ttp://example.org/data/subjects/> .
-@prefix exStudent: <ttp://example.org/data/students/> .
-@prefix exTimeSlot: <ttp://example.org/data/timeslots/> .
-@prefix exTimetable: <ttp://example.org/data/timetables/> .
 
 
 
+<http://example.org/data/timetables/20216A15> a ex:Timetable .
+<http://example.org/data/timetables/20216A15> ex:AcademicalYear "2020/2021" .
+<http://example.org/data/timetables/20216A15> ex:TimetableVersion 1.5 .
+<http://example.org/data/timetables/20216A15> ex:PlannedLesson <http://example.org/data/lessons/TH0855S6> .
+<http://example.org/data/timetables/20216A15> ex:BelongingClass <http://example.org/data/classes/6A> .
 
+
+<http://example.org/data/timetables/21226B10> a ex:Timetable .
+<http://example.org/data/timetables/21226B10> ex:AcademicalYear "2021/2022" .
+<http://example.org/data/timetables/21226B10> ex:TimetableVersion 1.0 .
+<http://example.org/data/timetables/21226B10> ex:PlannedLesson <http://example.org/data/lessons/MO0800S7>, <http://example.org/data/lessons/FR1000S6> .
+<http://example.org/data/timetables/21226B10> ex:BelongingClass <http://example.org/data/classes/6B> .
+
+
+<http://example.org/data/timetables/22234C20> a ex:Timetable .
+<http://example.org/data/timetables/22234C20> ex:AcademicalYear "2022/2023" .
+<http://example.org/data/timetables/22234C20> ex:TimetableVersion 2.0 .
+<http://example.org/data/timetables/22234C20> ex:PlannedLesson <http://example.org/data/lessons/FR1000S9> .
+<http://example.org/data/timetables/22234C20> ex:BelongingClass <http://example.org/data/classes/4C> .
