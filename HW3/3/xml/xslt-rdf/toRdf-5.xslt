@@ -6,27 +6,22 @@
 
 <xsl:output method="text" encoding="UTF-8" />
 <xsl:variable name="prefix">https://example.org/</xsl:variable>
+<xsl:template match="Timetables">
+@prefix xsd: &lt;https://www.w3.org/2001/XMLSchema#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
 
-<xsl:template match="Timetable">
+@prefix ex: &lt;http://example.org/vocabulary/&gt; .
 
-<!-- 
+@prefix exClass: &lt;ttp://example.org/data/classes/&gt; .
+@prefix exTeacher: &lt;ttp://example.org/data/teachers/&gt; .
+@prefix exLesson: &lt;ttp://example.org/data/lessons/&gt; .
+@prefix exClassroom: &lt;ttp://example.org/data/classrooms/&gt; .
+@prefix exSubject: &lt;ttp://example.org/data/subjects/&gt; .
+@prefix exStudent: &lt;ttp://example.org/data/students/&gt; .
+@prefix exTimeSlot: &lt;ttp://example.org/data/timeslots/&gt; .
+@prefix exTimetable: &lt;ttp://example.org/data/timetables/&gt; .
 
-@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-
-@prefix ex: <http://example.org/vocabulary/> .
-
-@prefix exClass: <http://example.org/data/classes/> .
-@prefix exTeacher: <http://example.org/data/teachers/> .
-@prefix exLesson: <http://example.org/data/lessons/> .
-@prefix exClassroom: <http://example.org/data/classrooms/> .
-@prefix exSubject: <http://example.org/data/subjects/> .
-@prefix exStudent: <http://example.org/data/students/> .
-@prefix exTimeSlot: <http://example.org/data/timeslots/> .
-@prefix exTimetable: <http://example.org/data/timetables/> .
-
--->
 
 
 </xsl:template>

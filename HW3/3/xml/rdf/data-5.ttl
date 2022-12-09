@@ -1,6 +1,19 @@
 
-	
-	
-	
-	
-	
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+@prefix ex: <http://example.org/vocabulary/> .
+
+@prefix exClass: <ttp://example.org/data/classes/> .
+@prefix exTeacher: <ttp://example.org/data/teachers/> .
+@prefix exLesson: <ttp://example.org/data/lessons/> .
+@prefix exClassroom: <ttp://example.org/data/classrooms/> .
+@prefix exSubject: <ttp://example.org/data/subjects/> .
+@prefix exStudent: <ttp://example.org/data/students/> .
+@prefix exTimeSlot: <ttp://example.org/data/timeslots/> .
+@prefix exTimetable: <ttp://example.org/data/timetables/> .
+
+
+
+
