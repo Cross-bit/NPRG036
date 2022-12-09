@@ -1,0 +1,2 @@
+(: Vrátí jména všech Subjectů, které jsou vyučovány více než 1 hodinu. :)
+/Subjects/Subject[count(IsTaught/Lesson)>1]/Name

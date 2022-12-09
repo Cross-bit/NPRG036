@@ -24,8 +24,8 @@ pip install rdflib
 
 Spuštění věřím, že každý zvládne dle systému.
 
-
-
+# JSON
+(validator)[https://jsonlint.com/]
 
 
 
