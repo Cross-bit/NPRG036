@@ -35,14 +35,14 @@
   <xsl:template mode="entity" match="Subject">
 <xsl:apply-templates mode="IRI" select="." /> a ex:Subject ;
 	ex:SubjectID "<xsl:value-of select="SubjectCode" />"^^xsd:ID ;
-	foaf:name "<xsl:value-of select="Name" />"@<xsl:value-of select="Name/@xml:lang" /> .
+	ex:SubjectName "<xsl:value-of select="Name" />"@<xsl:value-of select="Name/@xml:lang" /> .
 
 <xsl:apply-templates mode="entity" select="Subjects" />
   </xsl:template>
   
   <xsl:template mode="entity" match="Class">
 <xsl:apply-templates mode="IRI" select="." /> a ex:Class ;
-	ex:ClassCode "<xsl:value-of select="ClassCode" />"^^xsd:ID ;
+	ex:ClassCode "<xsl:value-of select="ClassCode" />"^^xsd:token ;
 	ex:ClassYear <xsl:value-of select="ClassYear" /> ;
 	ex:ClassTeacher <xsl:apply-templates mode="IRI" select="../.." /> .
 

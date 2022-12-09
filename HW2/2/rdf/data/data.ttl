@@ -38,17 +38,17 @@ exTimetable:22234C20 a ex:Timetable ;
 # Třída
 
 exClass:6A a ex:Class ;
-	ex:ClassCode "A" ;
+	ex:ClassCode "A"^^xsd:token ;
 	ex:ClassYear 6 ;
 	ex:ClassTeacher exTeacher:muk .
 
 exClass:6B a ex:Class ;
-	ex:ClassCode "B" ;
+	ex:ClassCode "B"^^xsd:token ;
 	ex:ClassYear 6 ;
 	ex:ClassTeacher exTeacher:pel .
 
 exClass:4C a ex:Class ;
-	ex:ClassCode "C" ;
+	ex:ClassCode "C"^^xsd:token ;
 	ex:ClassYear 4 ;
 	ex:ClassTeacher exTeacher:svo .
 

@@ -23,14 +23,14 @@
 <http://example.org/data/subjects/Math>
    a ex:Subject ;
 	ex:SubjectID "mt"^^xsd:ID ;
-	foaf:name "Matematika"@cs .
+	ex:SubjectName "Matematika"@cs .
 
 
 		
-          
+      
 <http://example.org/data/classes/6A>
    a ex:Class ;
-	ex:ClassCode "A"^^xsd:ID ;
+	ex:ClassCode "A"^^xsd:token ;
 	ex:ClassYear 6 ;
 	ex:ClassTeacher 
 <http://example.org/data/teachers/muk>
@@ -51,21 +51,21 @@
 <http://example.org/data/subjects/Math>
    a ex:Subject ;
 	ex:SubjectID "mt"^^xsd:ID ;
-	foaf:name "Matematika"@cs .
+	ex:SubjectName "Matematika"@cs .
 
 
 			
 <http://example.org/data/subjects/Physics>
    a ex:Subject ;
 	ex:SubjectID "ps"^^xsd:ID ;
-	foaf:name "Fyzika"@cs .
+	ex:SubjectName "Fyzika"@cs .
 
 
 		
-          
+      
 <http://example.org/data/classes/6B>
    a ex:Class ;
-	ex:ClassCode "B"^^xsd:ID ;
+	ex:ClassCode "B"^^xsd:token ;
 	ex:ClassYear 6 ;
 	ex:ClassTeacher 
 <http://example.org/data/teachers/pel>
@@ -86,14 +86,14 @@
 <http://example.org/data/subjects/English>
    a ex:Subject ;
 	ex:SubjectID "en"^^xsd:ID ;
-	foaf:name "Angličtina"@cs .
+	ex:SubjectName "Angličtina"@cs .
 
 
 		
-          
+      
 <http://example.org/data/classes/4C>
    a ex:Class ;
-	ex:ClassCode "C"^^xsd:ID ;
+	ex:ClassCode "C"^^xsd:token ;
 	ex:ClassYear 4 ;
 	ex:ClassTeacher 
 <http://example.org/data/teachers/svo>
