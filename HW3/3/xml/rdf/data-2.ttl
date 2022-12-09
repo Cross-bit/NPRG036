@@ -1,68 +1,68 @@
 
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
 
 # Custom prefixes
 @prefix ex: <http://example.org/vocabulary/> .
-@prefix exClassroom: <http://example.org/data/classes/> .
-@prefix ex:Lesson <http://example.org/data/classes/> .
+@prefix exClassroom: <http://example.org/data/classrooms/> .
+@prefix exLesson: <http://example.org/data/lessons/> .
 
 
 	
-<http://example.org/data/timeslots/S7>
+<http://example.org/data/classrooms/S7>
    a ex:Classroom ;
 	ex:ClassroomID "S7"^^xsd:ID ;
-	ex:ClassroomCapacity 30 .
+	ex:ClassroomCapacity 28 .
 
 
 			
 <http://example.org/data/lessons/MO0800S7>
    a ex:Lesson ;
-	ex:LessonID "MO0800S7"^^xsd:token ;
+	ex:LessonID "MO0800S7"^^xsd:ID ;
   ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI ;
 	ex:TakesPlace 
-<http://example.org/data/timeslots/S7>
+<http://example.org/data/classrooms/S7>
    .
   
 			
 <http://example.org/data/lessons/TH0855S7>
    a ex:Lesson ;
-	ex:LessonID "TH0855S7"^^xsd:token ;
+	ex:LessonID "TH0855S7"^^xsd:ID ;
   ex:LessonUrl "https://zoom.com/TH0855S7"^^xsd:anyURI ;
 	ex:TakesPlace 
-<http://example.org/data/timeslots/S7>
+<http://example.org/data/classrooms/S7>
    .
   
 		
 	
 	
-<http://example.org/data/classroom/S6>
+<http://example.org/data/classrooms/S6>
    a ex:Classroom ;
 	ex:ClassroomID "S6"^^xsd:ID ;
-	ex:ClassroomCapacity 28 .
+	ex:ClassroomCapacity 30 .
 
 
 			
 <http://example.org/data/lessons/TH0855S6>
    a ex:Lesson ;
-	ex:LessonID "TH0855S6"^^xsd:token ;
+	ex:LessonID "TH0855S6"^^xsd:ID ;
   ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI ;
 	ex:TakesPlace 
-<http://example.org/data/classroom/S6>
+<http://example.org/data/classrooms/S6>
    .
   
 			
 <http://example.org/data/lessons/FR1000S6>
    a ex:Lesson ;
-	ex:LessonID "FR1000S6"^^xsd:token ;
+	ex:LessonID "FR1000S6"^^xsd:ID ;
   ex:LessonUrl "https://zoom.com/FR1000S6"^^xsd:anyURI ;
 	ex:TakesPlace 
-<http://example.org/data/classroom/S6>
+<http://example.org/data/classrooms/S6>
    .
   
 		
 	
 	
-<http://example.org/data/classroom/S9>
+<http://example.org/data/classrooms/S9>
    a ex:Classroom ;
 	ex:ClassroomID "S9"^^xsd:ID ;
 	ex:ClassroomCapacity 30 .
@@ -71,11 +71,10 @@
 			
 <http://example.org/data/lessons/FR1000S9>
    a ex:Lesson ;
-	ex:LessonID "FR1000S9"^^xsd:token ;
+	ex:LessonID "FR1000S9"^^xsd:ID ;
   ex:LessonUrl "https://zoom.com/FR1000S9"^^xsd:anyURI ;
 	ex:TakesPlace 
-<http://example.org/data/classroom/S9>
+<http://example.org/data/classrooms/S9>
    .
   
 		
-

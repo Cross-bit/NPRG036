@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="../schemas/schema-2.xsd"
 >
-	<Classroom ID="http://example.org/data/timeslots/S7">
+	<Classroom ID="http://example.org/data/classrooms/S7">
 		<Code>S7</Code>
-		<ClassroomCapacity>30</ClassroomCapacity>
+		<ClassroomCapacity>28</ClassroomCapacity>
 		<TakesPlace>
 			<Lesson ID="http://example.org/data/lessons/MO0800S7">
 				<ZoomURI>https://zoom.com/MO0800S7</ZoomURI>
@@ -18,9 +18,9 @@
 		</TakesPlace>
 	</Classroom>
 	
-	<Classroom ID="http://example.org/data/classroom/S6">
+	<Classroom ID="http://example.org/data/classrooms/S6">
 		<Code>S6</Code>
-		<ClassroomCapacity>28</ClassroomCapacity>
+		<ClassroomCapacity>30</ClassroomCapacity>
 		<TakesPlace>
 			<Lesson ID="http://example.org/data/lessons/TH0855S6">
 				<ZoomURI>https://zoom.com/TH0855S6</ZoomURI>
@@ -33,7 +33,7 @@
 		</TakesPlace>
 	</Classroom>
 	
-	<Classroom ID="http://example.org/data/classroom/S9">
+	<Classroom ID="http://example.org/data/classrooms/S9">
 		<Code>S9</Code>
 		<ClassroomCapacity>30</ClassroomCapacity>
 		<TakesPlace>

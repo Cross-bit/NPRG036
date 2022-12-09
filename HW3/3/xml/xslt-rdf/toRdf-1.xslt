@@ -26,7 +26,7 @@
 </xsl:template>
 
 <xsl:template match="TakesTime/Lesson" >
-   &lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; a ex:TimeSlot ;
+   &lt;<xsl:value-of select="self::Lesson/@ID"/>&gt; a ex:Lesson ;
 	ex:TakesTime &lt;<xsl:value-of select="ancestor::TimeSlot/@ID"/>&gt; .
 
 </xsl:template>

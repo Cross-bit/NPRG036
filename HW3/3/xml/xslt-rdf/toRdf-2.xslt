@@ -3,12 +3,12 @@
   <xsl:output method="text" encoding="UTF-8" />
   
   <xsl:template match="/">
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix xsd: &lt;https://www.w3.org/2001/XMLSchema#&gt; .
 
 # Custom prefixes
 @prefix ex: &lt;http://example.org/vocabulary/&gt; .
-@prefix exClassroom: &lt;http://example.org/data/classes/&gt; .
-@prefix ex:Lesson &lt;http://example.org/data/classes/&gt; .
+@prefix exClassroom: &lt;http://example.org/data/classrooms/&gt; .
+@prefix exLesson: &lt;http://example.org/data/lessons/&gt; .
 
 <xsl:apply-templates mode="entity" select="Classrooms"/>
   </xsl:template>
@@ -27,7 +27,7 @@
   
   <xsl:template mode="entity" match="Lesson">
 <xsl:apply-templates mode="IRI" select="." /> a ex:Lesson ;
-	ex:LessonID "<xsl:value-of select="Code" />"^^xsd:token ;
+	ex:LessonID "<xsl:value-of select="Code" />"^^xsd:ID ;
   ex:LessonUrl "<xsl:value-of select="ZoomURI" />"^^xsd:anyURI ;
 	ex:TakesPlace <xsl:apply-templates mode="IRI" select="../.." /> .
   </xsl:template>

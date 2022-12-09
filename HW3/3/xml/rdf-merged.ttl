@@ -1,4 +1,259 @@
 
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+@prefix ex: <http://example.org/vocabulary/> .
+
+   <http://example.org/data/timeslots/MO0800> a ex:TimeSlot ;
+	ex:TimeSlotBeginning "08:00:00"^^xsd:time ;
+	ex:TimeSlotEnd "08:45:00"^^xsd:time ;
+	ex:DayOfWeek time:Monday .
+   
+   <http://example.org/data/lessons/MO0800S7> a ex:Lesson ;
+	ex:TakesTime <http://example.org/data/timeslots/MO0800> .
+
+
+   <http://example.org/data/timeslots/TH0855> a ex:TimeSlot ;
+	ex:TimeSlotBeginning "08:55:00"^^xsd:time ;
+	ex:TimeSlotEnd "09:40:00"^^xsd:time ;
+	ex:DayOfWeek time:Thursday .
+   
+   <http://example.org/data/lessons/TH0855S6> a ex:Lesson ;
+	ex:TakesTime <http://example.org/data/timeslots/TH0855> .
+
+
+   <http://example.org/data/lessons/TH0855S7> a ex:Lesson ;
+	ex:TakesTime <http://example.org/data/timeslots/TH0855> .
+
+
+   <http://example.org/data/timeslots/FR1000> a ex:TimeSlot ;
+	ex:TimeSlotBeginning "10:00:00"^^xsd:time ;
+	ex:TimeSlotEnd "10:45:00"^^xsd:time ;
+	ex:DayOfWeek time:Friday .
+   
+   <http://example.org/data/lessons/FR1000S9> a ex:Lesson ;
+	ex:TakesTime <http://example.org/data/timeslots/FR1000> .
+
+
+   <http://example.org/data/lessons/FR1000S6> a ex:Lesson ;
+	ex:TakesTime <http://example.org/data/timeslots/FR1000> .
+
+
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+
+# Custom prefixes
+@prefix ex: <http://example.org/vocabulary/> .
+@prefix exClassroom: <http://example.org/data/classrooms/> .
+@prefix exLesson: <http://example.org/data/lessons/> .
+
+
+	
+<http://example.org/data/classrooms/S7>
+   a ex:Classroom ;
+	ex:ClassroomID "S7"^^xsd:ID ;
+	ex:ClassroomCapacity 28 .
+
+
+			
+<http://example.org/data/lessons/MO0800S7>
+   a ex:Lesson ;
+	ex:LessonID "MO0800S7"^^xsd:ID ;
+  ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI ;
+	ex:TakesPlace 
+<http://example.org/data/classrooms/S7>
+   .
+  
+			
+<http://example.org/data/lessons/TH0855S7>
+   a ex:Lesson ;
+	ex:LessonID "TH0855S7"^^xsd:ID ;
+  ex:LessonUrl "https://zoom.com/TH0855S7"^^xsd:anyURI ;
+	ex:TakesPlace 
+<http://example.org/data/classrooms/S7>
+   .
+  
+		
+	
+	
+<http://example.org/data/classrooms/S6>
+   a ex:Classroom ;
+	ex:ClassroomID "S6"^^xsd:ID ;
+	ex:ClassroomCapacity 30 .
+
+
+			
+<http://example.org/data/lessons/TH0855S6>
+   a ex:Lesson ;
+	ex:LessonID "TH0855S6"^^xsd:ID ;
+  ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI ;
+	ex:TakesPlace 
+<http://example.org/data/classrooms/S6>
+   .
+  
+			
+<http://example.org/data/lessons/FR1000S6>
+   a ex:Lesson ;
+	ex:LessonID "FR1000S6"^^xsd:ID ;
+  ex:LessonUrl "https://zoom.com/FR1000S6"^^xsd:anyURI ;
+	ex:TakesPlace 
+<http://example.org/data/classrooms/S6>
+   .
+  
+		
+	
+	
+<http://example.org/data/classrooms/S9>
+   a ex:Classroom ;
+	ex:ClassroomID "S9"^^xsd:ID ;
+	ex:ClassroomCapacity 30 .
+
+
+			
+<http://example.org/data/lessons/FR1000S9>
+   a ex:Lesson ;
+	ex:LessonID "FR1000S9"^^xsd:ID ;
+  ex:LessonUrl "https://zoom.com/FR1000S9"^^xsd:anyURI ;
+	ex:TakesPlace 
+<http://example.org/data/classrooms/S9>
+   .
+  
+		
+
+
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+@prefix ex: <http://example.org/vocabulary/> .
+
+
+
+<http://example.org/data/subjects/Math> a ex:Subject ;
+    ex:SubjectName "Matematika"@cs ;
+    ex:SubjectID "mt"^^xsd:ID .
+
+
+<http://example.org/data/lessons/TH0855S7> a ex:Lesson .
+<http://example.org/data/lessons/TH0855S7> ex:IsTaught <http://example.org/data/subjects/Math> .
+
+<http://example.org/data/lessons/TH0855S6> a ex:Lesson .
+<http://example.org/data/lessons/TH0855S6> ex:IsTaught <http://example.org/data/subjects/Math> .
+
+<http://example.org/data/subjects/English> a ex:Subject ;
+    ex:SubjectName "Angličtina"@cs ;
+    ex:SubjectID "en"^^xsd:ID .
+
+
+<http://example.org/data/lessons/MO0800S7> a ex:Lesson .
+<http://example.org/data/lessons/MO0800S7> ex:IsTaught <http://example.org/data/subjects/English> .
+
+<http://example.org/data/lessons/FR1000S9> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S9> ex:IsTaught <http://example.org/data/subjects/English> .
+
+<http://example.org/data/subjects/Physics> a ex:Subject ;
+    ex:SubjectName "Fyzika"@cs ;
+    ex:SubjectID "ps"^^xsd:ID .
+
+
+<http://example.org/data/lessons/FR1000S6> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S6> ex:IsTaught <http://example.org/data/subjects/Physics> .
+
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+# Custom prefixes
+@prefix ex: <http://example.org/vocabulary/> .
+@prefix exClass: <http://example.org/data/classes/> .
+@prefix exTeacher: <http://example.org/data/teachers/> .
+@prefix exSubject: <http://example.org/data/subjects/> .
+
+
+	
+<http://example.org/data/teachers/muk>
+   a ex:Teacher ;
+	ex:TeacherID "muk"^^xsd:ID ;
+	foaf:name "Vladimír Mukvald"@cs ;
+	ex:TeacherExperience "5"^^xsd:integer ;
+	ex:Teaches <http://example.org/data/subjects/Math> .
+
+
+			
+<http://example.org/data/subjects/Math>
+   a ex:Subject ;
+	ex:SubjectID "mt"^^xsd:ID ;
+	ex:SubjectName "Matematika"@cs .
+  
+		
+          
+<http://example.org/data/classes/6A>
+   a ex:Class ;
+	ex:ClassCode "A"^^xsd:token ;
+	ex:ClassYear 6 ;
+	ex:ClassTeacher 
+<http://example.org/data/teachers/muk>
+   .
+  
+		
+	
+<http://example.org/data/teachers/pel>
+   a ex:Teacher ;
+	ex:TeacherID "pel"^^xsd:ID ;
+	foaf:name "Jaroslav Pelikán"@cs ;
+	ex:TeacherExperience "3"^^xsd:integer ;
+	ex:Teaches <http://example.org/data/subjects/Math>, <http://example.org/data/subjects/Physics> .
+
+
+			
+<http://example.org/data/subjects/Math>
+   a ex:Subject ;
+	ex:SubjectID "mt"^^xsd:ID ;
+	ex:SubjectName "Matematika"@cs .
+  
+			
+<http://example.org/data/subjects/Physics>
+   a ex:Subject ;
+	ex:SubjectID "ps"^^xsd:ID ;
+	ex:SubjectName "Fyzika"@cs .
+  
+		
+          
+<http://example.org/data/classes/6B>
+   a ex:Class ;
+	ex:ClassCode "B"^^xsd:token ;
+	ex:ClassYear 6 ;
+	ex:ClassTeacher 
+<http://example.org/data/teachers/pel>
+   .
+  
+		
+	
+<http://example.org/data/teachers/svo>
+   a ex:Teacher ;
+	ex:TeacherID "svo"^^xsd:ID ;
+	foaf:name "Patrik Svoboda"@cs ;
+	ex:TeacherExperience "2"^^xsd:integer ;
+	ex:Teaches <http://example.org/data/subjects/English> .
+
+
+			
+<http://example.org/data/subjects/English>
+   a ex:Subject ;
+	ex:SubjectID "en"^^xsd:ID ;
+	ex:SubjectName "Angličtina"@cs .
+  
+		
+          
+<http://example.org/data/classes/4C>
+   a ex:Class ;
+	ex:ClassCode "C"^^xsd:token ;
+	ex:ClassYear 4 ;
+	ex:ClassTeacher 
+<http://example.org/data/teachers/svo>
+   .
+  
+		
+
 
 
 
@@ -18,6 +273,19 @@
 <http://example.org/data/timetables/20216A15> ex:BelongingClass <http://example.org/data/classes/6A> .
 
 
+<http://example.org/data/classes/6A> a ex:Class .
+<http://example.org/data/classes/6A> ex:ClassCode "A"^^xsd:token .
+<http://example.org/data/classes/6A> ex:ClassYear 6 .
+
+<http://example.org/data/students/kovpe> a ex:Student .
+<http://example.org/data/students/kovpe> foaf:name "Petr Kovář" .
+<http://example.org/data/students/kovpe> ex:StudentCode "kovpe" .
+
+
+<http://example.org/data/lessons/TH0855S6> a ex:Lesson .
+<http://example.org/data/lessons/TH0855S6> ex:LessonID "TH0855S6"^^xsd:ID .
+<http://example.org/data/lessons/TH0855S6> ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI .
+
 
 <http://example.org/data/timetables/21226B10> a ex:Timetable .
 <http://example.org/data/timetables/21226B10> ex:AcademicalYear "2021/2022" .
@@ -26,6 +294,24 @@
 <http://example.org/data/timetables/21226B10> ex:BelongingClass <http://example.org/data/classes/6B> .
 
 
+<http://example.org/data/classes/6B> a ex:Class .
+<http://example.org/data/classes/6B> ex:ClassCode "B"^^xsd:token .
+<http://example.org/data/classes/6B> ex:ClassYear 6 .
+
+<http://example.org/data/students/kliji> a ex:Student .
+<http://example.org/data/students/kliji> foaf:name "Jiří Klimošek" .
+<http://example.org/data/students/kliji> ex:StudentCode "kliji" .
+<http://example.org/data/students/kliji> ex:Nickname "Limoš"@cs . 
+
+<http://example.org/data/lessons/MO0800S7> a ex:Lesson .
+<http://example.org/data/lessons/MO0800S7> ex:LessonID "MO0800S7"^^xsd:ID .
+<http://example.org/data/lessons/MO0800S7> ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI .
+
+
+<http://example.org/data/lessons/FR1000S6> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S6> ex:LessonID "FR1000S6"^^xsd:ID .
+<http://example.org/data/lessons/FR1000S6> ex:LessonUrl "https://zoom.com/FR1000S6"^^xsd:anyURI .
+
 
 <http://example.org/data/timetables/22234C20> a ex:Timetable .
 <http://example.org/data/timetables/22234C20> ex:AcademicalYear "2022/2023" .
@@ -33,3 +319,16 @@
 <http://example.org/data/timetables/22234C20> ex:PlannedLesson <http://example.org/data/lessons/FR1000S9> .
 <http://example.org/data/timetables/22234C20> ex:BelongingClass <http://example.org/data/classes/4C> .
 
+
+<http://example.org/data/classes/4C> a ex:Class .
+<http://example.org/data/classes/4C> ex:ClassCode "C"^^xsd:token .
+<http://example.org/data/classes/4C> ex:ClassYear 4 .
+
+<http://example.org/data/students/novpa> a ex:Student .
+<http://example.org/data/students/novpa> foaf:name "Pavel Novák" .
+<http://example.org/data/students/novpa> ex:StudentCode "novpa" .
+<http://example.org/data/students/novpa> ex:Nickname "Kajak"@cs, "Bizon"@cs . 
+
+<http://example.org/data/lessons/FR1000S9> a ex:Lesson .
+<http://example.org/data/lessons/FR1000S9> ex:LessonID "FR1000S9"^^xsd:ID .
+<http://example.org/data/lessons/FR1000S9> ex:LessonUrl "https://zoom.com/FR1000S9"^^xsd:anyURI .

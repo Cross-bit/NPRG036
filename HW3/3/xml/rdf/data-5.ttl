@@ -19,7 +19,7 @@
 
 
 <http://example.org/data/classes/6A> a ex:Class .
-<http://example.org/data/classes/6A> ex:ClassCode "A" .
+<http://example.org/data/classes/6A> ex:ClassCode "A"^^xsd:token .
 <http://example.org/data/classes/6A> ex:ClassYear 6 .
 
 <http://example.org/data/students/kovpe> a ex:Student .
@@ -40,13 +40,13 @@
 
 
 <http://example.org/data/classes/6B> a ex:Class .
-<http://example.org/data/classes/6B> ex:ClassCode "B" .
+<http://example.org/data/classes/6B> ex:ClassCode "B"^^xsd:token .
 <http://example.org/data/classes/6B> ex:ClassYear 6 .
 
 <http://example.org/data/students/kliji> a ex:Student .
 <http://example.org/data/students/kliji> foaf:name "Jiří Klimošek" .
 <http://example.org/data/students/kliji> ex:StudentCode "kliji" .
-<http://example.org/data/students/kliji> ex:Nickname "Limoš" . 
+<http://example.org/data/students/kliji> ex:Nickname "Limoš"@cs . 
 
 <http://example.org/data/lessons/MO0800S7> a ex:Lesson .
 <http://example.org/data/lessons/MO0800S7> ex:LessonID "MO0800S7"^^xsd:ID .
@@ -66,13 +66,13 @@
 
 
 <http://example.org/data/classes/4C> a ex:Class .
-<http://example.org/data/classes/4C> ex:ClassCode "C" .
+<http://example.org/data/classes/4C> ex:ClassCode "C"^^xsd:token .
 <http://example.org/data/classes/4C> ex:ClassYear 4 .
 
 <http://example.org/data/students/novpa> a ex:Student .
 <http://example.org/data/students/novpa> foaf:name "Pavel Novák" .
 <http://example.org/data/students/novpa> ex:StudentCode "novpa" .
-<http://example.org/data/students/novpa> ex:Nickname "Kajak", "Bizon" . 
+<http://example.org/data/students/novpa> ex:Nickname "Kajak"@cs, "Bizon"@cs . 
 
 <http://example.org/data/lessons/FR1000S9> a ex:Lesson .
 <http://example.org/data/lessons/FR1000S9> ex:LessonID "FR1000S9"^^xsd:ID .

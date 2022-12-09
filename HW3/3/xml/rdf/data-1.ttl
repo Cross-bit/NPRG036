@@ -10,7 +10,7 @@
 	ex:TimeSlotEnd "08:45:00"^^xsd:time ;
 	ex:DayOfWeek time:Monday .
    
-   <http://example.org/data/lessons/MO0800S7> a ex:TimeSlot ;
+   <http://example.org/data/lessons/MO0800S7> a ex:Lesson ;
 	ex:TakesTime <http://example.org/data/timeslots/MO0800> .
 
 
@@ -19,11 +19,11 @@
 	ex:TimeSlotEnd "09:40:00"^^xsd:time ;
 	ex:DayOfWeek time:Thursday .
    
-   <http://example.org/data/lessons/TH0855S6> a ex:TimeSlot ;
+   <http://example.org/data/lessons/TH0855S6> a ex:Lesson ;
 	ex:TakesTime <http://example.org/data/timeslots/TH0855> .
 
 
-   <http://example.org/data/lessons/TH0855S7> a ex:TimeSlot ;
+   <http://example.org/data/lessons/TH0855S7> a ex:Lesson ;
 	ex:TakesTime <http://example.org/data/timeslots/TH0855> .
 
 
@@ -32,10 +32,10 @@
 	ex:TimeSlotEnd "10:45:00"^^xsd:time ;
 	ex:DayOfWeek time:Friday .
    
-   <http://example.org/data/lessons/FR1000S9> a ex:TimeSlot ;
+   <http://example.org/data/lessons/FR1000S9> a ex:Lesson ;
 	ex:TakesTime <http://example.org/data/timeslots/FR1000> .
 
 
-   <http://example.org/data/lessons/FR1000S6> a ex:TimeSlot ;
+   <http://example.org/data/lessons/FR1000S6> a ex:Lesson ;
 	ex:TakesTime <http://example.org/data/timeslots/FR1000> .
 
