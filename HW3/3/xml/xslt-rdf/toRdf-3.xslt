@@ -24,7 +24,7 @@
 
 <xsl:template match="Subject" >
 &lt;<xsl:value-of select="self::Subject/@ID"/>&gt; a ex:Subject ;
-    ex:SubjectName "<xsl:value-of select="Name"/>"@cs ;
+    ex:SubjectName "<xsl:value-of select="Name"/>"@<xsl:value-of select="Name/@xml:lang"/> ;
     ex:SubjectID "<xsl:value-of select="SubjectCode"/>"^^xsd:ID .
 
 <xsl:apply-templates select="IsTaught/Lesson" />
