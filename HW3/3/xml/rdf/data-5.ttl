@@ -18,6 +18,7 @@
 <http://example.org/data/timetables/20216A15> ex:BelongingClass <http://example.org/data/classes/6A> .
 
 
+
 <http://example.org/data/timetables/21226B10> a ex:Timetable .
 <http://example.org/data/timetables/21226B10> ex:AcademicalYear "2021/2022" .
 <http://example.org/data/timetables/21226B10> ex:TimetableVersion 1.0 .
@@ -25,8 +26,10 @@
 <http://example.org/data/timetables/21226B10> ex:BelongingClass <http://example.org/data/classes/6B> .
 
 
+
 <http://example.org/data/timetables/22234C20> a ex:Timetable .
 <http://example.org/data/timetables/22234C20> ex:AcademicalYear "2022/2023" .
 <http://example.org/data/timetables/22234C20> ex:TimetableVersion 2.0 .
 <http://example.org/data/timetables/22234C20> ex:PlannedLesson <http://example.org/data/lessons/FR1000S9> .
 <http://example.org/data/timetables/22234C20> ex:BelongingClass <http://example.org/data/classes/4C> .
+
