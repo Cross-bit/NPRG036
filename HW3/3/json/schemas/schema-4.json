@@ -50,10 +50,16 @@
 				"TeacherCode": {"$ref": "#/$definitions/Code"},
 				"Name": {"$ref": "#/$definitions/langString"},
 				"Experience": {"type": "integer"},
-				"Subjects": {
-					"type": "array",
-					"items": {"$ref": "#/$definitions/Subject"},
-					"uniqueItems": true
+				"Teaches": {
+					"type": "object",
+					"properties": {
+						"Subject": {
+							"type": "array",
+							"items": {"$ref": "#/$definitions/Subject"},
+							"uniqueItems": true
+						}
+					},
+					"required": ["Subject"]
 				},
 				"ClassTeacher": {"$ref": "#/$definitions/Class"}
 			},

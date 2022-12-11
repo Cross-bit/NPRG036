@@ -8,17 +8,18 @@
 		"TeacherCode": {"@id": "ex:TeacherID", "@type": "xsd:token"},
 		"Name": {"@id": "foaf:name", "@container": "@language"},
 		"Experience": "ex:TeacherExperience",
-		"Subjects": {
+		"Subject": "ex:Subject",
+		"Teaches": {
 			"@id": "ex:Teaches",
-			"@type": "TODO:ex:Subject",
+			"@container": "@type",
 			"@context": {
 				"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:token"},
 				"Name": {"@id": "ex:SubjectName", "@container": "@language"}
 			}
 		},
+		"Class": "ex:Class",
 		"ClassTeacher": {
 			"@reverse": "ex:ClassTeacher",
-			"@type": "TODO:ex:Class",
 			"@context": {
 				"ClassYear": "ex:ClassYear",
 				"ClassCode": {"@id": "ex:ClassCode", "@type": "xsd:token"}
@@ -31,13 +32,14 @@
 		"TeacherCode": "muk",
 		"Name": {"cs": "Vladimír Mukvald"},
 		"Experience": 5,
-		"Subjects": [{
+		"Teaches": {"Subject": [{
 			"@id": "http://example.org/data/subjects/Math",
 			"SubjectCode": "mt",
 			"Name": {"cs": "Matematika"}
-		}],
+		}]},
 		"ClassTeacher": {
 			"@id": "http://example.org/data/classes/6A",
+			"@type": "Class",
 			"ClassYear": 6,
 			"ClassCode": "A"
 		}
@@ -46,7 +48,7 @@
 		"TeacherCode": "pel",
 		"Name": {"cs": "Jaroslav Pelikán"},
 		"Experience": 3,
-		"Subjects": [{
+		"Teaches": {"Subject": [{
 			"@id": "http://example.org/data/subjects/Math",
 			"SubjectCode": "mt",
 			"Name": {"cs": "Matematika"}
@@ -54,9 +56,10 @@
 			"@id": "http://example.org/data/subjects/Physics",
 			"SubjectCode": "ps",
 			"Name": {"cs": "Fyzika"}
-		}],
+		}]},
 		"ClassTeacher": {
 			"@id": "http://example.org/data/classes/6B",
+			"@type": "Class",
 			"ClassYear": 6,
 			"ClassCode": "B"
 		}
@@ -65,13 +68,14 @@
 		"TeacherCode": "svo",
 		"Name": {"cs": "Patrik Svoboda"},
 		"Experience": 2,
-		"Subjects": [{
+		"Teaches": {"Subject": [{
 			"@id": "http://example.org/data/subjects/English",
 			"SubjectCode": "en",
 			"Name": {"cs": "Angličtina"}
-		}],
+		}]},
 		"ClassTeacher": {
 			"@id": "http://example.org/data/classes/4C",
+			"@type": "Class",
 			"ClassYear": 4,
 			"ClassCode": "C"
 		}
