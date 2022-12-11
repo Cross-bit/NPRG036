@@ -1,0 +1,80 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://example.org/json/schema-1.json",
+	"$definitions": {
+		"Code": {
+			"type": "string",
+			"pattern": "^[a-zA-Z0-9]+$"
+		},
+		"langString": {
+			"type": "object",
+			"patternProperties": {
+				".*": {"type": "string"}
+			},
+			"minProperties": 1
+		},
+        "dayOfWeek": {
+            "type": "string",            
+            "enum": [
+                "Monday", 
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ]
+		},
+
+		"TimeSlot": {
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/timeslots/.+$"
+				},
+				"TimeSlotBeginning": {
+                    "type": "string",
+                    "format": "time"
+                },
+				"TimeSlotEnd": {
+                    "type": "string",
+                    "format": "time"
+                },
+                "DayOfWeek": {"$ref": "#/$definitions/dayOfWeek"},
+                "TakesTime": {
+                    "type": "array",
+                    "items": {"$ref": "#/$definitions/Lesson"},
+                    "uniqueItems": true
+                }
+			},
+			"required": ["@id", "TimeSlotBeginning", "TimeSlotEnd", "DayOfWeek"]
+		},
+		"Lesson":{
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/lessons/.+$"
+				},
+				"ZoomURI": {
+					"type": "string",
+					"format": "iri"
+				},
+				"Code": {"$ref": "#/$definitions/Code"}
+			},
+			"required": ["@id", "ZoomURI", "Code"]
+		}
+	},
+	"title":"TimeSlots",
+	"description": "TimeSlots connections",
+	"type": "object",
+	"properties": {
+		"TimeSlots": {
+			"type": "array",
+			"items": {"$ref": "#/$definitions/TimeSlot"},
+			"uniqueItems": true
+		}
+	},
+	"required": ["TimeSlots"]
+}
