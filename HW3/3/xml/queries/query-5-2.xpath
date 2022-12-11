@@ -1,3 +1,3 @@
-(: Vypiš třídní identifikátor 5. ročníku a výše s označením B, pokud je jeho součáští student Jiří Klimošek. :)
+(: Pro třídu 5. ročníku a výše s označením B vypíše třídní identifikátor, pokud je součástí této třídy student Jiří Klimošek. :)
 
 //Class[number(ClassYear) >= 5 and ClassCode = 'B' and BelongsTo[some $Student in Student satisfies ($Student/Name/@xml:lang='cs' and $Student/Name='Jiří Klimošek')]]/@ID
