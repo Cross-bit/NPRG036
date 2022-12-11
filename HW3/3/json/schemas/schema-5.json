@@ -86,7 +86,7 @@
 				},
                 "BelongingClass": {"$ref": "#/$definitions/Class"}
 			},
-			"required": ["@id", "AcademicalYear", "TimetableVesrsion", "PlannedLesson", "BelongingClass"] TODO validation use= in .xsd
+			"required": ["@id", "AcademicalYear", "TimetableVersion", "PlannedLesson", "BelongingClass"] TODO validation use= in .xsd
 		}
 	},
 
