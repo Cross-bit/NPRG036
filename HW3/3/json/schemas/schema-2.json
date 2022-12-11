@@ -1,0 +1,64 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://example.org/json/schema-2.json",
+	"$definitions": {
+		"Code": {
+			"type": "string",
+			"pattern": "^[a-zA-Z0-9]+$"
+		},
+		"langString": {
+			"type": "object",
+			"patternProperties": {
+				".*": {"type": "string"}
+			},
+			"minProperties": 1
+		},
+		"Classroom": {
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/classrooms/.+$"
+				},
+				"ClassroomCapacity": {
+                    "type": "number"
+                },
+                "Code": {"$ref": "#/$definitions/Code"},
+                "TakesPlace": {
+                    "type": "array",
+                    "items": {"$ref": "#/$definitions/Lesson"},
+                    "uniqueItems": true
+                }
+			},
+			"required": ["@id", "ClassroomCapacity", "Code", "TakesPlace"]
+		},
+		"Lesson":{
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/lessons/.+$"
+				},
+				"ZoomURI": {
+					"type": "string",
+					"format": "iri"
+				},
+				"Code": {"$ref": "#/$definitions/Code"}
+			},
+			"required": ["@id", "ZoomURI", "Code"]
+		}
+	},
+	"title":"Classrooms",
+	"description": "Classrooms connections",
+	"type": "object",
+	"properties": {
+		"Classrooms": {
+			"type": "array",
+			"items": {"$ref": "#/$definitions/Classroom"},
+			"uniqueItems": true
+		}
+	},
+	"required": ["Classrooms"]
+}
