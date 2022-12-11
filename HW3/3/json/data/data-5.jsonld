@@ -12,8 +12,8 @@
 			"@id": "ex:PlannedLesson",
 			"@container": "@type",
 			"@context": {
-				"LessonID": {"@id": "ex:LessonID", "@type": "xsd:ID"},
-				"LessonUrl": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"}
+				"LessonCode": {"@id": "ex:LessonID", "@type": "xsd:ID"},
+				"ZoomURI": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"}
 			}
 		},
 		"Class": "ex:Class",
