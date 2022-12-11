@@ -1,0 +1,42 @@
+{
+	"@context": {
+	},
+	"@id": "",
+
+	"Subjects": [{
+		"@id": "http://example.org/data/subjects/Math",
+		"SubjectCode": "mt",
+		"Name": {"cs": "Matematika"},
+		"IsTaught": [{
+			"@id": "http://example.org/data/lessons/TH0855S7",
+			"ZoomURI": "https://zoom.com/TH0855S7",
+			"Code": "TH0855S6"
+		}, {
+            "@id": "http://example.org/data/lessons/TH0855S6",
+			"ZoomURI": "https://zoom.com/TH0855S6",
+			"Code": "TH0855S6"
+        }]
+	}, {
+		"@id": "http://example.org/data/subjects/English",
+		"SubjectCode": "en",
+		"Name": {"cs": "Angličtina"},
+		"IsTaught": [{
+			"@id": "http://example.org/data/lessons/MO0800S7",
+			"ZoomURI": "https://zoom.com/MO0800S7",
+			"Code": "MO0800S7"
+		}, {
+            "@id": "http://example.org/data/lessons/FR1000S9",
+			"ZoomURI": "https://zoom.com/FR1000S9",
+			"Code": "FR1000S9"
+        }]
+	}, {
+		"@id": "http://example.org/data/subjects/Physic",
+		"SubjectCode": "ps",
+		"Name": {"cs": "Fyzika"},
+		"IsTaught": [{
+			"@id": "http://example.org/data/lessons/FR1000S6",
+			"ZoomURI": "https://zoom.com/FR1000S6",
+			"Code": "FR1000S6"
+        }]
+	}]
+}

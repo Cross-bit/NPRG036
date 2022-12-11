@@ -58,5 +58,5 @@
 			"uniqueItems": true
 		}
 	},
-	"required": ["Subjets"]
+	"required": ["Subjects"]
 }
