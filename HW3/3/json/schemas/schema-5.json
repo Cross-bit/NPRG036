@@ -52,7 +52,7 @@
 			"required": ["@id", "Name", "StudentCode", "NickName"]
 		},
 		"Class": {
-			"type":"object",
+			"type":"array",
 			"properties": {
 				"@id": {
 					"type": "string",
