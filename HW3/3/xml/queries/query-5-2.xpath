@@ -1,0 +1,3 @@
+(: Najdi identifikátory všech 5 a vyšší ročníků s třídním označením B, které navštěvuje student Jiří Klimošek. :)
+
+//Class[number(ClassYear) >= 5 and ClassCode = 'B' and BelongsTo[some $Student in Student satisfies ($Student/Name/@xml:lang='cs' and $Student/Name='Jiří Klimošek')]]/@ID

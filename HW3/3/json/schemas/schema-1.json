@@ -16,11 +16,11 @@
 		"dayOfWeek": {
 			"type": "string",
 			"enum": [
-				"Monday",
-				"Tuesday",
-				"Wednesday",
-				"Thursday",
-				"Friday"
+				"time:Monday",
+				"time:Tuesday",
+				"time:Wednesday",
+				"time:Thursday",
+				"time:Friday"
 			]
 		},
 		"TimeSlot": {

@@ -2,32 +2,32 @@
 	"@context": {
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 		"xsd": "https://www.w3.org/2001/XMLSchema#",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-        "time": "http://www.w3.org/2006/time#",
+		"time": "http://www.w3.org/2006/time#",
 		"ex": "http://example.org/vocabulary/",
-
 		"TimeSlots": {"@reverse": "rdf:type"},
 		"TimeSlotBeginning": {"@id": "ex:TimeSlotBeginning", "@type": "xsd:time"},
 		"TimeSlotEnd": {"@id": "ex:TimeSlotEnd", "@type": "xsd:time"},
-		"DayOfWeek":  {"@id": "time"},
-        "Lesson": "ex:Lesson",
-        "TakesTime": {
-            "@reverse": "ex:TakesTime",
-            "@context": {
+		"Monday": "http://www.w3.org/2006/time#Monday",
+		"DayOfWeek":  {"@id": "ex:DayOfWeek", "@type": "@id"},
+		"Lesson": "ex:Lesson",
+		"TakesTime": {
+			"@reverse": "ex:TakesTime",
+			"@context": {
 				"Code": {"@id": "ex:LessonID", "@type": "xsd:token"},
-                "ZoomURI": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"},
+				"ZoomURI": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"},
 				"Name": {"@id": "ex:SubjectName", "@container": "@language"}
 			}
-        }
+		}
 	},
-    "@id": "ex:TimeSlot",
+	"@id": "ex:TimeSlot",
 	"TimeSlots": [{
 		"@id": "http://example.org/data/timeslots/MO0800",
 		"TimeSlotBeginning": "08:00:00",
 		"TimeSlotEnd": "08:45:00",
-		"DayOfWeek": "Monday",
+		"DayOfWeek": "time:Monday",
 		"TakesTime": [{
-		"@id": "http://example.org/data/lessons/MO0800S7",
+			"@id": "http://example.org/data/lessons/MO0800S7",
+			"@type": "Lesson",
 			"ZoomURI": "https://zoom.com/MO0800S7",
 			"Code": "MO0800S7"
 		}]
@@ -35,13 +35,15 @@
 		"@id": "http://example.org/data/timeslots/TH0855",
 		"TimeSlotBeginning": "08:55:00",
 		"TimeSlotEnd": "09:40:00",
-		"DayOfWeek": "Thursday",
+		"DayOfWeek": "time:Thursday",
 		"TakesTime": [{
 			"@id": "http://example.org/data/lessons/TH0855S6",
+			"@type": "Lesson",
 			"ZoomURI": "https://zoom.com/TH0855S6",
 			"Code": "TH0855S6"
 		}, {
 			"@id": "http://example.org/data/lessons/TH0855S7",
+			"@type": "Lesson",
 			"ZoomURI": "https://zoom.com/TH0855S7",
 			"Code": "TH0855S7"
 		}]
@@ -49,13 +51,15 @@
 		"@id": "http://example.org/data/timeslots/FR1000",
 		"TimeSlotBeginning": "10:00:00",
 		"TimeSlotEnd": "10:45:00",
-		"DayOfWeek": "Friday",
+		"DayOfWeek": "time:Friday",
 		"TakesTime": [{
 			"@id": "http://example.org/data/lessons/FR1000S9",
+			"@type": "Lesson",
 			"ZoomURI": "https://zoom.com/FR1000S9",
 			"Code": "FR1000S9"
 		}, {
 			"@id": "http://example.org/data/lessons/FR1000S6",
+			"@type": "Lesson",
 			"ZoomURI": "https://zoom.com/FR1000S6",
 			"Code": "FR1000S6"
 		}]
