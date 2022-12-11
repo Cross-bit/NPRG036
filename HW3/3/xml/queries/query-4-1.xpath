@@ -1,3 +1,3 @@
 (: Najdi všechny učitele s křesním jménem Jaroslav, jenž mají více jak dvouleté zkušenosti a vyučují matematiku nebo angličtinu :)
 
-//Teachers/Teacher[starts-with(Name, 'Jaroslav') and number(Experience) > 2 and Subjects/Subject[SubjectCode = 'mt' or SubjectCode = 'en']]/Name
+//Teachers/Teacher[starts-with(Name, 'Jaroslav') and number(Experience) > 2 and Subjects/Subject[SubjectCode = 'mt' or SubjectCode = 'en']]/concat(Name,' with years experience ', Experience)
