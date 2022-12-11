@@ -1,1 +1,1 @@
-.TimeSlots | .[] | select(.TimeSlotBeginning >= "07:45:00").TakesTime | .[] | . as $TakesTime | .ZoomURI | test("https://zoom.com/" + $TakesTime.Code)
+.TimeSlots | .[] | select(.TimeSlotBeginning >= "07:45:00").TakesTime | .[] | . as $TakesTime | .ZoomURI | if (test("https://zoom.com/" + $TakesTime.Code)) then("https://zoom.com/" + $TakesTime.Code + " OK") else (empty) end
