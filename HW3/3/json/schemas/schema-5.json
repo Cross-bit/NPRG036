@@ -16,7 +16,7 @@
 		"AcademicalYear": {
 		    TODO validation
 			"type": "string",
-				"pattern": "^\\d{4}[/]\\d{4}+$", 
+				"pattern": "\\d{4}[/]\\d{4}", 
 		    "minLength": 9,
 		    "maxLength": 9
 		},
