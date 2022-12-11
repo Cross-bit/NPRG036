@@ -1,0 +1,104 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://example.org/json/schema-4.json",
+	"$definitions": {
+		"Code": {
+			"type": "string",
+			"pattern": "^[a-zA-Z0-9]+$"
+		},
+		"langString": {
+			"type": "object",
+			"patternProperties": {
+				".*": {"type": "string"}
+			},
+			"minProperties": 1
+		},
+        "AcademicalYear": {
+            TODO validation
+        	"type": "string",
+			"pattern": "^\\d{4}[/]\\d{4}+$", 
+            "minLength": 9,
+            "maxLength": 9
+        },
+		"Lesson": {
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/lessons/.+$"
+				},
+				"LessonCode": {"$ref": "#/$definitions/Code"},
+                "ZoomURI": {
+					"type": "string",
+					"format": "iri"
+				}
+			},
+			"required": ["@id", "LessonCode", "ZoomURI"]
+		},
+
+		"Student": {
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/students/.+$"
+				},
+                "Name": {"$ref": "#/$definitions/langString"},
+				"StudentCode": {"$ref": "#/$definitions/Code"},
+				"NickName": {"$ref": "#/$definitions/langString"}
+			},
+			"required": ["@id", "Name", "StudentCode", "NickName"]
+		},
+		"Class": {
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/classes/.+$"
+				},
+				"ClassYear": {"type": "integer"},
+				"ClassCode": {"$ref": "#/$definitions/Code"},
+                "BelongsTo": {
+					"type": "array",
+					"items": {"$ref": "#/$definitions/Student"},
+					"uniqueItems": true
+				}
+			},
+			"required": ["@id", "ClassYear", "ClassCode"]
+		},
+		"TimeTable": {
+			"type": "object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/timetables/.+$"
+				},
+                "AcademicalYear": {"$ref": "#/$definitions/AcademicalYear"},
+                "TimetableVesrsion": {"type": "number"},
+				"PlannedLesson": {
+					"type": "array",
+					"items": {"$ref": "#/$definitions/Lesson"},
+					"uniqueItems": true
+				},
+                "BelongingClass": {"$ref": "#/$definitions/Class"}
+			},
+			"required": ["@id", "AcademicalYear", "TimetableVesrsion", "PlannedLesson", "BelongingClass"] TODO validation use= in .xsd
+		}
+	},
+
+	"title":"Timetables",
+	"description": "description",
+	"type": "object",
+	"properties": {
+		"Subjects": {
+			"type": "array",
+			"items": {"$ref": "#/$definitions/Timetable"},
+			"uniqueItems": true
+		}
+	},
+	"required": ["Timetable"]
+}
