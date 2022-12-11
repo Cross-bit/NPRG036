@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "http://example.org/json/schema-4.json",
+	"$id": "http://example.org/json/schema-5.json",
 	"$definitions": {
 		"Code": {
 			"type": "string",
@@ -16,7 +16,7 @@
 		"AcademicalYear": {
 		    TODO validation
 			"type": "string",
-				"pattern": "^\\d{4}[/]\\d{4}+$", 
+				"pattern": "\\d{4}[/]\\d{4}", 
 		    "minLength": 9,
 		    "maxLength": 9
 		},
@@ -69,7 +69,7 @@
 			},
 			"required": ["@id", "ClassYear", "ClassCode"]
 		},
-		"TimeTable": {
+		"Timetable": {
 			"type": "object",
 			"properties": {
 				"@id": {
@@ -86,7 +86,7 @@
 				},
                 "BelongingClass": {"$ref": "#/$definitions/Class"}
 			},
-			"required": ["@id", "AcademicalYear", "TimetableVesrsion", "PlannedLesson", "BelongingClass"] TODO validation use= in .xsd
+			"required": ["@id", "AcademicalYear", "TimetableVersion", "PlannedLesson", "BelongingClass"] TODO validation use= in .xsd
 		}
 	},
 
@@ -100,5 +100,5 @@
 			"uniqueItems": true
 		}
 	},
-	"required": ["Timetable"]
+	"required": ["Timetables"]
 }
