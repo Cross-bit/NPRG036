@@ -4,14 +4,14 @@
 		"xsd": "https://www.w3.org/2001/XMLSchema#",
 		"ex": "http://example.org/vocabulary/",
 		"Subjects": {"@reverse": "rdf:type"},
-		"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:token"},
+		"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:ID"},
 		"Name": {"@id": "ex:SubjectName", "@container": "@language"},
 		"Lesson": "ex:Lesson",
 		"IsTaught": {
 			"@reverse": "ex:IsTaught",
 			"@context": {
 				"ZoomURI": "ex:LessonUrl",
-				"Code": {"@id": "ex:LessonID", "@type": "xsd:token"}
+				"Code": {"@id": "ex:LessonID", "@type": "xsd:ID"}
 			}
 		}
 	},
@@ -47,7 +47,7 @@
 			"Code": "FR1000S9"
 		}]
 	}, {
-		"@id": "http://example.org/data/subjects/Physic",
+		"@id": "http://example.org/data/subjects/Physics",
 		"SubjectCode": "ps",
 		"Name": {"cs": "Fyzika"},
 		"IsTaught": [{

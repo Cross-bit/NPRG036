@@ -6,14 +6,14 @@
 		"ex": "http://example.org/vocabulary/",
 		"Timetables": {"@reverse": "rdf:type"},
 		"AcademicalYear": "ex:AcademicalYear",
-		"TimetableVersion": "ex:TimetableVersion",
+		"TimetableVersion": {"@id": "ex:TimetableVersion", "@type": "xsd:decimal"},
 		"Lesson": "ex:Lesson",
 		"PlannedLesson": {
 			"@id": "ex:PlannedLesson",
 			"@container": "@type",
 			"@context": {
-				"LessonID": {"@id": "ex:LessonID", "@type": "xsd:token"},
-				"LessonUrl": {"@id": "ex:LessonUrl", "@type": "xsd:anyUri"}
+				"LessonID": {"@id": "ex:LessonID", "@type": "xsd:ID"},
+				"LessonUrl": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"}
 			}
 		},
 		"Class": "ex:Class",
@@ -39,7 +39,7 @@
 	"Timetables": [{
 		"@id": "http://example.org/data/timetables/20216A15",
 		"AcademicalYear": "2020/2021",
-		"TimetableVersion": 1.5,
+		"TimetableVersion": "1.5",
 		"PlannedLesson": {"Lesson": [{
 			"@id": "http://example.org/data/lessons/TH0855S6",
 			"ZoomURI": "https://zoom.com/TH0855S6",
@@ -59,7 +59,7 @@
 	}, {
 		"@id": "http://example.org/data/timetables/21226B10",
 		"AcademicalYear": "2021/2022",
-		"TimetableVersion": 1.0,
+		"TimetableVersion": "1.0",
 		"PlannedLesson": {"Lesson": [{
 			"@id": "http://example.org/data/lessons/MO0800S7",
 			"ZoomURI": "https://zoom.com/MO0800S7",
@@ -84,7 +84,7 @@
 	}, {
 		"@id": "http://example.org/data/timetables/22234C20",
 		"AcademicalYear": "2022/2023",
-		"TimetableVersion": 2.0,
+		"TimetableVersion": "2.0",
 		"PlannedLesson": {"Lesson": [{
 			"@id": "http://example.org/data/lessons/FR1000S9",
 			"ZoomURI": "https://zoom.com/FR1000S9",

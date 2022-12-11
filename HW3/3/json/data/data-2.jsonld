@@ -10,7 +10,7 @@
 		"TakesPlace": {
 			"@reverse": "ex:TakesPlace",
 			"@context": {
-				"Code": {"@id": "ex:LessonID", "@type": "xsd:token"},
+				"Code": {"@id": "ex:LessonID", "@type": "xsd:ID"},
 				"ZoomURI": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"}
 			}
 		}
