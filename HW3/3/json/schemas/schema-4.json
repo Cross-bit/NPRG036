@@ -19,7 +19,7 @@
 				"ID": {
 					"type": "string",
 					"format": "iri",
-					"pattern": "^http\\://example\\.org/data/classes/.+$"
+					"pattern": "^http\\://example\\.org/data/subjects/.+$"
 				},
 				"SubjectCode": {"$ref": "#/$definitions/Code"},
 				"Name": {"$ref": "#/$definitions/langString"}
@@ -38,7 +38,7 @@
 				"ClassCode": {"$ref": "#/$definitions/Code"}
 			},
 			"required": ["ID", "ClassYear", "ClassCode"]
-		}
+		},
 		"Teacher": {
 			"type": "object",
 			"properties": {
@@ -51,7 +51,7 @@
 				"Name": {"$ref": "#/$definitions/langString"},
 				"Experience": {"type": "integer"},
 				"Subjects": {
-					"type": "array"
+					"type": "array",
 					"items": {"$ref": "#/$definitions/Subject"},
 					"uniqueItems": true
 				},
@@ -59,13 +59,13 @@
 			},
 			"required": ["ID", "TeacherCode", "Name", "Experience"]
 		}
-	}
+	},
 	"title": "TODO",
 	"description": "TODO",
 	"type": "object",
 	"properties": {
 		"Teachers": {
-			"type": "array"
+			"type": "array",
 			"items": {"$ref": "#/$definitions/Teacher"},
 			"uniqueItems": true
 		}

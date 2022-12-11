@@ -1,0 +1,53 @@
+{
+	"@context": {},
+	"Teachers": [{
+		"ID": "http://example.org/data/teachers/muk",
+		"TeacherCode": "muk",
+		"Name": {"cs": "Vladimír Mukvald"},
+		"Experience": 5,
+		"Subjects": [{
+			"ID": "http://example.org/data/subjects/Math",
+			"SubjectCode": "mt",
+			"Name": {"cs": "Matematika"}
+		}],
+		"ClassTeacher": {
+			"ID": "http://example.org/data/classes/6A",
+			"ClassYear": 6,
+			"ClassCode": "A"
+		}
+	}, {
+		"ID": "http://example.org/data/teachers/pel",
+		"TeacherCode": "pel",
+		"Name": {"cs": "Jaroslav Pelikán"},
+		"Experience": 3,
+		"Subjects": [{
+			"ID": "http://example.org/data/subjects/Math",
+			"SubjectCode": "mt",
+			"Name": {"cs": "Matematika"}
+		}, {
+			"ID": "http://example.org/data/subjects/Physics",
+			"SubjectCode": "ps",
+			"Name": {"cs": "Fyzika"}
+		}],
+		"ClassTeacher": {
+			"ID": "http://example.org/data/classes/6B",
+			"ClassYear": 6,
+			"ClassCode": "B"
+		}
+	}, {
+		"ID": "http://example.org/data/teachers/svo",
+		"TeacherCode": "svo",
+		"Name": {"cs": "Patrik Svoboda"},
+		"Experience": 2,
+		"Subjects": [{
+			"ID": "http://example.org/data/subjects/English",
+			"SubjectCode": "en",
+			"Name": {"cs": "Angličtina"}
+		}],
+		"ClassTeacher": {
+			"ID": "http://example.org/data/classes/4C",
+			"ClassYear": 4,
+			"ClassCode": "C"
+		}
+	}]
+}
