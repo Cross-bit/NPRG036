@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/vocabulary/> .
+
+<http://example.org/data/lessons/FR1000S6>
+        rdf:type     ex:Lesson ;
+        ex:IsTaught  <http://example.org/data/subjects/Physics> .
+
+<http://example.org/data/lessons/FR1000S9>
+        rdf:type     ex:Lesson ;
+        ex:IsTaught  <http://example.org/data/subjects/English> .
+
+<http://example.org/data/lessons/MO0800S7>
+        rdf:type     ex:Lesson ;
+        ex:IsTaught  <http://example.org/data/subjects/English> .
+
+<http://example.org/data/lessons/TH0855S6>
+        rdf:type     ex:Lesson ;
+        ex:IsTaught  <http://example.org/data/subjects/Math> .
+
+<http://example.org/data/lessons/TH0855S7>
+        rdf:type     ex:Lesson ;
+        ex:IsTaught  <http://example.org/data/subjects/Math> .
+
+<http://example.org/data/subjects/English>
+        ex:SubjectID    "en"^^xsd:ID ;
+        ex:SubjectName  "Angličtina"@cs ;
+        rdf:type        ex:Subject .
+
+<http://example.org/data/subjects/Math>
+        ex:SubjectID    "mt"^^xsd:ID ;
+        ex:SubjectName  "Matematika"@cs ;
+        rdf:type        ex:Subject .
+
+<http://example.org/data/subjects/Physics>
+        ex:SubjectID    "ps"^^xsd:ID ;
+        ex:SubjectName  "Fyzika"@cs ;
+        rdf:type        ex:Subject .

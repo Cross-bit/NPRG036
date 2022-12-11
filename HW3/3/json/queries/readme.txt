@@ -1,5 +1,5 @@
 query-1-1:
-(: Vrátí všechny údaje ID Lessons, pokud se hodina vyskytuje v časovém slotu začínajícím později než 7:45:00 a ověří, zdali hodina má platný zoom meeting, s kódem dané lesson.
+Vrátí všechny údaje ID Lessons, pokud se hodina vyskytuje v časovém slotu začínajícím později než 7:45:00 a ověří s kódem dané lesson, zda-li hodina má platný zoom meeting.
 
 query-4-1:
 Najde všechny učitele s křesním jménem Jaroslav, jenž mají více než dvouleté zkušenosti a vyučují matematiku nebo angličtinu. Výstup obsahuje jméno učitele společně s léty jeho zkušeností.

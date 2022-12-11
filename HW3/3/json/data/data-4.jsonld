@@ -5,15 +5,15 @@
 		"foaf": "http://xmlns.com/foaf/0.1/",
 		"ex": "http://example.org/vocabulary/",
 		"Teachers": {"@reverse": "rdf:type"},
-		"TeacherCode": {"@id": "ex:TeacherID", "@type": "xsd:token"},
+		"TeacherCode": {"@id": "ex:TeacherID", "@type": "xsd:ID"},
 		"Name": {"@id": "foaf:name", "@container": "@language"},
-		"Experience": "ex:TeacherExperience",
+		"Experience": {"@id": "ex:TeacherExperience", "@type": "xsd:integer" },
 		"Subject": "ex:Subject",
 		"Teaches": {
 			"@id": "ex:Teaches",
 			"@container": "@type",
 			"@context": {
-				"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:token"},
+				"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:ID"},
 				"Name": {"@id": "ex:SubjectName", "@container": "@language"}
 			}
 		},
