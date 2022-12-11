@@ -14,7 +14,8 @@
         "TakesTime": {
             "@reverse": "ex:TakesTime",
             "@context": {
-				"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:token"},
+				"Code": {"@id": "ex:LessonID", "@type": "xsd:token"},
+                "ZoomURI": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"},
 				"Name": {"@id": "ex:SubjectName", "@container": "@language"}
 			}
         }
