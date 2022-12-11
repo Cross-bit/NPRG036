@@ -1,5 +1,34 @@
 {
-     "TimeSlots": [{
+	"@context": {
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"xsd": "https://www.w3.org/2001/XMLSchema#",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"ex": "http://example.org/vocabulary/",
+
+		"TimeSlots": {"@reverse": "rdf:type"},
+		"TeacherCode": {"@id": "ex:TeacherID", "@type": "xsd:token"},
+        "DayOfWeek": { },
+		"Name": {"@id": "foaf:name", "@container": "@language"},
+		"Experience": "ex:TeacherExperience",
+		"Subjects": {
+			"@id": "ex:Teaches",
+			"@type": "TODO:ex:Subject",
+			"@context": {
+				"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:token"},
+				"Name": {"@id": "ex:SubjectName", "@container": "@language"}
+			}
+		},
+		"ClassTeacher": {
+			"@reverse": "ex:ClassTeacher",
+			"@type": "TODO:ex:Class",
+			"@context": {
+				"ClassYear": "ex:ClassYear",
+				"ClassCode": {"@id": "ex:ClassCode", "@type": "xsd:token"}
+			}
+		}
+	},
+    "@id": "ex:TimeSlot",
+    "TimeSlots": [{
          "@id": "http://example.org/data/timeslots/MO0800",
          "TimeSlotBeginning": "08:00:00",
          "TimeSlotEnd": "08:45:00",
