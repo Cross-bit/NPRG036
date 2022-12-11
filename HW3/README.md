@@ -3,6 +3,8 @@
 ### [HW3](https://jakub.xn--klmek-0sa.com/nprg036-hw3)
   - [XPath cheatsheet](https://docs.google.com/presentation/d/1bFPlbK3PCgASwsOfRNyAXhLB2YmcXcGUyz8DeKVxB8A/edit#slide=id.gbd8102a4cc_0_18)
   - [XPath online editor](http://xpather.com/)
+  - [JSON Schema types](https://json-schema.org/understanding-json-schema/reference/type.html)
+  - [JSON Schema string type (>> formats)](https://json-schema.org/understanding-json-schema/reference/string.html)
 # XML schéma:
 Dle .svg hierarchií(v /HW3/03/model/) každý vytvořte odpovídající XML schema. 
 Pojmenování souborů je ze zadání **schema-k.xsd**, kde – **k** volte stejné jako je v názvu hierarchie tj.: **hierarchy-k.svg**.

@@ -1,0 +1,74 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://example.org/json/schema-4.json",
+	"$definitions": {
+		"Code": {
+			"type": "string",
+			"pattern": "^[a-zA-Z0-9]+$"
+		},
+		"langString": {
+			"type": "object",
+			"patternProperties": {
+				".*": {"type": "string"}
+			},
+			"minProperties": 1
+		},
+		"Subject": {
+			"type":"object",
+			"properties": {
+				"ID": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/classes/.+$"
+				},
+				"SubjectCode": {"$ref": "#/$definitions/Code"},
+				"Name": {"$ref": "#/$definitions/langString"}
+			},
+			"required": ["ID", "SubjectCode", "Name"]
+		},
+		"Class": {
+			"type":"object",
+			"properties": {
+				"ID": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/classes/.+$"
+				},
+				"ClassYear": {"type": "integer"},
+				"ClassCode": {"$ref": "#/$definitions/Code"}
+			},
+			"required": ["ID", "ClassYear", "ClassCode"]
+		}
+		"Teacher": {
+			"type": "object",
+			"properties": {
+				"ID": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/teachers/.+$"
+				},
+				"TeacherCode": {"$ref": "#/$definitions/Code"},
+				"Name": {"$ref": "#/$definitions/langString"},
+				"Experience": {"type": "integer"},
+				"Subjects": {
+					"type": "array"
+					"items": {"$ref": "#/$definitions/Subject"},
+					"uniqueItems": true
+				},
+				"ClassTeacher": {"$ref": "#/$definitions/Class"}
+			},
+			"required": ["ID", "TeacherCode", "Name", "Experience"]
+		}
+	}
+	"title": "TODO",
+	"description": "TODO",
+	"type": "object",
+	"properties": {
+		"Teachers": {
+			"type": "array"
+			"items": {"$ref": "#/$definitions/Teacher"},
+			"uniqueItems": true
+		}
+	},
+	"required": ["Teachers"]
+}

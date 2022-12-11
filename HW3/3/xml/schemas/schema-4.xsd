@@ -3,11 +3,11 @@
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2009/01/xml.xsd" />
 	
 	<xs:attribute name="ID" type="xs:anyURI" />
-  <xs:simpleType name="Code">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[a-zA-Z0-9]+"/>
-    </xs:restriction>
-  </xs:simpleType>
+	<xs:simpleType name="Code">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
 	
 	<xs:element name="Subject">
 		<xs:complexType>
@@ -42,24 +42,24 @@
 			<xs:all>
 				<xs:element name="TeacherCode" type="Code" />
 				<xs:element name="Name">
-				<!-- inspired by: https://stackoverflow.com/questions/4504994/xml-schema-for-simpletype-and-attribute -->
+					<!-- inspired by: https://stackoverflow.com/questions/4504994/xml-schema-for-simpletype-and-attribute -->
 					<xs:complexType>
 						<xs:simpleContent>
 						<xs:extension base="xs:string">
 							<xs:attribute ref="xml:lang" use="required" />
 						</xs:extension>
 						</xs:simpleContent>
-                  	</xs:complexType>     
+					</xs:complexType>     
 				</xs:element>
 				<xs:element name="Experience" type="xs:integer" />
 				<xs:element name="ClassTeacher">
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element ref="Class" />
-                    </xs:sequence>
-                  </xs:complexType>
-              	</xs:element>
-				<xs:element name="Subjects" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Class" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Subjects">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element ref="Subject" maxOccurs="unbounded" />
@@ -67,7 +67,7 @@
 					</xs:complexType>
 				</xs:element>
 			</xs:all>
-            <xs:attribute ref="ID" use="required" />
+			<xs:attribute ref="ID" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
