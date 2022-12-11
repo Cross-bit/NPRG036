@@ -69,7 +69,7 @@
 			},
 			"required": ["@id", "ClassYear", "ClassCode"]
 		},
-		"TimeTable": {
+		"Timetable": {
 			"type": "object",
 			"properties": {
 				"@id": {
