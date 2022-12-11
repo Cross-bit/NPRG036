@@ -1,5 +1,26 @@
 {
 
+	"@context": {
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"xsd": "https://www.w3.org/2001/XMLSchema#",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+        "time": "http://www.w3.org/2006/time#",
+		"ex": "http://example.org/vocabulary/",
+
+		"Classrooms": {"@reverse": "rdf:type"},
+		"TimeSlotBeginning": {"@id": "ex:TimeSlotBeginning", "@type": "xsd:time"},
+		"TimeSlotEnd": {"@id": "ex:TimeSlotEnd", "@type": "xsd:time"},
+		"DayOfWeek":  {"@id": "time"},
+        "Lesson": "ex:Lesson",
+        "TakesTime": {
+            "@reverse": "ex:TakesTime",
+            "@context": {
+				"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:token"},
+				"Name": {"@id": "ex:SubjectName", "@container": "@language"}
+			}
+        }
+	},
+    "@id": "Classroom",
     "Classrooms": [{
         "@id": "http://example.org/data/classrooms/S7",
         "Code": "S7",
