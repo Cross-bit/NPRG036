@@ -19,8 +19,8 @@
 		    "@id": "ex:BelongingClass",
 		    "@type": "ex:Class",
 		    "@context": {
-					"ClassYear": "ex:ClassYear",
-					"ClassCode": {"@id": "ex:ClassCode", "@type": "xsd:token"}
+			"ClassYear": "ex:ClassYear",
+			"ClassCode": {"@id": "ex:ClassCode", "@type": "xsd:token"}
 		    }
 		},
 		"BelongsTo": {
