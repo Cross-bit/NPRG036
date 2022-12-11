@@ -13,8 +13,8 @@
 			},
 			"minProperties": 1
 		},
-		"Lesson":{
-			"type":"object",
+		"Lesson": {
+			"type": "object",
 			"properties": {
 				"@id": {
 					"type": "string",
@@ -30,7 +30,7 @@
 			"required": ["@id", "ZoomURI", "Code"]
 		},
 		"Subject": {
-			"type":"object",
+			"type": "object",
 			"properties": {
 				"@id": {
 					"type": "string",
@@ -39,16 +39,16 @@
 				},
 				"SubjectCode": {"$ref": "#/$definitions/Code"},
 				"Name": {"$ref": "#/$definitions/langString"},
-				"IsTaught":{
-					"type":"array",
-					"items":{"$ref": "#/$definitions/Lesson"},
+				"IsTaught": {
+					"type": "array",
+					"items": {"$ref": "#/$definitions/Lesson"},
 					"uniqueItems": true
 				}
 			},
 			"required": ["@id", "SubjectCode", "Name"]
 		}
 	},
-	"title":"Subjects",
+	"title": "Subjects",
 	"description": "Subject-Lesson connection",
 	"type": "object",
 	"properties": {
@@ -58,5 +58,5 @@
 			"uniqueItems": true
 		}
 	},
-	"required": ["Subjets"]
+	"required": ["Subjects"]
 }

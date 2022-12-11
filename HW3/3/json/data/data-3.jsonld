@@ -1,0 +1,60 @@
+{
+	"@context": {
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"xsd": "https://www.w3.org/2001/XMLSchema#",
+		"ex": "http://example.org/vocabulary/",
+		"Subjects": {"@reverse": "rdf:type"},
+		"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:token"},
+		"Name": {"@id": "ex:SubjectName", "@container": "@language"},
+		"Lesson": "ex:Lesson",
+		"IsTaught": {
+			"@reverse": "ex:IsTaught",
+			"@context": {
+				"ZoomURI": "ex:LessonUrl",
+				"Code": {"@id": "ex:LessonID", "@type": "xsd:token"}
+			}
+		}
+	},
+	"@id": "ex:Subject",
+	"Subjects": [{
+		"@id": "http://example.org/data/subjects/Math",
+		"SubjectCode": "mt",
+		"Name": {"cs": "Matematika"},
+		"IsTaught": [{
+			"@id": "http://example.org/data/lessons/TH0855S7",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/TH0855S7",
+			"Code": "TH0855S6"
+		}, {
+			"@id": "http://example.org/data/lessons/TH0855S6",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/TH0855S6",
+			"Code": "TH0855S6"
+		}]
+	}, {
+		"@id": "http://example.org/data/subjects/English",
+		"SubjectCode": "en",
+		"Name": {"cs": "Angličtina"},
+		"IsTaught": [{
+			"@id": "http://example.org/data/lessons/MO0800S7",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/MO0800S7",
+			"Code": "MO0800S7"
+		}, {
+			"@id": "http://example.org/data/lessons/FR1000S9",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/FR1000S9",
+			"Code": "FR1000S9"
+		}]
+	}, {
+		"@id": "http://example.org/data/subjects/Physic",
+		"SubjectCode": "ps",
+		"Name": {"cs": "Fyzika"},
+		"IsTaught": [{
+			"@id": "http://example.org/data/lessons/FR1000S6",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/FR1000S6",
+			"Code": "FR1000S6"
+		}]
+	}]
+}

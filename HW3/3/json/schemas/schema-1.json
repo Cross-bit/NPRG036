@@ -13,17 +13,16 @@
 			},
 			"minProperties": 1
 		},
-        "dayOfWeek": {
-            "type": "string",            
-            "enum": [
-                "Monday", 
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-            ]
+		"dayOfWeek": {
+			"type": "string",
+			"enum": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday"
+			]
 		},
-
 		"TimeSlot": {
 			"type":"object",
 			"properties": {
@@ -33,19 +32,19 @@
 					"pattern": "^http\\://example\\.org/data/timeslots/.+$"
 				},
 				"TimeSlotBeginning": {
-                    "type": "string",
-                    "format": "time"
-                },
+					"type": "string",
+					"format": "time"
+				},
 				"TimeSlotEnd": {
-                    "type": "string",
-                    "format": "time"
-                },
-                "DayOfWeek": {"$ref": "#/$definitions/dayOfWeek"},
-                "TakesTime": {
-                    "type": "array",
-                    "items": {"$ref": "#/$definitions/Lesson"},
-                    "uniqueItems": true
-                }
+					"type": "string",
+					"format": "time"
+				},
+				"DayOfWeek": {"$ref": "#/$definitions/dayOfWeek"},
+				"TakesTime": {
+					"type": "array",
+					"items": {"$ref": "#/$definitions/Lesson"},
+					"uniqueItems": true
+				}
 			},
 			"required": ["@id", "TimeSlotBeginning", "TimeSlotEnd", "DayOfWeek"]
 		},
