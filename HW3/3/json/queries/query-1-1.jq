@@ -1,0 +1,1 @@
+.TimeSlots | .[] | select(.TimeSlotBeginning >= "07:45:00").TakesTime | .[] | . as $TakesTime | .ZoomURI | test("https://zoom.com/" + $TakesTime.Code)
