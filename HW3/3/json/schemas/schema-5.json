@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "http://example.org/json/schema-4.json",
+	"$id": "http://example.org/json/schema-5.json",
 	"$definitions": {
 		"Code": {
 			"type": "string",
@@ -100,5 +100,5 @@
 			"uniqueItems": true
 		}
 	},
-	"required": ["Timetable"]
+	"required": ["Timetables"]
 }
