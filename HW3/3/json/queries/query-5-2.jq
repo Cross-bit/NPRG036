@@ -1,0 +1,1 @@
+.Timetables|.[]|.BelongingClass|.Class | if(.ClassYear >= 5 and .ClassCode == "B" and (.BelongsTo|.[]|.Name.cs=="Jiří Klimošek")) then((.ClassYear|tostring)+.ClassCode) else (empty) end
