@@ -13,19 +13,6 @@
 			},
 			"minProperties": 1
 		},
-		"Subject": {
-			"type":"object",
-			"properties": {
-				"@id": {
-					"type": "string",
-					"format": "iri",
-					"pattern": "^http\\://example\\.org/data/subjects/.+$"
-				},
-				"SubjectCode": {"$ref": "#/$definitions/Code"},
-				"Name": {"$ref": "#/$definitions/langString"}
-			},
-			"required": ["@id", "SubjectCode", "Name"]
-		},
 		"Lesson":{
 			"type":"object",
 			"properties": {
@@ -41,6 +28,24 @@
 				"Code": {"$ref": "#/$definitions/Code"}
 			},
 			"required": ["@id", "ZoomURI", "Code"]
+		},
+		"Subject": {
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/subjects/.+$"
+				},
+				"SubjectCode": {"$ref": "#/$definitions/Code"},
+				"Name": {"$ref": "#/$definitions/langString"},
+				"IsTaught":{
+					"type":"array",
+					"items":{"$ref": "#/$definitions/Lesson"},
+					"uniqueItems": true
+				}
+			},
+			"required": ["@id", "SubjectCode", "Name"]
 		}
 	},
 	"title":"Subjects",
