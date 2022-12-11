@@ -1,0 +1,57 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://example.org/json/schema-3.json",
+    "$definitions": {
+		"Code": {
+			"type": "string",
+			"pattern": "^[a-zA-Z0-9]+$"
+		},
+		"langString": {
+			"type": "object",
+			"patternProperties": {
+				".*": {"type": "string"}
+			},
+			"minProperties": 1
+		},
+		"Subject": {
+			"type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/subjects/.+$"
+				},
+				"SubjectCode": {"$ref": "#/$definitions/Code"},
+				"Name": {"$ref": "#/$definitions/langString"}
+			},
+			"required": ["@id", "SubjectCode", "Name"]
+		},
+        "Lesson":{
+            "type":"object",
+			"properties": {
+				"@id": {
+					"type": "string",
+					"format": "iri",
+					"pattern": "^http\\://example\\.org/data/lessons/.+$"
+				},
+				"ZoomURI": {
+					"type": "string",
+					"format": "iri"
+                },
+				"Code": {"$ref": "#/$definitions/Code"}
+			},
+            "required": ["@id", "ZoomURI", "Code"]
+        }
+	},
+    "title":"Subjects",
+    "description": "Subject-Lesson connection",
+    "type": "object",
+	"properties": {
+		"Subjects": {
+			"type": "array",
+			"items": {"$ref": "#/$definitions/Subject"},
+			"uniqueItems": true
+		}
+	},
+	"required": ["Subjets"]
+}
