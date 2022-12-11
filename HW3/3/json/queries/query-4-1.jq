@@ -1,0 +1,1 @@
+.Teachers | .[] | if ((.Name.cs | startswith("Jaroslav")) and .Experience>2 and (.Teaches.Subject | .[]| (.SubjectCode=="mt" or .SubjectCode=="en"))) then (.Name.cs +" with years experience " +(.Experience|tostring)) else (empty) end
