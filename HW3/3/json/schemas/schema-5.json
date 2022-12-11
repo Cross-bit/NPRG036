@@ -94,7 +94,7 @@
 	"description": "description",
 	"type": "object",
 	"properties": {
-		"Subjects": {
+		"Timetables": {
 			"type": "array",
 			"items": {"$ref": "#/$definitions/Timetable"},
 			"uniqueItems": true
