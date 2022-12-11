@@ -1,0 +1,46 @@
+{
+
+    "Classrooms": [{
+        "@id": "http://example.org/data/classrooms/S7",
+        "Code": "S7",
+        "ClassroomCapacity": 28,
+        "TakesPlace": [{
+            "@id": "http://example.org/data/lessons/MO0800S7",
+            "ZoomURI": "https://zoom.com/MO0800S7",
+            "Code": "MO0800S7"
+        },
+        {
+            "@id": "http://example.org/data/lessons/TH0855S7",
+            "ZoomURI": "https://zoom.com/TH0855S7",
+            "Code": "TH0855S7"
+        }]
+    },
+    {
+        "@id": "http://example.org/data/classrooms/S6",
+        "Code": "S6",
+        "ClassroomCapacity": 30,
+        "TakesPlace": [{
+            "@id": "http://example.org/data/lessons/TH0855S6",
+            "ZoomURI": "https://zoom.com/TH0855S6",
+            "Code": "TH0855S6"
+        },
+        {
+            "@id": "http://example.org/data/lessons/FR1000S6",
+            "ZoomURI": "https://zoom.com/FR1000S6",
+            "Code": "FR1000S6"
+        }]
+    },
+    {
+        "@id": "http://example.org/data/classrooms/S9",
+        "Code": "S9",
+        "ClassroomCapacity": 30,
+        "TakesPlace": [{
+            "@id": "http://example.org/data/lessons/FR1000S9",
+            "ZoomURI": "https://zoom.com/FR1000S9",
+            "Code": "FR1000S9"
+        }]
+    }
+
+
+    ]
+}
