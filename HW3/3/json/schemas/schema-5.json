@@ -14,11 +14,10 @@
 			"minProperties": 1
 		},
 		"AcademicalYear": {
-		    TODO validation
 			"type": "string",
-				"pattern": "\\d{4}[/]\\d{4}", 
-		    "minLength": 9,
-		    "maxLength": 9
+			"pattern": "^\\d{4}[/]\\d{4}$", 
+			"minLength": 9,
+			"maxLength": 9
 		},
 		"Lesson": {
 			"type":"object",
@@ -29,14 +28,13 @@
 					"pattern": "^http\\://example\\.org/data/lessons/.+$"
 				},
 				"LessonCode": {"$ref": "#/$definitions/Code"},
-                "ZoomURI": {
+					"ZoomURI": {
 					"type": "string",
 					"format": "iri"
 				}
 			},
 			"required": ["@id", "LessonCode", "ZoomURI"]
 		},
-
 		"Student": {
 			"type":"object",
 			"properties": {
@@ -45,11 +43,11 @@
 					"format": "iri",
 					"pattern": "^http\\://example\\.org/data/students/.+$"
 				},
-                "Name": {"$ref": "#/$definitions/langString"},
+				"Name": {"$ref": "#/$definitions/langString"},
 				"StudentCode": {"$ref": "#/$definitions/Code"},
 				"NickName": {"$ref": "#/$definitions/langString"}
 			},
-			"required": ["@id", "Name", "StudentCode", "NickName"]
+			"required": ["@id", "Name", "StudentCode"]
 		},
 		"Class": {
 			"type":"array",
@@ -61,7 +59,7 @@
 				},
 				"ClassYear": {"type": "integer"},
 				"ClassCode": {"$ref": "#/$definitions/Code"},
-                "BelongsTo": {
+				"BelongsTo": {
 					"type": "array",
 					"items": {"$ref": "#/$definitions/Student"},
 					"uniqueItems": true
@@ -77,19 +75,18 @@
 					"format": "iri",
 					"pattern": "^http\\://example\\.org/data/timetables/.+$"
 				},
-                "AcademicalYear": {"$ref": "#/$definitions/AcademicalYear"},
-                "TimetableVesrsion": {"type": "number"},
+				"AcademicalYear": {"$ref": "#/$definitions/AcademicalYear"},
+				"TimetableVersion": {"type": "number"},
 				"PlannedLesson": {
 					"type": "array",
 					"items": {"$ref": "#/$definitions/Lesson"},
 					"uniqueItems": true
 				},
-                "BelongingClass": {"$ref": "#/$definitions/Class"}
+				"BelongingClass": {"$ref": "#/$definitions/Class"}
 			},
-			"required": ["@id", "AcademicalYear", "TimetableVersion", "PlannedLesson", "BelongingClass"] TODO validation use= in .xsd
+			"required": ["@id", "AcademicalYear", "TimetableVersion", "BelongingClass"]
 		}
 	},
-
 	"title":"Timetables",
 	"description": "description",
 	"type": "object",

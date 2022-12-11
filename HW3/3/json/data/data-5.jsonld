@@ -4,100 +4,98 @@
 		"xsd": "https://www.w3.org/2001/XMLSchema#",
 		"foaf": "http://xmlns.com/foaf/0.1/",
 		"ex": "http://example.org/vocabulary/",
-		"Timetables": {"@reverse": "rdf:type"}, TODO is it valid?
+		"Timetables": {"@reverse": "rdf:type"},
 		"AcademicalYear": "ex:AcademicalYear",
 		"TimetableVersion": "ex:TimetableVersion",
 		"PlannedLesson": {
-		    "@id": "ex:PlannedLesson",
-		    "@type": "ex:Lesson",
-		    "@context": {
-			"LessonID": {"@id": "ex:LessonID", "@type": "xsd:token"},
-			"LessonUrl": {"@id": "ex:LessonUrl", "@type": "xsd:anyUri"}
-		    }
+			"@id": "ex:PlannedLesson",
+			"@type": "ex:Lesson",
+			"@context": {
+				"LessonID": {"@id": "ex:LessonID", "@type": "xsd:token"},
+				"LessonUrl": {"@id": "ex:LessonUrl", "@type": "xsd:anyUri"}
+			}
 		},
 		"BelongingClass": {
-		    "@id": "ex:BelongingClass",
-		    "@type": "ex:Class",
-		    "@context": {
-			"ClassYear": "ex:ClassYear",
-			"ClassCode": {"@id": "ex:ClassCode", "@type": "xsd:token"}
-		    }
+			"@id": "ex:BelongingClass",
+			"@type": "ex:Class",
+			"@context": {
+				"ClassYear": "ex:ClassYear",
+				"ClassCode": {"@id": "ex:ClassCode", "@type": "xsd:token"}
+			}
 		},
 		"BelongsTo": {
-		    "@reverse": "ex:BelogsTo",
-		    "@type": "ex:Student",
-		    "@context": {
-			"name": {"@id": "foaf:name", "@container": "@language"},
-			"StudentID": {"@id": "ex:StudentID", "@type": "xsd:ID"},
-			"NickName": {"@id": "ex:NickName", "@container": "@language"}
-		    }
+			"@reverse": "ex:BelogsTo",
+			"@type": "ex:Student",
+			"@context": {
+				"name": {"@id": "foaf:name", "@container": "@language"},
+				"StudentID": {"@id": "ex:StudentID", "@type": "xsd:ID"},
+				"NickName": {"@id": "ex:NickName", "@container": "@language"}
+			}
 		}
-		},
-		"@id": "ex:Timetable",
-		"Timetables": [{
-			"@id": "http://example.org/data/timetables/20216A15",
-			"AcademicalYear": "2020/2021",
-			"TimetableVersion": "1.5",
-			"PlannedLesson": [{
-			    "@id": "http://example.org/data/lessons/TH0855S6",
-			    "ZoomURI": "https://zoom.com/TH0855S6",
-			    "LessonCode": "TH0855S6"
-			}],
-			"BelongingClass": [{
-			    "@id": "http://example.org/data/classes/6A",
-			    "ClassYear": "6",
-			    "ClassCode": "A",
-			    "BelongsTo": [{
+	},
+	"@id": "ex:Timetable",
+	"Timetables": [{
+		"@id": "http://example.org/data/timetables/20216A15",
+		"AcademicalYear": "2020/2021",
+		"TimetableVersion": 1.5,
+		"PlannedLesson": [{
+			"@id": "http://example.org/data/lessons/TH0855S6",
+			"ZoomURI": "https://zoom.com/TH0855S6",
+			"LessonCode": "TH0855S6"
+		}],
+		"BelongingClass": {
+			"@id": "http://example.org/data/classes/6A",
+			"ClassYear": 6,
+			"ClassCode": "A",
+			"BelongsTo": [{
 				"@id": "http://example.org/data/students/kovpe",
 				"Name": {"cs": "Petr Kovář"},
 				"StudentCode": "kovpe"
-			    }]
 			}]
-			}, {
-			"@id": "http://example.org/data/timetables/21226B10",
-			"AcademicalYear": "2021/2022",
-			"TimetableVersion": "1.0",
-			"PlannedLesson": [{
-			    "@id": "http://example.org/data/lessons/MO0800S7",
-			    "ZoomURI": "https://zoom.com/MO0800S7",
-			    "LessonCode": "MO0800S7"
-			}, {
-			    "@id": "http://example.org/data/lessons/FR1000S6",
-			    "ZoomURI": "https://zoom.com/FR1000S6",
-			    "LessonCode": "FR1000S6"
-			}
-		    ],
-			"BelongingClass": [{
-			    "@id": "http://example.org/data/classes/6B",
-			    "ClassYear": "6",
-			    "ClassCode": "B",
-			    "BelongsTo": [{
+		}
+	}, {
+		"@id": "http://example.org/data/timetables/21226B10",
+		"AcademicalYear": "2021/2022",
+		"TimetableVersion": 1.0,
+		"PlannedLesson": [{
+			"@id": "http://example.org/data/lessons/MO0800S7",
+			"ZoomURI": "https://zoom.com/MO0800S7",
+			"LessonCode": "MO0800S7"
+		}, {
+			"@id": "http://example.org/data/lessons/FR1000S6",
+			"ZoomURI": "https://zoom.com/FR1000S6",
+			"LessonCode": "FR1000S6"
+		}],
+		"BelongingClass": {
+			"@id": "http://example.org/data/classes/6B",
+			"ClassYear": 6,
+			"ClassCode": "B",
+			"BelongsTo": [{
 				"@id": "http://example.org/data/students/kliji",
 				"Name": {"cs": "Jiří Klimošek"},
 				"StudentCode": "kliji",
 				"Nickname": {"cs": "Limoš"}
-
-			    }]
 			}]
-		    }, {
-			"@id": "http://example.org/data/timetables/22234C20",
-			"AcademicalYear": "2022/2023",
-			"TimetableVersion": "2.0",
-			"PlannedLesson": [{
-			    "@id": "http://example.org/data/lessons/FR1000S9",
-			    "ZoomURI": "https://zoom.com/FR1000S9",
-			    "LessonCode": "FR1000S9"
-			}],
-			"BelongingClass": [{
-			    "@id": "http://example.org/data/classes/4C",
-			    "ClassYear": "4",
-			    "ClassCode": "C",
-			    "BelongsTo": [{
+		}
+	}, {
+		"@id": "http://example.org/data/timetables/22234C20",
+		"AcademicalYear": "2022/2023",
+		"TimetableVersion": 2.0,
+		"PlannedLesson": [{
+			"@id": "http://example.org/data/lessons/FR1000S9",
+			"ZoomURI": "https://zoom.com/FR1000S9",
+			"LessonCode": "FR1000S9"
+		}],
+		"BelongingClass": {
+			"@id": "http://example.org/data/classes/4C",
+			"ClassYear": 4,
+			"ClassCode": "C",
+			"BelongsTo": [{
 				"@id": "http://example.org/data/students/novpa",
 				"Name": {"cs": "Pavel Novák"},
 				"StudentCode": "novpa",
 				"Nickname": {"cs": ["Kajak", "Bizon"]}
-			    }]
 			}]
-	    }]
-	}
+		}
+	}]
+}
