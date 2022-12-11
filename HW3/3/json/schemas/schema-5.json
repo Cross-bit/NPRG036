@@ -9,7 +9,16 @@
 		"langString": {
 			"type": "object",
 			"patternProperties": {
-				".*": {"type": "string"}
+				".*": {
+					"anyOf": [
+						{"type": "string"},
+						{
+							"type": "array",
+							"items": {"type": "string"},
+							"uniqueItems": true
+						}
+					]
+				}
 			},
 			"minProperties": 1
 		},
@@ -45,12 +54,12 @@
 				},
 				"Name": {"$ref": "#/$definitions/langString"},
 				"StudentCode": {"$ref": "#/$definitions/Code"},
-				"NickName": {"$ref": "#/$definitions/langString"}
+				"Nickname": {"$ref": "#/$definitions/langString"}
 			},
 			"required": ["@id", "Name", "StudentCode"]
 		},
 		"Class": {
-			"type":"array",
+			"type":"object",
 			"properties": {
 				"@id": {
 					"type": "string",
@@ -78,11 +87,23 @@
 				"AcademicalYear": {"$ref": "#/$definitions/AcademicalYear"},
 				"TimetableVersion": {"type": "number"},
 				"PlannedLesson": {
-					"type": "array",
-					"items": {"$ref": "#/$definitions/Lesson"},
-					"uniqueItems": true
+					"type": "object",
+					"properties": {
+						"Lesson": {
+							"type": "array",
+							"items": {"$ref": "#/$definitions/Lesson"},
+							"uniqueItems": true
+						}
+					},
+					"required": ["Lesson"]
 				},
-				"BelongingClass": {"$ref": "#/$definitions/Class"}
+				"BelongingClass": {
+					"type": "object",
+					"properties": {
+						"Class": {"$ref": "#/$definitions/Class"}
+					},
+					"required": ["Class"]
+				}
 			},
 			"required": ["@id", "AcademicalYear", "TimetableVersion", "BelongingClass"]
 		}
