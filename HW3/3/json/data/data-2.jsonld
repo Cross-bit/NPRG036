@@ -1,66 +1,60 @@
 {
-
 	"@context": {
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 		"xsd": "https://www.w3.org/2001/XMLSchema#",
-		"foaf": "http://xmlns.com/foaf/0.1/",
 		"ex": "http://example.org/vocabulary/",
-
 		"Classrooms": {"@reverse": "rdf:type"},
 		"Code": {"@id": "ex:ClassroomID", "@type": "xsd:ID"},
 		"ClassroomCapacity": {"@id": "ex:ClassroomCapacity", "@type": "xsd:integer"},
-        "Lesson": "ex:Lesson",
-        "TakesPlace": {
-            "@reverse": "ex:TakesPlace",
-            "@context": {
+		"Lesson": "ex:Lesson",
+		"TakesPlace": {
+			"@reverse": "ex:TakesPlace",
+			"@context": {
 				"Code": {"@id": "ex:LessonID", "@type": "xsd:token"},
-                "ZoomURI": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"},
-				"Name": {"@id": "ex:SubjectName", "@container": "@language"}
+				"ZoomURI": {"@id": "ex:LessonUrl", "@type": "xsd:anyURI"}
 			}
-        }
+		}
 	},
-    "@id": "Classroom",
-    "Classrooms": [{
-        "@id": "http://example.org/data/classrooms/S7",
-        "Code": "S7",
-        "ClassroomCapacity": 28,
-        "TakesPlace": [{
-            "@id": "http://example.org/data/lessons/MO0800S7",
-            "ZoomURI": "https://zoom.com/MO0800S7",
-            "Code": "MO0800S7"
-        },
-        {
-            "@id": "http://example.org/data/lessons/TH0855S7",
-            "ZoomURI": "https://zoom.com/TH0855S7",
-            "Code": "TH0855S7"
-        }]
-    },
-    {
-        "@id": "http://example.org/data/classrooms/S6",
-        "Code": "S6",
-        "ClassroomCapacity": 30,
-        "TakesPlace": [{
-            "@id": "http://example.org/data/lessons/TH0855S6",
-            "ZoomURI": "https://zoom.com/TH0855S6",
-            "Code": "TH0855S6"
-        },
-        {
-            "@id": "http://example.org/data/lessons/FR1000S6",
-            "ZoomURI": "https://zoom.com/FR1000S6",
-            "Code": "FR1000S6"
-        }]
-    },
-    {
-        "@id": "http://example.org/data/classrooms/S9",
-        "Code": "S9",
-        "ClassroomCapacity": 30,
-        "TakesPlace": [{
-            "@id": "http://example.org/data/lessons/FR1000S9",
-            "ZoomURI": "https://zoom.com/FR1000S9",
-            "Code": "FR1000S9"
-        }]
-    }
-
-
-    ]
+	"@id": "ex:Classroom",
+	"Classrooms": [{
+		"@id": "http://example.org/data/classrooms/S7",
+		"Code": "S7",
+		"ClassroomCapacity": 28,
+		"TakesPlace": [{
+			"@id": "http://example.org/data/lessons/MO0800S7",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/MO0800S7",
+			"Code": "MO0800S7"
+		}, {
+			"@id": "http://example.org/data/lessons/TH0855S7",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/TH0855S7",
+			"Code": "TH0855S7"
+		}]
+	}, {
+		"@id": "http://example.org/data/classrooms/S6",
+		"Code": "S6",
+		"ClassroomCapacity": 30,
+		"TakesPlace": [{
+			"@id": "http://example.org/data/lessons/TH0855S6",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/TH0855S6",
+			"Code": "TH0855S6"
+		}, {
+			"@id": "http://example.org/data/lessons/FR1000S6",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/FR1000S6",
+			"Code": "FR1000S6"
+		}]
+	}, {
+		"@id": "http://example.org/data/classrooms/S9",
+		"Code": "S9",
+		"ClassroomCapacity": 30,
+		"TakesPlace": [{
+			"@id": "http://example.org/data/lessons/FR1000S9",
+			"@type": "Lesson",
+			"ZoomURI": "https://zoom.com/FR1000S9",
+			"Code": "FR1000S9"
+		}]
+	}]
 }
