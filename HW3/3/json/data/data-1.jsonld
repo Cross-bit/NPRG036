@@ -6,7 +6,7 @@
         "time": "http://www.w3.org/2006/time#",
 		"ex": "http://example.org/vocabulary/",
 
-		"TimeSlot": {"@reverse": "rdf:type"},
+		"TimeSlots": {"@reverse": "rdf:type"},
 		"TimeSlotBeginning": {"@id": "ex:TimeSlotBeginning", "@type": "xsd:time"},
 		"TimeSlotEnd": {"@id": "ex:TimeSlotEnd", "@type": "xsd:time"},
 		"DayOfWeek":  {"@id": "time"},
@@ -19,7 +19,7 @@
 			}
         }
 	},
-    "@id": "ex:TimeSlots",
+    "@id": "ex:TimeSlot",
 	"TimeSlots": [{
 		"@id": "http://example.org/data/timeslots/MO0800",
 		"TimeSlotBeginning": "08:00:00",
