@@ -1,3 +1,3 @@
-(: Vrátí všechny údaje ID Lessons, pokud se hodina vyskytuje v časovém slotu začínajícím později než 7:45:00 a ověří, zdali hodina má platný zoom meeting, s kódem dané lesson. :)
+(: Vrátí všechny údaje ID Lessons, pokud se hodina vyskytuje v časovém slotu začínajícím později než 7:45:00 a ověří s kódem dané lesson, zda-li hodina má platný zoom meeting. :)
 
 //TimeSlot[number(translate(TimeSlotBeginning/text(), ':','')) > number(translate("7:45:00", ':',''))]/TakesTime/Lesson[matches(ZoomURI, concat("https://zoom.com/", Code))]/concat(@ID, " OK")
