@@ -1,0 +1,2 @@
+ex		http://example.org/vocabulary/
+test	test://example.org/test/

@@ -1,0 +1,12 @@
+@prefix ex: <http://example.org/vocabulary/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.com/data/TODOs/r1> a ex:TODO;
+  ex:col1 4;
+  <test://example.org/test/col2> "q2" .
+
+<https://example.com/data/TODOs/r2> a ex:TODO;
+  ex:col1 5;
+  <test://example.org/test/col2> """a
+a""" .
