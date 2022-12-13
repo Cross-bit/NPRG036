@@ -1,0 +1,37 @@
+{
+	"@id": "exd:tables/data-1.csv",
+	"@type": "Table",
+	"url": "data-1.csv",
+	"dc:title": "TODO",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exd:TODOs/{+iri}",
+		"columns": [{
+			"@type": "Column",
+			"name": "iri",
+			"titles": "IRI",
+			"dc:description": "Resource IRI",
+			"datatype": "token",
+			"required": true,
+			"propertyUrl": "rdf:type",
+			"valueUrl": "ex:TODO"
+		}, {
+			"@type": "Column",
+			"name": "col1",
+			"titles": "col1",
+			"dc:description": "Column 1",
+			"datatype": "integer",
+			"required": true,
+			"propertyUrl": "ex:col1"
+		}, {
+			"@type": "Column",
+			"name": "col2",
+			"titles": "col2",
+			"dc:description": "Column 2",
+			"datatype": "string",
+			"required": true,
+			"propertyUrl": "test:col2"
+		}],
+		"primaryKey": "iri"
+	}
+}

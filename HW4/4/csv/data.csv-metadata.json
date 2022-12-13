@@ -4,13 +4,50 @@
 	"@id": "https://example.org/data/tables",
 	"tables": [
 		{
-			"@id": "https://example.org/data/tables/data-1.csv",
+			"@id": "http://example.org/data/tables/data-1.csv",
 			"@type": "Table",
 			"url": "data-1.csv",
 			"dc:title": "TODO",
 			"tableSchema": {
 				"@type": "Schema",
-				"aboutUrl": "https://example.com/data/TODOs/{+iri}",
+				"aboutUrl": "http://example.org/data/TODOs/{+iri}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri",
+					"titles": "IRI",
+					"dc:description": "Resource IRI",
+					"datatype": "token",
+					"required": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/TODO"
+				}, {
+					"@type": "Column",
+					"name": "col1",
+					"titles": "col1",
+					"dc:description": "Column 1",
+					"datatype": "integer",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/col1"
+				}, {
+					"@type": "Column",
+					"name": "col2",
+					"titles": "col2",
+					"dc:description": "Column 2",
+					"datatype": "string",
+					"required": true,
+					"propertyUrl": "test://example.org/test/col2"
+				}],
+				"primaryKey": "iri"
+			}
+		},
+		{
+			"@id": "http://example.org/data/tables/data-1.csv",
+			"@type": "Table",
+			"url": "data-1.csv",
+			"dc:title": "TODO",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/TODOs/{+iri}",
 				"columns": [{
 					"@type": "Column",
 					"name": "iri",

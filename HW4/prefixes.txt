@@ -1,2 +1,3 @@
 ex		http://example.org/vocabulary/
+exd		http://example.org/data/
 test	test://example.org/test/
