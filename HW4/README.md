@@ -1,5 +1,7 @@
 # [HW4](https://jakub.xn--klmek-0sa.com/nprg036-hw4)
 
+[Nástroj na relační diagramy](https://dbdiagram.io)
+
 ## Instrukce
 
 - Deskriptory tabulek pište do souborů ve složce `metadata`.
