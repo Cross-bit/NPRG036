@@ -1,6 +1,7 @@
 # [HW4](https://jakub.xn--klmek-0sa.com/nprg036-hw4)
 
-[Nástroj na relační diagramy](https://dbdiagram.io)
+- [Nástroj na relační diagramy](https://dbdiagram.io)
+- [Standardní prefixy](https://www.w3.org/ns/csvw#introduction)
 
 ## Instrukce
 
@@ -48,3 +49,5 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
   - Ta kardinaůita je nějaká divná, ale tak jak je to teď by to byl cizí klíč na rozvrh v tabulce třídy.
 - Vazba třída &mdash; učitel
   - Podle Datových formátů nesmí být nepovinné (klíčové) atributy, takže by to měla být další tabulka. Tady nám to přímo neříkal, takže bychom to mohly dát jako nepovinný cizí klíč na učitele v tabulce třídy.
+- Vazby učeitel &mdash; předmět a hodina &mdash; rozvrh bychom mohli vyjádřit pomocí vícenásobného atributu s cizím klíčem.
+- Přidat české názvy sloupců?

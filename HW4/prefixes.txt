@@ -1,3 +1,13 @@
-ex		http://example.org/vocabulary/
-exd		http://example.org/data/
-test	test://example.org/test/
+ex           http://example.org/vocabulary/
+exd          http://example.org/data/
+exClass      http://example.org/data/classes/
+exTeacher    http://example.org/data/teachers/
+exLesson     http://example.org/data/lessons/
+exClassroom  http://example.org/data/classrooms/
+exSubject    http://example.org/data/subjects/
+exStudent    http://example.org/data/students/
+exTimeSlot   http://example.org/data/timeslots/
+exTimetable  http://example.org/data/timetables/
+xsd          http://www.w3.org/2001/XMLSchema#
+foaf         http://xmlns.com/foaf/0.1/
+time         http://www.w3.org/2006/time#

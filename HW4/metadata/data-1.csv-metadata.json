@@ -2,19 +2,19 @@
 	"@id": "exd:tables/data-1.csv",
 	"@type": "Table",
 	"url": "data-1.csv",
-	"dc:title": "TODO",
+	"dc:title": "Timetables",
 	"tableSchema": {
 		"@type": "Schema",
-		"aboutUrl": "exd:TODOs/{+iri}",
+		"aboutUrl": "exTimetable:{+iri_id}",
 		"columns": [{
 			"@type": "Column",
-			"name": "iri",
-			"titles": "IRI",
-			"dc:description": "Resource IRI",
-			"datatype": "token",
+			"name": "iri_id",
+			"titles": ["IRI_ID", "IRI", "ID"],
+			"dc:description": "Resource IRI end",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"propertyUrl": "rdf:type",
-			"valueUrl": "ex:TODO"
+			"valueUrl": "ex:Timetable"
 		}, {
 			"@type": "Column",
 			"name": "col1",
@@ -30,8 +30,8 @@
 			"dc:description": "Column 2",
 			"datatype": "string",
 			"required": true,
-			"propertyUrl": "test:col2"
+			"propertyUrl": "ex:col2"
 		}],
-		"primaryKey": "iri"
+		"primaryKey": "iri_id"
 	}
 }

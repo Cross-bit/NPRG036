@@ -1,37 +1,47 @@
 {
-	"@id": "exd:tables/data-1.csv",
+	"@id": "exd:tables/data-4.csv",
 	"@type": "Table",
-	"url": "data-1.csv",
-	"dc:title": "TODO",
+	"url": "data-4.csv",
+	"dc:title": "Teachers",
 	"tableSchema": {
 		"@type": "Schema",
-		"aboutUrl": "exd:TODOs/{+iri}",
+		"aboutUrl": "exTeacher:{+id}",
 		"columns": [{
 			"@type": "Column",
-			"name": "iri",
-			"titles": "IRI",
-			"dc:description": "Resource IRI",
-			"datatype": "token",
+			"name": "id",
+			"titles": ["ID", "IRI"],
+			"dc:description": "ID (resource IRI end)",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
-			"propertyUrl": "rdf:type",
-			"valueUrl": "ex:TODO"
+			"propertyUrl": "ex:TeacherID"
 		}, {
 			"@type": "Column",
-			"name": "col1",
-			"titles": "col1",
-			"dc:description": "Column 1",
-			"datatype": "integer",
-			"required": true,
-			"propertyUrl": "ex:col1"
-		}, {
-			"@type": "Column",
-			"name": "col2",
-			"titles": "col2",
-			"dc:description": "Column 2",
+			"name": "name",
+			"titles": {
+				"en": "name",
+				"cs": "jméno"
+			},
+			"dc:description": "Name",
 			"datatype": "string",
 			"required": true,
-			"propertyUrl": "test:col2"
+			"propertyUrl": "foaf:name"
+		}, {
+			"@type": "Column",
+			"name": "experience",
+			"titles": {
+				"en": "experience",
+				"cs": "zkušenosti"
+			},
+			"dc:description": "Years of experience",
+			"datatype": "integer",
+			"required": true,
+			"propertyUrl": "ex:TeacherExperience"
+		}, {
+			"@type": "Column",
+			"virtual": true,
+			"propertyUrl": "rdf:type",
+			"valueUrl": "ex:Teacher"
 		}],
-		"primaryKey": "iri"
+		"primaryKey": "id"
 	}
 }

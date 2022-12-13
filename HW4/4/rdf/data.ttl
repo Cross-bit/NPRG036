@@ -1,14 +1,30 @@
 @prefix ex: <http://example.org/vocabulary/> .
-@prefix exd: <http://example.org/data/> .
+@prefix exTeacher: <http://example.org/data/teachers/> .
+@prefix exTimetable: <http://example.org/data/timetables/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix test: <test://example.org/test/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-exd:TODOs\/r1 a ex:TODO;
-  ex:col1 4;
-  test:col2 "q2" .
+exTeacher:muk a ex:Teacher;
+  ex:TeacherExperience 5;
+  ex:TeacherID "muk"^^xsd:ID;
+  foaf:name "Vladimír Mukvald" .
 
-exd:TODOs\/r2 a ex:TODO;
+exTeacher:pel a ex:Teacher;
+  ex:TeacherExperience 3;
+  ex:TeacherID "pel"^^xsd:ID;
+  foaf:name "Jaroslav Pelikán" .
+
+exTeacher:svo a ex:Teacher;
+  ex:TeacherExperience 2;
+  ex:TeacherID "svo"^^xsd:ID;
+  foaf:name "Patrik Svoboda" .
+
+exTimetable:r1 a ex:Timetable;
+  ex:col1 4;
+  ex:col2 "q2" .
+
+exTimetable:r2 a ex:Timetable;
   ex:col1 5;
-  test:col2 """a
+  ex:col2 """a
 a""" .
