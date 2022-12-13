@@ -36,13 +36,13 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
 6. **Časový slot**
 7. **Třída**
 8. **Žák** + cizí klíč na *třídu*
-9. Vazba (cizí klíče) *učeitel* &harr; *předmět*
+9. Vazba (cizí klíče) *učeitel* &mdash; *předmět*
 
 ### K vyřešení
 
-- Vazba hodina &harr; rozvrh
+- Vazba hodina &mdash; rozvrh
   - Vážně může hodina patřit do několika rozvrhů? Pokud ano tak na to bude další tabluka (jako 9.).
-- Vazba rozvrh &harr; třída
+- Vazba rozvrh &mdash; třída
   - Ta kardinaůita je nějaká divná, ale tak jak je to teď by to byl cizí klíč na rozvrh v tabulce třídy.
-- Vazba třída &harr; učitel
+- Vazba třída &mdash; učitel
   - Podle Datových formátů nesmí být nepovinné (klíčové) atributy, takže by to měla být další tabulka. Tady nám to přímo neříkal, takže bychom to mohly dát jako nepovinný cizí klíč na učitele v tabulce třídy.
