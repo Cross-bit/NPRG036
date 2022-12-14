@@ -37,17 +37,13 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
 - [x] **4:** **Učitel**
 - [ ] **5:** **Učebna**
 - [ ] **6:** **Časový slot**
-- [ ] **7:** **Třída**
-- [x] **8:** **Žák** + cizí klíč na *třídu*
+- [ ] **7:** **Třída** + cizí klíč na *rozvrh*
+- [ ] **8:** **Žák**
 - [ ] **9:** Vazba (cizí klíče) *učeitel* &mdash; *předmět*
+- [ ] **10:** Vazba (cizí klíče) *třída* &mdash; *učitel*
+- [ ] **11:** Vazba (cizí klíče) *předmět* &mdash; *rozvrh*
+- [ ] **12:** Přezdívky *žáků*
 
 ### K vyřešení
 
-- Vazba hodina &mdash; rozvrh
-  - Vážně může hodina patřit do několika rozvrhů? Pokud ano tak na to bude další tabluka (jako 9.).
-- Vazba rozvrh &mdash; třída
-  - Ta kardinaůita je nějaká divná, ale tak jak je to teď by to byl cizí klíč na rozvrh v tabulce třídy.
-- Vazba třída &mdash; učitel
-  - Podle Datových formátů nesmí být nepovinné (klíčové) atributy, takže by to měla být další tabulka. Tady nám to přímo neříkal, takže bychom to mohly dát jako nepovinný cizí klíč na učitele v tabulce třídy.
-- Vazby učeitel &mdash; předmět a hodina &mdash; rozvrh bychom mohli vyjádřit pomocí vícenásobného atributu s cizím klíčem.
 - Přidat české názvy sloupců?
