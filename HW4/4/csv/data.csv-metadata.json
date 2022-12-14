@@ -4,6 +4,48 @@
 	"@id": "https://example.org/data/tables",
 	"tables": [
 		{
+			"@id": "http://example.org/data/tables/data-12.csv",
+			"@type": "Table",
+			"url": "data-12.csv",
+			"dc:title": "Student nickname",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/students/{+student}",
+				"columns": [{
+					"@type": "Column",
+					"name": "student",
+					"titles": {
+						"en": "student",
+						"cs": "žák"
+					},
+					"dc:description": "Student ID",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"suppressOutput": true
+				}, {
+					"@type": "Column",
+					"name": "nickname",
+					"titles": {
+						"en": "nickname",
+						"cs": "přezdívka"
+					},
+					"dc:description": "Student's nickname",
+					"datatype": "string",
+					"lang": "cs",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/Nickname"
+				}],
+				"primaryKey": ["student", "nickname"],
+				"foreignKeys": [{
+					"columnReference": "student",
+					"reference": {
+						"resource": "data-8.csv",
+						"columnReference": "id"
+					}
+				}]
+			}
+		},
+		{
 			"@id": "http://example.org/data/tables/data-1.csv",
 			"@type": "Table",
 			"url": "data-1.csv",
@@ -121,19 +163,6 @@
 					"lang": "cs",
 					"required": true,
 					"propertyUrl": "http://xmlns.com/foaf/0.1/name"
-				}, {
-					"@type": "Column",
-					"name": "nicknames",
-					"titles": {
-						"en": "nicknames",
-						"cs": "přezdívky"
-					},
-					"dc:description": "Student's nicknames",
-					"datatype": "string",
-					"lang": "cs",
-					"separator": "\n",
-					"required": false,
-					"propertyUrl": "http://example.org/vocabulary/Nickname"
 				}, {
 					"@type": "Column",
 					"name": "class",

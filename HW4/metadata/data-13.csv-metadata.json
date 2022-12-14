@@ -1,0 +1,42 @@
+{
+	"@id": "exd:tables/data-12.csv",
+	"@type": "Table",
+	"url": "data-12.csv",
+	"dc:title": "Student nickname",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exStudent:{+student}",
+		"columns": [{
+			"@type": "Column",
+			"name": "student",
+			"titles": {
+				"en": "student",
+				"cs": "žák"
+			},
+			"dc:description": "Student ID",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
+			"required": true,
+			"suppressOutput": true
+		}, {
+			"@type": "Column",
+			"name": "nickname",
+			"titles": {
+				"en": "nickname",
+				"cs": "přezdívka"
+			},
+			"dc:description": "Student's nickname",
+			"datatype": "string",
+			"lang": "cs",
+			"required": true,
+			"propertyUrl": "ex:Nickname"
+		}],
+		"primaryKey": ["student", "nickname"],
+		"foreignKeys": [{
+			"columnReference": "student",
+			"reference": {
+				"resource": "data-8.csv",
+				"columnReference": "id"
+			}
+		}]
+	}
+}

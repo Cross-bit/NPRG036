@@ -28,19 +28,6 @@
 			"propertyUrl": "foaf:name"
 		}, {
 			"@type": "Column",
-			"name": "nicknames",
-			"titles": {
-				"en": "nicknames",
-				"cs": "přezdívky"
-			},
-			"dc:description": "Student's nicknames",
-			"datatype": "string",
-			"lang": "cs",
-			"separator": "\n",
-			"required": false,
-			"propertyUrl": "ex:Nickname"
-		}, {
-			"@type": "Column",
 			"name": "class",
 			"titles": {
 				"en": "class",
