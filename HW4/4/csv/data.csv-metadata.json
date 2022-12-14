@@ -20,22 +20,6 @@
 					"required": true,
 					"propertyUrl": "rdf:type",
 					"valueUrl": "http://example.org/vocabulary/Timetable"
-				}, {
-					"@type": "Column",
-					"name": "col1",
-					"titles": "col1",
-					"dc:description": "Column 1",
-					"datatype": "integer",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/col1"
-				}, {
-					"@type": "Column",
-					"name": "col2",
-					"titles": "col2",
-					"dc:description": "Column 2",
-					"datatype": "string",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/col2"
 				}],
 				"primaryKey": "iri_id"
 			}
@@ -65,6 +49,7 @@
 					},
 					"dc:description": "Name",
 					"datatype": "string",
+					"lang": "cs",
 					"required": true,
 					"propertyUrl": "http://xmlns.com/foaf/0.1/name"
 				}, {
@@ -85,6 +70,96 @@
 					"valueUrl": "http://example.org/vocabulary/Teacher"
 				}],
 				"primaryKey": "id"
+			}
+		},
+		{
+			"@id": "http://example.org/data/tables/data-7.csv",
+			"@type": "Table",
+			"url": "data-7.csv",
+			"dc:title": "Classes",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/classes/{+iri_id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri_id",
+					"titles": ["IRI_ID", "IRI", "ID"],
+					"dc:description": "Resource IRI end",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Class"
+				}],
+				"primaryKey": "iri_id"
+			}
+		},
+		{
+			"@id": "http://example.org/data/tables/data-8.csv",
+			"@type": "Table",
+			"url": "data-8.csv",
+			"dc:title": "Students",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/students/{+id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "id",
+					"titles": ["ID", "IRI"],
+					"dc:description": "ID (resource IRI end)",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/StudentID"
+				}, {
+					"@type": "Column",
+					"name": "name",
+					"titles": {
+						"en": "name",
+						"cs": "jméno"
+					},
+					"dc:description": "Name",
+					"datatype": "string",
+					"lang": "cs",
+					"required": true,
+					"propertyUrl": "http://xmlns.com/foaf/0.1/name"
+				}, {
+					"@type": "Column",
+					"name": "nicknames",
+					"titles": {
+						"en": "nicknames",
+						"cs": "přezdívky"
+					},
+					"dc:description": "Student's nicknames",
+					"datatype": "string",
+					"lang": "cs",
+					"separator": "\n",
+					"required": false,
+					"propertyUrl": "http://example.org/vocabulary/Nickname"
+				}, {
+					"@type": "Column",
+					"name": "class",
+					"titles": {
+						"en": "class",
+						"cs": "třída"
+					},
+					"dc:description": "The class the student belongs to",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/BelongsTo",
+					"valueUrl": "http://example.org/data/classes/{+class}"
+				}, {
+					"@type": "Column",
+					"virtual": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Student"
+				}],
+				"primaryKey": "id",
+				"foreignKeys": [{
+					"columnReference": "class",
+					"reference": {
+						"resource": "data-7.csv",
+						"columnReference": "iri_id"
+					}
+				}]
 			}
 		}
 	]

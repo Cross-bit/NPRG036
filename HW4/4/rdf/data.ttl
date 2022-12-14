@@ -1,30 +1,46 @@
 @prefix ex: <http://example.org/vocabulary/> .
+@prefix exClass: <http://example.org/data/classes/> .
+@prefix exStudent: <http://example.org/data/students/> .
 @prefix exTeacher: <http://example.org/data/teachers/> .
-@prefix exTimetable: <http://example.org/data/timetables/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+exStudent:kliji a ex:Student;
+  ex:BelongsTo exClass:6B;
+  ex:Nickname "Limoš"@cs;
+  ex:StudentID "kliji"^^xsd:ID;
+  foaf:name "Jiří Klimošek"@cs .
+
+exStudent:kovpe a ex:Student;
+  ex:BelongsTo exClass:6A;
+  ex:StudentID "kovpe"^^xsd:ID;
+  foaf:name "Petr Kovář"@cs .
+
+exStudent:novpa a ex:Student;
+  ex:BelongsTo exClass:4C;
+  ex:Nickname "Kajak"@cs,
+    "Bizon"@cs;
+  ex:StudentID "novpa"^^xsd:ID;
+  foaf:name "Pavel Novák"@cs .
+
 exTeacher:muk a ex:Teacher;
   ex:TeacherExperience 5;
   ex:TeacherID "muk"^^xsd:ID;
-  foaf:name "Vladimír Mukvald" .
+  foaf:name "Vladimír Mukvald"@cs .
 
 exTeacher:pel a ex:Teacher;
   ex:TeacherExperience 3;
   ex:TeacherID "pel"^^xsd:ID;
-  foaf:name "Jaroslav Pelikán" .
+  foaf:name "Jaroslav Pelikán"@cs .
 
 exTeacher:svo a ex:Teacher;
   ex:TeacherExperience 2;
   ex:TeacherID "svo"^^xsd:ID;
-  foaf:name "Patrik Svoboda" .
+  foaf:name "Patrik Svoboda"@cs .
 
-exTimetable:r1 a ex:Timetable;
-  ex:col1 4;
-  ex:col2 "q2" .
+exClass:4C a ex:Class .
 
-exTimetable:r2 a ex:Timetable;
-  ex:col1 5;
-  ex:col2 """a
-a""" .
+exClass:6A a ex:Class .
+
+exClass:6B a ex:Class .

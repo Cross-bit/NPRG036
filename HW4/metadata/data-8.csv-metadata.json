@@ -1,0 +1,69 @@
+{
+	"@id": "exd:tables/data-8.csv",
+	"@type": "Table",
+	"url": "data-8.csv",
+	"dc:title": "Students",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exStudent:{+id}",
+		"columns": [{
+			"@type": "Column",
+			"name": "id",
+			"titles": ["ID", "IRI"],
+			"dc:description": "ID (resource IRI end)",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
+			"required": true,
+			"propertyUrl": "ex:StudentID"
+		}, {
+			"@type": "Column",
+			"name": "name",
+			"titles": {
+				"en": "name",
+				"cs": "jméno"
+			},
+			"dc:description": "Name",
+			"datatype": "string",
+			"lang": "cs",
+			"required": true,
+			"propertyUrl": "foaf:name"
+		}, {
+			"@type": "Column",
+			"name": "nicknames",
+			"titles": {
+				"en": "nicknames",
+				"cs": "přezdívky"
+			},
+			"dc:description": "Student's nicknames",
+			"datatype": "string",
+			"lang": "cs",
+			"separator": "\n",
+			"required": false,
+			"propertyUrl": "ex:Nickname"
+		}, {
+			"@type": "Column",
+			"name": "class",
+			"titles": {
+				"en": "class",
+				"cs": "třída"
+			},
+			"dc:description": "The class the student belongs to",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
+			"required": true,
+			"propertyUrl": "ex:BelongsTo",
+			"valueUrl": "exClass:{+class}"
+		}, {
+			"@type": "Column",
+			"virtual": true,
+			"propertyUrl": "rdf:type",
+			"valueUrl": "ex:Student"
+		}],
+		"primaryKey": "id",
+		"foreignKeys": [{
+			"columnReference": "class",
+			"reference": {
+				"resource": "data-7.csv",
+				"columnReference": "iri_id"
+			}
+		}]
+	}
+}

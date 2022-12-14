@@ -23,6 +23,7 @@
 			},
 			"dc:description": "Name",
 			"datatype": "string",
+			"lang": "cs",
 			"required": true,
 			"propertyUrl": "foaf:name"
 		}, {

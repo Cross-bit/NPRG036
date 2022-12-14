@@ -1,11 +1,11 @@
 {
-	"@id": "exd:tables/data-1.csv",
+	"@id": "exd:tables/data-7.csv",
 	"@type": "Table",
-	"url": "data-1.csv",
-	"dc:title": "Timetables",
+	"url": "data-7.csv",
+	"dc:title": "Classes",
 	"tableSchema": {
 		"@type": "Schema",
-		"aboutUrl": "exTimetable:{+iri_id}",
+		"aboutUrl": "exClass:{+iri_id}",
 		"columns": [{
 			"@type": "Column",
 			"name": "iri_id",
@@ -14,7 +14,7 @@
 			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"propertyUrl": "rdf:type",
-			"valueUrl": "ex:Timetable"
+			"valueUrl": "ex:Class"
 		}],
 		"primaryKey": "iri_id"
 	}
