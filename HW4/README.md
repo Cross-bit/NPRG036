@@ -31,15 +31,15 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
 
 ## Tabulky
 
-1. **Rozvrh**
-2. **Hodina** + cizí klíče na *předmět*, *učebnu* a *časový slot*
-3. **Předmět**
-4. **Učitel**
-5. **Učebna**
-6. **Časový slot**
-7. **Třída**
-8. **Žák** + cizí klíč na *třídu*
-9. Vazba (cizí klíče) *učeitel* &mdash; *předmět*
+- [ ] 1. **Rozvrh**
+- [ ] 2. **Hodina** + cizí klíče na *předmět*, *učebnu* a *časový slot*
+- [ ] 3. **Předmět**
+- [x] 4. **Učitel**
+- [ ] 5. **Učebna**
+- [ ] 6. **Časový slot**
+- [ ] 7. **Třída**
+- [ ] 8. **Žák** + cizí klíč na *třídu*
+- [ ] 9. Vazba (cizí klíče) *učeitel* &mdash; *předmět*
 
 ### K vyřešení
 
