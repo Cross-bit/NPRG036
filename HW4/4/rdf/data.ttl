@@ -1,6 +1,7 @@
 @prefix ex: <http://example.org/vocabulary/> .
 @prefix exClass: <http://example.org/data/classes/> .
 @prefix exStudent: <http://example.org/data/students/> .
+@prefix exSubject: <http://example.org/data/subjects/> .
 @prefix exTeacher: <http://example.org/data/teachers/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -33,17 +34,27 @@ exClass:6A a ex:Class;
 exClass:6B a ex:Class;
   ex:ClassTeacher exTeacher:pel .
 
+exSubject:English a ex:Subject .
+
+exSubject:Physics a ex:Subject .
+
 exTeacher:muk a ex:Teacher;
   ex:TeacherExperience 5;
   ex:TeacherID "muk"^^xsd:ID;
+  ex:Teaches exSubject:Math;
   foaf:name "Vladimír Mukvald"@cs .
 
 exTeacher:pel a ex:Teacher;
   ex:TeacherExperience 3;
   ex:TeacherID "pel"^^xsd:ID;
+  ex:Teaches exSubject:Math,
+    exSubject:Physics;
   foaf:name "Jaroslav Pelikán"@cs .
 
 exTeacher:svo a ex:Teacher;
   ex:TeacherExperience 2;
   ex:TeacherID "svo"^^xsd:ID;
+  ex:Teaches exSubject:English;
   foaf:name "Patrik Svoboda"@cs .
+
+exSubject:Math a ex:Subject .

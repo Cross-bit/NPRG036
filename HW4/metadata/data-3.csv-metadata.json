@@ -1,0 +1,21 @@
+{
+	"@id": "exd:tables/data-3.csv",
+	"@type": "Table",
+	"url": "data-3.csv",
+	"dc:title": "Subjects",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exSubject:{+iri_id}",
+		"columns": [{
+			"@type": "Column",
+			"name": "iri_id",
+			"titles": ["IRI_ID", "IRI", "ID"],
+			"dc:description": "Resource IRI end",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
+			"required": true,
+			"propertyUrl": "rdf:type",
+			"valueUrl": "ex:Subject"
+		}],
+		"primaryKey": "iri_id"
+	}
+}

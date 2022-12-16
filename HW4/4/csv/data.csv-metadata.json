@@ -116,6 +116,27 @@
 			}
 		},
 		{
+			"@id": "http://example.org/data/tables/data-3.csv",
+			"@type": "Table",
+			"url": "data-3.csv",
+			"dc:title": "Subjects",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/subjects/{+iri_id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri_id",
+					"titles": ["IRI_ID", "IRI", "ID"],
+					"dc:description": "Resource IRI end",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Subject"
+				}],
+				"primaryKey": "iri_id"
+			}
+		},
+		{
 			"@id": "http://example.org/data/tables/data-4.csv",
 			"@type": "Table",
 			"url": "data-4.csv",
@@ -235,6 +256,55 @@
 					"columnReference": "class",
 					"reference": {
 						"resource": "data-7.csv",
+						"columnReference": "iri_id"
+					}
+				}]
+			}
+		},
+		{
+			"@id": "http://example.org/data/tables/data-9.csv",
+			"@type": "Table",
+			"url": "data-9.csv",
+			"dc:title": "Teacher subjects",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/teachers/{+teacher}",
+				"columns": [{
+					"@type": "Column",
+					"name": "teacher",
+					"titles": {
+						"en": "teacher",
+						"cs": "učitel"
+					},
+					"dc:description": "Teacher",
+					"datatype": "token",
+					"required": true,
+					"suppressOutput": true
+				}, {
+					"@type": "Column",
+					"name": "subject",
+					"titles": {
+						"en": "subject",
+						"cs": "předmět"
+					},
+					"dc:description": "Taught subject",
+					"datatype": "token",
+					"lang": "cs",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/Teaches",
+					"valueUrl": "http://example.org/data/subjects/{+subject}"
+				}],
+				"primaryKey": "teacher",
+				"foreignKeys": [{
+					"columnReference": "teacher",
+					"reference": {
+						"resource": "data-4.csv",
+						"columnReference": "id"
+					}
+				}, {
+					"columnReference": "subject",
+					"reference": {
+						"resource": "data-3.csv",
 						"columnReference": "iri_id"
 					}
 				}]

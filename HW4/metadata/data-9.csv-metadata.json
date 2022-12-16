@@ -1,0 +1,49 @@
+{
+	"@id": "exd:tables/data-9.csv",
+	"@type": "Table",
+	"url": "data-9.csv",
+	"dc:title": "Teacher subjects",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exTeacher:{+teacher}",
+		"columns": [{
+			"@type": "Column",
+			"name": "teacher",
+			"titles": {
+				"en": "teacher",
+				"cs": "učitel"
+			},
+			"dc:description": "Teacher",
+			"datatype": "token",
+			"required": true,
+			"suppressOutput": true
+		}, {
+			"@type": "Column",
+			"name": "subject",
+			"titles": {
+				"en": "subject",
+				"cs": "předmět"
+			},
+			"dc:description": "Taught subject",
+			"datatype": "token",
+			"lang": "cs",
+			"required": true,
+			"propertyUrl": "ex:Teaches",
+			"valueUrl": "exSubject:{+subject}"
+		}],
+		"primaryKey": "teacher",
+		"foreignKeys": [{
+			"columnReference": "teacher",
+			"reference": {
+				"resource": "data-4.csv",
+				"columnReference": "id"
+			}
+		}, {
+			"columnReference": "subject",
+			"reference": {
+				"resource": "data-3.csv",
+				"columnReference": "iri_id"
+			}
+		}]
+	}
+}
