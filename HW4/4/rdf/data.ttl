@@ -24,6 +24,15 @@ exStudent:novpa a ex:Student;
   ex:StudentID "novpa"^^xsd:ID;
   foaf:name "Pavel Novák"@cs .
 
+exClass:4C a ex:Class;
+  ex:ClassTeacher exTeacher:svo .
+
+exClass:6A a ex:Class;
+  ex:ClassTeacher exTeacher:muk .
+
+exClass:6B a ex:Class;
+  ex:ClassTeacher exTeacher:pel .
+
 exTeacher:muk a ex:Teacher;
   ex:TeacherExperience 5;
   ex:TeacherID "muk"^^xsd:ID;
@@ -38,9 +47,3 @@ exTeacher:svo a ex:Teacher;
   ex:TeacherExperience 2;
   ex:TeacherID "svo"^^xsd:ID;
   foaf:name "Patrik Svoboda"@cs .
-
-exClass:4C a ex:Class .
-
-exClass:6A a ex:Class .
-
-exClass:6B a ex:Class .

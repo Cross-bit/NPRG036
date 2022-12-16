@@ -1,0 +1,49 @@
+{
+	"@id": "exd:tables/data-10.csv",
+	"@type": "Table",
+	"url": "data-10.csv",
+	"dc:title": "Class teachers",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exClass:{+class}",
+		"columns": [{
+			"@type": "Column",
+			"name": "class",
+			"titles": {
+				"en": "class",
+				"cs": "třída"
+			},
+			"dc:description": "Class",
+			"datatype": "token",
+			"required": true,
+			"suppressOutput": true
+		}, {
+			"@type": "Column",
+			"name": "teacher",
+			"titles": {
+				"en": "teacher",
+				"cs": "učitel"
+			},
+			"dc:description": "Class teacher",
+			"datatype": "token",
+			"lang": "cs",
+			"required": true,
+			"propertyUrl": "ex:ClassTeacher",
+			"valueUrl": "exTeacher:{+teacher}"
+		}],
+		"primaryKey": "class",
+		"foreignKeys": [{
+			"columnReference": "class",
+			"reference": {
+				"resource": "data-7.csv",
+				"columnReference": "iri_id"
+			}
+		}, {
+			"columnReference": "teacher",
+			"reference": {
+				"resource": "data-4.csv",
+				"columnReference": "id"
+			}
+		}]
+	}
+}
