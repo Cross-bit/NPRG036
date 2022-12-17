@@ -4,6 +4,51 @@
 	"@id": "https://example.org/data/tables",
 	"tables": [
 		{
+			"@id": "http://example.org/data/tables/data-1.csv",
+			"@type": "Table",
+			"url": "data-1.csv",
+			"dc:title": "Timetables",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/timetables/{+iri_id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri_id",
+					"titles": ["IRI_ID", "IRI", "ID"],
+					"dc:description": "Resource IRI end",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Timetable"
+				},
+				{
+					"@type": "Column",
+					"name": "academical_year",
+					"titles": {
+						"en": "academical_year",
+						"cs": "akademický rok"
+					},
+					"dc:description": "Academical year",
+					"datatype": "string",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/AcademicalYear"
+				},
+				{
+					"@type": "Column",
+					"name": "version",
+					"titles": {
+						"en": "version",
+						"cs": "verze"
+					},
+					"dc:description": "Version",
+					"datatype": "double",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/TimetableVersion"
+				}],
+				"primaryKey": "iri_id"
+			}
+		},
+		{
 			"@id": "http://example.org/data/tables/data-10.csv",
 			"@type": "Table",
 			"url": "data-10.csv",
@@ -92,27 +137,6 @@
 						"columnReference": "id"
 					}
 				}]
-			}
-		},
-		{
-			"@id": "http://example.org/data/tables/data-1.csv",
-			"@type": "Table",
-			"url": "data-1.csv",
-			"dc:title": "Timetables",
-			"tableSchema": {
-				"@type": "Schema",
-				"aboutUrl": "http://example.org/data/timetables/{+iri_id}",
-				"columns": [{
-					"@type": "Column",
-					"name": "iri_id",
-					"titles": ["IRI_ID", "IRI", "ID"],
-					"dc:description": "Resource IRI end",
-					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
-					"required": true,
-					"propertyUrl": "rdf:type",
-					"valueUrl": "http://example.org/vocabulary/Timetable"
-				}],
-				"primaryKey": "iri_id"
 			}
 		},
 		{

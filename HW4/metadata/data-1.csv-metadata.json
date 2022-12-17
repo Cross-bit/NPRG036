@@ -15,6 +15,30 @@
 			"required": true,
 			"propertyUrl": "rdf:type",
 			"valueUrl": "ex:Timetable"
+		},
+		{
+			"@type": "Column",
+			"name": "academical_year",
+			"titles": {
+				"en": "academical_year",
+				"cs": "akademický rok"
+			},
+			"dc:description": "Academical year",
+			"datatype": "string",
+			"required": true,
+			"propertyUrl": "ex:AcademicalYear"
+		},
+		{
+			"@type": "Column",
+			"name": "version",
+			"titles": {
+				"en": "version",
+				"cs": "verze"
+			},
+			"dc:description": "Version",
+			"datatype": "double",
+			"required": true,
+			"propertyUrl": "ex:TimetableVersion"
 		}],
 		"primaryKey": "iri_id"
 	}
