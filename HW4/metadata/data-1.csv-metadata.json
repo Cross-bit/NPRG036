@@ -36,7 +36,7 @@
 				"cs": "verze"
 			},
 			"dc:description": "Version",
-			"datatype": "double",
+			"datatype": "decimal",
 			"required": true,
 			"propertyUrl": "ex:TimetableVersion"
 		}],
