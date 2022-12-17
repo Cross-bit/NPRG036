@@ -37,7 +37,7 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
 - [x] **4:** **Učitel**
 - [ ] **5:** **Učebna**
 - [ ] **6:** **Časový slot**
-- [ ] **7:** **Třída** + cizí klíč na *rozvrh*
+- [x] **7:** **Třída** + cizí klíč na *rozvrh*
 - [x] **8:** **Žák**
 - [x] **9:** Vazba (cizí klíče) *učeitel* &mdash; *předmět*
 - [x] **10:** Vazba (cizí klíče) *třída* &mdash; *učitel*
