@@ -140,73 +140,6 @@
 			}
 		},
 		{
-			"@id": "http://example.org/data/tables/data-1.csv",
-			"@type": "Table",
-			"url": "data-2.csv",
-			"dc:title": "Classes",
-			"tableSchema": {
-				"@type": "Schema",
-				"aboutUrl": "http://example.org/data/classes/{+iri_id}",
-				"columns": [{
-					"@type": "Column",
-					"name": "iri_id",
-					"titles": ["IRI_ID", "IRI", "ID"],
-					"dc:description": "Resource IRI end",
-					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
-					"required": true,
-					"propertyUrl": "rdf:type",
-					"valueUrl": "http://example.org/vocabulary/Class"
-				},
-				{
-					"@type": "Column",
-					"name": "class_code",
-					"titles": {
-						"en": "class_code",
-						"cs": "kód třídy"
-					},
-					"dc:description": "Class code",
-					"datatype": "token",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/ClassCode"
-				},
-				{
-					"@type": "Column",
-					"name": "class_year",
-					"titles": {
-						"en": "class_year",
-						"cs": "ročník"
-					},
-					"dc:description": "Class year",
-					"datatype": "integer",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/ClassYear"
-				},
-				{
-					"@type": "Column",
-					"name": "timetable",
-					"titles": {
-						"en": "timetable",
-						"cs": "Časový rozvrh"
-					},
-					"dc:description": "Timetable",
-					"datatype": "string",
-					"required": true,
-					"aboutUrl": "http://example.org/data/timetables/{+timetable}",
-					"propertyUrl": "http://example.org/vocabulary/BelongingClass",
-					"valueUrl": "http://example.org/data/classes/{+iri_id}"
-				}
-			],
-			"primaryKey": "iri_id",
-			"foreignKeys": [{
-				"columnReference": "timetable",
-				"reference": {
-					"resource": "data-1.csv",
-					"columnReference": "iri_id"
-				}
-			}]
-			}
-		},
-		{
 			"@id": "http://example.org/data/tables/data-3.csv",
 			"@type": "Table",
 			"url": "data-3.csv",
@@ -292,8 +225,54 @@
 					"required": true,
 					"propertyUrl": "rdf:type",
 					"valueUrl": "http://example.org/vocabulary/Class"
-				}],
-				"primaryKey": "iri_id"
+				},
+				{
+					"@type": "Column",
+					"name": "class_code",
+					"titles": {
+						"en": "class_code",
+						"cs": "kód třídy"
+					},
+					"dc:description": "Class code",
+					"datatype": "token",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/ClassCode"
+				},
+				{
+					"@type": "Column",
+					"name": "class_year",
+					"titles": {
+						"en": "class_year",
+						"cs": "ročník"
+					},
+					"dc:description": "Class year",
+					"datatype": "integer",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/ClassYear"
+				},
+				{
+					"@type": "Column",
+					"name": "timetable",
+					"titles": {
+						"en": "timetable",
+						"cs": "Časový rozvrh"
+					},
+					"dc:description": "Timetable",
+					"datatype": "string",
+					"required": true,
+					"aboutUrl": "http://example.org/data/timetables/{+timetable}",
+					"propertyUrl": "http://example.org/vocabulary/BelongingClass",
+					"valueUrl": "http://example.org/data/classes/{+iri_id}"
+				}
+			],
+			"primaryKey": "iri_id",
+			"foreignKeys": [{
+				"columnReference": "timetable",
+				"reference": {
+					"resource": "data-1.csv",
+					"columnReference": "iri_id"
+				}
+			}]
 			}
 		},
 		{
