@@ -1,0 +1,91 @@
+{
+	"@id": "exd:tables/data-3.csv",
+	"@type": "Table",
+	"url": "data-2.csv",
+	"dc:title": "Lessons",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exLesson:{+iri_id}",
+		"columns": [{
+			"@type": "Column",
+			"name": "iri_id",
+			"titles": ["IRI_ID", "IRI", "ID"],
+			"dc:description": "Resource IRI end",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
+			"required": true,
+			"propertyUrl": "ex:LessonID"
+		},{
+			"@type": "Column",
+			"name": "Zoom_URI",
+			"titles": {
+				"en": "Zoom_URI",
+				"cs": "Zoom_URI"
+			},
+			"dc:description": "Zoom URI",
+			"datatype": "xsd:anyURI",
+			"required": true,
+			"propertyUrl": "ex:LessonURI"
+		},{
+			"@type": "Column",
+			"name": "subject",
+			"titles": {
+				"en": "subject",
+				"cs": "předmět"
+			},
+			"dc:description": "Subject taught at lesson",
+			"datatype": "token",
+			"required": true,
+			"propertyUrl": "ex:IsTaught",
+			"valueUrl": "exSubject:{+subject}"
+		},{
+			"@type": "Column",
+			"name": "classroom",
+			"titles": {
+				"en": "classroom",
+				"cs": "učebna"
+			},
+			"dc:description": "Lesson at classroom",
+			"datatype": "token",
+			"required": true,
+			"propertyUrl": "ex:TakesPlace",
+			"valueUrl": "exClassroom:{+classroom}"
+		},{
+			"@type": "Column",
+			"name": "timeslot",
+			"titles": {
+				"en": "timeslot",
+				"cs": "časový slot"
+			},
+			"dc:description": "Lesson at timeslot",
+			"datatype": "token",
+			"required": true,
+			"propertyUrl": "ex:TakesTime",
+			"valueUrl": "exTimeSlot:{+timeslot}"
+		},{
+            "@type": "Column",
+            "virtual": true,
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://example.org/vocabulary/Lesson"
+        }],
+		"primaryKey": "iri_id",
+        "foreignKeys": [{
+            "columnReference": "subject",
+            "reference": {
+                "resource": "data-3.csv",
+                "columnReference": "iri_id"
+            }
+        },{
+            "columnReference": "classroom",
+            "reference": {
+                "resource": "data-5.csv",
+                "columnReference": "iri_id"
+            }
+        },{
+            "columnReference": "timetable",
+            "reference": {
+                "resource": "data-1.csv",
+                "columnReference": "iri_id"
+            }
+        }]
+	}
+}
