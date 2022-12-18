@@ -1,0 +1,31 @@
+{
+    "@id": "exd:tables/data-5.csv",
+    "@type": "Table",
+    "url": "data-5.csv",
+    "dc:title": "Classrooms",
+    "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "exClassroom:{+iri_id}",
+        "columns": [{
+            "@type": "Column",
+            "name": "iri_id",
+            "titles": ["IRI_ID", "IRI", "ID"],
+            "dc:description": "Resource IRI end",
+            "datatype": {"base": "token", "@id": "xsd:ID"},
+            "required": true,
+            "propertyUrl": "ex:ClassroomID"
+        }, {
+            "@type": "Column",
+            "name": "capacity",
+            "titles": {
+                "en": "capacity",
+                "cs": "kapacita"
+            },
+            "dc:description": "Capacity of classroom",
+            "datatype": "integer",
+            "required": true,
+            "propertyUrl": "ex:ClassroomCapacity"
+        }],
+        "primaryKey": "iri_id"
+    }
+}

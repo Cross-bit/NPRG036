@@ -13,8 +13,18 @@
 			"dc:description": "Resource IRI end",
 			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
-			"propertyUrl": "rdf:type",
-			"valueUrl": "ex:Subject"
+			"propertyUrl": "ex:SubjectID"
+		}, {
+			"@type": "Column",
+			"name": "name",
+			"titles": {
+				"en": "name",
+				"cs": "název"
+			},
+			"dc:description": "Name of subject",
+			"datatype": "string",
+			"required": true,
+			"propertyUrl": "ex:SubjectName"
 		}],
 		"primaryKey": "iri_id"
 	}
