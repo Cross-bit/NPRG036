@@ -9,8 +9,17 @@
 		"columns": [{
 			"@type": "Column",
 			"name": "iri_id",
-			"titles": ["IRI_ID", "IRI", "ID"],
+			"titles": ["IRI_ID", "IRI"],
 			"dc:description": "Resource IRI end",
+			"datatype": "token",
+			"required": true,
+			"propertyUrl": "rdf:type",
+			"valueUrl": "ex:Subject"
+		}, {
+			"@type": "Column",
+			"name": "id",
+			"titles": ["ID"],
+			"dc:description": "Subject ID",
 			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"propertyUrl": "ex:SubjectID"
@@ -23,6 +32,7 @@
 			},
 			"dc:description": "Name of subject",
 			"datatype": "string",
+			"lang": "cs",
 			"required": true,
 			"propertyUrl": "ex:SubjectName"
 		}],

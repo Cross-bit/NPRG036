@@ -1,4 +1,4 @@
-IRI_ID,name
-mt,Math
-en,English
-ps,Physics
+IRI_ID,ID,name
+Math,mt,Matematika
+English,en,Angličtina
+Physics,ps,Fyzika

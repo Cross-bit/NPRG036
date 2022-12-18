@@ -34,7 +34,7 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
 
 - [x] **1:** **Rozvrh**
 - [x] **2:** **Hodina** + cizí klíče na *předmět*, *učebnu* a *časový slot*
-- [ ] **3:** **Předmět**
+- [x] **3:** **Předmět**
 - [x] **4:** **Učitel**
 - [ ] **5:** **Učebna**
 - [ ] **6:** **Časový slot**
