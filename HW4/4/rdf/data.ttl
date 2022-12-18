@@ -1,12 +1,50 @@
 @prefix ex: <http://example.org/vocabulary/> .
 @prefix exClass: <http://example.org/data/classes/> .
+@prefix exClassroom: <http://example.org/data/classrooms/> .
+@prefix exLesson: <http://example.org/data/lessons/> .
 @prefix exStudent: <http://example.org/data/students/> .
 @prefix exSubject: <http://example.org/data/subjects/> .
 @prefix exTeacher: <http://example.org/data/teachers/> .
+@prefix exTimeSlot: <http://example.org/data/timeslots/> .
 @prefix exTimetable: <http://example.org/data/timetables/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+exLesson:FR1000S6 a ex:Lesson;
+  ex:IsTaught exSubject:Physics;
+  ex:LessonID "FR1000S6"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/FR1000S6"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S6;
+  ex:TakesTime exTimeSlot:FR1000 .
+
+exLesson:FR1000S9 a ex:Lesson;
+  ex:IsTaught exSubject:English;
+  ex:LessonID "FR1000S9"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/FR1000S9"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S9;
+  ex:TakesTime exTimeSlot:FR1000 .
+
+exLesson:MO0800S7 a ex:Lesson;
+  ex:IsTaught exSubject:English;
+  ex:LessonID "MO0800S7"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/MO0800S7"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S7;
+  ex:TakesTime exTimeSlot:MO0800 .
+
+exLesson:TH0855S6 a ex:Lesson;
+  ex:IsTaught exSubject:Math;
+  ex:LessonID "TH0855S6"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/TH0855S6"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S6;
+  ex:TakesTime exTimeSlot:TH0855 .
+
+exLesson:TH0855S7 a ex:Lesson;
+  ex:IsTaught exSubject:Math;
+  ex:LessonID "TH0855S7"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/TH0855S7"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S7;
+  ex:TakesTime exTimeSlot:TH0855 .
 
 exStudent:kliji a ex:Student;
   ex:BelongsTo exClass:6B;
@@ -26,6 +64,15 @@ exStudent:novpa a ex:Student;
   ex:StudentID "novpa"^^xsd:ID;
   foaf:name "Pavel Novák"@cs .
 
+exSubject:en ex:SubjectID "en"^^xsd:ID;
+  ex:SubjectName "English" .
+
+exSubject:mt ex:SubjectID "mt"^^xsd:ID;
+  ex:SubjectName "Math" .
+
+exSubject:ps ex:SubjectID "ps"^^xsd:ID;
+  ex:SubjectName "Physics" .
+
 exTimetable:20216A15 a ex:Timetable;
   ex:AcademicalYear "2020/2021";
   ex:BelongingClass exClass:6A;
@@ -41,9 +88,8 @@ exTimetable:22234C20 a ex:Timetable;
   ex:BelongingClass exClass:4C;
   ex:TimetableVersion 2.0 .
 
-exSubject:English a ex:Subject .
-
-exSubject:Physics a ex:Subject .
+exClassroom:S9 ex:ClassroomCapacity 30;
+  ex:ClassroomID "S9"^^xsd:ID .
 
 exTeacher:muk a ex:Teacher;
   ex:TeacherExperience 5;
@@ -79,4 +125,8 @@ exClass:6B a ex:Class;
   ex:ClassTeacher exTeacher:pel;
   ex:ClassYear 6 .
 
-exSubject:Math a ex:Subject .
+exClassroom:S6 ex:ClassroomCapacity 30;
+  ex:ClassroomID "S6"^^xsd:ID .
+
+exClassroom:S7 ex:ClassroomCapacity 28;
+  ex:ClassroomID "S7"^^xsd:ID .

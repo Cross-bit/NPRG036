@@ -33,7 +33,7 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
 ## Tabulky
 
 - [x] **1:** **Rozvrh**
-- [ ] **2:** **Hodina** + cizí klíče na *předmět*, *učebnu* a *časový slot*
+- [x] **2:** **Hodina** + cizí klíče na *předmět*, *učebnu* a *časový slot*
 - [ ] **3:** **Předmět**
 - [x] **4:** **Učitel**
 - [ ] **5:** **Učebna**

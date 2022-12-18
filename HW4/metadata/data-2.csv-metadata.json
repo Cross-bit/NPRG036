@@ -65,7 +65,7 @@
             "@type": "Column",
             "virtual": true,
             "propertyUrl": "rdf:type",
-            "valueUrl": "http://example.org/vocabulary/Lesson"
+            "valueUrl": "ex:Lesson"
         }],
 		"primaryKey": "iri_id",
         "foreignKeys": [{
@@ -78,12 +78,6 @@
             "columnReference": "classroom",
             "reference": {
                 "resource": "data-5.csv",
-                "columnReference": "iri_id"
-            }
-        },{
-            "columnReference": "timetable",
-            "reference": {
-                "resource": "data-1.csv",
                 "columnReference": "iri_id"
             }
         }]

@@ -221,12 +221,6 @@
 		                "resource": "data-5.csv",
 		                "columnReference": "iri_id"
 		            }
-		        },{
-		            "columnReference": "timetable",
-		            "reference": {
-		                "resource": "data-1.csv",
-		                "columnReference": "iri_id"
-		            }
 		        }]
 			}
 		},
