@@ -320,35 +320,40 @@
 			}
 		},
 		{
-		    "@id": "http://example.org/data/tables/data-5.csv",
-		    "@type": "Table",
-		    "url": "data-5.csv",
-		    "dc:title": "Classrooms",
-		    "tableSchema": {
-		        "@type": "Schema",
-		        "aboutUrl": "http://example.org/data/classrooms/{+iri_id}",
-		        "columns": [{
-		            "@type": "Column",
-		            "name": "iri_id",
-		            "titles": ["IRI_ID", "IRI", "ID"],
-		            "dc:description": "Resource IRI end",
-		            "datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
-		            "required": true,
-		            "propertyUrl": "http://example.org/vocabulary/ClassroomID"
-		        }, {
-		            "@type": "Column",
-		            "name": "capacity",
-		            "titles": {
-		                "en": "capacity",
-		                "cs": "kapacita"
-		            },
-		            "dc:description": "Capacity of classroom",
-		            "datatype": "integer",
-		            "required": true,
-		            "propertyUrl": "http://example.org/vocabulary/ClassroomCapacity"
-		        }],
-		        "primaryKey": "iri_id"
-		    }
+			"@id": "http://example.org/data/tables/data-5.csv",
+			"@type": "Table",
+			"url": "data-5.csv",
+			"dc:title": "Classrooms",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/classrooms/{+iri_id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri_id",
+					"titles": ["IRI_ID", "IRI", "ID"],
+					"dc:description": "Resource IRI end",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/ClassroomID"
+				}, {
+					"@type": "Column",
+					"name": "capacity",
+					"titles": {
+						"en": "capacity",
+						"cs": "kapacita"
+					},
+					"dc:description": "Capacity of classroom",
+					"datatype": "integer",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/ClassroomCapacity"
+				}, {
+					"@type": "Column",
+					"virtual": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Classroom"
+				}],
+				"primaryKey": "iri_id"
+			}
 		},
 		{
 			"@id": "http://example.org/data/tables/data-6.csv",

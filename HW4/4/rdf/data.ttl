@@ -79,7 +79,8 @@ exTimetable:22234C20 a ex:Timetable;
   ex:BelongingClass exClass:4C;
   ex:TimetableVersion 2.0 .
 
-exClassroom:S9 ex:ClassroomCapacity 30;
+exClassroom:S9 a ex:Classroom;
+  ex:ClassroomCapacity 30;
   ex:ClassroomID "S9"^^xsd:ID .
 
 exTeacher:muk a ex:Teacher;
@@ -118,10 +119,12 @@ exClass:6B a ex:Class;
   ex:ClassTeacher exTeacher:pel;
   ex:ClassYear 6 .
 
-exClassroom:S6 ex:ClassroomCapacity 30;
+exClassroom:S6 a ex:Classroom;
+  ex:ClassroomCapacity 30;
   ex:ClassroomID "S6"^^xsd:ID .
 
-exClassroom:S7 ex:ClassroomCapacity 28;
+exClassroom:S7 a ex:Classroom;
+  ex:ClassroomCapacity 28;
   ex:ClassroomID "S7"^^xsd:ID .
 
 exSubject:Physics a ex:Subject;
