@@ -22,7 +22,7 @@
 				"cs": "Zoom_URI"
 			},
 			"dc:description": "Zoom URI",
-			"datatype": "anyURI",
+			"datatype": "xsd:anyURI",
 			"required": true,
 			"propertyUrl": "ex:LessonURI"
 		},{
@@ -33,7 +33,7 @@
 				"cs": "předmět"
 			},
 			"dc:description": "Subject taught at lesson",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"propertyUrl": "ex:IsTaught",
 			"valueUrl": "exSubject:{+subject}"
@@ -45,7 +45,7 @@
 				"cs": "učebna"
 			},
 			"dc:description": "Lesson at classroom",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"propertyUrl": "ex:TakesPlace",
 			"valueUrl": "exClassroom:{+classroom}"
@@ -57,35 +57,35 @@
 				"cs": "časový slot"
 			},
 			"dc:description": "Lesson at timeslot",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"propertyUrl": "ex:TakesTime",
 			"valueUrl": "exTimeSlot:{+timeslot}"
 		},{
-			"@type": "Column",
-			"virtual": true,
-			"propertyUrl": "rdf:type",
-			"valueUrl": "ex:Lesson"
-		}],
+            "@type": "Column",
+            "virtual": true,
+            "propertyUrl": "rdf:type",
+            "valueUrl": "ex:Lesson"
+        }],
 		"primaryKey": "iri_id",
-		"foreignKeys": [{
-			"columnReference": "subject",
-			"reference": {
-				"resource": "data-3.csv",
-				"columnReference": "iri_id"
-			}
-		},{
-			"columnReference": "classroom",
-			"reference": {
-				"resource": "data-5.csv",
-				"columnReference": "iri_id"
-			}
-		},{
-			"columnReference": "timeslot",
-			"reference": {
-				"resource": "data-6.csv",
-				"columnReference": "iri_id"
-			}
-		}]
+        "foreignKeys": [{
+            "columnReference": "subject",
+            "reference": {
+                "resource": "data-3.csv",
+                "columnReference": "iri_id"
+            }
+        },{
+            "columnReference": "classroom",
+            "reference": {
+                "resource": "data-5.csv",
+                "columnReference": "iri_id"
+            }
+        },{
+            "columnReference": "timeslot",
+            "reference": {
+                "resource": "data-6.csv",
+                "columnReference": "iri_id"
+            }
+        }]
 	}
 }

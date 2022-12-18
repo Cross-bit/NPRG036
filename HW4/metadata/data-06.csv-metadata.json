@@ -5,16 +5,53 @@
 	"dc:title": "TimeSlots",
 	"tableSchema": {
 		"@type": "Schema",
-		"aboutUrl": "exTimeSlot:{+iri_id}",
+		"aboutUrl": "exTimeSlot:{+id}",
 		"columns": [{
 			"@type": "Column",
 			"name": "iri_id",
-			"titles": ["IRI_ID", "IRI"],
-			"dc:description": "Resource IRI end",
+			"titles": ["IRI_ID","ID", "IRI"],
+			"dc:description": "ID (resource IRI end)",
 			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
+			"propertyUrl": "ex:TimeSlotID"
+		}, {
+			"@type": "Column",
+			"name": "begining",
+			"titles": {
+				"en": "begining",
+				"cs": "začátek"
+			},
+			"dc:description": "Beginning of the timeslot",
+			"datatype": {"base": "string", "@id": "xsd:time"},
+			"required": true,
+			"propertyUrl": "ex:TimeSlotBeginning"
+		}, {
+			"@type": "Column",
+			"name": "end",
+			"titles": {
+				"en": "end",
+				"cs": "konec"
+			},
+			"dc:description": "End of the timeslot",
+			"datatype": {"base": "string", "@id": "xsd:time"},
+			"required": true,
+			"propertyUrl": "ex:TimeSlotEnd"
+        }, {
+            "@type": "Column",
+            "name": "day",
+            "titles": {
+                "en": "day",
+                "cs": "den"
+            },
+            "dc:description": "Day of the timeslot",
+            "datatype": {"base": "string", "@id": "xsd:time"},
+            "required": true,
+            "propertyUrl": "ex:DayOfWeek"
+		}, {
+			"@type": "Column",
+			"virtual": true,
 			"propertyUrl": "rdf:type",
-			"valueUrl": "ex:Class"
+			"valueUrl": "ex:TimeSlot"
 		}],
 		"primaryKey": "iri_id"
 	}

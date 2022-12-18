@@ -1,4 +1,4 @@
-IRI_ID
-MO0800
-TH0855
-FR1000
+IRI_ID,beginning,end,day
+MO0800,"08:00:00","08:45:00",Monday
+TH0855,"08:55:00","09:40:00",Thursday
+FR1000,"10:00:00","10:45:00",Friday
