@@ -32,7 +32,7 @@
 			"propertyUrl": "ex:PlannedLesson",
 			"valueUrl": "exLesson:{+lesson}"
 		}],
-		"primaryKey": ["lesson, timetable"],
+		"primaryKey": ["lesson", "timetable"],
 		"foreignKeys": [{
 			"columnReference": "lesson",
 			"reference": {
