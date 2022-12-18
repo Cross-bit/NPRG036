@@ -1,0 +1,50 @@
+{
+	"@id": "exd:tables/data-11.csv",
+	"@type": "Table",
+	"url": "data-11.csv",
+	"dc:title": "Lessons – Timetables",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exLesson:{+lesson}",
+		"columns": [{
+			"@type": "Column",
+			"name": "lesson",
+			"titles": {
+				"en": "lesson",
+				"cs": "třída"
+			},
+			"dc:description": "Lesson",
+			"datatype": "token",
+			"required": true,
+			"suppressOutput": true
+		}, {
+			"@type": "Column",
+			"name": "timetable",
+			"titles": {
+				"en": "Timetable",
+				"cs": "Třídní rozvrh"
+			},
+			"dc:description": "Timetable",
+			"datatype": "token",
+			"lang": "cs",
+			"required": true,
+            "aboutUrl": "exTimetable:{+timetable}",
+			"propertyUrl": "ex:PlannedLesson",
+			"valueUrl": "exLesson:{+lesson}"
+		}],
+		"primaryKey": "lesson",
+		"foreignKeys": [{
+			"columnReference": "lesson",
+			"reference": {
+				"resource": "data-2.csv",
+				"columnReference": "iri_id"
+			}
+		}, {
+			"columnReference": "timetable",
+			"reference": {
+				"resource": "data-7.csv",
+				"columnReference": "iri_id"
+			}
+		}]
+	}
+}
