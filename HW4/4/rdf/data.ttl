@@ -11,34 +11,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-exLesson:FR1000S6 a ex:Lesson;
-  ex:IsTaught exSubject:Physics;
-  ex:LessonID "FR1000S6"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/FR1000S6"^^xsd:anyURI;
-  ex:TakesPlace exClassroom:S6;
-  ex:TakesTime exTimeSlot:FR1000 .
-
-exLesson:FR1000S9 a ex:Lesson;
-  ex:IsTaught exSubject:English;
-  ex:LessonID "FR1000S9"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/FR1000S9"^^xsd:anyURI;
-  ex:TakesPlace exClassroom:S9;
-  ex:TakesTime exTimeSlot:FR1000 .
-
-exLesson:MO0800S7 a ex:Lesson;
-  ex:IsTaught exSubject:English;
-  ex:LessonID "MO0800S7"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/MO0800S7"^^xsd:anyURI;
-  ex:TakesPlace exClassroom:S7;
-  ex:TakesTime exTimeSlot:MO0800 .
-
-exLesson:TH0855S6 a ex:Lesson;
-  ex:IsTaught exSubject:Math;
-  ex:LessonID "TH0855S6"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/TH0855S6"^^xsd:anyURI;
-  ex:TakesPlace exClassroom:S6;
-  ex:TakesTime exTimeSlot:TH0855 .
-
 exLesson:TH0855S7 a ex:Lesson;
   ex:IsTaught exSubject:Math;
   ex:LessonID "TH0855S7"^^xsd:ID;
@@ -67,21 +39,53 @@ exStudent:novpa a ex:Student;
 exTimetable:20216A15 a ex:Timetable;
   ex:AcademicalYear "2020/2021";
   ex:BelongingClass exClass:6A;
+  ex:PlannedLesson exLesson:TH0855S6;
   ex:TimetableVersion 1.5 .
 
 exTimetable:21226B10 a ex:Timetable;
   ex:AcademicalYear "2021/2022";
   ex:BelongingClass exClass:6B;
+  ex:PlannedLesson exLesson:MO0800S7,
+    exLesson:FR1000S6;
   ex:TimetableVersion 1.0 .
 
 exTimetable:22234C20 a ex:Timetable;
   ex:AcademicalYear "2022/2023";
   ex:BelongingClass exClass:4C;
+  ex:PlannedLesson exLesson:FR1000S9;
   ex:TimetableVersion 2.0 .
 
 exClassroom:S9 a ex:Classroom;
   ex:ClassroomCapacity 30;
   ex:ClassroomID "S9"^^xsd:ID .
+
+exLesson:FR1000S6 a ex:Lesson;
+  ex:IsTaught exSubject:Physics;
+  ex:LessonID "FR1000S6"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/FR1000S6"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S6;
+  ex:TakesTime exTimeSlot:FR1000 .
+
+exLesson:FR1000S9 a ex:Lesson;
+  ex:IsTaught exSubject:English;
+  ex:LessonID "FR1000S9"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/FR1000S9"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S9;
+  ex:TakesTime exTimeSlot:FR1000 .
+
+exLesson:MO0800S7 a ex:Lesson;
+  ex:IsTaught exSubject:English;
+  ex:LessonID "MO0800S7"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/MO0800S7"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S7;
+  ex:TakesTime exTimeSlot:MO0800 .
+
+exLesson:TH0855S6 a ex:Lesson;
+  ex:IsTaught exSubject:Math;
+  ex:LessonID "TH0855S6"^^xsd:ID;
+  ex:LessonURI "https://zoom.com/TH0855S6"^^xsd:anyURI;
+  ex:TakesPlace exClassroom:S6;
+  ex:TakesTime exTimeSlot:TH0855 .
 
 exTeacher:muk a ex:Teacher;
   ex:TeacherExperience 5;

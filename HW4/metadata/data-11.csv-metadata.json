@@ -21,7 +21,7 @@
 			"@type": "Column",
 			"name": "timetable",
 			"titles": {
-				"en": "Timetable",
+				"en": "timetable",
 				"cs": "Třídní rozvrh"
 			},
 			"dc:description": "Timetable",
