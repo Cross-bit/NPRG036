@@ -203,25 +203,31 @@
 					"propertyUrl": "http://example.org/vocabulary/TakesTime",
 					"valueUrl": "http://example.org/data/timeslots/{+timeslot}"
 				},{
-		            "@type": "Column",
-		            "virtual": true,
-		            "propertyUrl": "rdf:type",
-		            "valueUrl": "http://example.org/vocabulary/Lesson"
-		        }],
+					"@type": "Column",
+					"virtual": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Lesson"
+				}],
 				"primaryKey": "iri_id",
-		        "foreignKeys": [{
-		            "columnReference": "subject",
-		            "reference": {
-		                "resource": "data-3.csv",
-		                "columnReference": "iri_id"
-		            }
-		        },{
-		            "columnReference": "classroom",
-		            "reference": {
-		                "resource": "data-5.csv",
-		                "columnReference": "iri_id"
-		            }
-		        }]
+				"foreignKeys": [{
+					"columnReference": "subject",
+					"reference": {
+						"resource": "data-3.csv",
+						"columnReference": "iri_id"
+					}
+				},{
+					"columnReference": "classroom",
+					"reference": {
+						"resource": "data-5.csv",
+						"columnReference": "iri_id"
+					}
+				},{
+					"columnReference": "timeslot",
+					"reference": {
+						"resource": "data-6.csv",
+						"columnReference": "iri_id"
+					}
+				}]
 			}
 		},
 		{
@@ -333,6 +339,27 @@
 		        }],
 		        "primaryKey": "iri_id"
 		    }
+		},
+		{
+			"@id": "http://example.org/data/tables/data-6.csv",
+			"@type": "Table",
+			"url": "data-6.csv",
+			"dc:title": "TimeSlots",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/timeslots/{+iri_id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri_id",
+					"titles": ["IRI_ID", "IRI", "ID"],
+					"dc:description": "Resource IRI end",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Class"
+				}],
+				"primaryKey": "iri_id"
+			}
 		},
 		{
 			"@id": "http://example.org/data/tables/data-7.csv",

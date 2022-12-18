@@ -1,0 +1,21 @@
+{
+	"@id": "exd:tables/data-6.csv",
+	"@type": "Table",
+	"url": "data-6.csv",
+	"dc:title": "TimeSlots",
+	"tableSchema": {
+		"@type": "Schema",
+		"aboutUrl": "exTimeSlot:{+iri_id}",
+		"columns": [{
+			"@type": "Column",
+			"name": "iri_id",
+			"titles": ["IRI_ID", "IRI", "ID"],
+			"dc:description": "Resource IRI end",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
+			"required": true,
+			"propertyUrl": "rdf:type",
+			"valueUrl": "ex:Class"
+		}],
+		"primaryKey": "iri_id"
+	}
+}

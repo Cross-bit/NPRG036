@@ -110,6 +110,8 @@ exTeacher:svo a ex:Teacher;
   ex:Teaches exSubject:English;
   foaf:name "Patrik Svoboda"@cs .
 
+exTimeSlot:MO0800 a ex:Class .
+
 exClass:4C a ex:Class;
   ex:ClassCode "V"^^xsd:token;
   ex:ClassTeacher exTeacher:svo;
@@ -130,3 +132,7 @@ exClassroom:S6 ex:ClassroomCapacity 30;
 
 exClassroom:S7 ex:ClassroomCapacity 28;
   ex:ClassroomID "S7"^^xsd:ID .
+
+exTimeSlot:FR1000 a ex:Class .
+
+exTimeSlot:TH0855 a ex:Class .
