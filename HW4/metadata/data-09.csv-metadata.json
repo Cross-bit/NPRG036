@@ -14,7 +14,7 @@
 				"cs": "učitel"
 			},
 			"dc:description": "Teacher",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"suppressOutput": true
 		}, {
@@ -25,13 +25,13 @@
 				"cs": "předmět"
 			},
 			"dc:description": "Taught subject",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"lang": "cs",
 			"required": true,
 			"propertyUrl": "ex:Teaches",
 			"valueUrl": "exSubject:{+subject}"
 		}],
-		"primaryKey": "teacher",
+		"primaryKey": ["teacher", "subject"],
 		"foreignKeys": [{
 			"columnReference": "teacher",
 			"reference": {

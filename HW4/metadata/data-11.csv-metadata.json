@@ -14,7 +14,7 @@
 				"cs": "třída"
 			},
 			"dc:description": "Lesson",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"suppressOutput": true
 		}, {
@@ -25,7 +25,7 @@
 				"cs": "Třídní rozvrh"
 			},
 			"dc:description": "Timetable",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"lang": "cs",
 			"required": true,
             "aboutUrl": "exTimetable:{+timetable}",
