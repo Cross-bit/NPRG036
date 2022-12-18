@@ -9,14 +9,13 @@
 		"columns": [{
 			"@type": "Column",
 			"name": "iri_id",
-			"titles": ["IRI_ID", "IRI", "ID"],
+			"titles": ["IRI_ID", "IRI"],
 			"dc:description": "Resource IRI end",
 			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"propertyUrl": "rdf:type",
 			"valueUrl": "ex:Timetable"
-		},
-		{
+		}, {
 			"@type": "Column",
 			"name": "academical_year",
 			"titles": {
@@ -27,8 +26,7 @@
 			"datatype": "string",
 			"required": true,
 			"propertyUrl": "ex:AcademicalYear"
-		},
-		{
+		}, {
 			"@type": "Column",
 			"name": "version",
 			"titles": {

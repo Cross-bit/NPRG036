@@ -105,14 +105,13 @@
 				"columns": [{
 					"@type": "Column",
 					"name": "iri_id",
-					"titles": ["IRI_ID", "IRI", "ID"],
+					"titles": ["IRI_ID", "IRI"],
 					"dc:description": "Resource IRI end",
 					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"required": true,
 					"propertyUrl": "rdf:type",
 					"valueUrl": "http://example.org/vocabulary/Timetable"
-				},
-				{
+				}, {
 					"@type": "Column",
 					"name": "academical_year",
 					"titles": {
@@ -123,8 +122,7 @@
 					"datatype": "string",
 					"required": true,
 					"propertyUrl": "http://example.org/vocabulary/AcademicalYear"
-				},
-				{
+				}, {
 					"@type": "Column",
 					"name": "version",
 					"titles": {
@@ -387,26 +385,13 @@
 				"columns": [{
 					"@type": "Column",
 					"name": "iri_id",
-					"titles": ["IRI_ID", "IRI", "ID"],
+					"titles": ["IRI_ID", "IRI"],
 					"dc:description": "Resource IRI end",
 					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"required": true,
 					"propertyUrl": "rdf:type",
 					"valueUrl": "http://example.org/vocabulary/Class"
-				},
-				{
-					"@type": "Column",
-					"name": "class_code",
-					"titles": {
-						"en": "class_code",
-						"cs": "kód třídy"
-					},
-					"dc:description": "Class code",
-					"datatype": "token",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/ClassCode"
-				},
-				{
+				}, {
 					"@type": "Column",
 					"name": "class_year",
 					"titles": {
@@ -417,8 +402,18 @@
 					"datatype": "integer",
 					"required": true,
 					"propertyUrl": "http://example.org/vocabulary/ClassYear"
-				},
-				{
+				}, {
+					"@type": "Column",
+					"name": "class_code",
+					"titles": {
+						"en": "class_code",
+						"cs": "kód třídy"
+					},
+					"dc:description": "Class code",
+					"datatype": "token",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/ClassCode"
+				}, {
 					"@type": "Column",
 					"name": "timetable",
 					"titles": {
@@ -431,16 +426,15 @@
 					"aboutUrl": "http://example.org/data/timetables/{+timetable}",
 					"propertyUrl": "http://example.org/vocabulary/BelongingClass",
 					"valueUrl": "http://example.org/data/classes/{+iri_id}"
-				}
-			],
-			"primaryKey": "iri_id",
-			"foreignKeys": [{
-				"columnReference": "timetable",
-				"reference": {
-					"resource": "data-1.csv",
-					"columnReference": "iri_id"
-				}
-			}]
+				}],
+				"primaryKey": "iri_id",
+				"foreignKeys": [{
+					"columnReference": "timetable",
+					"reference": {
+						"resource": "data-1.csv",
+						"columnReference": "iri_id"
+					}
+				}]
 			}
 		},
 		{
