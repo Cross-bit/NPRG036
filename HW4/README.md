@@ -48,4 +48,4 @@ Spojí deskriptory, nahradí prefixy a zvaliduje a vygeneruje. `-c` taky vypíš
 ### K vyřešení
 
 - Přidat české názvy sloupců?
-- Přidat k akademickému roku regex jako v XML/JSONu.
+- Přidat k akademickému roku regex jako v XML/JSONu?

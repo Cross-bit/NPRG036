@@ -4,97 +4,6 @@
 	"@id": "https://example.org/data/tables",
 	"tables": [
 		{
-			"@id": "http://example.org/data/tables/data-10.csv",
-			"@type": "Table",
-			"url": "data-10.csv",
-			"dc:title": "Class teachers",
-			"tableSchema": {
-				"@type": "Schema",
-				"aboutUrl": "http://example.org/data/classes/{+class}",
-				"columns": [{
-					"@type": "Column",
-					"name": "class",
-					"titles": {
-						"en": "class",
-						"cs": "třída"
-					},
-					"dc:description": "Class",
-					"datatype": "token",
-					"required": true,
-					"suppressOutput": true
-				}, {
-					"@type": "Column",
-					"name": "teacher",
-					"titles": {
-						"en": "teacher",
-						"cs": "učitel"
-					},
-					"dc:description": "Class teacher",
-					"datatype": "token",
-					"lang": "cs",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/ClassTeacher",
-					"valueUrl": "http://example.org/data/teachers/{+teacher}"
-				}],
-				"primaryKey": "class",
-				"foreignKeys": [{
-					"columnReference": "class",
-					"reference": {
-						"resource": "data-7.csv",
-						"columnReference": "iri_id"
-					}
-				}, {
-					"columnReference": "teacher",
-					"reference": {
-						"resource": "data-4.csv",
-						"columnReference": "id"
-					}
-				}]
-			}
-		},
-		{
-			"@id": "http://example.org/data/tables/data-12.csv",
-			"@type": "Table",
-			"url": "data-12.csv",
-			"dc:title": "Student nickname",
-			"tableSchema": {
-				"@type": "Schema",
-				"aboutUrl": "http://example.org/data/students/{+student}",
-				"columns": [{
-					"@type": "Column",
-					"name": "student",
-					"titles": {
-						"en": "student",
-						"cs": "žák"
-					},
-					"dc:description": "Student ID",
-					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
-					"required": true,
-					"suppressOutput": true
-				}, {
-					"@type": "Column",
-					"name": "nickname",
-					"titles": {
-						"en": "nickname",
-						"cs": "přezdívka"
-					},
-					"dc:description": "Student's nickname",
-					"datatype": "string",
-					"lang": "cs",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/Nickname"
-				}],
-				"primaryKey": ["student", "nickname"],
-				"foreignKeys": [{
-					"columnReference": "student",
-					"reference": {
-						"resource": "data-8.csv",
-						"columnReference": "id"
-					}
-				}]
-			}
-		},
-		{
 			"@id": "http://example.org/data/tables/data-1.csv",
 			"@type": "Table",
 			"url": "data-1.csv",
@@ -138,7 +47,7 @@
 			}
 		},
 		{
-			"@id": "http://example.org/data/tables/data-3.csv",
+			"@id": "http://example.org/data/tables/data-2.csv",
 			"@type": "Table",
 			"url": "data-2.csv",
 			"dc:title": "Lessons",
@@ -538,6 +447,97 @@
 					"reference": {
 						"resource": "data-3.csv",
 						"columnReference": "iri_id"
+					}
+				}]
+			}
+		},
+		{
+			"@id": "http://example.org/data/tables/data-10.csv",
+			"@type": "Table",
+			"url": "data-10.csv",
+			"dc:title": "Class teachers",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/classes/{+class}",
+				"columns": [{
+					"@type": "Column",
+					"name": "class",
+					"titles": {
+						"en": "class",
+						"cs": "třída"
+					},
+					"dc:description": "Class",
+					"datatype": "token",
+					"required": true,
+					"suppressOutput": true
+				}, {
+					"@type": "Column",
+					"name": "teacher",
+					"titles": {
+						"en": "teacher",
+						"cs": "učitel"
+					},
+					"dc:description": "Class teacher",
+					"datatype": "token",
+					"lang": "cs",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/ClassTeacher",
+					"valueUrl": "http://example.org/data/teachers/{+teacher}"
+				}],
+				"primaryKey": "class",
+				"foreignKeys": [{
+					"columnReference": "class",
+					"reference": {
+						"resource": "data-7.csv",
+						"columnReference": "iri_id"
+					}
+				}, {
+					"columnReference": "teacher",
+					"reference": {
+						"resource": "data-4.csv",
+						"columnReference": "id"
+					}
+				}]
+			}
+		},
+		{
+			"@id": "http://example.org/data/tables/data-12.csv",
+			"@type": "Table",
+			"url": "data-12.csv",
+			"dc:title": "Student nickname",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/students/{+student}",
+				"columns": [{
+					"@type": "Column",
+					"name": "student",
+					"titles": {
+						"en": "student",
+						"cs": "žák"
+					},
+					"dc:description": "Student ID",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"suppressOutput": true
+				}, {
+					"@type": "Column",
+					"name": "nickname",
+					"titles": {
+						"en": "nickname",
+						"cs": "přezdívka"
+					},
+					"dc:description": "Student's nickname",
+					"datatype": "string",
+					"lang": "cs",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/Nickname"
+				}],
+				"primaryKey": ["student", "nickname"],
+				"foreignKeys": [{
+					"columnReference": "student",
+					"reference": {
+						"resource": "data-8.csv",
+						"columnReference": "id"
 					}
 				}]
 			}
