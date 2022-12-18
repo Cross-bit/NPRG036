@@ -2,7 +2,7 @@
 	"@id": "exd:tables/data-11.csv",
 	"@type": "Table",
 	"url": "data-11.csv",
-	"dc:title": "Lessons – Timetables",
+	"dc:title": "Lessons timetables",
 	"tableSchema": {
 		"@type": "Schema",
 		"aboutUrl": "exLesson:{+lesson}",
@@ -32,7 +32,7 @@
 			"propertyUrl": "ex:PlannedLesson",
 			"valueUrl": "exLesson:{+lesson}"
 		}],
-		"primaryKey": "lesson",
+		"primaryKey": ["lesson, timetable"],
 		"foreignKeys": [{
 			"columnReference": "lesson",
 			"reference": {
