@@ -2,6 +2,7 @@
 
 - [Nástroj na relační diagramy](https://dbdiagram.io)
 - [Standardní prefixy](https://www.w3.org/ns/csvw#introduction)
+- [Built-in typy](https://www.w3.org/TR/csv2rdf/#datatypes)
 
 ## Instrukce
 

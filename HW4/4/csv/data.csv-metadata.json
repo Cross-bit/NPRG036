@@ -4,51 +4,6 @@
 	"@id": "https://example.org/data/tables",
 	"tables": [
 		{
-			"@id": "http://example.org/data/tables/data-1.csv",
-			"@type": "Table",
-			"url": "data-1.csv",
-			"dc:title": "Timetables",
-			"tableSchema": {
-				"@type": "Schema",
-				"aboutUrl": "http://example.org/data/timetables/{+iri_id}",
-				"columns": [{
-					"@type": "Column",
-					"name": "iri_id",
-					"titles": ["IRI_ID", "IRI", "ID"],
-					"dc:description": "Resource IRI end",
-					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
-					"required": true,
-					"propertyUrl": "rdf:type",
-					"valueUrl": "http://example.org/vocabulary/Timetable"
-				},
-				{
-					"@type": "Column",
-					"name": "academical_year",
-					"titles": {
-						"en": "academical_year",
-						"cs": "akademický rok"
-					},
-					"dc:description": "Academical year",
-					"datatype": "string",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/AcademicalYear"
-				},
-				{
-					"@type": "Column",
-					"name": "version",
-					"titles": {
-						"en": "version",
-						"cs": "verze"
-					},
-					"dc:description": "Version",
-					"datatype": "decimal",
-					"required": true,
-					"propertyUrl": "http://example.org/vocabulary/TimetableVersion"
-				}],
-				"primaryKey": "iri_id"
-			}
-		},
-		{
 			"@id": "http://example.org/data/tables/data-10.csv",
 			"@type": "Table",
 			"url": "data-10.csv",
@@ -140,6 +95,142 @@
 			}
 		},
 		{
+			"@id": "http://example.org/data/tables/data-1.csv",
+			"@type": "Table",
+			"url": "data-1.csv",
+			"dc:title": "Timetables",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/timetables/{+iri_id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri_id",
+					"titles": ["IRI_ID", "IRI", "ID"],
+					"dc:description": "Resource IRI end",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "rdf:type",
+					"valueUrl": "http://example.org/vocabulary/Timetable"
+				},
+				{
+					"@type": "Column",
+					"name": "academical_year",
+					"titles": {
+						"en": "academical_year",
+						"cs": "akademický rok"
+					},
+					"dc:description": "Academical year",
+					"datatype": "string",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/AcademicalYear"
+				},
+				{
+					"@type": "Column",
+					"name": "version",
+					"titles": {
+						"en": "version",
+						"cs": "verze"
+					},
+					"dc:description": "Version",
+					"datatype": "decimal",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/TimetableVersion"
+				}],
+				"primaryKey": "iri_id"
+			}
+		},
+		{
+			"@id": "http://example.org/data/tables/data-3.csv",
+			"@type": "Table",
+			"url": "data-2.csv",
+			"dc:title": "Lessons",
+			"tableSchema": {
+				"@type": "Schema",
+				"aboutUrl": "http://example.org/data/lessons/{+iri_id}",
+				"columns": [{
+					"@type": "Column",
+					"name": "iri_id",
+					"titles": ["IRI_ID", "IRI", "ID"],
+					"dc:description": "Resource IRI end",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/LessonID"
+				},{
+					"@type": "Column",
+					"name": "Zoom_URI",
+					"titles": {
+						"en": "Zoom_URI",
+						"cs": "Zoom_URI"
+					},
+					"dc:description": "Zoom URI",
+					"datatype": "anyURI",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/LessonURI"
+				},{
+					"@type": "Column",
+					"name": "subject",
+					"titles": {
+						"en": "subject",
+						"cs": "předmět"
+					},
+					"dc:description": "Subject taught at lesson",
+					"datatype": "token",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/IsTaught",
+					"valueUrl": "http://example.org/data/subjects/{+subject}"
+				},{
+					"@type": "Column",
+					"name": "classroom",
+					"titles": {
+						"en": "classroom",
+						"cs": "učebna"
+					},
+					"dc:description": "Lesson at classroom",
+					"datatype": "token",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/TakesPlace",
+					"valueUrl": "http://example.org/data/classrooms/{+classroom}"
+				},{
+					"@type": "Column",
+					"name": "timeslot",
+					"titles": {
+						"en": "timeslot",
+						"cs": "časový slot"
+					},
+					"dc:description": "Lesson at timeslot",
+					"datatype": "token",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/TakesTime",
+					"valueUrl": "http://example.org/data/timeslots/{+timeslot}"
+				},{
+		            "@type": "Column",
+		            "virtual": true,
+		            "propertyUrl": "rdf:type",
+		            "valueUrl": "http://example.org/vocabulary/Lesson"
+		        }],
+				"primaryKey": "iri_id",
+		        "foreignKeys": [{
+		            "columnReference": "subject",
+		            "reference": {
+		                "resource": "data-3.csv",
+		                "columnReference": "iri_id"
+		            }
+		        },{
+		            "columnReference": "classroom",
+		            "reference": {
+		                "resource": "data-5.csv",
+		                "columnReference": "iri_id"
+		            }
+		        },{
+		            "columnReference": "timetable",
+		            "reference": {
+		                "resource": "data-1.csv",
+		                "columnReference": "iri_id"
+		            }
+		        }]
+			}
+		},
+		{
 			"@id": "http://example.org/data/tables/data-3.csv",
 			"@type": "Table",
 			"url": "data-3.csv",
@@ -154,8 +245,18 @@
 					"dc:description": "Resource IRI end",
 					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"required": true,
-					"propertyUrl": "rdf:type",
-					"valueUrl": "http://example.org/vocabulary/Subject"
+					"propertyUrl": "http://example.org/vocabulary/SubjectID"
+				}, {
+					"@type": "Column",
+					"name": "name",
+					"titles": {
+						"en": "name",
+						"cs": "název"
+					},
+					"dc:description": "Name of subject",
+					"datatype": "string",
+					"required": true,
+					"propertyUrl": "http://example.org/vocabulary/SubjectName"
 				}],
 				"primaryKey": "iri_id"
 			}
@@ -207,6 +308,37 @@
 				}],
 				"primaryKey": "id"
 			}
+		},
+		{
+		    "@id": "http://example.org/data/tables/data-5.csv",
+		    "@type": "Table",
+		    "url": "data-5.csv",
+		    "dc:title": "Classrooms",
+		    "tableSchema": {
+		        "@type": "Schema",
+		        "aboutUrl": "http://example.org/data/classrooms/{+iri_id}",
+		        "columns": [{
+		            "@type": "Column",
+		            "name": "iri_id",
+		            "titles": ["IRI_ID", "IRI", "ID"],
+		            "dc:description": "Resource IRI end",
+		            "datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
+		            "required": true,
+		            "propertyUrl": "http://example.org/vocabulary/ClassroomID"
+		        }, {
+		            "@type": "Column",
+		            "name": "capacity",
+		            "titles": {
+		                "en": "capacity",
+		                "cs": "kapacita"
+		            },
+		            "dc:description": "Capacity of classroom",
+		            "datatype": "integer",
+		            "required": true,
+		            "propertyUrl": "http://example.org/vocabulary/ClassroomCapacity"
+		        }],
+		        "primaryKey": "iri_id"
+		    }
 		},
 		{
 			"@id": "http://example.org/data/tables/data-7.csv",

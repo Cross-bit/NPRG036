@@ -22,7 +22,7 @@
 				"cs": "Zoom_URI"
 			},
 			"dc:description": "Zoom URI",
-			"datatype": "xsd:anyURI",
+			"datatype": "anyURI",
 			"required": true,
 			"propertyUrl": "ex:LessonURI"
 		},{
