@@ -1,44 +1,44 @@
 <http://example.org/data/classrooms/S6>
-        <http://example.org/vocabulary/ClassroomCapacity>  "30"^^<https://www.w3.org/2001/XMLSchema#integer> ;
-        <http://example.org/vocabulary/ClassroomID>  "S6"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/ClassroomCapacity>  "30"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+        <http://example.org/vocabulary/ClassroomID>  "S6"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         a       <http://example.org/vocabulary/Classroom> .
 
 <http://example.org/data/classrooms/S7>
-        <http://example.org/vocabulary/ClassroomCapacity>  "28"^^<https://www.w3.org/2001/XMLSchema#integer> ;
-        <http://example.org/vocabulary/ClassroomID>  "S7"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/ClassroomCapacity>  "28"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+        <http://example.org/vocabulary/ClassroomID>  "S7"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         a       <http://example.org/vocabulary/Classroom> .
 
 <http://example.org/data/classrooms/S9>
-        <http://example.org/vocabulary/ClassroomCapacity>  "30"^^<https://www.w3.org/2001/XMLSchema#integer> ;
-        <http://example.org/vocabulary/ClassroomID>  "S9"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/ClassroomCapacity>  "30"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+        <http://example.org/vocabulary/ClassroomID>  "S9"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         a       <http://example.org/vocabulary/Classroom> .
 
 <http://example.org/data/lessons/FR1000S6>
         a       <http://example.org/vocabulary/Lesson> ;
-        <http://example.org/vocabulary/LessonID>  "FR1000S6"^^<https://www.w3.org/2001/XMLSchema#ID> ;
-        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S6"^^<https://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/LessonID>  "FR1000S6"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S6"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
         <http://example.org/vocabulary/TakesPlace>  <http://example.org/data/classrooms/S6> .
 
 <http://example.org/data/lessons/FR1000S9>
         a       <http://example.org/vocabulary/Lesson> ;
-        <http://example.org/vocabulary/LessonID>  "FR1000S9"^^<https://www.w3.org/2001/XMLSchema#ID> ;
-        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S9"^^<https://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/LessonID>  "FR1000S9"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S9"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
         <http://example.org/vocabulary/TakesPlace>  <http://example.org/data/classrooms/S9> .
 
 <http://example.org/data/lessons/MO0800S7>
         a       <http://example.org/vocabulary/Lesson> ;
-        <http://example.org/vocabulary/LessonID>  "MO0800S7"^^<https://www.w3.org/2001/XMLSchema#ID> ;
-        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/MO0800S7"^^<https://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/LessonID>  "MO0800S7"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/MO0800S7"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
         <http://example.org/vocabulary/TakesPlace>  <http://example.org/data/classrooms/S7> .
 
 <http://example.org/data/lessons/TH0855S6>
         a       <http://example.org/vocabulary/Lesson> ;
-        <http://example.org/vocabulary/LessonID>  "TH0855S6"^^<https://www.w3.org/2001/XMLSchema#ID> ;
-        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/TH0855S6"^^<https://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/LessonID>  "TH0855S6"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/TH0855S6"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
         <http://example.org/vocabulary/TakesPlace>  <http://example.org/data/classrooms/S6> .
 
 <http://example.org/data/lessons/TH0855S7>
         a       <http://example.org/vocabulary/Lesson> ;
-        <http://example.org/vocabulary/LessonID>  "TH0855S7"^^<https://www.w3.org/2001/XMLSchema#ID> ;
-        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/TH0855S7"^^<https://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/LessonID>  "TH0855S7"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/TH0855S7"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
         <http://example.org/vocabulary/TakesPlace>  <http://example.org/data/classrooms/S7> .

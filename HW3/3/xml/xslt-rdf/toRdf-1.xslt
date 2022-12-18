@@ -8,7 +8,7 @@
 <xsl:variable name="prefix">https://example.org/</xsl:variable>
 
 <xsl:template match="TimeSlots" >
-@prefix xsd: &lt;https://www.w3.org/2001/XMLSchema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix time: &lt;http://www.w3.org/2006/time#&gt; .
 

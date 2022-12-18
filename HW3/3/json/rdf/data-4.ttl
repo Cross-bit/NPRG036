@@ -1,54 +1,54 @@
 <http://example.org/data/classes/4C>
         a       <http://example.org/vocabulary/Class> ;
-        <http://example.org/vocabulary/ClassCode>  "C"^^<https://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/ClassCode>  "C"^^<http://www.w3.org/2001/XMLSchema#token> ;
         <http://example.org/vocabulary/ClassTeacher>  <http://example.org/data/teachers/svo> ;
         <http://example.org/vocabulary/ClassYear>  4 .
 
 <http://example.org/data/classes/6A>
         a       <http://example.org/vocabulary/Class> ;
-        <http://example.org/vocabulary/ClassCode>  "A"^^<https://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/ClassCode>  "A"^^<http://www.w3.org/2001/XMLSchema#token> ;
         <http://example.org/vocabulary/ClassTeacher>  <http://example.org/data/teachers/muk> ;
         <http://example.org/vocabulary/ClassYear>  6 .
 
 <http://example.org/data/classes/6B>
         a       <http://example.org/vocabulary/Class> ;
-        <http://example.org/vocabulary/ClassCode>  "B"^^<https://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/ClassCode>  "B"^^<http://www.w3.org/2001/XMLSchema#token> ;
         <http://example.org/vocabulary/ClassTeacher>  <http://example.org/data/teachers/pel> ;
         <http://example.org/vocabulary/ClassYear>  6 .
 
 <http://example.org/data/subjects/English>
         a       <http://example.org/vocabulary/Subject> ;
-        <http://example.org/vocabulary/SubjectID>  "en"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/SubjectID>  "en"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         <http://example.org/vocabulary/SubjectName>  "Angličtina"@cs .
 
 <http://example.org/data/subjects/Math>
         a       <http://example.org/vocabulary/Subject> ;
-        <http://example.org/vocabulary/SubjectID>  "mt"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/SubjectID>  "mt"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         <http://example.org/vocabulary/SubjectName>  "Matematika"@cs .
 
 <http://example.org/data/subjects/Physics>
         a       <http://example.org/vocabulary/Subject> ;
-        <http://example.org/vocabulary/SubjectID>  "ps"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/SubjectID>  "ps"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         <http://example.org/vocabulary/SubjectName>  "Fyzika"@cs .
 
 <http://example.org/data/teachers/muk>
-        <http://example.org/vocabulary/TeacherExperience>  "5"^^<https://www.w3.org/2001/XMLSchema#integer> ;
-        <http://example.org/vocabulary/TeacherID>  "muk"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/TeacherExperience>  "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+        <http://example.org/vocabulary/TeacherID>  "muk"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         <http://example.org/vocabulary/Teaches>  <http://example.org/data/subjects/Math> ;
         a       <http://example.org/vocabulary/Teacher> ;
         <http://xmlns.com/foaf/0.1/name>  "Vladimír Mukvald"@cs .
 
 <http://example.org/data/teachers/pel>
-        <http://example.org/vocabulary/TeacherExperience>  "3"^^<https://www.w3.org/2001/XMLSchema#integer> ;
-        <http://example.org/vocabulary/TeacherID>  "pel"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/TeacherExperience>  "3"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+        <http://example.org/vocabulary/TeacherID>  "pel"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         <http://example.org/vocabulary/Teaches>  <http://example.org/data/subjects/Math> ;
         <http://example.org/vocabulary/Teaches>  <http://example.org/data/subjects/Physics> ;
         a       <http://example.org/vocabulary/Teacher> ;
         <http://xmlns.com/foaf/0.1/name>  "Jaroslav Pelikán"@cs .
 
 <http://example.org/data/teachers/svo>
-        <http://example.org/vocabulary/TeacherExperience>  "2"^^<https://www.w3.org/2001/XMLSchema#integer> ;
-        <http://example.org/vocabulary/TeacherID>  "svo"^^<https://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/TeacherExperience>  "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+        <http://example.org/vocabulary/TeacherID>  "svo"^^<http://www.w3.org/2001/XMLSchema#ID> ;
         <http://example.org/vocabulary/Teaches>  <http://example.org/data/subjects/English> ;
         a       <http://example.org/vocabulary/Teacher> ;
         <http://xmlns.com/foaf/0.1/name>  "Patrik Svoboda"@cs .

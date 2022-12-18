@@ -3,7 +3,7 @@
   <xsl:output method="text" encoding="UTF-8" />
   
   <xsl:template match="/">
-@prefix xsd: &lt;https://www.w3.org/2001/XMLSchema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # Custom prefixes
 @prefix ex: &lt;http://example.org/vocabulary/&gt; .

@@ -1,73 +1,77 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ex: <http://example.org/vocabulary/> .
-
 <http://example.org/data/classes/4C>
-        rdf:type      ex:Class ;
-        ex:ClassCode  "C"^^xsd:token ;
-        ex:ClassYear  4 .
+        a       <http://example.org/vocabulary/Class> ;
+        <http://example.org/vocabulary/ClassCode>  "C"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/ClassYear>  4 .
 
 <http://example.org/data/classes/6A>
-        rdf:type      ex:Class ;
-        ex:ClassCode  "A"^^xsd:token ;
-        ex:ClassYear  6 .
+        a       <http://example.org/vocabulary/Class> ;
+        <http://example.org/vocabulary/ClassCode>  "A"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/ClassYear>  6 .
 
 <http://example.org/data/classes/6B>
-        rdf:type      ex:Class ;
-        ex:ClassCode  "B"^^xsd:token ;
-        ex:ClassYear  6 .
+        a       <http://example.org/vocabulary/Class> ;
+        <http://example.org/vocabulary/ClassCode>  "B"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/ClassYear>  6 .
 
 <http://example.org/data/lessons/FR1000S6>
-        rdf:type      ex:Lesson ;
-        ex:LessonID   "FR1000S6"^^xsd:ID ;
-        ex:LessonUrl  "https://zoom.com/FR1000S6"^^xsd:anyURI .
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "FR1000S6"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S6"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://example.org/data/lessons/FR1000S9>
-        rdf:type      ex:Lesson ;
-        ex:LessonID   "FR1000S9"^^xsd:ID ;
-        ex:LessonUrl  "https://zoom.com/FR1000S9"^^xsd:anyURI .
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "FR1000S9"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S9"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://example.org/data/lessons/MO0800S7>
-        rdf:type      ex:Lesson ;
-        ex:LessonID   "MO0800S7"^^xsd:ID ;
-        ex:LessonUrl  "https://zoom.com/MO0800S7"^^xsd:anyURI .
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "MO0800S7"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/MO0800S7"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://example.org/data/lessons/TH0855S6>
-        rdf:type      ex:Lesson ;
-        ex:LessonID   "TH0855S6"^^xsd:ID ;
-        ex:LessonUrl  "https://zoom.com/TH0855S6"^^xsd:anyURI .
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "TH0855S6"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/TH0855S6"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://example.org/data/students/kliji>
-        rdf:type      ex:Student ;
-        ex:BelongsTo  <http://example.org/data/classes/6B> .
+        a       <http://example.org/vocabulary/Student> ;
+        <http://example.org/vocabulary/BelongsTo>  <http://example.org/data/classes/6B> ;
+        <http://example.org/vocabulary/Nickname>  "Limoš"@cs ;
+        <http://example.org/vocabulary/StudentID>  "kliji"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://xmlns.com/foaf/0.1/name>  "Jiří Klimošek"@cs .
 
 <http://example.org/data/students/kovpe>
-        rdf:type      ex:Student ;
-        ex:BelongsTo  <http://example.org/data/classes/6A> .
+        a       <http://example.org/vocabulary/Student> ;
+        <http://example.org/vocabulary/BelongsTo>  <http://example.org/data/classes/6A> ;
+        <http://example.org/vocabulary/StudentID>  "kovpe"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://xmlns.com/foaf/0.1/name>  "Petr Kovář"@cs .
 
 <http://example.org/data/students/novpa>
-        rdf:type      ex:Student ;
-        ex:BelongsTo  <http://example.org/data/classes/4C> .
+        a       <http://example.org/vocabulary/Student> ;
+        <http://example.org/vocabulary/BelongsTo>  <http://example.org/data/classes/4C> ;
+        <http://example.org/vocabulary/Nickname>  "Kajak"@cs ;
+        <http://example.org/vocabulary/Nickname>  "Bizon"@cs ;
+        <http://example.org/vocabulary/StudentID>  "novpa"^^<http://www.w3.org/2001/XMLSchema#ID> ;
+        <http://xmlns.com/foaf/0.1/name>  "Pavel Novák"@cs .
 
 <http://example.org/data/timetables/20216A15>
-        ex:AcademicalYear    "2020/2021" ;
-        ex:BelongingClass    <http://example.org/data/classes/6A> ;
-        ex:PlannedLesson     <http://example.org/data/lessons/TH0855S6> ;
-        ex:TimetableVersion  "1.5"^^xsd:decimal ;
-        rdf:type             ex:Timetable .
+        <http://example.org/vocabulary/AcademicalYear>  "2020/2021" ;
+        <http://example.org/vocabulary/BelongingClass>  <http://example.org/data/classes/6A> ;
+        <http://example.org/vocabulary/PlannedLesson>  <http://example.org/data/lessons/TH0855S6> ;
+        <http://example.org/vocabulary/TimetableVersion>  "1.5"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        a       <http://example.org/vocabulary/Timetable> .
 
 <http://example.org/data/timetables/21226B10>
-        ex:AcademicalYear    "2021/2022" ;
-        ex:BelongingClass    <http://example.org/data/classes/6B> ;
-        ex:PlannedLesson     <http://example.org/data/lessons/MO0800S7> ;
-        ex:PlannedLesson     <http://example.org/data/lessons/FR1000S6> ;
-        ex:TimetableVersion  "1.0"^^xsd:decimal ;
-        rdf:type             ex:Timetable .
+        <http://example.org/vocabulary/AcademicalYear>  "2021/2022" ;
+        <http://example.org/vocabulary/BelongingClass>  <http://example.org/data/classes/6B> ;
+        <http://example.org/vocabulary/PlannedLesson>  <http://example.org/data/lessons/MO0800S7> ;
+        <http://example.org/vocabulary/PlannedLesson>  <http://example.org/data/lessons/FR1000S6> ;
+        <http://example.org/vocabulary/TimetableVersion>  "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        a       <http://example.org/vocabulary/Timetable> .
 
 <http://example.org/data/timetables/22234C20>
-        ex:AcademicalYear    "2022/2023" ;
-        ex:BelongingClass    <http://example.org/data/classes/4C> ;
-        ex:PlannedLesson     <http://example.org/data/lessons/FR1000S9> ;
-        ex:TimetableVersion  "2.0"^^xsd:decimal ;
-        rdf:type             ex:Timetable .
+        <http://example.org/vocabulary/AcademicalYear>  "2022/2023" ;
+        <http://example.org/vocabulary/BelongingClass>  <http://example.org/data/classes/4C> ;
+        <http://example.org/vocabulary/PlannedLesson>  <http://example.org/data/lessons/FR1000S9> ;
+        <http://example.org/vocabulary/TimetableVersion>  "2.0"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        a       <http://example.org/vocabulary/Timetable> .

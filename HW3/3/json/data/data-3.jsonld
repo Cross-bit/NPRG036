@@ -1,7 +1,7 @@
 {
 	"@context": {
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"xsd": "https://www.w3.org/2001/XMLSchema#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
 		"ex": "http://example.org/vocabulary/",
 		"Subjects": {"@reverse": "rdf:type"},
 		"SubjectCode": {"@id": "ex:SubjectID", "@type": "xsd:ID"},

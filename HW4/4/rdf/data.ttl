@@ -9,12 +9,13 @@
 @prefix exTimetable: <http://example.org/data/timetables/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 exLesson:TH0855S7 a ex:Lesson;
   ex:IsTaught exSubject:Math;
   ex:LessonID "TH0855S7"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/TH0855S7"^^xsd:anyURI;
+  ex:LessonUrl "https://zoom.com/TH0855S7"^^xsd:anyURI;
   ex:TakesPlace exClassroom:S7;
   ex:TakesTime exTimeSlot:TH0855 .
 
@@ -62,28 +63,28 @@ exClassroom:S9 a ex:Classroom;
 exLesson:FR1000S6 a ex:Lesson;
   ex:IsTaught exSubject:Physics;
   ex:LessonID "FR1000S6"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/FR1000S6"^^xsd:anyURI;
+  ex:LessonUrl "https://zoom.com/FR1000S6"^^xsd:anyURI;
   ex:TakesPlace exClassroom:S6;
   ex:TakesTime exTimeSlot:FR1000 .
 
 exLesson:FR1000S9 a ex:Lesson;
   ex:IsTaught exSubject:English;
   ex:LessonID "FR1000S9"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/FR1000S9"^^xsd:anyURI;
+  ex:LessonUrl "https://zoom.com/FR1000S9"^^xsd:anyURI;
   ex:TakesPlace exClassroom:S9;
   ex:TakesTime exTimeSlot:FR1000 .
 
 exLesson:MO0800S7 a ex:Lesson;
   ex:IsTaught exSubject:English;
   ex:LessonID "MO0800S7"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/MO0800S7"^^xsd:anyURI;
+  ex:LessonUrl "https://zoom.com/MO0800S7"^^xsd:anyURI;
   ex:TakesPlace exClassroom:S7;
   ex:TakesTime exTimeSlot:MO0800 .
 
 exLesson:TH0855S6 a ex:Lesson;
   ex:IsTaught exSubject:Math;
   ex:LessonID "TH0855S6"^^xsd:ID;
-  ex:LessonURI "https://zoom.com/TH0855S6"^^xsd:anyURI;
+  ex:LessonUrl "https://zoom.com/TH0855S6"^^xsd:anyURI;
   ex:TakesPlace exClassroom:S6;
   ex:TakesTime exTimeSlot:TH0855 .
 
@@ -106,10 +107,13 @@ exTeacher:svo a ex:Teacher;
   ex:Teaches exSubject:English;
   foaf:name "Patrik Svoboda"@cs .
 
-exTimeSlot:MO0800 a ex:Class .
+exTimeSlot:MO0800 a ex:TimeSlot;
+  ex:DayOfWeek time:Monday;
+  ex:TimeSlotBeginning "08:00:00"^^xsd:time;
+  ex:TimeSlotEnd "08:45:00"^^xsd:time .
 
 exClass:4C a ex:Class;
-  ex:ClassCode "V"^^xsd:token;
+  ex:ClassCode "C"^^xsd:token;
   ex:ClassTeacher exTeacher:svo;
   ex:ClassYear 4 .
 
@@ -135,9 +139,15 @@ exSubject:Physics a ex:Subject;
   ex:SubjectID "ps"^^xsd:ID;
   ex:SubjectName "Fyzika"@cs .
 
-exTimeSlot:FR1000 a ex:Class .
+exTimeSlot:FR1000 a ex:TimeSlot;
+  ex:DayOfWeek time:Friday;
+  ex:TimeSlotBeginning "10:00:00"^^xsd:time;
+  ex:TimeSlotEnd "10:45:00"^^xsd:time .
 
-exTimeSlot:TH0855 a ex:Class .
+exTimeSlot:TH0855 a ex:TimeSlot;
+  ex:DayOfWeek time:Thursday;
+  ex:TimeSlotBeginning "08:55:00"^^xsd:time;
+  ex:TimeSlotEnd "09:40:00"^^xsd:time .
 
 exSubject:English a ex:Subject;
   ex:SubjectID "en"^^xsd:ID;

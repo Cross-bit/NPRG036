@@ -1,42 +1,47 @@
-@prefix ex:   <http://example.org/vocabulary/> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix xsd:  <https://www.w3.org/2001/XMLSchema#> .
-
-<http://example.org/data/timeslots/FR1000>
-        rdf:type              ex:TimeSlot ;
-        ex:DayOfWeek          time:Friday ;
-        ex:TimeSlotBeginning  "10:00:00"^^xsd:time ;
-        ex:TimeSlotEnd        "10:45:00"^^xsd:time .
-
-<http://example.org/data/timeslots/TH0855>
-        rdf:type              ex:TimeSlot ;
-        ex:DayOfWeek          time:Thursday ;
-        ex:TimeSlotBeginning  "08:55:00"^^xsd:time ;
-        ex:TimeSlotEnd        "09:40:00"^^xsd:time .
-
-<http://example.org/data/lessons/TH0855S6>
-        rdf:type      ex:Lesson ;
-        ex:TakesTime  <http://example.org/data/timeslots/TH0855> .
-
 <http://example.org/data/lessons/FR1000S6>
-        rdf:type      ex:Lesson ;
-        ex:TakesTime  <http://example.org/data/timeslots/FR1000> .
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "FR1000S6"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S6"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/TakesTime>  <http://example.org/data/timeslots/FR1000> .
 
 <http://example.org/data/lessons/FR1000S9>
-        rdf:type      ex:Lesson ;
-        ex:TakesTime  <http://example.org/data/timeslots/FR1000> .
-
-<http://example.org/data/lessons/TH0855S7>
-        rdf:type      ex:Lesson ;
-        ex:TakesTime  <http://example.org/data/timeslots/TH0855> .
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "FR1000S9"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/FR1000S9"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/TakesTime>  <http://example.org/data/timeslots/FR1000> .
 
 <http://example.org/data/lessons/MO0800S7>
-        rdf:type      ex:Lesson ;
-        ex:TakesTime  <http://example.org/data/timeslots/MO0800> .
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "MO0800S7"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/MO0800S7"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/TakesTime>  <http://example.org/data/timeslots/MO0800> .
+
+<http://example.org/data/lessons/TH0855S6>
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "TH0855S6"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/TH0855S6"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/TakesTime>  <http://example.org/data/timeslots/TH0855> .
+
+<http://example.org/data/lessons/TH0855S7>
+        a       <http://example.org/vocabulary/Lesson> ;
+        <http://example.org/vocabulary/LessonID>  "TH0855S7"^^<http://www.w3.org/2001/XMLSchema#token> ;
+        <http://example.org/vocabulary/LessonUrl>  "https://zoom.com/TH0855S7"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://example.org/vocabulary/TakesTime>  <http://example.org/data/timeslots/TH0855> .
+
+<http://example.org/data/timeslots/FR1000>
+        <http://example.org/vocabulary/DayOfWeek>  <http://www.w3.org/2006/time#Friday> ;
+        <http://example.org/vocabulary/TimeSlotBeginning>  "10:00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+        <http://example.org/vocabulary/TimeSlotEnd>  "10:45:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+        a       <http://example.org/vocabulary/TimeSlot> .
 
 <http://example.org/data/timeslots/MO0800>
-        rdf:type              ex:TimeSlot ;
-        ex:DayOfWeek          time:Monday ;
-        ex:TimeSlotBeginning  "08:00:00"^^xsd:time ;
-        ex:TimeSlotEnd        "08:45:00"^^xsd:time .
+        <http://example.org/vocabulary/DayOfWeek>  <http://www.w3.org/2006/time#Monday> ;
+        <http://example.org/vocabulary/TimeSlotBeginning>  "08:00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+        <http://example.org/vocabulary/TimeSlotEnd>  "08:45:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+        a       <http://example.org/vocabulary/TimeSlot> .
+
+<http://example.org/data/timeslots/TH0855>
+        <http://example.org/vocabulary/DayOfWeek>  <http://www.w3.org/2006/time#Thursday> ;
+        <http://example.org/vocabulary/TimeSlotBeginning>  "08:55:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+        <http://example.org/vocabulary/TimeSlotEnd>  "09:40:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+        a       <http://example.org/vocabulary/TimeSlot> .
