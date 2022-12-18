@@ -45,7 +45,7 @@
                 "cs": "den"
             },
             "dc:description": "Day of the timeslot",
-            "datatype": "string",
+            "datatype": "token",
             "required": true,
             "propertyUrl": "ex:DayOfWeek",
 			"valueUrl": "time:{+day}"
