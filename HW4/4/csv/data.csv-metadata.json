@@ -469,7 +469,7 @@
 					"propertyUrl": "http://example.org/vocabulary/Teaches",
 					"valueUrl": "http://example.org/data/subjects/{+subject}"
 				}],
-				"primaryKey": "teacher",
+				"primaryKey": ["teacher", "subject"],
 				"foreignKeys": [{
 					"columnReference": "teacher",
 					"reference": {

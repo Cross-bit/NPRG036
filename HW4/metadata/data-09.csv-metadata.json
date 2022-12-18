@@ -31,7 +31,7 @@
 			"propertyUrl": "ex:Teaches",
 			"valueUrl": "exSubject:{+subject}"
 		}],
-		"primaryKey": "teacher",
+		"primaryKey": ["teacher", "subject"],
 		"foreignKeys": [{
 			"columnReference": "teacher",
 			"reference": {
