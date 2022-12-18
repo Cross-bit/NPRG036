@@ -1,0 +1,85 @@
+
+
+Table Timetable {
+  iri_id "xsd:ID" [pk]
+  academical_year "xsd:string"
+  version  "xsd:decimal"
+}
+
+Table Class {
+  iri_id "xsd:ID" [pk]
+  class_year "xsd:integer"
+  class_code "xsd:token"
+  timetable "xsd:ID" [ref: - Timetable.iri_id] // many-to-one
+}
+
+
+
+Table Classroom {
+  iri_id "xsd:ID" [pk]
+  capacity "xsd:integer"
+}
+
+Table Subject {
+  iri_id "xsd:ID" [pk]
+  ID "xsd:token"
+  name "xsd:string"
+}
+
+Table Lesson {
+    iri_id "xsd:ID" [pk]
+    Zoom_URI "xsd:anyURI"
+    subject "xsd:ID" [ref: > Subject.iri_id]
+    classroom "xsd:ID" [ref: > Classroom.iri_id]
+    timeslot "xsd:ID" [ref: > TimeSlot.iri_id]
+}
+
+Table TimeSlot {
+    iri_id "xsd:ID" [pk]
+    beginning "xsd:time"
+    end "xsd:time"
+    day "xsd:token"
+}
+
+Table LessonsTimetables {
+  lesson "xsd:ID" [ref: > Lesson.iri_id]
+  timetable "xsd:ID" [ref: > Timetable.iri_id]
+  Indexes {
+    (lesson, timetable) [PK]
+  }
+
+}
+
+
+Table Teacher {
+  iri_id "xsd:ID" [PK]
+  name "rdf:langString"
+  experience "xsd:integer"
+}
+
+Table Student {
+  iri_id "xsd:ID" [PK]
+  name "rdf:langString"
+  class "xsd:ID" [ref: > Class.iri_id]
+}
+
+Table TeacherSubject {
+  teacher "xsd:ID" [ref: > Teacher.iri_id]
+  subject "xsd:ID" [ref: > Subject.iri_id]
+  Indexes {
+    (teacher, subject) [PK]
+  }
+}
+
+Table ClassTeacher {
+  class "xsd:ID" [PK, ref: - Class.iri_id]
+  teacher "xsd:ID" [ref: - Teacher.iri_id]
+}
+
+Table StudentNickname {
+  student "xsd:ID" [ref: > Student.iri_id]
+  nickname "rdf:langString"
+  Indexes {
+    (student, nickname) [PK]
+  }
+}

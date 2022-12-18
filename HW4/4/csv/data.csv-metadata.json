@@ -309,7 +309,7 @@
 		                "cs": "den"
 		            },
 		            "dc:description": "Day of the timeslot",
-		            "datatype": "string",
+		            "datatype": "token",
 		            "required": true,
 		            "propertyUrl": "http://example.org/vocabulary/DayOfWeek",
 					"valueUrl": "http://www.w3.org/2006/time#{+day}"
@@ -452,7 +452,7 @@
 						"cs": "učitel"
 					},
 					"dc:description": "Teacher",
-					"datatype": "token",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"required": true,
 					"suppressOutput": true
 				}, {
@@ -463,7 +463,7 @@
 						"cs": "předmět"
 					},
 					"dc:description": "Taught subject",
-					"datatype": "token",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"lang": "cs",
 					"required": true,
 					"propertyUrl": "http://example.org/vocabulary/Teaches",
@@ -501,7 +501,7 @@
 						"cs": "třída"
 					},
 					"dc:description": "Class",
-					"datatype": "token",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"required": true,
 					"suppressOutput": true
 				}, {
@@ -512,7 +512,7 @@
 						"cs": "učitel"
 					},
 					"dc:description": "Class teacher",
-					"datatype": "token",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"lang": "cs",
 					"required": true,
 					"propertyUrl": "http://example.org/vocabulary/ClassTeacher",
@@ -538,7 +538,7 @@
 			"@id": "http://example.org/data/tables/data-11.csv",
 			"@type": "Table",
 			"url": "data-11.csv",
-			"dc:title": "Lessons – Timetables",
+			"dc:title": "Lessons timetables",
 			"tableSchema": {
 				"@type": "Schema",
 				"aboutUrl": "http://example.org/data/lessons/{+lesson}",
@@ -550,7 +550,7 @@
 						"cs": "třída"
 					},
 					"dc:description": "Lesson",
-					"datatype": "token",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"required": true,
 					"suppressOutput": true
 				}, {
@@ -561,14 +561,14 @@
 						"cs": "Třídní rozvrh"
 					},
 					"dc:description": "Timetable",
-					"datatype": "token",
+					"datatype": {"base": "token", "@id": "http://www.w3.org/2001/XMLSchema#ID"},
 					"lang": "cs",
 					"required": true,
 		            "aboutUrl": "http://example.org/data/timetables/{+timetable}",
 					"propertyUrl": "http://example.org/vocabulary/PlannedLesson",
 					"valueUrl": "http://example.org/data/lessons/{+lesson}"
 				}],
-				"primaryKey": "lesson",
+				"primaryKey": ["lesson", "timetable"],
 				"foreignKeys": [{
 					"columnReference": "lesson",
 					"reference": {
