@@ -14,7 +14,7 @@
 				"cs": "třída"
 			},
 			"dc:description": "Class",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"required": true,
 			"suppressOutput": true
 		}, {
@@ -25,7 +25,7 @@
 				"cs": "učitel"
 			},
 			"dc:description": "Class teacher",
-			"datatype": "token",
+			"datatype": {"base": "token", "@id": "xsd:ID"},
 			"lang": "cs",
 			"required": true,
 			"propertyUrl": "ex:ClassTeacher",
